@@ -6,11 +6,10 @@
 Inoculator User Guide
 ===================================
 
-This is a sample document. 
+This is a sample document.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
 ModHistory
-
