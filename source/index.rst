@@ -9,8 +9,8 @@ Inoculator User Guide
 This is a sample document. 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 10
    :caption: Contents:
 
 ModHistory
-
+Introduction

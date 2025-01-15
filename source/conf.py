@@ -9,7 +9,7 @@
 project = 'Inoculator User Guide'
 copyright = '2025, Maita Leonida'
 author = 'Maita Leonida'
-release = '2.4'
+release = '2.5'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
