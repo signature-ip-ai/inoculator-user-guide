@@ -18,4 +18,7 @@ Table of Contents
    Introduction#confidentiality-notice
    features
    requestAccess
+   activateAccount
+   inviteUser
+   
    
