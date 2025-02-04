@@ -3,9 +3,9 @@ body {
     max-width: 1000px; 
 }
 
-/* Adjust the sidebar width */
+/* sidebar width */
 div.sphinxsidebar {
-    width: 100px;  /* Adjust width as needed */
+    width: 100px;  
     position: fixed;
     left: 0;
     top: 0;
@@ -16,10 +16,10 @@ div.sphinxsidebar {
     border-right: 1px solid #ddd;
 }
 
-/* Shift the main content to prevent overlap */
+
 div.document {
     margin-left: 100px;  /* sidebar width */
     margin-right: 100px; /* sidebar width */
-    max-width: 1000px;  /* Adjust to fit well */
+    max-width: 1000px;  
 }
 
