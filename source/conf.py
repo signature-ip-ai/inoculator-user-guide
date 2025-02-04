@@ -19,7 +19,7 @@ exclude_patterns = []
 
 html_theme = 'classic'
 html_static_path = ['_static']
-# html_css_files = ['custom.css']
+html_css_files = ['custom.css']
 html_theme_options = {
     "rightsidebar": "true",
     "relbarbgcolor": "black"
