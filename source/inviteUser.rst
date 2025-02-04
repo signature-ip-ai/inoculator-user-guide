@@ -3,7 +3,7 @@ Invite User
 This function is for Admin Account. Once access is requested, all admins of Inoculator will be notified, and the next step is to send an invitation to the requester to activate their account. This will be discussed on ‘Admin’s User Guide’. 
 After an admin verifies the eligibility of the requester, admin will send an invite email to the requester. Request will receive this email content: 
 
-..images:: images/invite_user-invitation_email.png
+..image:: images/invite_user-invitation_email.png
 :align: center
 :alt: invite_user-invitation_email
 
