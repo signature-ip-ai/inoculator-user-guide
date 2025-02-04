@@ -10,7 +10,7 @@ B. Sign In, One-time Pin, and Logout
     1. Sign In
     2. One-Time Pin (OTP)
     3. Log out
-c. Forgot Password
+C. Forgot Password
 ---------------------------------------------------
 D. Authorization and Authentication
 ------------------------------------------------------
