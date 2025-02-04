@@ -18,7 +18,7 @@ div.sphinxsidebar {
 
 /* Shift the main content to prevent overlap */
 div.document {
-    margin-left: 270px;  /* Adjust based on sidebar width */
-    max-width: 900px;  /* Adjust to fit well */
+    margin-left: 100px;  /* Adjust based on sidebar width */
+    max-width: 1000px;  /* Adjust to fit well */
 }
 
