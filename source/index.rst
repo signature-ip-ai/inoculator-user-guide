@@ -20,5 +20,9 @@ Table of Contents
    requestAccess
    activateAccount
    inviteUser
+   signin
+   otp
+   logout
+   forgotpassword
    
    
