@@ -24,9 +24,7 @@ Limitations:
     - Use only alphanumeric keys including ñ and Ñ, spaces and no special characters.
 
 
-    After filling out the Request Access Form, confirmation page will be displayed and user’s
-registered email will receive a confirmation email from Admin that the request has been sent
-successfully.
+    After filling out the Request Access Form, confirmation page will be displayed and user’s registered email will receive a confirmation email from Admin that the request has been sent successfully.
 
 .. image:: images/request_access-confirmation_page.png
     :alt: request_access-confirmation_page
