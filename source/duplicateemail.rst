@@ -1,4 +1,4 @@
-Request Access - Duplicate email 
+Request Access - Duplicate Email 
 ==============================================
 If an email address is already associated with an existing account, the system will:
   - Detect Duplication – Identify that the email address is already in use.
