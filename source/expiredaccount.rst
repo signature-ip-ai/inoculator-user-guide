@@ -4,6 +4,7 @@ An expired account refers to an account that has reached the end of its active p
 ------------------------------------------------------------------
 
 .. image:: images/authorization-expired_account.png
-  [alt] authorization-expired_account
+  :alt: authorization-expired_account
+  :align: center
 
 To resolve this, please contact the Group Admin or Signature IP Administrators to update or renew the account's License Expiry Date.
