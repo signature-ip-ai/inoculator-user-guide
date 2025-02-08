@@ -52,3 +52,57 @@ Outstanding Reads – The number of allowed outstanding reads limited to help ma
 +------------------+--------------------------+----------------------+
 |    SIG_NATIVE    |          N/A             |          N/A         |
 +------------------+--------------------------+----------------------+
+
+
+
+.. image:: images/initiator-timing.png
+  :alt: initiator-timing
+  :align: center
+
+Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation’ in the 'Create Project' prompt is unchecked. 
+
+**Latency Clock Sync** – When enabled, Frequency will be same as Subtopology clock. When disabled, Frequency needs to be set in MHz. 
+
+**Frequency** – The rate of speed on how a processor can execute instructions. This field will be available if ‘Latency Clock Sync’ is disabled. 
+
+
+.. image:: images/initiator-traffic_behavior.png
+  :alt: initiator-traffic_behavior
+  :align: center
+
+**Transaction Type** – This refers to the kind of operation or request being executed. The dropdown selections available are Write Only, Read Only, or Read/Write. 
+
+**Burst Length** – This refers to the performance of data transfers. The dropdown selections available are Single, Short, Long, Max, or Any.
+
+**Request Speed** – This refers to the measure of how quickly a system will initiate and handle requests. Selections are 'fast' or 'slow.'
+
+
+.. image:: images/initiator-security.png
+  :alt: initiator-security
+  :align: center
+
+**Root Policy** – Policy or configuration of the top level for Initiator. Choose from Passthrough, Programmable, Blocked, and Fixed-Secure. 
+
+**Device Policies** – Policy or configuration assigned for the connected Target device. This will also reflect in Target device’s setting. Choose from Passthrough, Programmable (Secure or Non-Secure), Blocked, and Fixed-Secure.
+
+
+.. image:: images/initiator-others.png
+  :alt: initiator-others
+  :align: center
+
+**Enable Local SRAM** – This can be enabled if local SRAM is going to be used for the device. Default setting is disabled.
+
+**Address Width** – Address Width for Local SRAM. User can choose from 8, 16, 32 and 64. 
+
+**Base Address** – Starting address map for the Local SRAM when enabled. 
+
+**Limit Address** – End address map for the Local SRAM when enabled. 
+
+**Read Data Delay** – Time interval to set for a read request. User can choose either 1 or 2. 
+
+**Address Translation** – Default settings is disabled. User can choose either true or false
+
+
+
+
+
