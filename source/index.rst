@@ -3,13 +3,32 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Inoculator User Guide
+Table of Contents
 ===================================
-
-This is a sample document.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
-ModHistory
+   :titlesonly:
+   
+   ModHistory
+   Introduction
+   Introduction#terminologies
+   Introduction#user-description
+   Introduction#overview
+   Introduction#confidentiality-notice
+   features
+   requestAccess
+   activateAccount
+   inviteUser
+   signin
+   otp
+   logout
+   forgotpassword
+   expiredaccount
+   suspendedaccount
+   invalidcredentials
+   duplicateemail
+   expiredlink
+   uploadtopology
+   
+   

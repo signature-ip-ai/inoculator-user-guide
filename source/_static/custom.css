@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto;
+    max-width: 1000px; 
+}
+
+/* sidebar width */
+div.sphinxsidebar {
+    width: 100px;  
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f8f9fa; /* Light background */
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+
+div.document {
+    margin-left: 100px;  /* sidebar width */
+    margin-right: 100px; /* sidebar width */
+    max-width: 1000px;  
+}
+
+.justify-table td {
+    text-align: justify;
+}
+
