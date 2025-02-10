@@ -4,7 +4,7 @@ A. Creating an account
 ----------------------------------------------
     1. 'Request Access <requestaccess.html>'_
     2. 'Invite User <inviteuser.html>'_
-    3. 'Activate Account <activateaccount.html>'+
+    3. 'Activate Account <activateaccount.html>'_
 B. Sign In, One-time Pin, and Logout
 -------------------------------------------------
     1. Sign In
