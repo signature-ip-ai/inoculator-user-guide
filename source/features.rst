@@ -2,9 +2,9 @@ Features of Web Inoculator
 ===================================
 A. Creating an account
 ----------------------------------------------
-    1. Request Access
-    2. Invite User
-    3. Activate Account 
+    1. 'Request Access <requestaccess.html>'_
+    2. 'Invite User <inviteuser.html>'_
+    3. 'Activate Account <activateaccount.html>'+
 B. Sign In, One-time Pin, and Logout
 -------------------------------------------------
     1. Sign In
