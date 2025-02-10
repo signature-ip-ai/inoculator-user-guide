@@ -23,3 +23,7 @@ div.document {
     max-width: 1000px;  
 }
 
+.justify-table td {
+    text-align: justify;
+}
+
