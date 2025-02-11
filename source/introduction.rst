@@ -6,6 +6,10 @@ Introduction
     **A. Terminologies**
 --------------------------------------------------------------------------------------------------------------------------------------------
 
+.. contents::
+   :local:
+   :depth: 1
+
 The table below indicates the terms used in web application.
 
                                             Table 1. Definition of terms. 
