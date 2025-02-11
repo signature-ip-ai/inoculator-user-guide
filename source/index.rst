@@ -13,9 +13,9 @@ Table of Contents
    modificationhistory
    introduction
    features
-   requestAccess
-   activateAccount
-   inviteUser
+   requestaccess
+   activateaccount
+   inviteuser
    signin
    otp
    logout
