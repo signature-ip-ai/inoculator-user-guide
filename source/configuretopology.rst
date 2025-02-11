@@ -1,7 +1,5 @@
-Coherent NoC Topology
+Configure Topology
 =======================================================
-
-  2. Configure Topology
 
 .. image:: images/c_noc-configure_topology.png
   :alt: c_noc-configure_topology
