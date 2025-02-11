@@ -1,4 +1,4 @@
- Create Project (C-NoC Topology)
+Create Project (C-NoC Topology)
 ==================================
 
 This feature is for designing a topology in Coherent NoC and can be accessed by selecting 'Coherent NOC' from the Project Type dropdown.
