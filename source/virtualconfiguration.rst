@@ -1,6 +1,5 @@
-NC-NoC Topology
+ Virtual Device Configuration
 ======================================
-  6. Virtual Device Configuration
 
 .. image:: images/virtual_device-toggle_on.png
   :alt: virtual_device-toggle_on
