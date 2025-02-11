@@ -3,7 +3,7 @@ Introduction
 
 .. _terminologies:
 
-    A. Terminologies
+    **A. Terminologies**
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 The table below indicates the terms used in web application.
@@ -45,7 +45,7 @@ The table below indicates the terms used in web application.
 
 .. _user-description: 
 
-    B. User Description
+    **B. User Description**
 -------------------------------------------------------------------------------------------------------------------------------------------------------
     
         This web application is made for the following user:
@@ -58,14 +58,14 @@ The table below indicates the terms used in web application.
 
 .. _overview:
 
-    C. Overview
+    **C. Overview**
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         The iNoCulator web-based tool designed for the interactive configuration of Network-on-Chip (NoC) topologies. It facilitates the seamless connection of initiators, routers, targets, and bridges, enabling users to efficiently design and optimize their NoC architectures.
 
 .. _confidentiality-notice:
 
-    D. Confidentiality Notice
+    **D. Confidentiality Notice**
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         
         This document contains proprietary and confidential information of Signature IP. The information enclosed is intended solely for the use of the individual or entity to whom it isaddressed. Unauthorized distribution, copying, or disclosure of this document, in whole or in part, is strictly prohibited without the prior written consent of Signature IP.
