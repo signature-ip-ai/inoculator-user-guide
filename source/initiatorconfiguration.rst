@@ -1,6 +1,5 @@
-NC-NoC Topology
+Initiator Configuration
 ====================================================
-  4. Initiator Configuration
 
 Configuring an Initiator device involves various settings. The Settings tab includes sections for Parameters, Timing, Traffic Behavior, Security, and Others. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. 
 

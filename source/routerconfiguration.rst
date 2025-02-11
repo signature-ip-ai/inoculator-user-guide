@@ -1,6 +1,5 @@
-NC-NoC Topology
+Router Configuration 
 =============================================
-  3. Router Configuration
 
 Configuring a router includes setting up the power and routing table. To start editing the router settings, the user must click on the router in the grid.
 

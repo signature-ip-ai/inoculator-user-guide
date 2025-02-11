@@ -1,6 +1,5 @@
-NC-NoC Topology
+Components and Explorer
 ==============================================================
-  2. Components and Explorer
 
 .. image:: images/components_panel_and_explorer_panel.png
   :alt: components_panel_and_explorer_panel

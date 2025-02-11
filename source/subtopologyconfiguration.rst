@@ -1,6 +1,5 @@
-NC-NoC Topology
+Subtopology Configuration
 ============================================
-  8. Subtopology Configuration
 
 A subtopology is a subset of a topology. A complete topology can be divided into multiple subtopologies. In iNoCulator, this is represented as a folder containing components that are connected to each other using a bridge or pipeline. To learn how to design, follow these procedures:
 
