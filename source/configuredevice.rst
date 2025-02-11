@@ -1,6 +1,5 @@
-Coherent NoC Topology
+Configure Device
 ===========================================================
-  2. Configure Device
 
 .. image:: images/configuring_device-chi_protocol.png
   :alt: configuring_device-chi_protocol
