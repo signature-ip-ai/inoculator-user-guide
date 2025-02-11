@@ -1,4 +1,4 @@
- Virtual Device Configuration
+Virtual Device Configuration
 ======================================
 
 .. image:: images/virtual_device-toggle_on.png
