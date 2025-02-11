@@ -12,7 +12,6 @@ Table of Contents
    
    modificationhistory
    introduction
-   features
    requestaccess
    activateaccount
    inviteuser
