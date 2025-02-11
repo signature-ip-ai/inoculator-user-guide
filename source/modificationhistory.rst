@@ -1,4 +1,4 @@
-**Modification History** 
+Modification History
 =============================
 
 This is the modification history made for the documentation. 
