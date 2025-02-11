@@ -3,7 +3,6 @@
 
 This is the modification history made for the documentation. 
 
-.. class:: justify-table
 
 +-----------------------+----------------------+------------------------------------------------------------------------------------------------+
 |      **Version**      |      **Date**        |                                     **Description**                                            |
