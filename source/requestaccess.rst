@@ -13,7 +13,7 @@ access the iNoCulator. To find this, from home page, click â€˜Get started now!â€
 
 .. image:: images/request_access_page.png
     :alt: request_access_page
-    :alt: center
+    :align: center
 
 
 ---------------------------------------------------------------------------------------
