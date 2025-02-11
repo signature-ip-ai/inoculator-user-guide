@@ -28,15 +28,34 @@ Table of Contents
    uploadtopology
    createprojectncnoc
    componentsandexplorer
-   routerconfig
-   initiatorconfig
-   targetconfig
-   virtualdeviceconfig
-   bridgeconfig
-   subtopologyconfig
+   routerconfiguration
+   initiatorconfiguration
+   targetconfiguration
+   virtualconfiguration
+   bridgeconfiguration
+   subtopologyconfiguration
    createprojectcnoc
-   configureproject
+   configuretopology
    configuredevice
+   readbandwidth
+   writebandwidth
+   readlatency
+   writelatency
+   accessmap
+   addressmap
+   topologyvalidation
+   generatertlandtestbench
+   simulation
+   downloadjson
+   implement
+   settings
+   copyproject
+   floorplan
+   autoplace
+   sharedproject
+   deleteproject
+   faqs
+   appendix
    
 
    
