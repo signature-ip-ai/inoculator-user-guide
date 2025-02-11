@@ -1,42 +1,59 @@
+/* Center the body and maximize width */
 body {
     margin: 0 auto;
-    max-width: 1000px; 
+    max-width: 1200px; 
 }
 
-/* sidebar width */
+/* Sidebar width */
 div.sphinxsidebar {
-    width: 100px;  
+    width: 220px; 
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
     overflow-y: auto;
     background-color: #f8f9fa; /* Light background */
-    padding: 15px;
+    padding: 20px;
     border-right: 1px solid #ddd;
 }
 
-
+/* Main content */
 div.document {
-    margin-left: 100px;  /* sidebar width */
-    margin-right: 100px; /* sidebar width */
-    max-width: 1000px;  
+    margin-left: 240px; 
+    margin-right: auto; 
+    max-width: 80%;  
+    padding: 20px;  
 }
+
+/* images display*/
+div.document img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+/* readability */
+div.wy-nav-content {
+    max-width: 85vw !important;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 
 .justify-table td {
     text-align: justify;
 }
-/* Maximize screen usage by reducing padding */
-.wy-nav-content {
-    max-width: 95% !important; /* Adjust width of content */
+
+/*.wy-nav-content {
+    max-width: 95% !important; 
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
 
-/* Center and enlarge images */
-img {
+/* image display */
+/* img {
     display: block;
     margin: 0 auto;
     max-width: 80%; 
-}
+}*/
 
