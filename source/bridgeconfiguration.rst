@@ -14,7 +14,7 @@ To add bridges in the design:
 
 .. image:: images/bridge_configuration.png
   :alt: bridge_configuration
-  :aling: center
+  :align: center
 
 To configure a bridge, click the bridge added to the grid to display the side panel on the right.
 
