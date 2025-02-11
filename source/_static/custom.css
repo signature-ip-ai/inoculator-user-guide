@@ -26,4 +26,17 @@ div.document {
 .justify-table td {
     text-align: justify;
 }
+/* Maximize screen usage by reducing padding */
+.wy-nav-content {
+    max-width: 95% !important; /* Adjust width of content */
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* Center and enlarge images */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%; 
+}
 
