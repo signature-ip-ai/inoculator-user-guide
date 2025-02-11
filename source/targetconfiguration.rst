@@ -68,7 +68,7 @@ Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation
 
 .. image:: images/target-traffic_behavior.png
   :alt: target-traffic_behavior
-  :aling: center
+  :align: center
 
 **Traffic Behavior** – This column will appear for all bus protocols selected, except for 'SRAM’. 
 
