@@ -37,18 +37,15 @@ Table of Contents
    createprojectcnoc
    configuretopology
    configuredevice
-   readbandwidth
-   writebandwidth
-   readlatency
-   writelatency
+   performancematrix
    accessmap
    addressmap
    topologyvalidation
-   generatertlandtestbench
+   generatertlandtb
    simulation
    downloadjson
    implement
-   settings
+   projectconfig
    copyproject
    floorplan
    autoplace
