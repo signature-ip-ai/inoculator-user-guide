@@ -19,4 +19,3 @@ D. Authorization and Authentication
     3. Invalid Credentials
     4. Duplicate Email
     5. Expired Activation Link
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
