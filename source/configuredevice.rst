@@ -1,7 +1,7 @@
 Configure Device (Coherent NoC)
 ===========================================================
 
-.. image:: images/configuring_device-chi_protocol.png
+.. image:: images/configuring_device-chi_protocol2.png
   :alt: configuring_device-chi_protocol
   :align: center
 
@@ -13,12 +13,12 @@ Configure Device (Coherent NoC)
   
 **Connected Device Type** – This is a dropdown button where the user can choose between “RN” or “SN” as the device type for the selected device.
   
-**Port Data Width** – This is a dropdown button where the user can choose between 128, 256, or 512 as the Data Bus Width for the device connected to the nth port of the mth cluster. Note that the selected data width will be reflected in the displayed connection to the Router.
+**Port Data Width** – This is a display-only item with a value of 512 as the Data Bus Width for the device connected to the nth port of the mth cluster. Note that the selected data width will be reflected in the displayed connection to the Router.
 
 **Reserved Port Data Width** - This is a dropdown button where the user can choose between 4, 8, 12, 16, or 32 as the Reserved Port Data Width for the selected device, which is reserved for future use in the data flit.
 
 
-.. image:: images/configuring_device-axi_protocol.png
+.. image:: images/configuring_device-axi_protocol2.png
   :alt: configuring_device-axi_protocol
   :align: center
 
@@ -26,7 +26,7 @@ Configure Device (Coherent NoC)
 
 **Connected Device Type** - This is a dropdown button where the user can choose between "Master" or "Slave" as the device type for the selected device.
 
-**Port Data Width** – This is a dropdown button where the user can choose between 128, 256, or 512 as the Data Bus Width for the device connected to the nth port of the mth cluster. Note that the selected data width will be reflected in the displayed connection to the Router.
+**Port Data Width** – This is a dropdown button where the user can choose between 32, 64, 128, 256, 512 or 1024 as the Data Bus Width for the device connected to the nth port of the mth cluster. Note that the selected data width will be reflected in the displayed connection to the Router.
 
 **Reserved Port Data Width** - This is a dropdown button where the user can choose between 4, 8, 12, 16, or 32 as the Reserved Port Data Width for the selected device, which is reserved for future use in the data flit.
 
