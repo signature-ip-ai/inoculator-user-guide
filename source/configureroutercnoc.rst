@@ -1,4 +1,4 @@
-Configuring Router
+Configuring C-NoC Router
 ===================================================
 
 .. image:: images/configuring_router1.png
