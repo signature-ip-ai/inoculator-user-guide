@@ -4,7 +4,7 @@ Authentication - Invalid Credentials
 The system will try to authenticate the provided credentials (email address and password). Since the email address is invalid or does not match any existing account, the authentication will fail.
 
 
-.. image:: images/authentication-invalid_credentials.png
+.. image:: images/authentication-invalid_credentials2.png
   :alt: authentication-invalid_credentials
   :align: center
 
