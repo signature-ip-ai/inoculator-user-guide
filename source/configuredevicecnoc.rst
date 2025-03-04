@@ -1,4 +1,4 @@
-Configure Coherent NoC Device
+Configure C-NoC Device
 ===========================================================
 
 .. image:: images/configuring_device-chi_protocol2.png
