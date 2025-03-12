@@ -20,11 +20,11 @@ This is a toggle button for enabling or disabling virtual devices. The default s
 
 This topic will be discussed in **6. Virtual Devices**. 
 
-.. image:: images/target-parameters1.png
+.. image:: images/target-parameters3.png
   :alt: target-parameters1
   :align: center
 
-.. image:: images/target-parameters2.png
+.. image:: images/target-parameters4.png
   :alt: target-parameters2
   :align: center
 
@@ -47,13 +47,21 @@ This topic will be discussed in **6. Virtual Devices**.
 
 **Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. 
 
+**User Request Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
+
+**User Data Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
+
 **Max Outstanding Writes** – The number of allowed outstanding writes limited by the system’s architecture. 
 
 **Max Outstanding Reads** – The number of allowed outstanding reads limited to help manage the bandwidth. 
 
+**Out of Order Transaction** – Toggle button where user can enable or disable out of order transactions. This setting will only appear in AXI3 and AXI4-Full bus protocols.
+
 **Read Data Delay** – This setting is only available in ‘SRAM’ Bus Protocol. Time interval to set for a read request. User can choose either 1 or 2.
 
 **Channel** – This setting is only available in ‘SRAM’ Bus Protocol. User can choose either 1RW (1 Read/Write) or 1R1W (1 Read 1 Write). 
+
+
 
 .. image:: images/target-timing.png
   :alt: target-timing
@@ -79,4 +87,4 @@ Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation
   :alt: target-security
   :align: center
 
-**Device Policy** – Policy or configuration assigned for the connected Initiator device. This will also reflect in Initiator device’s setting. Choose from Passthrough, Programmable (Secure or Non-Secure), Blocked, and Fixed-Secure.
+**Device Policy** – Policy or configuration assigned for the connected Initiator device. This will also reflect in Initiator device’s setting. Choose from Passthrough, Programmable (Interface Security: Secure or Non-Secure), Blocked, and Fixed-Secure.
