@@ -18,7 +18,7 @@ After setting up the excel sheet, go to inoculator.ai/login to sign in and go to
 
 After clicking that icon, ‘Create Project’ dialog box will appear. User will find a button to upload the file. Click ‘Drag ‘n drop an XLSX file here or click to select one’. 
 
-.. image:: images/uploading_topology-create_project_prompt.png
+.. image:: images/uploading_topology-create_project_prompt2.png
   :alt: uploading_topology-create_project_prompt
   :align: center
 
