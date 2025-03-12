@@ -89,9 +89,12 @@ Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation
   :alt: initiator-security
   :align: center
 
-**Root Policy** – Policy or configuration of the top level for Initiator. Choose from Passthrough, Programmable, Blocked, and Fixed-Secure. 
+**Security Policy** – Policy or configuration of the top level for Initiator. Choose from Passthrough, Programmable, Blocked, and Fixed-Secure. 
+
+**Interface Security** – When the selected security policy is ‘Programmable,’ the user must choose the interface security as either ‘Secure’ or ‘Non-Secure’.
 
 **Device Policies** – Policy or configuration assigned for the connected Target device. This will also reflect in Target device’s setting. Choose from Passthrough, Programmable (Secure or Non-Secure), Blocked, and Fixed-Secure.
+
 
 .. image:: images/initiator-others2.png
   :alt: initiator-others
