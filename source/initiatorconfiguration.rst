@@ -7,31 +7,40 @@ Configuring an Initiator device involves various settings. The Settings tab incl
   :alt: initiator-parameters
   :align: center
 
-Subtopology – A dropdown list for changing subtopology assigned for the selected initiator. 
+**Subtopology** – A dropdown list for changing subtopology assigned for the selected initiator. 
   
-Name – Label name assigned for selected initiator. This is an input field where only alphanumeric keys and underscores are allowed.
+**Name** – Label name assigned for selected initiator. This is an input field where only alphanumeric keys and underscores are allowed.
   
-Device ID – This ID is unique for each component.
+**Device ID** – This ID is unique for each component.
   
-Bus Protocol – The selected item here will be assigned as the protocol for the Initiator device. The available selections are AXI, AHB, APB, and SIG_NATIVE.
+**Bus Protocol** – The selected item here will be assigned as the protocol for the Initiator device. The available selections are AXI, AHB, APB, and SIG_NATIVE.
 
-Bus Protocol Version – The list of versions depends in ‘Bus Protocol’ that has been selected. Please check the table below as reference.
+**Bus Protocol Version** – The list of versions depends in ‘Bus Protocol’ that has been selected. Please check the table below as reference.
 
-Bus Variant – The list of variants for the selected 'Bus Protocol' will be displayed here. Please check the table below as reference. 
+**Bus Variant** – The list of variants for the selected 'Bus Protocol' will be displayed here. Please check the table below as reference. 
 
-Write Transaction ID Width – Refers to the number of bits allocated to identify write transactions. 
+**Write Transaction ID Width** – Refers to the number of bits allocated to identify write transactions. 
 
-Read Transaction ID Width – Refers to the number of bits used to identify read transaction. 
+**Read Transaction ID Width** – Refers to the number of bits used to identify read transaction. 
 
-Port Data Width – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. 
+**Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. 
 
-Flit Write Packet Size – Amount of data in beats that constitutes a single flit for write transactions. 
+**Flit Write Packet Size** – Amount of data in beats that constitutes a single flit for write transactions. 
 
-Flit Read Buffer Size – Capacity of a buffer dedicated to storing incoming flits during read operations. 
+**Flit Read Buffer Size** – Capacity of a buffer dedicated to storing incoming flits during read operations. 
 
-Outstanding Writes – The number of allowed outstanding writes limited by the system’s architecture. 
+**Outstanding Writes** – The number of allowed outstanding writes limited by the system’s architecture. 
 
-Outstanding Reads – The number of allowed outstanding reads limited to help manage the bandwidth. 
+**Outstanding Reads** – The number of allowed outstanding reads limited to help manage the bandwidth. 
+
+**User Request Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
+
+**User Data Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
+
+**Read Reorder Buffer Size** – The number of read operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE. 
+
+**Write Reorder Buffer Size** – The number of write operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE.
+
 
 
 +------------------+--------------------------+----------------------+
@@ -84,10 +93,18 @@ Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation
 
 **Device Policies** – Policy or configuration assigned for the connected Target device. This will also reflect in Target device’s setting. Choose from Passthrough, Programmable (Secure or Non-Secure), Blocked, and Fixed-Secure.
 
+.. image:: images/initiator-others2.png
+  :alt: initiator-others
+  :align: center
+
 
 .. image:: images/initiator-others.png
   :alt: initiator-others
   :align: center
+
+**Traffic Regulation Policy 1&2** – Dropdown item where user can choose between ‘Disabled’, ‘Read only’, ‘Write Only’, ‘Read-Write Independent’ or ‘Read-Write Combined’. 
+
+**Traffic Regulation Policy 3** – Display-only parameter with a default value of ‘Disabled’. As of SWTOOLS_REL_5.1.1, this has not been implemented yet.
 
 **Enable Local SRAM** – This can be enabled if local SRAM is going to be used for the device. Default setting is disabled.
 
