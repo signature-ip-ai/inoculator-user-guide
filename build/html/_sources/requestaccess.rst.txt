@@ -7,13 +7,13 @@ access the iNoCulator. To find this, from home page, click ‘Get started now!�
     :alt: request_access-home_page
     :align: center
 
-.. image:: images/request_access-sign_in_page.png
+.. image:: images/request_access-sign_in_page2.png
     :alt: request_access-sign_in_page
     :align: center
 
-.. image:: images/request_access_page.png
+.. image:: images/request_access_page2.png
     :alt: request_access_page
-    :alt: center
+    :align: center
 
 
 ---------------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ Limitations:
 
     After filling out the Request Access Form, confirmation page will be displayed and user’s registered email will receive a confirmation email from Admin that the request has been sent successfully.
 
-.. image:: images/request_access-confirmation_page.png
+.. image:: images/request_access-confirmation_page2.png
     :alt: request_access-confirmation_page
     :align: center
 

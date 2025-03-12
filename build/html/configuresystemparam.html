@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Configure Device &#8212; Inoculator User Guide 3.3 documentation</title>
+    <title>Configuring C-NoC System Parameters &#8212; Inoculator User Guide 3.3 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/classic.css?v=4735ece4" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a80d37c9" />
@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Performance Matrix" href="performancematrix.html" />
-    <link rel="prev" title="Configure Topology" href="configuretopology.html" /> 
+    <link rel="prev" title="Configuring C-NoC Router" href="configureroutercnoc.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
@@ -29,10 +29,10 @@
           <a href="performancematrix.html" title="Performance Matrix"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="configuretopology.html" title="Configure Topology"
+          <a href="configureroutercnoc.html" title="Configuring C-NoC Router"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Inoculator User Guide 3.3 documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Configure Device</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Configuring C-NoC System Parameters</a></li> 
       </ul>
     </div>  
 
@@ -41,19 +41,23 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="configure-device">
-<h1>Configure Device<a class="headerlink" href="#configure-device" title="Link to this heading">¶</a></h1>
-<img alt="configuring_device-chi_protocol" class="align-center" src="_images/configuring_device-chi_protocol.png" />
-<p><strong>Device Name</strong> - Assigned for the selected device. This is an input field where only alphanumeric characters and underscores are allowed.</p>
-<p><strong>Device ID</strong> – This represents the unique identifier of the selected device.</p>
-<p><strong>Connected Device Protocol</strong> – This is a dropdown button where the user can choose between “CHI” or “AXI” as the device protocol for the selected device.</p>
-<p><strong>Connected Device Type</strong> – This is a dropdown button where the user can choose between “RN” or “SN” as the device type for the selected device.</p>
-<p><strong>Port Data Width</strong> – This is a dropdown button where the user can choose between 128, 256, or 512 as the Data Bus Width for the device connected to the nth port of the mth cluster. Note that the selected data width will be reflected in the displayed connection to the Router.</p>
-<p><strong>Reserved Port Data Width</strong> - This is a dropdown button where the user can choose between 4, 8, 12, 16, or 32 as the Reserved Port Data Width for the selected device, which is reserved for future use in the data flit.</p>
-<img alt="configuring_device-axi_protocol" class="align-center" src="_images/configuring_device-axi_protocol.png" />
-<p><strong>Connected Device Type</strong> - This is a dropdown button where the user can choose between “Master” or “Slave” as the device type for the selected device.</p>
-<p><strong>Transaction ID Width</strong> - This is a display-only parameter showing the ID width of the AXI port connected to the nth port of the mth cluster.</p>
-<p><strong>User Width</strong> - This is a display-only parameter showing the user-defined signal width of the AXI port connected to the nth port of the mth cluster.</p>
+  <section id="configuring-c-noc-system-parameters">
+<h1>Configuring C-NoC System Parameters<a class="headerlink" href="#configuring-c-noc-system-parameters" title="Link to this heading">¶</a></h1>
+<img alt="configuring_system_parameters" class="align-center" src="_images/configuring_system_parameters.png" />
+<p><strong>CHI Version</strong> – Version of AMBA CHI protocol to use for the whole C-NoC. Default is E.b. User can choose from E.b and B.</p>
+<p><strong>NoC Address Width</strong> – This is display-only parameter showing the Address width of the NoC. The default value is 52, equivalent to ADDR_WIDTH</p>
+<p><strong>NoC Address Mask Width</strong> – This display-only parameter showing the Address Mask Width of NoC. Default value is 24, equivalent to NUM_IGNORE_LOWBITS.</p>
+<p><strong>NoC Data Width</strong> – This is display-only parameter showing the Data Width. Default value is 512.</p>
+<p><strong>RSVDC in Request Flit</strong> – Toggle button to enable/disable CNOC_SYSCONFIG_REQ_RSVDC_ENABLED. Default is disabled.</p>
+<p><strong>RSVDC in Data Flit</strong> – Toggle button to enable/disable CNOC_SYSCONFIG_DAT_RSVDC_ENABLED. Default is disabled.</p>
+<p><strong>DATACHECK in Data Flit</strong> – Toggle button to enable/disable CNOC_SYSCONFIG_DAT_DATACHECK_ENABLED. Default is disabled.</p>
+<p><strong>POISON in Data Flit</strong> – Toggle button to enable/disable CNOC_SYSCONFIG_DAT_POISON_ENABLED. Default is disabled.</p>
+<p><strong>MPAM</strong> – Toggle button to enable/disable CNOC_SYSCONFIG_REVEB_MPAM_ENABLED. Default is disabled and only available using CHI Version – E.b.</p>
+<p><strong>Programmable SAM</strong> – Toggle button to enable/disable PROGRAMMABLE_SAM. Default is enabled.</p>
+<p><strong>Programming Interface</strong> – Toggle button to enable/disable SIG_PROG_AXI_LITE. Default is disabled.</p>
+<p><strong>Cluster Common Registers</strong> – Toggle button to enable/disable SIG_INCLUDE_CLST_COMMONREG. Default is disabled.</p>
+<p><strong>Async CC Clock</strong> – Toggle button to enable/disable SIG_PROC_ASYNCCLK. Default is disabled.</p>
+<p><strong>Async Device Clock</strong> – Toggle button to enable/disable SIG_CC_ASYNCCLK. Default is disabled.</p>
 </section>
 
 
@@ -70,7 +74,7 @@
 <li class="toctree-l1"><a class="reference internal" href="requestaccess.html">Request Access</a></li>
 <li class="toctree-l1"><a class="reference internal" href="activateaccount.html">Activate Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inviteuser.html">Invite User</a></li>
-<li class="toctree-l1"><a class="reference internal" href="signin.html">Sign In Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="signin.html">Log In Page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="otp.html">One-Time-Pin (OTP)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="logout.html">Logout</a></li>
 <li class="toctree-l1"><a class="reference internal" href="forgotpassword.html">Forgot Password</a></li>
@@ -89,8 +93,10 @@
 <li class="toctree-l1"><a class="reference internal" href="bridgeconfiguration.html">Bridge Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subtopologyconfiguration.html">Subtopology Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="createprojectcnoc.html">Create Project (C-NoC Topology)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="configuretopology.html">Configure Topology</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Configure Device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuretopology.html">Configure C-NoC Topology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuredevicecnoc.html">Configure C-NoC Device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configureroutercnoc.html">Configuring C-NoC Router</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuring C-NoC System Parameters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="performancematrix.html">Performance Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="accessmap.html">Access Map</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addressmap.html">Address Map</a></li>
@@ -112,7 +118,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/configuredevice.rst.txt"
+      <li><a href="_sources/configuresystemparam.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -140,10 +146,10 @@
           <a href="performancematrix.html" title="Performance Matrix"
              >next</a> |</li>
         <li class="right" >
-          <a href="configuretopology.html" title="Configure Topology"
+          <a href="configureroutercnoc.html" title="Configuring C-NoC Router"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Inoculator User Guide 3.3 documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Configure Device</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Configuring C-NoC System Parameters</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
