@@ -31,8 +31,8 @@ html_theme_options = {
     "display_version": True,  # Display version number
 }
 
-html_logo = "_static/logo.png"  # Add your logo (place in _static directory)
-html_favicon = "_static/favicon.ico"  # Add favicon
+#html_logo = "_static/logo.png"  # Add your logo (place in _static directory)
+#html_favicon = "_static/favicon.ico"  # Add favicon
 
 html_sidebars = {
     '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
