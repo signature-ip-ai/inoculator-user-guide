@@ -18,7 +18,7 @@ exclude_patterns = []
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = 'basic'  # Use Read the Docs theme for better UX
+html_theme = 'alabaster'  # Use Read the Docs theme for better UX
 html_static_path = ['_static']
 html_css_files = ['custom.css']  # Ensure this CSS file is properly styled
 
