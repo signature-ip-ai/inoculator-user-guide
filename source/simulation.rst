@@ -1,7 +1,7 @@
 Simulation
 ======================================
 
-Currently, this feature is for NC-NoC only. (SWTOOLS_REL_4.4.3). This feature is for running simulations and checking the results which are essential steps in digital design process to ensure that the RTL design functions as intended. There are three types of tests to run simulations: Simple, Multiple, and Performance. 
+Currently, this feature is for NC-NoC only. (SWTOOLS_REL_5.1.1). This feature is for running simulations and checking the results which are essential steps in digital design process to ensure that the RTL design functions as intended. There are three types of tests to run simulations: Simple, Multiple, and Performance. 
 
 .. image:: images/simulation1.png
   :alt: simulation1
@@ -21,3 +21,4 @@ Test results can be viewed inside the 'Results' section and can also be download
   :alt: simulate-results
   :align: center
 
+This feature is available depending on account accessibility. Please contact your group admin regarding this function, as it is managed on the group-admin side.

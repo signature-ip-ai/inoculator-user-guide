@@ -3,6 +3,7 @@ Bridge Configuration
 
 Bridges or Pipelines refer to devices or components that connect two or more network segments or different types of buses, allowing them to communicate and function as a unified network. In iNoCulator, they are represented as the connection between two routers with different subtopologies. 
 To add bridges in the design:
+
   - Select the ‘Bridge’ icon from the Components menu and place it on the grid.
   - Connect the bridge to a router by dragging one end of the bridge to any port on the router.
   - Drag the other end of the bridge to any port on another router with a different subtopology.
@@ -14,7 +15,7 @@ To add bridges in the design:
 
 .. image:: images/bridge_configuration.png
   :alt: bridge_configuration
-  :aling: center
+  :align: center
 
 To configure a bridge, click the bridge added to the grid to display the side panel on the right.
 

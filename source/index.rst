@@ -35,7 +35,9 @@ Table of Contents
    subtopologyconfiguration
    createprojectcnoc
    configuretopology
-   configuredevice
+   configuredevicecnoc
+   configureroutercnoc
+   configuresystemparam
    performancematrix
    accessmap
    addressmap

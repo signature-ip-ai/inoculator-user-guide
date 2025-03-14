@@ -55,5 +55,15 @@ This is the modification history made for the documentation.
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 | 3.2                   | February 6, 2025               |  Update the email address in Appendix                                                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.3                   | February 7, 2025               | Modified some figure names                                                                     |
+| 3.3                   | March 3, 2025                  | 1. Modified some figure names                                                                  |
+|                       |                                | 2. Update C-NoC Topology - Router and System Parameters                                        |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 3.4                   | March 12, 2025                 | 1. Update Screenshots of Dashboard and Grid view for NC-NoC Project.                           |
+|                       |                                | 2. Update the content of Performance Matrix.                                                   |
+|                       |                                | 3. Update AXI4-Full and AXI3 protocol with Out of Order parameter                              |
+|                       |                                | 4. Change screenshots related to functionality and UI improvements.                            |
+|                       |                                | 5. Added Traffic Regulation Policy parameter in Initiator device                               |
+|                       |                                | 6. Update the content of Address Map.                                                          |
+|                       |                                | 7. Update the UI of Coherent NoC                                                               |
+|                       |                                | 8. Add Device ID parameter in Router Configuration.                                            |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+

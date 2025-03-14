@@ -1,4 +1,4 @@
-Configure Topology
+Configure C-NoC Topology
 =======================================================
 
 .. image:: images/c_noc-configure_topology.png
@@ -11,7 +11,7 @@ Configure Topology
 
 **Configure Topology** – This button confirms the creation of a Coherent NoC topology. Once the user clicks it, the topology will be generated on the grid based on the configured number of columns and rows.
 
-.. image:: images/sample_cnoc_topology-without_added_device.png
+.. image:: images/sample_cnoc_topology-without_added_device2.png
   :alt: sample_cnoc_topology-without_added_device
   :align: center
 
