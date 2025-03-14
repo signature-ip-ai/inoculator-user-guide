@@ -36,12 +36,9 @@ html_theme_options = {
     "show_toc_level": 2,
     "announcement": "Inoculator User Guide v3.4",
     "home_page_in_toc": True,
-    "logo": {
-        "text": "Inoculator User Guide",
-    },
+    "repository_url": "https://github.com/signatureip/inoculator-guide",
+    "repository_branch": "main",
     "path_to_docs": "source",
-    "extra_navbar": "",
-    "extra_footer": "",
     "toc_title": "On this page",
 }
 

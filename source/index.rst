@@ -9,9 +9,10 @@ Table of Contents
 .. toctree::
    :maxdepth: 2
    :titlesonly:
-   
+
    modificationhistory
    introduction
+   features
    requestaccess
    activateaccount
    inviteuser
@@ -26,6 +27,7 @@ Table of Contents
    expiredlink
    uploadtopology
    createprojectncnoc
+   ncnoccontents
    componentsandexplorer
    routerconfiguration
    initiatorconfiguration
@@ -54,5 +56,3 @@ Table of Contents
    deleteproject
    faqs
    appendix
-   
-   
