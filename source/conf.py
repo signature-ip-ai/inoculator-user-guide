@@ -16,6 +16,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
+    "sphinx_design",
 ]
 templates_path = ['_templates']
 exclude_patterns = []
@@ -24,30 +25,33 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 
 
-html_theme = 'furo'
+html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 html_css_files = ['custom.css']
 
 html_theme_options = {
-    "sidebar_hide_name": False,
-    "navigation_with_keys": True,
+    "use_download_button": True,
+    "use_fullscreen_button": True,
+    "use_sidenotes": True,
+    "show_toc_level": 2,
     "announcement": "Inoculator User Guide v3.4",
-    "light_css_variables": {
-        "color-brand-primary": "#2980B9",
-        "color-brand-content": "#2980B9",
+    "home_page_in_toc": True,
+    "logo": {
+        "text": "Inoculator User Guide",
     },
-    "dark_css_variables": {
-        "color-brand-primary": "#4DB6AC",
-        "color-brand-content": "#4DB6AC",
-    },
+    "path_to_docs": "source",
+    "extra_navbar": "",
+    "extra_footer": "",
+    "toc_title": "On this page",
 }
 
 html_title = "Inoculator User Guide"
 html_favicon = "_static/favicon.ico"
 html_last_updated_fmt = "%b %d, %Y"
 
+# Sphinx Book Theme doesn't use html_sidebars in the same way as Material theme
+# html_sidebars = {
+#     "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
+# }
+
 html_add_permalinks = "¶"
-html_sidebars = {
-   '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
-   'using/windows': ['windows-sidebar.html', 'searchbox.html'],
-}

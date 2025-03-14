@@ -1,193 +1,226 @@
-/* Center the body and maximize width */
-body {
-    margin: 0 auto;
-    max-width: 1200px;
-    font-family: var(--font-stack);
-    line-height: 1.6;
-}
+/* Sphinx Book Theme Custom CSS */
 
-/* Sidebar width */
-div.sphinxsidebar {
-    width: 220px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    overflow-y: auto;
-    background-color: #f8f9fa; /* Light background */
-    padding: 20px;
-    border-right: 1px solid #ddd;
-}
-
-/* Main content */
-div.document {
-    margin-left: 240px;
-    margin-right: auto;
-    max-width: 80%;
-    padding: 20px;
-}
-
-/* images display*/
-div.document img {
-    display: block;
-    margin: 20px auto;
-    max-width: 90%;
-}
-
-/* readability */
-div.wy-nav-content {
-    max-width: 85vw !important;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-
-div.justify-table td {
-    text-align: justify;
-}
-
-/*.wy-nav-content {
-    max-width: 95% !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
-
-/* image display */
-/* img {
-    display: block;
-    margin: 0 auto;
-    max-width: 80%;
-}*/
-
-/* Custom styling for Furo theme */
-
-/* Typography improvements */
 :root {
-    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --font-stack-monospace: "SFMono-Regular", Menlo, Consolas, Monaco, "Liberation Mono", "Courier New", monospace;
+  --pst-color-primary: #0072b5;         /* Main brand color */
+  --pst-color-secondary: #4d9fff;       /* Secondary brand color */
+  --pst-color-success: #00a064;         /* Success color */
+  --pst-color-info: #2e6295;            /* Info color */
+  --pst-color-warning: #cd6d00;         /* Warning color */
+  --pst-color-danger: #b20000;          /* Danger/error color */
+  --pst-color-text-base: #1f1f1f;       /* Base text color */
+  --pst-color-h1: var(--pst-color-primary);  /* Heading color */
+  --pst-color-h2: var(--pst-color-primary);  /* Heading color */
+  --pst-color-h3: var(--pst-color-text-base);  /* Heading color */
+
+  /* Fonts */
+  --pst-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --pst-font-family-heading: var(--pst-font-family-base);
+  --pst-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Layout */
+  --pst-sidebar-width: 14em;
 }
 
-pre, code {
-    font-family: var(--font-stack-monospace);
+/* Main typography */
+body {
+  font-family: var(--pst-font-family-base);
+  color: var(--pst-color-text-base);
+  line-height: 1.6;
+  font-size: 16px;
 }
 
-/* Better tables */
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--pst-font-family-heading);
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  font-weight: 500;
+}
+
+h1 {
+  color: var(--pst-color-h1);
+  font-size: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  color: var(--pst-color-h2);
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: var(--pst-color-h3);
+  font-size: 1.3rem;
+}
+
+/* Links */
+a {
+  color: var(--pst-color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code styling */
+code {
+  font-family: var(--pst-font-family-monospace);
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 1em;
+  font-size: 85%;
+  overflow-x: auto;
+}
+
+/* Table styling */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2em 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  width: 100%;
 }
 
 th {
-    background-color: var(--color-brand-primary);
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    padding: 12px;
-    border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 0.75em;
+  text-align: left;
+  font-weight: 500;
 }
 
 td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    vertical-align: top;
+  border: 1px solid #ddd;
+  padding: 0.75em;
+  vertical-align: top;
 }
 
 tr:nth-child(even) {
-    background-color: #f8f9fa;
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
-/* Better images */
+/* Images */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 1.5em auto;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 1em auto;
+  display: block;
 }
 
-/* Admonitions/notes styling */
-div.admonition {
-    border-radius: 4px;
-    border-left-width: 4px;
-    padding: 1em 1.5em;
-    margin: 1.5em 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+/* Sidebar styling */
+.bd-sidebar {
+  width: var(--pst-sidebar-width);
 }
 
-div.admonition.note {
-    border-left-color: var(--color-brand-primary);
+.bd-sidebar label {
+  color: var(--pst-color-primary);
 }
 
-div.admonition.warning {
-    border-left-color: #f39c12;
+.bd-sidebar a {
+  transition: color 0.15s ease-in-out;
 }
 
-div.admonition.danger {
-    border-left-color: #e74c3c;
+/* TOC on right */
+.bd-toc {
+  padding-top: 1.5rem;
 }
 
-div.admonition.tip {
-    border-left-color: #2ecc71;
+.toc-h2 {
+  font-size: 0.9rem;
+}
+
+.toc-h3 {
+  font-size: 0.8rem;
+}
+
+/* Notes and admonitions */
+.admonition {
+  border-radius: 4px;
+  margin: 1.5em 0;
+  padding: 0 1em 0.5em 1em;
+}
+
+.admonition-title {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.note {
+  border-left: 4px solid var(--pst-color-info);
+  background-color: rgba(46, 98, 149, 0.1);
+}
+
+.warning {
+  border-left: 4px solid var(--pst-color-warning);
+  background-color: rgba(205, 109, 0, 0.1);
+}
+
+.danger {
+  border-left: 4px solid var(--pst-color-danger);
+  background-color: rgba(178, 0, 0, 0.1);
+}
+
+.tip, .hint {
+  border-left: 4px solid var(--pst-color-success);
+  background-color: rgba(0, 160, 100, 0.1);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--pst-color-primary);
+  border-color: var(--pst-color-primary);
+}
+
+.btn-outline-primary {
+  color: var(--pst-color-primary);
+  border-color: var(--pst-color-primary);
+}
+
+/* Announcement banner */
+div.announcement {
+  background-color: var(--pst-color-primary);
+  color: white;
+  padding: 0.5em 0;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
+  background: #f1f1f1;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #c1c1c1;
-    border-radius: 4px;
+  background: #c1c1c1;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
+  background: #a8a8a8;
 }
 
-/* Make sure code blocks have syntax highlighting background */
-div.highlight {
-    background-color: #f8f9fa;
-    border-radius: 4px;
-}
-
-/* Better links */
-a {
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Improve readability of content */
-main {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.toc-content {
-    padding-left: 20px;
-    border-left: 1px solid #eee;
-}
-
-/* Responsive adjustments for mobile */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    main {
-        padding: 0 15px;
-    }
-
-    table {
-        display: block;
-        overflow-x: auto;
-    }
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 }
