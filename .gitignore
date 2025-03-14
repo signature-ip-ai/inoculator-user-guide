@@ -1,1 +1,8 @@
 **/.pyvenv/
+**/build/
+**/dist/
+**/html/
+**/pdf/
+**/tex/
+**/texmf/
+**/texmf-var/
