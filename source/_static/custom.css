@@ -1,12 +1,14 @@
 /* Center the body and maximize width */
 body {
     margin: 0 auto;
-    max-width: 1200px; 
+    max-width: 1200px;
+    font-family: var(--font-stack);
+    line-height: 1.6;
 }
 
 /* Sidebar width */
 div.sphinxsidebar {
-    width: 220px; 
+    width: 220px;
     position: fixed;
     left: 0;
     top: 0;
@@ -19,10 +21,10 @@ div.sphinxsidebar {
 
 /* Main content */
 div.document {
-    margin-left: 240px; 
-    margin-right: auto; 
-    max-width: 80%;  
-    padding: 20px;  
+    margin-left: 240px;
+    margin-right: auto;
+    max-width: 80%;
+    padding: 20px;
 }
 
 /* images display*/
@@ -45,7 +47,7 @@ div.justify-table td {
 }
 
 /*.wy-nav-content {
-    max-width: 95% !important; 
+    max-width: 95% !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
@@ -54,6 +56,138 @@ div.justify-table td {
 /* img {
     display: block;
     margin: 0 auto;
-    max-width: 80%; 
+    max-width: 80%;
 }*/
 
+/* Custom styling for Furo theme */
+
+/* Typography improvements */
+:root {
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --font-stack-monospace: "SFMono-Regular", Menlo, Consolas, Monaco, "Liberation Mono", "Courier New", monospace;
+}
+
+pre, code {
+    font-family: var(--font-stack-monospace);
+}
+
+/* Better tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th {
+    background-color: var(--color-brand-primary);
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Better images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Admonitions/notes styling */
+div.admonition {
+    border-radius: 4px;
+    border-left-width: 4px;
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+div.admonition.note {
+    border-left-color: var(--color-brand-primary);
+}
+
+div.admonition.warning {
+    border-left-color: #f39c12;
+}
+
+div.admonition.danger {
+    border-left-color: #e74c3c;
+}
+
+div.admonition.tip {
+    border-left-color: #2ecc71;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Make sure code blocks have syntax highlighting background */
+div.highlight {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* Better links */
+a {
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Improve readability of content */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.toc-content {
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    main {
+        padding: 0 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
