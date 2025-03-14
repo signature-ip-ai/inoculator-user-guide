@@ -3,41 +3,63 @@ body {
     margin: 0 auto;
     max-width: 1200px; 
     font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
 }
 
 /* Sidebar width */
 div.sphinxsidebar {
-    width: 220px; 
+    width: 250px; 
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
     overflow-y: auto;
-    background-color: #f8f9fa; /* Light background */
-    padding: 20px;
-    border-right: 1px solid #ddd;
+    background-color: #f4f5f7; /* Light background */
+    padding: 25px 15px;
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1;
 }
+
+div.sphinxsidebar a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.sphinxsidebar {
+    text-decoration: underline;
+
+}
+
 
 /* Main content */
 div.document {
-    margin-left: 240px; 
+    margin-left: 270px; 
     margin-right: auto; 
     max-width: 80%;  
-    padding: 20px;  
+    padding: 25px;  
 }
+
+div.wy-nav-content {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    padding: 25px;
+    backgroud-color: #ffffff;
+
+}
+
 
 /* images display*/
 div.document img {
     display: block;
     margin: 20px auto;
-    max-width: 90%;
-}
-
-/* readability */
-div.wy-nav-content {
-    max-width: 85vw !important;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 95%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 
@@ -45,16 +67,33 @@ div.justify-table td {
     text-align: justify;
 }
 
-/*.wy-nav-content {
-    max-width: 95% !important; 
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+@media screen and (max-width: 1024px) {
+    div.sphinxsidebar {
+        width: 200px;
+        padding: 15px;
+    }
+
+    div.document {
+        margin-left: 220px;
+        max-width:90%;
+    }
 }
 
-/* image display */
-/* img {
-    display: block;
-    margin: 0 auto;
-    max-width: 80%; 
-}*/
+@media screen and (max-width: 768px) {
+    div.sphinxsidebar {
+        width: 100%
+        height: auto;
+        position: relative;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    div.document {
+        margin-left: 0;
+        max-width: 100%
+        padding: 15px;
+    }
+}
+
 
