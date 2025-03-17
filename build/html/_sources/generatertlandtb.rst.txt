@@ -15,6 +15,7 @@ This feature is for generation of RTL Files and testbench for the created topolo
   :align: center
 
 This feature is available depending on account accessibility. Please contact your group admin regarding this function, as it is managed on the group-admin side.
+
 (For C-NoC and NC-NoC) Once the button is enabled and functioning, it means the generated RTL and testbench can be downloaded to your machine for viewing. The downloaded file will be in .tgz format and must be extracted before the individual files can be viewed.
 
 1. Downloaded file will be stored in Downloads folder of your machine. 

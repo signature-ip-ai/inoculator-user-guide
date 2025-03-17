@@ -1,7 +1,7 @@
 Create Project (NC-NoC Topology)
 ====================================================
 
-.. image:: images/nc_noc-create_project_prompt.png
+.. image:: images/nc_noc-create_project_prompt3.png
   :alt: nc_noc-create_project_prompt
   :align: center
 

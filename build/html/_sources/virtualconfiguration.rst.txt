@@ -11,11 +11,11 @@ Virtual Device or Virtual Target Device refers to a software-defined device that
 3.	Click the ‘Add Virtual Device’ button to configure new virtual device. 
 4.	A new collapsible menu will be displayed below the Target device with the default name ‘Target_X_vdev_1’. 
 
-.. image:: images/virtual_device-settings.png
+.. image:: images/virtual_device-settings3.png
   :alt: virtual_device-settings
   :align: center
 
-.. image:: images/virtual_device-settings2.png
+.. image:: images/virtual_device-settings4.png
   :alt: virtual_device-settings2
   :align: center
 

@@ -16,3 +16,5 @@ The Copy Project function can also be used to copy a project from another owner.
 Limitations:
   -	Upper case only on the first letters. 
   -	Use only alphanumeric keys including ñ and Ñ, spaces and no special characters. 
+
+This function is currently implemented in NC-NoC projects only as of SWTOOLS_REL_5.1.1.

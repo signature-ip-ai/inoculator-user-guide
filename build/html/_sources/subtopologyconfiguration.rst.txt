@@ -8,7 +8,7 @@ A subtopology is a subset of a topology. A complete topology can be divided into
 2.	A new subtopology folder will be displayed under the default subtopology folder. While the second folder is selected, all additional components will be assigned to the second folder
 
 
-.. image:: images/subtopology-add_new_folder.png
+.. image:: images/subtopology-add_new_folder2.png
   :alt: subtopology-add_new_folder
   :align: center
 
@@ -24,13 +24,13 @@ To configure the Subtopology folder, click any folder you need to modify then ri
 
 **Comment** – User can input comments to describe the folder or subtopology. 
 
-**Data Width** – This is also called as NoC Width. Select from 256, 512, 1024, 2048 and 4096. 
+**Data Width** – This is also called as NoC Width. Select from 256, 512, and 1024. 
 
 **Frequency** - The rate of speed on how a processor can execute instructions. This field is available if ‘Disable Frequency validation’ is unchecked inside ‘Edit Project’ or ‘Settings’.
 
 **User Project Power Domain** – Default as enabled. This means that overall project power domain is used. When disabled, configuration of Power is available.
 
-.. image:: images/subtopology-properties_with_power_voltage.png
+.. image:: images/subtopology-properties_with_power_voltage2.png
   :alt: subtopology-properties_with_power_voltage
   :align: center
 

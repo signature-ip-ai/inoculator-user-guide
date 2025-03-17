@@ -5,12 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Target Configuration &#8212; Inoculator User Guide 3.3 documentation</title>
+    <title>Target Configuration &#8212; Inoculator User Guide 3.4 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=4735ece4" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a80d37c9" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=d78e9808" />
     
-    <script src="_static/documentation_options.js?v=26f62d79"></script>
+    <script src="_static/documentation_options.js?v=ed7fbdb4"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -31,7 +31,7 @@
         <li class="right" >
           <a href="initiatorconfiguration.html" title="Initiator Configuration"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Inoculator User Guide 3.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Inoculator User Guide 3.4 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Target Configuration</a></li> 
       </ul>
     </div>  
@@ -50,8 +50,8 @@
 <img alt="target-enable_virtual_device" class="align-center" src="_images/target-enable_virtual_device.png" />
 <p>This is a toggle button for enabling or disabling virtual devices. The default setting is disabled. When the user enables this button, adding virtual devices to the specific target becomes possible.</p>
 <p>This topic will be discussed in <strong>6. Virtual Devices</strong>.</p>
-<img alt="target-parameters1" class="align-center" src="_images/target-parameters1.png" />
-<img alt="target-parameters2" class="align-center" src="_images/target-parameters2.png" />
+<img alt="target-parameters3" class="align-center" src="_images/target-parameters3.png" />
+<img alt="target-parameters4" class="align-center" src="_images/target-parameters2.png" />
 <p><strong>Subtopology</strong> – A dropdown list for changing subtopology assigned for the selected target.</p>
 <p><strong>Name</strong> – Label name assigned for selected target. This is an input field where only alphanumeric keys and underscores are allowed.</p>
 <p><strong>Device Id</strong> – This ID is unique for each component.</p>
@@ -61,10 +61,55 @@
 <p><strong>Write Transaction ID Width</strong> – Refers to the number of bits allocated to identify write transactions.</p>
 <p><strong>Read Transaction ID Width</strong> – Refers to the number of bits used to identify read transaction.</p>
 <p><strong>Port Data Width</strong> – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected.</p>
+<p><strong>User Request Width</strong> – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits.</p>
+<p><strong>User Data Width</strong> – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits.</p>
 <p><strong>Max Outstanding Writes</strong> – The number of allowed outstanding writes limited by the system’s architecture.</p>
 <p><strong>Max Outstanding Reads</strong> – The number of allowed outstanding reads limited to help manage the bandwidth.</p>
+<p><strong>Out of Order Transaction</strong> – Toggle button where user can enable or disable out of order transactions. This setting will only appear in AXI3 and AXI4-Full bus protocols.</p>
 <p><strong>Read Data Delay</strong> – This setting is only available in ‘SRAM’ Bus Protocol. Time interval to set for a read request. User can choose either 1 or 2.</p>
 <p><strong>Channel</strong> – This setting is only available in ‘SRAM’ Bus Protocol. User can choose either 1RW (1 Read/Write) or 1R1W (1 Read 1 Write).</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Bus Protocol</strong></p></th>
+<th class="head"><p><strong>Bus Protocol Version</strong></p></th>
+<th class="head"><p><strong>Bus Variant</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AXI</p></td>
+<td><p>3</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>4</p></td>
+<td><p>Full, Lite, Stream</p></td>
+</tr>
+<tr class="row-even"><td><p>AHB</p></td>
+<td><p>3</p></td>
+<td><p>Lite</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>5</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>APB</p></td>
+<td><p>3</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>5</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>SIG_NATIVE</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p>SRAM</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+</tr>
+</tbody>
+</table>
 <img alt="target-timing" class="align-center" src="_images/target-timing.png" />
 <p>Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation’ in the ‘Create Project’ prompt is unchecked.</p>
 <p><strong>Latency Clock Sync</strong> – When enabled, Frequency will be same as Subtopology clock. When disabled, Frequency needs to be set in MHz.</p>
@@ -73,7 +118,7 @@
 <p><strong>Traffic Behavior</strong> – This column will appear for all bus protocols selected, except for ‘SRAM’.</p>
 <p><strong>Response Speed</strong> - This refers to the measure of how quickly a system will react to a given request. Selections are ‘fast’ or ‘slow.</p>
 <img alt="target-security" class="align-center" src="_images/target-security.png" />
-<p><strong>Device Policy</strong> – Policy or configuration assigned for the connected Initiator device. This will also reflect in Initiator device’s setting. Choose from Passthrough, Programmable (Secure or Non-Secure), Blocked, and Fixed-Secure.</p>
+<p><strong>Device Policy</strong> – Policy or configuration assigned for the connected Initiator device. This will also reflect in Initiator device’s setting. Choose from Passthrough, Programmable (Interface Security: Secure or Non-Secure), Blocked, and Fixed-Secure.</p>
 </section>
 
 
@@ -131,13 +176,6 @@
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix</a></li>
 </ul>
 
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/targetconfiguration.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
@@ -164,13 +202,12 @@
         <li class="right" >
           <a href="initiatorconfiguration.html" title="Initiator Configuration"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Inoculator User Guide 3.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Inoculator User Guide 3.4 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Target Configuration</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
     &#169; Copyright 2025, SignatureIP.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     </div>
   </body>
 </html>
