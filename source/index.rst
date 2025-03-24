@@ -6,31 +6,67 @@
 Table of Contents
 ===================================
 
-I. Introduction
-   A. Terminologies
-   B. User Description
-   C. Overview
-   D. Confidentiality Notice
+I. **Introduction**
+--------------------------------------
+   A. `Terminologies <introduction.html>`_
+   B. `User Description <introduction.html>`_
+   C. `Overview <introduction.html>`_
+   D. `Confidentiality Notice <introduction.html>`_
 
-II. Features
-   A. Creating an account
-      1. Request Access
-      2. Invite User
-      3. Activate Account
+II. **Features**
+-------------------------------------
+   A. Creating an account 
+
+      1. `Request Access <requestaccess.html>`_
+      2. `Invite User <inviteuser.html>`_
+      3. `Activate Account <activateaccount>`_
 
    B. Log in, OTP (One-time Pin) and Logout
-      1. Log in
-      2. One-Time Pin
-      3. Log out
+
+      1. `Log in <login.html>`_
+      2. `One-Time Pin <otp.html>`_
+      3. `Log out <logount.html>`_
 
    C. Recovery
-      1. Forgot Password
+
+      1. `Forgot Password <forgotpassword.html>`_
 
    D. Authorization and Authentication
-      1. Authorization - Expired Account
-      2. Authorization - Suspended Account 
-      3. Authentication - Invalid Credentials
-      4. Request Access - Duplicate Email
-      5. Activate Account - Expired Link
+
+      1. `Authorization - Expired Account <expiredaccount.html>`_
+      2. `Authorization - Suspended Account <suspendedaccount.html>`_
+      3. `Authentication - Invalid Credentials <invalidcredentials.html>`_
+      4. `Request Access - Duplicate Email <duplicateemail.html>`_
+      5. `Activate Account - Expired Link <expiredlink.html>`_
+
+III. **Creating a Project**
+-------------------------------------------------------
+   A. `Uploating a Topology <uploadtopology.html>`_
+
+   B. Non-Coherent NoC Topology 
+
+      1. `Create NC-NoC Project <createprojectncnoc.html>`_
+      2. `Components and Explorer <componentsandexplorer.html>`_
+      3. `Router Configuration <routerconfiguration.html>`_
+      4. `Initiator Configuration <initiatorconfiguration.html>`_
+      5. `Target Configuration <targetconfiguration.html>`_
+      6. `Virtual Device Configuration <virtualconfiguration.html>`_
+      7. `Bridge Configuration <bridgeconfiguration.html>`_
+      8. `Subtopology Configuration <subtopologyconfiguration.html>`_
+
+   C. Coherent NoC Topology
+
+      1. `Create a C-NoC Project <createprojectcnoc.html>`_
+      2. `Configure Topologoy <configuretopology.html>`_
+      3. `Confugure Device <configuredevicecnoc.html>`_
+      4. `Configure Router <configureroutercnoc.html>`_
+      5. `Configure System Parameters <configuresystemparam.html>`_
+
+   D. Performance Matrix
+
+      1. Read Bandwidth
+      2. Write Bandwidth
+      3. Read Latency
+      4. Write Latency
 
 
