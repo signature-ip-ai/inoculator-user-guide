@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Table of Contents
+What's inside the iNoCulator? 
 ===================================
 
 
@@ -12,4 +12,49 @@ Table of Contents
    :caption: Features of Web Inoculator
 
    features
+
+   accessmap
+   activateaccount
+   addressmap
+   appendix
+   autoplace
+   bridgeconfiguration
+   componentsandexplorer
+   configuredevicecnoc
+   configureroutercnoc
+   configuresystemparam
+   configuretopology
+   copyproject
+   createprojectcnoc
+   createprojectncnoc
+   deleteproject
+   downloadjson
+   duplicateemail
+   expiredaccount
+   expiredlink
+   faqs
+   floorplan
+   forgotpassword
+   generatertlandtb
+   implement
+   initiatorconfiguration
+   invalidcredentials
+   inviteuser
+   logout
+   ncnoccontents
+   otp
+   performancematrix
+   projectconfig
+   requestaccess
+   routerconfiguration
+   sharedproject
+   signin
+   simulation
+   subtopologyconfiguration
+   suspendedaccount
+   targetconfiguration
+   topologyvalidation
+   uploadtopology
+   virtualconfiguration
+
 
