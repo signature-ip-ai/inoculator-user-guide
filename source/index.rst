@@ -6,53 +6,31 @@
 Table of Contents
 ===================================
 
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
+I. Introduction
+   A. Terminologies
+   B. User Description
+   C. Overview
+   D. Confidentiality Notice
 
-   modificationhistory
-   introduction
-   features
-   requestaccess
-   activateaccount
-   inviteuser
-   signin
-   otp
-   logout
-   forgotpassword
-   expiredaccount
-   suspendedaccount
-   invalidcredentials
-   duplicateemail
-   expiredlink
-   uploadtopology
-   createprojectncnoc
-   ncnoccontents
-   componentsandexplorer
-   routerconfiguration
-   initiatorconfiguration
-   targetconfiguration
-   virtualconfiguration
-   bridgeconfiguration
-   subtopologyconfiguration
-   createprojectcnoc
-   configuretopology
-   configuredevicecnoc
-   configureroutercnoc
-   configuresystemparam
-   performancematrix
-   accessmap
-   addressmap
-   topologyvalidation
-   generatertlandtb
-   simulation
-   downloadjson
-   implement
-   projectconfig
-   copyproject
-   floorplan
-   autoplace
-   sharedproject
-   deleteproject
-   faqs
-   appendix
+II. Features
+   A. Creating an account
+      1. Request Access
+      2. Invite User
+      3. Activate Account
+
+   B. Log in, OTP (One-time Pin) and Logout
+      1. Log in
+      2. One-Time Pin
+      3. Log out
+
+   C. Recovery
+      1. Forgot Password
+
+   D. Authorization and Authentication
+      1. Authorization - Expired Account
+      2. Authorization - Suspended Account 
+      3. Authentication - Invalid Credentials
+      4. Request Access - Duplicate Email
+      5. Activate Account - Expired Link
+
+
