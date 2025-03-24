@@ -99,7 +99,7 @@ III. **Creating a Project**
 
    Q. `Delete Project <deleteproject.html>`_
 
-IV. `Frequently Asked Questions <faqa.html>`_
+IV. `Frequently Asked Questions <faqs.html>`_
 ------------------------------------------------------
 
 V. `Appendix <appendix.html>`_
