@@ -23,3 +23,10 @@
 #    4. Duplicate Email
 #    5. Expired Activation Link
 
+Features of Web Inoculator
+===========================
+
+A. **Creating an Account**  
+  - `Request Access <creating_account.html#requestaccess>`_
+  - `Invite User <creating_account.html#inviteuser>`_
+  - `Activate Account <creating_account.html#activateaccount>`_
