@@ -1,4 +1,4 @@
-#    Features of Web Inoculator
+#Features of Web Inoculator
 #    ===================================
 #    A. Creating an account
 #    ----------------------------------------------
@@ -27,6 +27,6 @@ Features of Web Inoculator
 ===========================
 
 A. **Creating an Account**  
-  - `Request Access <creating_account.html#requestaccess>`_
-  - `Invite User <creating_account.html#inviteuser>`_
-  - `Activate Account <creating_account.html#activateaccount>`_
+  - `Request Access <requestaccess.html>`_
+  - `Invite User <inviteuser.html>`_
+  - `Activate Account <activateaccount.html>`_
