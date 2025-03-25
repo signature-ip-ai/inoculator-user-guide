@@ -13,6 +13,8 @@ What's inside the iNoCulator?
 
    features
 
+
+   :caption: All Features 
    accessmap
    activateaccount
    addressmap
