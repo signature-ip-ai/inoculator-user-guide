@@ -6,14 +6,14 @@
 Table of Contents
 ===================================
 
-I. **Introduction**
+I. Introduction
 --------------------------------------
    A. `Terminologies <introduction.html>`_
    B. `User Description <introduction.html>`_
    C. `Overview <introduction.html>`_
    D. `Confidentiality Notice <introduction.html>`_
 
-II. **Features**
+II. Features
 -------------------------------------
    A. Creating an account 
 
@@ -39,7 +39,7 @@ II. **Features**
       4. `Request Access - Duplicate Email <duplicateemail.html>`_
       5. `Activate Account - Expired Link <expiredlink.html>`_
 
-III. **Creating a Project**
+III. Creating a Project
 -------------------------------------------------------
    A. `Uploating a Topology <uploadtopology.html>`_
 
