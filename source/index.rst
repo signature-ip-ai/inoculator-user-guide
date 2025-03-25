@@ -13,8 +13,10 @@ What's inside the iNoCulator?
 
    features
 
-
+.. toctree::
+   :maxdepth: 2
    :caption: All Features 
+
    accessmap
    activateaccount
    addressmap
