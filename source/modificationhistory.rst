@@ -67,3 +67,9 @@ This is the modification history made for the documentation.
 |                       |                                | 7. Update the UI of Coherent NoC                                                               |
 |                       |                                | 8. Add Device ID parameter in Router Configuration.                                            |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+|3.5                    | March 26, 2025                 | 1.	Added System Address Map for C-NoC Projects                                                 |
+|                       |                                | 2.	Added generateRTL for C-NoC topology.                                                       |
+|                       |                                | 3.	Changed the position of NoC Data Width in Project Config                                    |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+
+  
