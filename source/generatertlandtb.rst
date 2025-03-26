@@ -4,20 +4,23 @@ Generating RTL and Testbench
 1. NC-NoC
 ----------------------------------------
 
-This feature is for generation of RTL Files and testbench for the created topology. To perform this function, user must click the ‘Generate RTL’ button in the Action bar, and the results will be displayed inside ‘Results’. 
+This feature is for generation of RTL Files and testbench for the created NC-NoC topology. To perform this function, user must click the ‘Generate RTL’ button in the Action bar, and the results will be displayed inside ‘Results’. 
 
-.. image:: images/generate_rtl.png
+.. image:: images/generate_rtl2.png
   :alt: generate_rtl.png
   :align: center
 
-For downloading successful generateRTL files:
+For downloading successful generateRTL files:  
 
-.. image:: images/generate_rtl_files_and_testbench.png
+.. image:: images/generate_rtl_files_and_testbench.png  
   :alt: generate_rtl_files_and_testbench
   :align: center
 
- 2. C-NoC
------------------------------------------
+
+
+
+2. C-NoC
+------------------------------------------------
 
 This feature is for generation of RTL Files and testbench for the created C-NoC topology. To perform this function, user must click the ‘Generate RTL’ button in the Action bar, and the results will be displayed inside ‘Results’. 
 
