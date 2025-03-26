@@ -12,18 +12,19 @@ What's inside the iNoCulator?
    :caption: Overview
 
    getstarted
-
    introduction
+   modificationhistory
    faqs
    appendix
    requestaccess
    inviteuser
    activateaccount
-   login
+   signin
    otp
    logout
    forgotpassword
    expiredaccount
+   invalidcredentials
    suspendedaccount
    duplicateemail
    expiredlink
@@ -42,9 +43,10 @@ What's inside the iNoCulator?
 
    uploadtopology
    createprojectncnoc
-   componentsand explorer
+   componentsandexplorer
    initiatorconfiguration
    targetconfiguration
+   routerconfiguration
    virtualconfiguration
    bridgeconfiguration
    subtopologyconfiguration
