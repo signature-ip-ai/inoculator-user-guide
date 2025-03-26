@@ -92,16 +92,6 @@ Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation
 
 **Frequency** – The rate of speed on how a processor can execute instructions. This field will be available if ‘Latency Clock Sync’ is disabled. 
 
-
-.. image:: images/target-traffic_behavior.png
-  :alt: target-traffic_behavior
-  :align: center
-
-**Traffic Behavior** – This column will appear for all bus protocols selected, except for 'SRAM’. 
-
-**Response Speed** - This refers to the measure of how quickly a system will react to a given request. Selections are 'fast' or 'slow. 
-
-
 .. image:: images/target-security.png
   :alt: target-security
   :align: center
