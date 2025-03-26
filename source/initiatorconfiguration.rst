@@ -74,17 +74,6 @@ Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation
 **Frequency** – The rate of speed on how a processor can execute instructions. This field will be available if ‘Latency Clock Sync’ is disabled. 
 
 
-.. image:: images/initiator-traffic_behavior.png
-  :alt: initiator-traffic_behavior
-  :align: center
-
-**Transaction Type** – This refers to the kind of operation or request being executed. The dropdown selections available are Write Only, Read Only, or Read/Write. 
-
-**Burst Length** – This refers to the performance of data transfers. The dropdown selections available are Single, Short, Long, Max, or Any.
-
-**Request Speed** – This refers to the measure of how quickly a system will initiate and handle requests. Selections are 'fast' or 'slow.'
-
-
 .. image:: images/initiator-security.png
   :alt: initiator-security
   :align: center
