@@ -1,7 +1,7 @@
 Target Configuration
 ===========================================
 
-Configuring a Target device involves various settings. The Settings tab includes sections for Parameters, Timing, Traffic Behavior, and Security. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. In this device, user can set Default Slave by selecting ‘Default’ under Bus Protocol. 
+Configuring a Target device involves various settings. The Settings tab includes sections for Parameters, Timing, and Security. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. In this device, user can set Default Slave by selecting ‘Default’ under Bus Protocol. 
 
 .. image:: images/target-default_slave.png
   :alt: target-default_slave
