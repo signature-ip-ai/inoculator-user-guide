@@ -1,4 +1,4 @@
-Address Map for C-NoC and NC-NoC
+Address Map
 ===================================================
 
 NC-NoC 
