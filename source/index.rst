@@ -13,12 +13,31 @@ What's inside the iNoCulator?
 
    getstarted
 
+   introduction
+   faqs
+   appendix
+   requestaccess
+   inviteuser
+   activateaccount
+   login
+   otp
+   logout
+   forgotpassword
+   expiredaccount
+   suspendedaccount
+   duplicateemail
+   expiredlink
+
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Design Your Project
 
    features
 
+.. toctree::
+   :maxdepth: 2
    :caption: NC-NoC
 
    uploadtopology
@@ -33,7 +52,7 @@ What's inside the iNoCulator?
    accessmap
    addressmap
    topologyvalidation
-   generatertl
+   generatertlandtb
    simulation
    downloadjson
    implement
@@ -44,6 +63,8 @@ What's inside the iNoCulator?
    sharedproject
    deleteproject
 
+.. toctree::
+   :maxdepth: 2
    :caption: C-NoC
 
    createprojectcnoc
@@ -51,9 +72,5 @@ What's inside the iNoCulator?
    configureroutercnoc
    configuredevicecnoc
    configuresystemparam
-   addressmap
-   generatertl
-   downloadjson
-   sharedproject
-   deleteproject
+  
    
