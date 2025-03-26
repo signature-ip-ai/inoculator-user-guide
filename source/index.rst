@@ -9,58 +9,51 @@ What's inside the iNoCulator?
 
 .. toctree::
    :maxdepth: 2
-   :caption: Features of Web Inoculator
+   :caption: Overview
 
-   features
+   getstarted
 
 .. toctree::
    :maxdepth: 2
-   :caption: All Features 
+   :caption: Design Your Project
 
-   accessmap
-   activateaccount
-   addressmap
-   appendix
-   autoplace
-   bridgeconfiguration
-   componentsandexplorer
-   configuredevicecnoc
-   configureroutercnoc
-   configuresystemparam
-   configuretopology
-   copyproject
-   createprojectcnoc
-   createprojectncnoc
-   deleteproject
-   downloadjson
-   duplicateemail
-   expiredaccount
-   expiredlink
-   faqs
-   floorplan
-   forgotpassword
-   generatertlandtb
-   implement
-   initiatorconfiguration
-   introduction
-   invalidcredentials
-   inviteuser
-   logout
-   modificationhistory
-   ncnoccontents
-   otp
-   performancematrix
-   projectconfig
-   requestaccess
-   routerconfiguration
-   sharedproject
-   signin
-   simulation
-   subtopologyconfiguration
-   suspendedaccount
-   targetconfiguration
-   topologyvalidation
+   features
+
+   :caption: NC-NoC
+
    uploadtopology
+   createprojectncnoc
+   componentsand explorer
+   initiatorconfiguration
+   targetconfiguration
    virtualconfiguration
+   bridgeconfiguration
+   subtopologyconfiguration
+   performancematrix
+   accessmap
+   addressmap
+   topologyvalidation
+   generatertl
+   simulation
+   downloadjson
+   implement
+   projectconfig
+   copyproject
+   floorplan
+   autoplace
+   sharedproject
+   deleteproject
 
+   :caption: C-NoC
 
+   createprojectcnoc
+   configuretopology
+   configureroutercnoc
+   configuredevicecnoc
+   configuresystemparam
+   addressmap
+   generatertl
+   downloadjson
+   sharedproject
+   deleteproject
+   
