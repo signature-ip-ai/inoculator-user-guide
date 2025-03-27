@@ -1,7 +1,7 @@
 Target Configuration
 ===========================================
 
-Configuring a Target device involves various settings. The Settings tab includes sections for Parameters, Timing, Traffic Behavior, and Security. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. In this device, user can set Default Slave by selecting ‘Default’ under Bus Protocol. 
+Configuring a Target device involves various settings. The Settings tab includes sections for Parameters, Timing, and Security. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. In this device, user can set Default Slave by selecting ‘Default’ under Bus Protocol. 
 
 .. image:: images/target-default_slave.png
   :alt: target-default_slave
@@ -91,16 +91,6 @@ Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation
 **Latency Clock Sync** – When enabled, Frequency will be same as Subtopology clock. When disabled, Frequency needs to be set in MHz. 
 
 **Frequency** – The rate of speed on how a processor can execute instructions. This field will be available if ‘Latency Clock Sync’ is disabled. 
-
-
-.. image:: images/target-traffic_behavior.png
-  :alt: target-traffic_behavior
-  :align: center
-
-**Traffic Behavior** – This column will appear for all bus protocols selected, except for 'SRAM’. 
-
-**Response Speed** - This refers to the measure of how quickly a system will react to a given request. Selections are 'fast' or 'slow. 
-
 
 .. image:: images/target-security.png
   :alt: target-security

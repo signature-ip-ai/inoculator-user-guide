@@ -7,13 +7,15 @@ This feature allows the user to modify the current settings of the project. The 
   :alt: project_config1
   :align: center
 
-.. image:: images/project_config2.png
-  :alt: project_config2
+.. image:: images/project_config3.png
+  :alt: project_config3
   :align: center
 
 **Project Name** – This field is used to name your project. No spaces are allowed; only alphanumeric characters are permitted.
   
 **Address Width** – The user needs to choose either 32 or 64 as the address width for the NoC project.
+
+**Data Width** - The user needs to choose from 256, 512 or 1024 as the NoC Data Width. (This was previously configurable inside subtopology folder)
   
 **Power Net Name** – This field is for naming Power Net. 
   
@@ -23,5 +25,5 @@ This feature allows the user to modify the current settings of the project. The 
   
 **Disable frequency validation** – When unchecked, the frequency of each component within the topology must be set individually. When checked, the user does not need to set the frequency for each component.
 
-**Enable Custom Traffic Behavior** – When unchecked, the Traffic Behavior configuration in the project is unavailable. When checked, configuring Traffic Behavior is available inside Initiator and Target device. 
+
 

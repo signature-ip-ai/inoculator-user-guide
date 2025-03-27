@@ -1,18 +1,36 @@
 Generating RTL and Testbench
 =========================================================
 
-This feature is for generation of RTL Files and testbench for the created topology. To perform this function, user must click the ‘Generate RTL’ button in the side navigation, and the results will be displayed inside ‘Results’. 
+1. NC-NoC
+----------------------------------------
 
-**Downloading and viewing JSON**
+This feature is for generation of RTL Files and testbench for the created NC-NoC topology. To perform this function, user must click the ‘Generate RTL’ button in the Action bar, and the results will be displayed inside ‘Results’. 
 
-.. image:: images/generate_rtl.png
+.. image:: images/generate_rtl2.png
   :alt: generate_rtl.png
   :align: center
 
+For downloading successful generateRTL files:  
 
-.. image:: images/generate_rtl_files_and_testbench.png
+.. image:: images/generate_rtl_files_and_testbench.png  
   :alt: generate_rtl_files_and_testbench
   :align: center
+
+
+
+
+2. C-NoC
+------------------------------------------------
+
+This feature is for generation of RTL Files and testbench for the created C-NoC topology. To perform this function, user must click the ‘Generate RTL’ button in the Action bar, and the results will be displayed inside ‘Results’. 
+
+.. image:: images/c-noc_generateRTL.png
+  :alt: c-noc_generateRTL.png
+  :align: center
+
+
+3. Download and viewing JSON
+-------------------------------------------
 
 This feature is available depending on account accessibility. Please contact your group admin regarding this function, as it is managed on the group-admin side.
 
@@ -32,9 +50,13 @@ This feature is available depending on account accessibility. Please contact you
 
 3. After extracting, a new folder will be displayed and all the files downloaded will be shown. 
 
+For NC-NoC generatedRTL files:
+
 .. image:: images/generate_rtl_files_nc_noc-downloaded.png
   :alt: generate_rtl_files_nc_noc-downloaded
   :align: center
+
+For C-NoC generatedRTL files:
 
 .. image:: images/generate_rtl_files_c_noc-downloaded.png
   :alt: generate_rtl_files_c_noc-downloaded

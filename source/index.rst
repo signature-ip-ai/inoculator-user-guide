@@ -3,43 +3,53 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Table of Contents
+What's inside the iNoCulator? 
 ===================================
+
 
 .. toctree::
    :maxdepth: 2
-   :titlesonly:
+   :caption: Overview
 
-   modificationhistory
+   getstarted
    introduction
-   features
+   modificationhistory
+   faqs
+   appendix
    requestaccess
-   activateaccount
    inviteuser
+   activateaccount
    signin
    otp
    logout
    forgotpassword
    expiredaccount
-   suspendedaccount
    invalidcredentials
+   suspendedaccount
    duplicateemail
    expiredlink
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Design Your Project
+
+   features
+
+.. toctree::
+   :maxdepth: 2
+   :caption: NC-NoC
+
    uploadtopology
    createprojectncnoc
-   ncnoccontents
    componentsandexplorer
-   routerconfiguration
    initiatorconfiguration
    targetconfiguration
+   routerconfiguration
    virtualconfiguration
    bridgeconfiguration
    subtopologyconfiguration
-   createprojectcnoc
-   configuretopology
-   configuredevicecnoc
-   configureroutercnoc
-   configuresystemparam
    performancematrix
    accessmap
    addressmap
@@ -54,5 +64,15 @@ Table of Contents
    autoplace
    sharedproject
    deleteproject
-   faqs
-   appendix
+
+.. toctree::
+   :maxdepth: 2
+   :caption: C-NoC
+
+   createprojectcnoc
+   configuretopology
+   configureroutercnoc
+   configuredevicecnoc
+   configuresystemparam
+  
+   

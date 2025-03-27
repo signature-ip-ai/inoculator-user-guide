@@ -1,7 +1,7 @@
 Initiator Configuration
 ====================================================
 
-Configuring an Initiator device involves various settings. The Settings tab includes sections for Parameters, Timing, Traffic Behavior, Security, and Others. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. 
+Configuring an Initiator device involves various settings. The Settings tab includes sections for Parameters, Timing, Security, and Others. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. 
 
 .. image:: images/initiator-parameters.png
   :alt: initiator-parameters
@@ -72,17 +72,6 @@ Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation
 **Latency Clock Sync** – When enabled, Frequency will be same as Subtopology clock. When disabled, Frequency needs to be set in MHz. 
 
 **Frequency** – The rate of speed on how a processor can execute instructions. This field will be available if ‘Latency Clock Sync’ is disabled. 
-
-
-.. image:: images/initiator-traffic_behavior.png
-  :alt: initiator-traffic_behavior
-  :align: center
-
-**Transaction Type** – This refers to the kind of operation or request being executed. The dropdown selections available are Write Only, Read Only, or Read/Write. 
-
-**Burst Length** – This refers to the performance of data transfers. The dropdown selections available are Single, Short, Long, Max, or Any.
-
-**Request Speed** – This refers to the measure of how quickly a system will initiate and handle requests. Selections are 'fast' or 'slow.'
 
 
 .. image:: images/initiator-security.png
