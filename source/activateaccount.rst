@@ -1,8 +1,6 @@
 Activate Account
 =====================================================
-This function is for the formal acceptance and activation of user to create an account to
-iNoCulator. To access this feature, user must click the ‘link’ from the Invitation email and it will
-open a tab which will redirect to this screen:
+This function is for the formal acceptance and activation of a user to create an account in iNoCulator. To access this feature, the user must click the link in the invitation email, which will open a tab that redirects to this screen.
 
 .. image:: images/activate_account-fill_up_form2.png
     :alt: activate_account-fill_up_form
