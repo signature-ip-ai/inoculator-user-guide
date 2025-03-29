@@ -1,9 +1,9 @@
 One-Time-Pin (OTP)
 ===================================
 
-To use the iNoCulator, user must enter valid credentials and input valid OTP. One-time pin will be received thru user’s registered email.
+TTo use iNoCulator, the user must enter valid credentials and input a valid OTP. The one-time PIN will be sent to the user's registered email.
 
-.. image:: images/sign_in-otp_page2.png
+.. image:: images/sign_in-otp_page3.png
   :alt: sign_in-otp_page
   :align: center
 
