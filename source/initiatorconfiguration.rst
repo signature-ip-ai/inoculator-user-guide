@@ -7,7 +7,7 @@ Configuring an Initiator device involves various settings. The Settings tab incl
   :alt: initiator-parameters
   :align: center
 
-**Subtopology** – A dropdown list for changing subtopology assigned for the selected initiator. 
+**Subtopology** – A dropdown list allows users to change the subtopology assigned to the selected initiator. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
   
 **Name** – Label name assigned for selected initiator. This is an input field where only alphanumeric keys and underscores are allowed.
   
