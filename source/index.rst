@@ -13,15 +13,22 @@ What's inside the iNoCulator?
 
    getstarted
    introduction
-   modificationhistory
-   faqs
-   appendix
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Using iNoCulator
+
    requestaccess
    inviteuser
    activateaccount
    signin
    otp
    logout
+
+.. toctree::
+   :maxdepth: 2
+   :caption: TroubleShoot
+
    forgotpassword
    expiredaccount
    invalidcredentials
@@ -74,5 +81,18 @@ What's inside the iNoCulator?
    configureroutercnoc
    configuredevicecnoc
    configuresystemparam
-  
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Support
+
+   appendix
+   faqs
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Reference
+
+   modificationhistory
    
