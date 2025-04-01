@@ -27,19 +27,6 @@ What's inside the iNoCulator?
 
 .. toctree::
    :maxdepth: 2
-   :caption: TroubleShoot
-
-   forgotpassword
-   expiredaccount
-   invalidcredentials
-   suspendedaccount
-   duplicateemail
-   expiredlink
-
-
-
-.. toctree::
-   :maxdepth: 2
    :caption: Design Your Project
 
    features
@@ -81,6 +68,17 @@ What's inside the iNoCulator?
    configureroutercnoc
    configuredevicecnoc
    configuresystemparam
+
+.. toctree::
+   :maxdepth: 2
+   :caption: TroubleShoot
+
+   forgotpassword
+   expiredaccount
+   invalidcredentials
+   suspendedaccount
+   duplicateemail
+   expiredlink
 
 .. toctree::
    :maxdepth: 2
