@@ -9,8 +9,7 @@ Introduction
 
 The table below indicates the terms used in the web application.
 
-                                            Table 1. Definition of terms.
-
+                                  
 +----------------------+----------------------------------------------------------------------------------------------------+
 |      **Term**        |                                     **Definition**                                                 |
 +======================+====================================================================================================+
@@ -50,13 +49,13 @@ The table below indicates the terms used in the web application.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-        This web application is made for the following users:
+      This web application is made for the following users:
 
-            - Hardware engineer who wants to design a NOC topology.
-            - Hardware engineer who wants to evaluate the performance of a NOC topology.
-            - Hardware engineer who wants to become familiar in the usage of the tool.
-            - Software engineer who wants to develop software based on the current design module.
-            - Sales person who wants to provide a tool to their company.
+      - Hardware engineer who wants to design a NOC topology.
+      - Hardware engineer who wants to evaluate the performance of a NOC topology.
+      - Hardware engineer who wants to become familiar in the usage of the tool.
+      - Software engineer who wants to develop software based on the current design module.
+      - Sales person who wants to provide a tool to their company.
 
 .. _overview:
 
