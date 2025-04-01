@@ -11,7 +11,7 @@ Configuring an Initiator device involves various settings. The Settings tab incl
   
 **Name** – Label name assigned for selected initiator. This is an input field where only alphanumeric keys and underscores are allowed.
   
-**Device ID** – This ID is unique for each component.
+**Device ID** – This identifier is unique for each component.
   
 **Bus Protocol** – The selected item here will be assigned as the protocol for the Initiator device. The available selections are AXI, AHB, APB, and SIG_NATIVE.
 
@@ -19,9 +19,9 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 
 **Bus Variant** – The list of variants for the selected 'Bus Protocol' will be displayed here. Please check the table below as reference. 
 
-**Write Transaction ID Width** – Refers to the number of bits allocated to identify write transactions. 
+**Write Transaction ID Width** – Refers to the number of bits allocated to identify write transactions. This parameter is displayed in all AXI devices except in AXI4-Lite.  
 
-**Read Transaction ID Width** – Refers to the number of bits used to identify read transaction. 
+**Read Transaction ID Width** – Refers to the number of bits used to identify read transaction. This parameter is displayed in all AXI devices except in AXI4-Lite. 
 
 **Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. 
 
@@ -67,11 +67,11 @@ Configuring an Initiator device involves various settings. The Settings tab incl
   :alt: initiator-timing
   :align: center
 
-Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation’ in the 'Create Project' prompt is unchecked. 
+Timing tab displays the Latency Clock Sync and Frequency parameters. By default, Latency Clock Sync is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
 
-**Latency Clock Sync** – When enabled, Frequency will be same as Subtopology clock. When disabled, Frequency needs to be set in MHz. 
+**Latency Clock Sync** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
 
-**Frequency** – The rate of speed on how a processor can execute instructions. This field will be available if ‘Latency Clock Sync’ is disabled. 
+**Frequency** – TThis refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field can be modified if 'Latency Clock Sync' is disabled. 
 
 
 .. image:: images/initiator-security.png
