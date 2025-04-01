@@ -1,7 +1,12 @@
 Target Configuration
 ===========================================
 
-Configuring a Target device involves various settings. The Settings tab includes sections for Parameters, Timing, and Security. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. In this device, user can set Default Slave by selecting ‘Default’ under Bus Protocol. 
+Configuring a Target device involves various settings. There are two types of targets: Default Target and Target. 
+
+Default Target - A device that acts as the default communication slave in a master-slave setup. 
+
+Target Device - The device that is currently being controlled or receiving commands from the master.
+
 
 .. image:: images/target-default_slave.png
   :alt: target-default_slave
@@ -29,7 +34,7 @@ This topic will be discussed in **6. Virtual Devices**.
   :align: center
 
 
-**Subtopology** – A dropdown list for changing subtopology assigned for the selected target. 
+**Subtopology** –A dropdown list allows users to change the subtopology assigned to the selected target. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
   
 **Name** – Label name assigned for selected target. This is an input field where only alphanumeric keys and underscores are allowed.
   
@@ -86,11 +91,11 @@ This topic will be discussed in **6. Virtual Devices**.
   :alt: target-timing
   :align: center
 
-Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation’ in the 'Create Project' prompt is unchecked. 
+Timing tab displays the Latency Clock Sync and Frequency parameters. By default, Latency Clock Sync is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
 
-**Latency Clock Sync** – When enabled, Frequency will be same as Subtopology clock. When disabled, Frequency needs to be set in MHz. 
+**Latency Clock Sync** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
 
-**Frequency** – The rate of speed on how a processor can execute instructions. This field will be available if ‘Latency Clock Sync’ is disabled. 
+**Frequency** – This refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field will be available if 'Latency Clock Sync' is disabled.
 
 .. image:: images/target-security.png
   :alt: target-security
