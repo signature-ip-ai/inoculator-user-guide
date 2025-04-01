@@ -8,7 +8,7 @@ Configuring a router includes setting up the power and routing table. To start e
   :align: center
 
 
-**Subtopology** – A dropdown list for changing subtopology assigned for the selected router.
+**Subtopology** – A dropdown list allows users to change the subtopology assigned to the selected Router. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
 
 **Device ID** - This ID is unique for each component
 
