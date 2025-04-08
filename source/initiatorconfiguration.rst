@@ -3,8 +3,8 @@ Initiator Configuration
 
 Configuring an Initiator device involves various settings. The Settings tab includes sections for Parameters, Timing, Security, and Others. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. 
 
-.. image:: images/initiator-parameters.png
-  :alt: initiator-parameters
+.. image:: images/initiator-parameters3.png
+  :alt: initiator-parameters3
   :align: center
 
 **Subtopology** – A dropdown list allows users to change the subtopology assigned to the selected initiator. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
@@ -63,13 +63,13 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 
 
 
-.. image:: images/initiator-timing.png
+.. image:: images/initiator-timing3.png
   :alt: initiator-timing
   :align: center
 
-Timing tab displays the Latency Clock Sync and Frequency parameters. By default, Latency Clock Sync is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
+Timing tab displays the Latency Clock Sync and Frequency parameters. By default, Use Subtopology Clock is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
 
-**Latency Clock Sync** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
+**Use Subtopology Clock** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
 
 **Frequency** – TThis refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field can be modified if 'Latency Clock Sync' is disabled. 
 
