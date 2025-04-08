@@ -25,7 +25,7 @@ This is a toggle button for enabling or disabling virtual devices. The default s
 
 This topic will be discussed in **6. Virtual Devices**. 
 
-.. image:: images/target-parameters3.png
+.. image:: images/target-parameters4.png
   :alt: target-parameters3
   :align: center
 
@@ -87,13 +87,13 @@ This topic will be discussed in **6. Virtual Devices**.
 +------------------+--------------------------+----------------------+
 
 
-.. image:: images/target-timing.png
+.. image:: images/target-timing3.png
   :alt: target-timing
   :align: center
 
-Timing tab displays the Latency Clock Sync and Frequency parameters. By default, Latency Clock Sync is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
+Timing tab displays the Use Subtopology Clock and Frequency parameters. By default, Use Subtopology Clock is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
 
-**Latency Clock Sync** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
+**Use Subtopology Clock** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
 
 **Frequency** – This refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field will be available if 'Latency Clock Sync' is disabled.
 
