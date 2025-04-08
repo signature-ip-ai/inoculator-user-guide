@@ -67,7 +67,7 @@ Configuring an Initiator device involves various settings. The Settings tab incl
   :alt: initiator-timing
   :align: center
 
-Timing tab displays the Latency Clock Sync and Frequency parameters. By default, Use Subtopology Clock is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
+Timing tab displays the Use Subtopology Clock and Frequency parameters. By default, Use Subtopology Clock is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
 
 **Use Subtopology Clock** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
 
