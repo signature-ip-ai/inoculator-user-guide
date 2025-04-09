@@ -95,7 +95,7 @@ Timing tab displays the Use Subtopology Clock and Frequency parameters. By defau
 
 **Use Subtopology Clock** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
 
-**Frequency** – This refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field will be available if 'Latency Clock Sync' is disabled.
+**Frequency** – This refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field will be available if 'Use Subtopology Clock' is disabled.
 
 .. image:: images/target-security.png
   :alt: target-security
