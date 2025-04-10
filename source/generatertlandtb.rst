@@ -28,11 +28,25 @@ Each result includes an ‘Action’ column, where the user can choose to either
 2. C-NoC
 ------------------------------------------------
 
-This feature is for generation of RTL Files and testbench for the created C-NoC topology. To perform this function, user must click the ‘Generate RTL’ button in the Action bar, and the results will be displayed inside ‘Results’. 
+This feature generates RTL files and a testbench for the created C-NoC topology. To use it, the user must click the ‘Generate RTL’ button in the Action Bar, then click the ‘New’ button to start the generation. Results will be displayed in the same table, including timestamps for when the action started and completed. 
 
 .. image:: images/c-noc_generateRTL.png
   :alt: c-noc_generateRTL.png
   :align: center
+
+
+.. image:: images/c-noc_generateRTL2.png
+  :alt: c-noc_generateRTL2.png
+  :align: center
+
+
+.. image:: images/c-noc_generateRTL_actions.png  
+  :alt: c-noc_generateRTL_actions
+  :align: center
+
+
+Each result includes an ‘Action’ column, where the user can choose to either ‘Download’ or ‘Delete’ the result. The download option depends on the license assigned to the user’s group.
+
 
 
 3. Download and viewing JSON
