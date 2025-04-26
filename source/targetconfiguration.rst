@@ -50,7 +50,7 @@ This topic will be discussed in **6. Virtual Devices**.
 
 **Read Transaction ID Width** – Refers to the number of bits used to identify read transaction. 
 
-**Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. 
+**Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. This is not displayed in SIG-NATIVE. Maximum possible value depends on the 'Data Width' set in System Configuration.
 
 **User Request Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
 
