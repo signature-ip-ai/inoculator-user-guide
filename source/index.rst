@@ -53,7 +53,7 @@ What's inside the iNoCulator?
    exportpackage
    downloadjson
    implement
-   projectconfig
+   systemconfig
    copyproject
    floorplan
    autoplace
