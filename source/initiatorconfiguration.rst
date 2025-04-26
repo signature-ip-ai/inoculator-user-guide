@@ -23,7 +23,7 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 
 **Read Transaction ID Width** – Refers to the number of bits used to identify read transaction. This parameter is displayed in all AXI devices except in AXI4-Lite. 
 
-**Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. 
+**Port Data Width** – Refers to the Data Width you will be assigned to the connected port. Available list will depend on what Bus Protocol was selected. This is not displayed in SIG-NATIVE devices. Maximum possible value depends on the 'Data Width' set in System Configuration. 
 
 **Flit Write Packet Size** – Amount of data in beats that constitutes a single flit for write transactions. 
 
