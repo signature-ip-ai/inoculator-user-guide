@@ -67,9 +67,24 @@ This is the modification history made for the documentation.
 |                       |                                | 7. Update the UI of Coherent NoC                                                               |
 |                       |                                | 8. Add Device ID parameter in Router Configuration.                                            |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.5                   | March 26, 2025                 |  1. Added System Address Map for C-NoC Projects.                                               |
-|                       |                                |  2. Added generateRTL for C-NoC Topology                                                       |
-|                       |                                |  3. Changed the position of NoC Data Width in Project Config.                                  |
+| 3.5                   | March 26, 2025                 | 1. Added System Address Map for C-NoC Projects.                                                |
+|                       |                                | 2. Added generateRTL for C-NoC Topology                                                        |
+|                       |                                | 3. Changed the position of NoC Data Width in Project Config.                                   |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 3.6                   | April 10, 2025                 | 1. Changed behavior of Frequency Validation.                                                   |
+|                       |                                | 2. Added note for Traffic Behavior.                                                            |
+|                       |                                | 3. Changed the term used for 'Latency Clock Sync' to 'Use Subtopology Clock'.                  |
+|                       |                                | 4. Added a functionality description for Export Packages.                                      |
+|                       |                                | 5. Update the table display for GenerateRTL and Simulation.                                    |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 3.7                   | April 23, 2025                 | 1. Added Exclusive Access for NC-NoC Projects                                                  |
+|                       |                                | 2. Added Address Alignment for NC-NoC Projects                                                 |
+|                       |                                | 3. Changed the selection items for Data Width                                                  |
+|                       |                                | 4. Added option for Q/P Channels                                                               |
+|                       |                                | 5. Addded topology validation for C-NoC Projects                                               |
+|                       |                                | 6. Changed behavior for Repeater - Router Type                                                 |
+|                       |                                | 7. Copy Project icon is removed in Action Bar                                                  |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+
 
   
