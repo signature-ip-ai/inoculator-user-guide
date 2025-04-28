@@ -28,7 +28,7 @@ To configure the Subtopology folder, click any folder you need to modify then ri
 
 **Q/P Channels** – This parameter refers to the channel that will be used for a subtopology. The user can select between None, Q-Channel, and P-Channel. If Q-Channel or P-Channel is selected, another parameter will appear.
 
-**Number of Sync Stages* – This input field will appear after selecting either Q-Channel or P-Channel. The user can set the stages from 0 to 32.
+**Number of Sync Stages** – This input field will appear after selecting either Q-Channel or P-Channel. The user can set the stages from 0 to 32.
 
 **Use Project Power Domain** – Default as enabled. This means that overall project power domain is used. When disabled, configuration of Power is available.
 
