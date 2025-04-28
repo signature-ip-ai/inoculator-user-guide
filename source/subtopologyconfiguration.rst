@@ -14,8 +14,8 @@ A subtopology is a subset of a topology. A complete topology can be divided into
 
 To configure the Subtopology folder, click any folder you need to modify then right-side panel will appear. Subtopology settings will be displayed like this:
 
-.. image:: images/subtopology-with-frequency.png
-  :alt: subtopology-properties
+.. image:: images/subtopology-properties3.png
+  :alt: subtopology-properties3
   :align: center
 
 **Name** – Label name assigned for selected subtopology folder. This is an input field where only alphanumeric keys and underscores are allowed. 
@@ -24,11 +24,15 @@ To configure the Subtopology folder, click any folder you need to modify then ri
 
 **Comment** – User can input comments to describe the folder or subtopology. 
 
-**Frequency** - The rate of speed on how a processor can execute instructions. This field is available if ‘Disable Frequency validation’ is unchecked inside ‘Edit Project’ or ‘Settings’.
+**Clock Frequency** - This refers to the speed at which a processor can execute instructions. By default, the value displayed here is 0. The value set here will be reflected in initiators and targets when the device's Use Subtopology Clock is enabled. 
+
+**Q/P Channels** – This parameter refers to the channel that will be used for a subtopology. The user can select between None, Q-Channel, and P-Channel. If Q-Channel or P-Channel is selected, another parameter will appear.
+
+**Number of Sync Stages* – This input field will appear after selecting either Q-Channel or P-Channel. The user can set the stages from 0 to 32.
 
 **Use Project Power Domain** – Default as enabled. This means that overall project power domain is used. When disabled, configuration of Power is available.
 
-.. image:: images/subtopology-properties_with_power_voltage3.png
+.. image:: images/subtopology-properties_with_power_voltage4.png
   :alt: subtopology-properties_with_power_voltage
   :align: center
 
