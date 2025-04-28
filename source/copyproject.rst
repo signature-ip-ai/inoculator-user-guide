@@ -5,7 +5,7 @@ This feature allows you to create a new project by copying an existing one. This
 The Copy Project function can also be used to copy a project from another owner. After copying, the ownership of the copied project will be updated.
 
 
-.. image:: images/copy_project_dashboard.png
+.. image:: images/copy_project_dashboard2.png
   :alt: copy_project_dashboard
   :align: center
 
