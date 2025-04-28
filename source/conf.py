@@ -4,7 +4,7 @@
 project = 'Inoculator User Guide'
 copyright = '2025, SignatureIP'
 author = 'SignatureIP'
-release = '3.5'
+release = '3.7'
 
 # -- General configuration ---------------------------------------------------
 
