@@ -1,7 +1,7 @@
 Export Package
 ========================================
 
-iNoCulator offers two types of export packages: Encrypted and Unencrypted.
+iNoCulator offers two types of export packages: Encrypted and Clean.
 The type of package depends on the settings of the group the user belongs to. This function is available for NC-NoC projects.
 
 Encrypted Package 
