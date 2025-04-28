@@ -4,7 +4,7 @@ Export Package
 iNoCulator offers two types of export packages: Encrypted and Unencrypted.
 The type of package depends on the settings of the group the user belongs to. This function is available for NC-NoC projects.
 
-**Encrypted** 
+Encrypted
 -------------------------------------------------------
 
 To export an 'Encrypted' package, tick the checkbox inside the Export button in the Action Bar.
@@ -26,7 +26,7 @@ Click the 'Export Package' button to export the RTL and wait for the result in t
 
 
 
-**Unencrypted**
+Unencrypted
 ------------------------------------------------------------------------------
 
 To export an 'Unencrypted' package, untick the checkbox inside the Export button in the Action Bar. 
@@ -48,7 +48,7 @@ Click the 'Export Package' button to export the RTL and wait for the result in t
   :align: center
 
 
-**Results**
+Results
 ---------------------------------------------------------------------
 
 In the Export Design table, each package result has an 'Actions' column. Click the three dots in this column to select an action.
