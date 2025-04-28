@@ -1,7 +1,7 @@
 Logout 
 ===================================
 
-After using iNoCulator, the user will log out of their account. To do this, the user must click the 'Logout' icon located in the upper right corner of the tool. A confirmation message will appear before the logout is successful.
+After using iNoCulator, the user must log out of their account. To do this, click the 'Logout' icon located in the upper right corner of the tool. A confirmation message will appear before the logout is completed.
 
 
 .. image:: images/logout_icon_from_dashboard.png
