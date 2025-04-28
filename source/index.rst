@@ -21,7 +21,7 @@ What's inside the iNoCulator?
    requestaccess
    inviteuser
    activateaccount
-   signin
+   login
    otp
    logout
 
