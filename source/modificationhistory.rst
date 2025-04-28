@@ -83,7 +83,7 @@ This is the modification history made for the documentation.
 |                       |                                | 4. Added option for Q/P Channels                                                               |
 |                       |                                | 5. Addded topology validation for C-NoC Projects                                               |
 |                       |                                | 6. Changed behavior for Repeater - Router Type                                                 |
-|                       |                                | 7. Copy Project icon is removed in Action Bar                                                  |
+|                       |                                | 7. Copy Project icon has been removed from the Action Bar.                                     |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
