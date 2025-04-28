@@ -2,21 +2,22 @@ Uploading a Topology
 ========================================================
 
 To design a topology, uploading an excel file with set values will generate a topology instantly. Follow the steps below to generate a topology from an excel file. 
-Prepare the Excel file with the desired values. The current template file name is 'nc-noc_topology_generator_v1.4,' which is used for designing a topology from the Excel file. Instructions are included inside the file that user may follow. Sample values that need to modify are
+Prepare the Excel file with the desired values. The current template file name is 'nc-noc_topology_generator_v1.4,' which is used for designing a topology from the Excel file. Instructions are included inside the file that user may follow. Sample values that need to modify are: 
+
 
 
 .. image:: images/uploading_topology-excel_sheet.png
   :alt: uploading_topology-excel_sheet
   :align: center
 
-After setting up the excel sheet, go to inoculator.ai/login to sign in and go to Dashboard. In Dashboard, there is a huge ‘+’ icon for creating a project. Click that icon to proceed. 
+After setting up the excel sheet, go to inoculator.ai/login to log in and go to Dashboard. In Dashboard, there is a huge ‘+’ icon for creating a project. Click that icon to proceed. 
 
 
 .. image:: images/uploading_topology-create_project_icon.png
   :alt: uploading_topology-create_project_icon
   :align: center
 
-After clicking that icon, ‘Create Project’ dialog box will appear. User will find a button to upload the file. Click ‘Drag ‘n drop an XLSX file here or click to select one’. 
+After clicking that icon, ‘Create Project’ dialog box will appear. User will find a button to upload the file. Click ‘Upload Topology XLSX file’. 
 
 .. image:: images/uploading_topology-create_project_prompt2.png
   :alt: uploading_topology-create_project_prompt
