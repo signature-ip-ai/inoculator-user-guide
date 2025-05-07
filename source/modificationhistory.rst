@@ -85,6 +85,13 @@ This is the modification history made for the documentation.
 |                       |                                | 6. Changed behavior for Repeater - Router Type                                                 |
 |                       |                                | 7. Copy Project icon has been removed from the Action Bar.                                     |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 3.8                   | May 7, 2025                    | 1. Power Voltage display in Router.                                                            |
+|                       |                                | 2. Support of GHz in Clock Frequency.                                                          |
+|                       |                                | 3. Addition of 'Use Clock Frequency for Simulation' toggle button in Simulation.               |
+|                       |                                | 4. Read Data Buffer for Target devices and Write Data Buffer for Initiator devices.            |
+|                       |                                | 5. Modification in Exclusive Access functionality.                                             |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+
 
 
   
