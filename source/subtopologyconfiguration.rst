@@ -24,7 +24,7 @@ To configure the Subtopology folder, click any folder you need to modify then ri
 
 **Comment** – User can input comments to describe the folder or subtopology. 
 
-**Clock Frequency** - This refers to the speed at which a processor can execute instructions. By default, the value displayed here is 0. The value set here will be reflected in initiators and targets when the device's Use Subtopology Clock is enabled. 
+**Clock Frequency** - This refers to the speed at which a processor can execute instructions. By default, the value displayed here is 0. The value set here will be reflected in initiators and targets when the device's Use Subtopology Clock is enabled. The value can be set in MHz or GHz and will be reflected in all devices.
 
 **Q/P Channels** – This parameter refers to the channel that will be used for a subtopology. The user can select between None, Q-Channel, and P-Channel. If Q-Channel or P-Channel is selected, another parameter will appear.
 
