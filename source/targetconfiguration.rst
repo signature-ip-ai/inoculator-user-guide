@@ -25,7 +25,7 @@ This is a toggle button for enabling or disabling virtual devices. The default s
 
 This topic will be discussed in **6. Virtual Devices**. 
 
-.. image:: images/target-parameters5.png
+.. image:: images/target-parameters6.png
   :alt: target-parameters3
   :align: center
 
@@ -62,11 +62,15 @@ This topic will be discussed in **6. Virtual Devices**.
 
 **Out of Order Transaction** – Toggle button where user can enable or disable out of order transactions. This setting will only appear in AXI3 and AXI4-Full bus protocols.
 
-**Exclusive Access** – This parameter is a toggle button where user can enable or disable the Exclusive Access function. Default is disabled. When enabled, user must input the ‘Exclusive Access LUT Size’. This parameter is configurable only using AXI3 and AXI4-Full bus protocols. 
+**Exclusive Access** – This parameter is a toggle button where user can enable or disable the Exclusive Access function. Default is disabled and can only be enabled when 'Out of Order Transaction' is enabled. When enabled, user must input the ‘Exclusive Access LUT Size’. This parameter is configurable only using AXI3 and AXI4-Full bus protocols. 
 
 **Exclusive Access LUT Size** – This input field is displayed when ‘Exclusive Access’ is enabled. User can input from 2 to 256 as the size. 
 
 **Aligned Addresses** – This parameter is displayed for all target devices except in SIG-NATIVE devices. 
+
+**Read Data Buffer** – This parameter allows the user to configure the Read Data Buffer for a selected Target device. Toggle on to enable and toggle off to disable. This parameter is displayed in all Bus Protocols except in SIG_NATIVE and SRAM.
+
+**Read Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
 
 
 **Read Data Delay** – This setting is only available in ‘SRAM’ Bus Protocol. Time interval to set for a read request. User can choose either 1 or 2.
