@@ -5,14 +5,14 @@ This feature is designed to help users recover access to their accounts if they 
   1. From Sign in Page, click ‘Forgot Password’ to access the form. 
   2. When ‘Forgot Password’ is clicked, Forgot Password page will be displayed.
 
-  .. image:: images/forgot_password-reset_your_password_page2.png
+  .. image:: images/forgot_password-reset_your_password_page3.png
     :alt: forgot_password-reset_your_password_page
     :align: center
 
 
   3. After sending the valid email, user will receive email notification which includes the link for resetting password.
 
-  .. image:: images/forgot_password-email_notification.png
+  .. image:: images/forgot_password-email_notification2.png
     :alt: forgot_password-email_notification
     :align: center
 

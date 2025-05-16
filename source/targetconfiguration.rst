@@ -1,7 +1,12 @@
 Target Configuration
 ===========================================
 
-Configuring a Target device involves various settings. The Settings tab includes sections for Parameters, Timing, and Security. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. In this device, user can set Default Slave by selecting ‘Default’ under Bus Protocol. 
+Configuring a Target device involves various settings. There are two types of targets: Default Target and Target. 
+
+Default Target - A device that acts as the default communication slave in a master-slave setup. 
+
+Target Device - The device that is currently being controlled or receiving commands from the master.
+
 
 .. image:: images/target-default_slave.png
   :alt: target-default_slave
@@ -20,7 +25,7 @@ This is a toggle button for enabling or disabling virtual devices. The default s
 
 This topic will be discussed in **6. Virtual Devices**. 
 
-.. image:: images/target-parameters3.png
+.. image:: images/target-parameters6.png
   :alt: target-parameters3
   :align: center
 
@@ -29,7 +34,7 @@ This topic will be discussed in **6. Virtual Devices**.
   :align: center
 
 
-**Subtopology** – A dropdown list for changing subtopology assigned for the selected target. 
+**Subtopology** –A dropdown list allows users to change the subtopology assigned to the selected target. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
   
 **Name** – Label name assigned for selected target. This is an input field where only alphanumeric keys and underscores are allowed.
   
@@ -45,7 +50,7 @@ This topic will be discussed in **6. Virtual Devices**.
 
 **Read Transaction ID Width** – Refers to the number of bits used to identify read transaction. 
 
-**Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. 
+**Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. This is not displayed in SIG-NATIVE. Maximum possible value depends on the 'Data Width' set in System Configuration.
 
 **User Request Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
 
@@ -56,6 +61,17 @@ This topic will be discussed in **6. Virtual Devices**.
 **Max Outstanding Reads** – The number of allowed outstanding reads limited to help manage the bandwidth. 
 
 **Out of Order Transaction** – Toggle button where user can enable or disable out of order transactions. This setting will only appear in AXI3 and AXI4-Full bus protocols.
+
+**Exclusive Access** – This parameter is a toggle button where user can enable or disable the Exclusive Access function. Default is disabled and can only be enabled when 'Out of Order Transaction' is enabled. When enabled, user must input the ‘Exclusive Access LUT Size’. This parameter is configurable only using AXI3 and AXI4-Full bus protocols. 
+
+**Exclusive Access LUT Size** – This input field is displayed when ‘Exclusive Access’ is enabled. User can input from 2 to 256 as the size. 
+
+**Aligned Addresses** – This parameter is displayed for all target devices except in SIG-NATIVE devices. 
+
+**Read Data Buffer** – This parameter allows the user to configure the Read Data Buffer for a selected Target device. Toggle on to enable and toggle off to disable. This parameter is displayed in all Bus Protocols except in SIG_NATIVE and SRAM.
+
+**Read Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
+
 
 **Read Data Delay** – This setting is only available in ‘SRAM’ Bus Protocol. Time interval to set for a read request. User can choose either 1 or 2.
 
@@ -82,15 +98,15 @@ This topic will be discussed in **6. Virtual Devices**.
 +------------------+--------------------------+----------------------+
 
 
-.. image:: images/target-timing.png
+.. image:: images/target-timing3.png
   :alt: target-timing
   :align: center
 
-Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation’ in the 'Create Project' prompt is unchecked. 
+Timing tab displays the Use Subtopology Clock and Frequency parameters. By default, Use Subtopology Clock is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
 
-**Latency Clock Sync** – When enabled, Frequency will be same as Subtopology clock. When disabled, Frequency needs to be set in MHz. 
+**Use Subtopology Clock** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
 
-**Frequency** – The rate of speed on how a processor can execute instructions. This field will be available if ‘Latency Clock Sync’ is disabled. 
+**Frequency** – This refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field will be available if 'Use Subtopology Clock' is disabled.
 
 .. image:: images/target-security.png
   :alt: target-security

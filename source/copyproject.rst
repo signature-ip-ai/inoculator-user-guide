@@ -5,8 +5,8 @@ This feature allows you to create a new project by copying an existing one. This
 The Copy Project function can also be used to copy a project from another owner. After copying, the ownership of the copied project will be updated.
 
 
-.. image:: images/copy_project1.png
-  :alt: copy_project1
+.. image:: images/copy_project_dashboard2.png
+  :alt: copy_project_dashboard
   :align: center
 
 .. image:: images/copy_project2.png
@@ -17,4 +17,4 @@ Limitations:
   -	Upper case only on the first letters. 
   -	Use only alphanumeric keys including ñ and Ñ, spaces and no special characters. 
 
-This function is currently implemented in NC-NoC projects only as of SWTOOLS_REL_5.1.1.
+This function is currently implemented in **NC-NoC** projects only as of SWTOOLS_REL_5.1.1.

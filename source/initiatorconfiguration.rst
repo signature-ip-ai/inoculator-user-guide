@@ -3,15 +3,15 @@ Initiator Configuration
 
 Configuring an Initiator device involves various settings. The Settings tab includes sections for Parameters, Timing, Security, and Others. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. 
 
-.. image:: images/initiator-parameters.png
-  :alt: initiator-parameters
+.. image:: images/initiator-parameters4.png
+  :alt: initiator-parameters3
   :align: center
 
-**Subtopology** – A dropdown list for changing subtopology assigned for the selected initiator. 
+**Subtopology** – A dropdown list allows users to change the subtopology assigned to the selected initiator. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
   
 **Name** – Label name assigned for selected initiator. This is an input field where only alphanumeric keys and underscores are allowed.
   
-**Device ID** – This ID is unique for each component.
+**Device ID** – This identifier is unique for each component.
   
 **Bus Protocol** – The selected item here will be assigned as the protocol for the Initiator device. The available selections are AXI, AHB, APB, and SIG_NATIVE.
 
@@ -19,11 +19,11 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 
 **Bus Variant** – The list of variants for the selected 'Bus Protocol' will be displayed here. Please check the table below as reference. 
 
-**Write Transaction ID Width** – Refers to the number of bits allocated to identify write transactions. 
+**Write Transaction ID Width** – Refers to the number of bits allocated to identify write transactions. This parameter is displayed in all AXI devices except in AXI4-Lite.  
 
-**Read Transaction ID Width** – Refers to the number of bits used to identify read transaction. 
+**Read Transaction ID Width** – Refers to the number of bits used to identify read transaction. This parameter is displayed in all AXI devices except in AXI4-Lite. 
 
-**Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. 
+**Port Data Width** – Refers to the Data Width you will be assigned to the connected port. Available list will depend on what Bus Protocol was selected. This is not displayed in SIG-NATIVE devices. Maximum possible value depends on the 'Data Width' set in System Configuration. 
 
 **Flit Write Packet Size** – Amount of data in beats that constitutes a single flit for write transactions. 
 
@@ -40,6 +40,11 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 **Read Reorder Buffer Size** – The number of read operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE. 
 
 **Write Reorder Buffer Size** – The number of write operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE.
+
+**Write Data Buffer** – This parameter allows the user to configure the Write Data Buffer for a selected Initiator device. Toggle on to enable and toggle off to disable. This parameter is displayed in all Bus Protocols excepts in SIG_NATIVE.
+
+**Write Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
+
 
 
 
@@ -63,15 +68,15 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 
 
 
-.. image:: images/initiator-timing.png
+.. image:: images/initiator-timing3.png
   :alt: initiator-timing
   :align: center
 
-Timing tab will be displayed if the checkbox for ‘Disable Frequency Validation’ in the 'Create Project' prompt is unchecked. 
+Timing tab displays the Use Subtopology Clock and Frequency parameters. By default, Use Subtopology Clock is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
 
-**Latency Clock Sync** – When enabled, Frequency will be same as Subtopology clock. When disabled, Frequency needs to be set in MHz. 
+**Use Subtopology Clock** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
 
-**Frequency** – The rate of speed on how a processor can execute instructions. This field will be available if ‘Latency Clock Sync’ is disabled. 
+**Frequency** – TThis refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field can be modified if 'Use Subtopology Clock' is disabled. 
 
 
 .. image:: images/initiator-security.png
