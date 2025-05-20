@@ -25,7 +25,7 @@ This is a toggle button for enabling or disabling virtual devices. The default s
 
 This topic will be discussed in **6. Virtual Devices**. 
 
-.. image:: images/target-parameters6.png
+.. image:: images/target-parameters7.png
   :alt: target-parameters3
   :align: center
 
