@@ -4,14 +4,17 @@ Generating RTL and Testbench
 1. NC-NoC
 ----------------------------------------
 
-This feature generates RTL files and a testbench for the created NC-NoC topology. To use it, the user must click the ‘Generate RTL’ button in the Action Bar, then click the ‘New’ button to start the generation. Results will be displayed in the same table, including timestamps for when the action started and completed.
+This feature generates RTL files and a testbench for the created NC-NoC topology.
+To use it, click the ‘Generate RTL’ button in the Action Bar. An optional checkbox labeled ‘Include Cycle Accurate Model’ allows you to include the model in the generation—tick the checkbox to include it, or leave it unticked to exclude it.
+
+Then, click the ‘Generate Design’ button to start the process. The results, including timestamps for when the action started and completed, will be displayed in the same table.
 
 .. image:: images/generate_rtl3.png
   :alt: generate_rtl.png
   :align: center
  
 
-.. image:: images/generate_rtl_files_and_testbench2.png  
+.. image:: images/generate_rtl_files_and_testbench3.png  
   :alt: generate_rtl_files_and_testbench
   :align: center
 
@@ -28,14 +31,19 @@ Each result includes an ‘Action’ column, where the user can choose to either
 2. C-NoC
 ------------------------------------------------
 
-This feature generates RTL files and a testbench for the created C-NoC topology. To use it, the user must click the ‘Generate RTL’ button in the Action Bar, then click the ‘New’ button to start the generation. Results will be displayed in the same table, including timestamps for when the action started and completed. 
+This feature generates RTL files and a testbench for the created C-NoC topology.
+To use it, click the ‘Generate RTL’ button in the Action Bar. An optional checkbox labeled ‘Include Cycle Accurate Model’ allows you to include the model in the generation—tick the checkbox to include it, or leave it unticked to exclude it.
+
+
+Then, click the ‘Generate Design’ button to start the process. The results, including timestamps for when the action started and completed, will be displayed in the same table.
+
 
 .. image:: images/c-noc_generateRTL.png
   :alt: c-noc_generateRTL.png
   :align: center
 
 
-.. image:: images/c-noc_generateRTL2.png
+.. image:: images/c-noc_generateRTL3.png
   :alt: c-noc_generateRTL2.png
   :align: center
 
@@ -72,14 +80,27 @@ This feature is available depending on account accessibility. Please contact you
 
 For NC-NoC generatedRTL files:
 
-.. image:: images/generate_rtl_files_nc_noc-downloaded.png
-  :alt: generate_rtl_files_nc_noc-downloaded
+
+**without Cycle Accurate**
+
+.. image:: images/generate_rtl_without_cycle_accurate.png
+  :alt: generate_rtl_without_cycle_accurate
   :align: center
+
+
+**with Cycle Accurate**
+
+.. image:: images/generate_rtl_with_cycle_accurate.png
+  :alt: generate_rtl_with_cycle_accurate
+  :align: center
+
 
 For C-NoC generatedRTL files:
 
-.. image:: images/generate_rtl_files_c_noc-downloaded.png
-  :alt: generate_rtl_files_c_noc-downloaded
+**without Cycle Accurate**
+
+.. image:: images/generate_rtl_files_c_noc-without_cycle_accurate.png
+  :alt: generate_rtl_files_c_noc-without_cycle_accurate
   :align: center
 
 
