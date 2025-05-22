@@ -91,7 +91,8 @@ This is the modification history made for the documentation.
 |                       |                                | 4. Read Data Buffer for Target devices and Write Data Buffer for Initiator devices.            |
 |                       |                                | 5. Modification in Exclusive Access functionality.                                             |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-
-
-
-  
+| 3.9                   | May 21, 2025                   | 1. Added SystemC Cycle Accurate Model generation in generateRTL function.                      |
+|                       |                                | 2. Change limit for Max Outstanding Reads and Max Outstanding Writes.                          |
+|                       |                                | 3. Add limit for generateRTL, simulate and export function.                                    |
+|                       |                                | 4. Copy project function for C-NoC Topologies.                                                 |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+ 
