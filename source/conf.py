@@ -69,6 +69,11 @@ html_theme_options = {
     "code_font_size": "0.9em",
     "code_line_numbers": True,
     "code_copy_button": True,
+    
+    # Image display settings
+    "image_scaling": "scale",
+    "image_align": "center",
+    "image_loading": "lazy",
 }
 
 html_title = "Inoculator User Guide"
