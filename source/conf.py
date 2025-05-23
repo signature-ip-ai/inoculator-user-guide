@@ -47,40 +47,25 @@ html_theme_options = {
         "image_light": "_static/logo-light.png",
         "image_dark": "_static/logo-dark.png",
     },
-    "navbar_footer_text": "Inoculator User Guide by SignatureIP",
     "navbar_align": "left",
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
     
     # Theme customization
-    "primary_color": "#2B6CB0",
-    "secondary_color": "#4299E1",
-    "accent_color": "#63B3ED",
-    "font_family": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-    
-    # Additional features
-    "search_bar_text": "Search documentation...",
-    "search_bar_position": "navbar",
-    "search_include_pat": "**",
-    "search_exclude_pat": "**/build/**",
-    "search_show_suggestions": True,
-    
-    # Code blocks
-    "code_font_size": "0.9em",
-    "code_line_numbers": True,
-    "code_copy_button": True,
-    
-    # Image display settings
-    "image_scaling": "scale",
-    "image_align": "center",
-    "image_loading": "lazy",
+    "theme_dev_mode": False,
+    "show_navbar_depth": 1,
+    "show_toc_level": 2,
+    "use_edit_page_button": True,
+    "use_issues_button": True,
+    "use_repository_button": True,
+    "use_source_button": True,
 }
 
 html_title = "Inoculator User Guide"
 html_favicon = "_static/favicon.ico"
 html_last_updated_fmt = "%b %d, %Y"
 
-# Add custom CSS variables for consistent styling
+# Add custom CSS for styling
 html_css_files = [
     'custom.css',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
