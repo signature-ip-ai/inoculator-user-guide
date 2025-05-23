@@ -32,9 +32,9 @@ body {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--pst-font-family-heading);
-  margin-top: 1.5em;
-  margin-bottom: 0.75em;
-  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 h1 {
@@ -56,11 +56,13 @@ h3 {
 
 /* Links */
 a {
-  color: var(--pst-color-primary);
+  color: #2563eb;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
+  color: #1d4ed8;
   text-decoration: underline;
 }
 
@@ -76,49 +78,49 @@ code {
 pre {
   background-color: #f8f8f8;
   border: 1px solid #eee;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 1em;
   font-size: 85%;
   overflow-x: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Table styling */
 table {
   border-collapse: collapse;
-  margin: 1.5em 0;
   width: 100%;
+  margin: 1em 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
 }
 
 th {
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  padding: 0.75em;
-  text-align: left;
-  font-weight: 500;
-}
-
-td {
-  border: 1px solid #ddd;
-  padding: 0.75em;
-  vertical-align: top;
-}
-
-tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #f3f4f6;
+  font-weight: 600;
 }
 
 /* Images */
 img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
   max-width: 100%;
   height: auto;
-  border-radius: 4px;
-  margin: 1em auto;
-  display: block;
+}
+
+img:hover {
+  transform: scale(1.02);
 }
 
 /* Sidebar styling */
 .bd-sidebar {
   width: var(--pst-sidebar-width);
+  border-right: 1px solid #e5e7eb;
 }
 
 .bd-sidebar label {
@@ -132,6 +134,7 @@ img {
 /* TOC on right */
 .bd-toc {
   padding-top: 1.5rem;
+  border-left: 1px solid #e5e7eb;
 }
 
 .toc-h2 {
@@ -222,5 +225,51 @@ div.announcement {
   table {
     display: block;
     overflow-x: auto;
+  }
+}
+
+/* Figure captions */
+.figure {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.figure .caption {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5em;
+}
+
+/* Content area */
+.bd-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  img {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .figure .caption {
+    color: #9ca3af;
+  }
+  
+  a {
+    color: #60a5fa;
+  }
+  
+  a:hover {
+    color: #93c5fd;
+  }
+  
+  th {
+    background-color: #1f2937;
+  }
+  
+  th, td {
+    border-color: #374151;
   }
 }
