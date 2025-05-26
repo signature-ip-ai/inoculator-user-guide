@@ -43,8 +43,6 @@ html_theme_options = {
     "toc_title": "On this page",
     
     # Visual improvements
-
-}
     "navbar_align": "left",
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
@@ -55,7 +53,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "use_issues_button": True,
     "use_repository_button": True,
-    "use_source_button": True,
+    "use_source_button": True
 }
 
 html_title = "Inoculator User Guide"
