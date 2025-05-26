@@ -44,7 +44,7 @@ html_theme_options = {
     
     # Visual improvements
 
-},
+}
     "navbar_align": "left",
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
