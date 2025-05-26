@@ -43,16 +43,13 @@ html_theme_options = {
     "toc_title": "On this page",
     
     # Visual improvements
-    "logo": {
-        "image_light": "_static/logo-light.png",
-        "image_dark": "_static/logo-dark.png",
-    },
+
+},
     "navbar_align": "left",
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
     
     # Theme customization
-    "theme_dev_mode": False,
     "show_navbar_depth": 1,
     "show_toc_level": 2,
     "use_edit_page_button": True,
