@@ -26,7 +26,7 @@ body {
   font-family: var(--pst-font-family-base);
   color: var(--pst-color-text-base);
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* Headings */
