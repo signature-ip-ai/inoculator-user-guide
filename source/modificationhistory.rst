@@ -96,3 +96,10 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Add limit for generateRTL, simulate and export function.                                    |
 |                       |                                | 4. Copy project function for C-NoC Topologies.                                                 |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+ 
+| 5.2.1                 | May 26, 2025                   | 1. Update the  User Guide version to match the Web Inoculator version.                         |
+|                       |                                | 2. Update the CSS File for some images and elements improvements.                              |
+|                       | June 3, 2025                   | 3. Additional AXI4 User Signal Parameters inside System Config of NC-NoC.                      |
+|                       |                                | 4. Additional option 'Obfuscated' to export package.                                           |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+
+
