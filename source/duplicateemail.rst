@@ -1,8 +1,10 @@
-Request Access - Duplicate Email 
+Duplicate Email 
 ==============================================
 If an email address is already associated with an existing account, the system will:
   - Detect Duplication – Identify that the email address is already in use.
   - Provide a warning – Inform the user that the email address is already associated with an existing account. 
+
+This will be encountered in Request Access form.
 
 .. image:: images/request_access-duplicate_email_address2.png
   :alt: request_access-duplicate_email_address
