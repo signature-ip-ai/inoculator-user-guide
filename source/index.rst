@@ -18,12 +18,13 @@ What's inside the iNoCulator?
    :maxdepth: 2
    :caption: Using iNoCulator
 
-   requestaccess
-   inviteuser
    activateaccount
+   inviteuser   
    login
-   otp
    logout
+   otp
+   requestaccess
+      
 
 .. toctree::
    :maxdepth: 2
@@ -35,30 +36,31 @@ What's inside the iNoCulator?
    :maxdepth: 2
    :caption: NC-NoC
 
-   uploadtopology
-   createprojectncnoc
-   componentsandexplorer
-   initiatorconfiguration
-   targetconfiguration
-   routerconfiguration
-   virtualconfiguration
-   bridgeconfiguration
-   subtopologyconfiguration
-   performancematrix
    accessmap
    addressmap
-   topologyvalidation
-   generatertlandtb
-   simulation
-   exportpackage
-   downloadjson
-   implement
-   systemconfig
-   copyproject
-   floorplan
    autoplace
-   sharedproject
+   bridgeconfiguration
+   componentsandexplorer
+   copyproject
+   createprojectncnoc
    deleteproject
+   downloadjson
+   exportpackage
+   floorplan
+   generatertlandtb
+   implement
+   initiatorconfiguration
+   performancematrix
+   routerconfiguration
+   sharedproject
+   simulation
+   subtopologyconfiguration
+   systemconfig
+   targetconfiguration
+   topologyvalidation
+   uploadtopology
+   virtualconfiguration
+
 
 .. toctree::
    :maxdepth: 2
@@ -74,12 +76,12 @@ What's inside the iNoCulator?
    :maxdepth: 2
    :caption: TroubleShoot
 
-   forgotpassword
+   duplicateemail
    expiredaccount
+   expiredlink
+   forgotpassword
    invalidcredentials
    suspendedaccount
-   duplicateemail
-   expiredlink
 
 .. toctree::
    :maxdepth: 2
