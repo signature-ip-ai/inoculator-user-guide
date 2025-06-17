@@ -14,7 +14,7 @@ Create Project (NC-NoC Topology)
 
 After setting up the Project Settings, the user needs to click the ‘Create’ button. A new project tile will be displayed on the Dashboard. The user must click the tile to start designing a topology within the project.
 
-.. image:: images/non_coherent_noc_project-grid_view.png
+.. image:: images/non_coherent_noc_project-grid_view2.png
   :alt: non_coherent_noc_project-grid_view
   :align: center
 
