@@ -8,7 +8,7 @@ To view this, navigate to “Access Map” tab.
 
 In this feature, the policy for each device is defined. The Security Device is not displayed on this matrix. Users can choose from four policies: Passthrough, Fixed Secure, Programmable, and Blocked. Greyed-out cell means the equivalent device is not reachable.
 
-.. image:: images/access_map-security_policy2.png
+.. image:: images/access_map-security_policy3.png
   :alt: access_map-security_policy
   :align: center
 
