@@ -1,4 +1,4 @@
-Authorization - Expired Account 
+Expired Account 
 ==========================================================
 An expired account refers to an account that has reached the end of its active period, often due to a time-based condition, such as the expiration of a subscription, membership, or license. 
 

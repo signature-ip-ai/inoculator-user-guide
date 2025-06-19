@@ -7,7 +7,7 @@ NC-NoC
 This feature displays the address range of all target devices in the topology. By default, addresses are configured automatically, but users can still configure them manually. To configure this, navigate to “Address Map” tab.  
 
 
-.. image:: images/address_map3.png
+.. image:: images/address_map4.png
   :alt: address_map
   :align: center
 
@@ -27,7 +27,7 @@ The Router Type should be set to HN-F w/ L3 or HN-F w/o L3 to configure the Addr
 
 Device Protocol and Device Type should be set to AXI and Slave to configure the Subordinate Node Address Map. Other Device Protocols and Device Types do not allow users to configure the Address Map.
 
-.. image:: images/cnoc_address_map.png
+.. image:: images/cnoc_address_map2.png
   :alt: ccnoc_address_map
   :align: center
 

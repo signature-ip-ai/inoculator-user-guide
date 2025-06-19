@@ -1,4 +1,4 @@
-Authorization - Suspended Account 
+Suspended Account 
 ========================================================
 A suspended account is one that has been temporarily disabled or restricted by the administrator, often due to a violation of terms of service, suspicious activity, or a pending investigation. 
 

@@ -1,4 +1,4 @@
-Authentication - Invalid Credentials
+Invalid Credentials
 =======================================================
 
 The system will try to authenticate the provided credentials (email address and password). Since the email address is invalid or does not match any existing account, the authentication will fail.

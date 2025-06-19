@@ -33,11 +33,11 @@ II. Features
 
    D. Authorization and Authentication
 
-      1. `Authorization - Expired Account <expiredaccount.html>`_
-      2. `Authorization - Suspended Account <suspendedaccount.html>`_
-      3. `Authentication - Invalid Credentials <invalidcredentials.html>`_
-      4. `Request Access - Duplicate Email <duplicateemail.html>`_
-      5. `Activate Account - Expired Link <expiredlink.html>`_
+      1. `Expired Account <expiredaccount.html>`_
+      2. `Suspended Account <suspendedaccount.html>`_
+      3. `Invalid Credentials <invalidcredentials.html>`_
+      4. `Duplicate Email <duplicateemail.html>`_
+      5. `Expired Link <expiredlink.html>`_
 
 III. Creating a Project
 -------------------------------------------------------
