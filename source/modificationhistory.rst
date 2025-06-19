@@ -101,5 +101,11 @@ This is the modification history made for the documentation.
 |                       | June 3, 2025                   | 3. Additional AXI4 User Signal Parameters inside System Config of NC-NoC.                      |
 |                       |                                | 4. Additional option 'Obfuscated' to export package.                                           |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.2.2                 | June 19, 2025                  | 1. Update the Table of Contents to be in alphabetical order within each group.                 |
+|                       |                                | 2. Update the screenshots based on the modification in Project view.                           | 
+|                       |                                | 3. Added the collapsible left and right panel.                                                 |
+|                       |                                | 4. Removed the Project list display in Dashboard view.                                         |
+|                       |                                | 5. Update the link for 'Expired Link' topic to fix the error 404.                              |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
