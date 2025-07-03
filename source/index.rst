@@ -51,6 +51,7 @@ What's inside the iNoCulator?
    implement
    initiatorconfiguration
    performancematrix
+   registermap
    routerconfiguration
    sharedproject
    simulation
