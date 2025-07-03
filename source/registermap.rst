@@ -16,3 +16,7 @@ Key Features of the Register Map
 - Reset/Default Values: Indicates the initial value after power-up or reset.
 
 - Usage Context: Specifies functional groupings or relevant modules where the registers apply.
+
+.. image:: images/register_map.png
+  :alt: register_map
+  :align: center
