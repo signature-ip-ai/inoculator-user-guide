@@ -17,6 +17,8 @@ Key Features of the Register Map
 
 - Usage Context: Specifies functional groupings or relevant modules where the registers apply.
 
+To view the Register Map, toggle on the 'Register Map Generation' from NC-NoC System Config. Register Map tab should be visible inside the NC-NoC Project. 
+
 .. image:: images/register_map.png
   :alt: register_map
   :align: center
