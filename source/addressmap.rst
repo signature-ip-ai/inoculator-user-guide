@@ -1,10 +1,12 @@
 Address Map
 ===================================================
 
-NC-NoC 
+**NC-NoC** 
 ------------------------------------------------
 
-This feature displays the address range of all target devices in the topology. By default, addresses are configured automatically, but users can still configure them manually. To configure this, navigate to “Address Map” tab.  
+The Address Map feature displays the address ranges assigned to all Target Devices within the topology. By default, these addresses are automatically generated. However, users have the option to manually configure the address ranges as needed.
+
+To access this feature, navigate to the “Address Map” tab.
 
 
 .. image:: images/address_map4.png
@@ -12,20 +14,44 @@ This feature displays the address range of all target devices in the topology. B
   :align: center
 
 
-C-NoC 
+**C-NoC** 
 ------------------------------------------------
 
-There are two Address Maps available for the Coherent NoC topology. The first one is the **Home Node Address Map**, which displays the addresses of routers connected to the grid. By default, the names displayed in the column are the routers' default coordinates for easy navigation. The second one is **Subordinate Node Address Map**, which displays the addresses of AXI slave devices connected to a Router. 
+There are two types of Address Maps available for the Coherent NoC topology:
 
-Here is the sample Topology design. 
+Home Node Address Map
+--------------------------------------------------
+
+This map displays the address ranges of routers connected to the grid. By default, each router is labeled using its coordinate-based name, making it easier for users to identify and locate routers within the topology.
+
+
+
+Subordinate Node Address Map
+-------------------------------------
+
+This map shows the address ranges of AXI slave devices that are connected to a specific router. It provides a clear view of how subordinate devices are mapped within the overall address space.
+
+Below is a sample topology design illustrating how these address maps are structured and visualized.
 
 .. image:: images/cnoc_address_map_sample.png
   :alt: cnoc_address_map_sample
   :align: center
 
-The Router Type should be set to HN-F w/ L3 or HN-F w/o L3 to configure the Address Map of the Home Node Address Map. Other Router Types, such as DVM Node, Device Only, and Repeater, do not allow users to configure the Address Map. 
+To configure the Home Node Address Map, the Router Type must be set to either:
 
-Device Protocol and Device Type should be set to AXI and Slave to configure the Subordinate Node Address Map. Other Device Protocols and Device Types do not allow users to configure the Address Map.
+  - HN-F w/ L3 or
+
+  - HN-F w/o L3
+
+Other Router Types—such as DVM Node, Device Only, and Repeater—do not support Address Map configuration and will not allow user modifications.
+
+To configure the Subordinate Node Address Map, both the Device Protocol and Device Type must be set as follows:
+
+  - Device Protocol: AXI
+
+  - Device Type: Slave
+
+Other combinations of Device Protocols and Device Types do not support Address Map configuration and will disable editing capabilities.
 
 .. image:: images/cnoc_address_map2.png
   :alt: ccnoc_address_map
