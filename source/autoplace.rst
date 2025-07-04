@@ -1,9 +1,9 @@
 Auto Place
 ==================================
 
-The Auto-Place determines the best positions for logic gates, memory blocks, and other circuit components. It aims to minimize wire length, reduce signal delay, and optimize overall performance. 
+The Auto-Place feature automatically determines the optimal positions for logic gates, memory blocks, and other circuit components within the chip layout. Its primary objective is to minimize wire length, reduce signal delay, and enhance overall performance.
 
-The tool strives to use the chip area efficiently by minimizing the space occupied by the placed components, leading to a more compact and cost-effective design. 
+Additionally, the tool focuses on efficient chip area utilization by minimizing the physical space occupied by components. This results in a more compact, cost-effective, and high-performing design. 
 
 .. image:: images/auto_place.png
   :alt: auto_place
