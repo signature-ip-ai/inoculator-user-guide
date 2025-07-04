@@ -1,12 +1,25 @@
 Access Map 
 =================================
-This feature allows users to view the policy of each device connected to each port. Currently, it includes only one category: Security Policy. In this matrix, users can view the policy assigned to each device (Initiator, Target and Virtual Target devices). Users can also configure each policy, and the changes will be reflected on the device. 
+The Access Map feature provides a matrix view of the policy assigned to each device connected to every port within the topology. At present, the only supported category is the Security Policy. This matrix displays the policies associated with each device type—Initiator, Target, and Virtual Target. Users can also configure the policy settings directly within the matrix, and any changes will be immediately reflected on the corresponding device.
 
-To view this, navigate to “Access Map” tab. 
+To access this feature, navigate to the “Access Map” tab.
 
-  1. Security Policy
+Security Policy
+----------------------------------------------------
 
-In this feature, the policy for each device is defined. The Security Device is not displayed on this matrix. Users can choose from four policies: Passthrough, Fixed Secure, Programmable, and Blocked. Greyed-out cell means the equivalent device is not reachable.
+This section defines the security policy assigned to each device. The Security Device itself is excluded from the matrix view.
+
+Users can select from the following four policies:
+
+  - Passthrough
+
+  - Fixed Secure
+
+  - Programmable
+
+  - Blocked
+
+Cells that appear greyed out indicate that the corresponding device is not reachable from that port.
 
 .. image:: images/access_map-security_policy3.png
   :alt: access_map-security_policy
