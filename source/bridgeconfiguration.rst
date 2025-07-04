@@ -1,14 +1,18 @@
 Bridge Configuration
 =======================================
 
-Bridges or Pipelines refer to devices or components that connect two or more network segments or different types of buses, allowing them to communicate and function as a unified network. In iNoCulator, they are represented as the connection between two routers with different subtopologies. 
+Bridges or Pipelines are components used to connect two or more network segments or different types of buses, enabling communication and integration across subtopologies. In iNoCulator, a bridge represents the connection between two routers that belong to different subtopologies, allowing them to operate as part of a unified network.
 
-To add bridges in the design:
+To Add a Bridge in the Design:
+  1. Select the Bridge icon from the Components menu and place it onto the grid.
 
-  - Select the ‘Bridge’ icon from the Components menu and place it on the grid.
-  - Connect the bridge to a router by dragging one end of the bridge to any port on the router.
-  - Drag the other end of the bridge to any port on another router with a different subtopology.
-  - The topology will show a connection between two routers with different subtopologies
+  2. Connect one end of the bridge to a router by dragging it to any available port.
+
+  3. Connect the other end of the bridge to a port on a different router that belongs to another subtopology.
+
+  4. The topology will then visually reflect a connection between two routers with different subtopologies.
+
+
 
 .. image:: images/sample_topology_with_bridge2.png
   :alt: sample_topology_with_bridge2
@@ -18,13 +22,17 @@ To add bridges in the design:
   :alt: bridge_configuration
   :align: center
 
-To configure a bridge, click the bridge added to the grid to display the side panel on the right.
+To configure a bridge, click the bridge placed on the grid. This action will open the **Side Panel** on the right, where configuration options are available.
 
-**Name** – Label name assigned for selected bridge. This is an input field where only alphanumeric keys and underscores are allowed. 
+- **Name**  
+  The label assigned to the selected bridge. This is a user-editable input field that accepts only **alphanumeric characters** and **underscores** (`_`). Special characters are not allowed.
 
-**Incoming Link** – This identifies what router connection is an incoming link. 
+- **Incoming Link**  
+  Specifies the router connection serving as the **incoming link** to the bridge.
 
-**Outgoing Link** – This identifies what router is the outgoing link. 
+- **Outgoing Link**  
+  Specifies the router that serves as the **outgoing link** from the bridge.
 
-**Number of Pipeline Stages** – This is an input field where user can set the number of stages the selected bridge must have. The range is from 0 stage to 65,535 stages. 						
+- **Number of Pipeline Stages**  
+  Defines the number of pipeline stages for the bridge. This is a numeric input field with a valid range of **0 to 65,535**.				
 
