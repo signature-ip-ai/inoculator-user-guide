@@ -3,8 +3,8 @@ System Config
 
 This feature allows the user to modify the current settings of the project. The following items are the same items set initially when creating a project. To update the settings, user must click ‘System Config’ from action bar.
 
-.. image:: images/nc_noc-system_config1.png
-  :alt: nc_noc-system_config1
+.. image:: images/nc_noc-system_config12.png
+  :alt: nc_noc-system_config12
   :align: center
 
 .. image:: images/nc_noc-system_config2.png
@@ -19,7 +19,7 @@ This feature allows the user to modify the current settings of the project. The 
 
 **Power Voltage** – This field is used to set the power voltage for the NoC project. The minimum configuration is 0.5, and the maximum configuration is 1.5.
 
-**Ground Net Name** – This field is for naming Ground Net Name. 
+**Ground Net Name** – This field is for naming Ground Net. 
 
 **User Request Width** – This is an input field for AXI4 User Signal where the user are allowed to input any value between 1 to 64. 
 
@@ -27,7 +27,11 @@ This feature allows the user to modify the current settings of the project. The 
 
 **User Response Width** - This is an input field for AXI4 User Signal where the user is allowed to input any value between 1 and 64.
 
-**Clock Frequency Validation** – When unchecked, the frequency of each component within the topology must be set individually. When checked, the user does not need to set the frequency for each component.
+**Clock Frequency Validation** – When toggled on, the frequency of each component in the topology must be set individually. When toggled off, setting individual frequencies is not required.
+
+**Register Map Generation** - When toggled on, the Register Map tab becomes visible, allowing the user to view the Register Map table based on the current topology design.
+
+
 
 
 

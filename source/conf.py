@@ -4,7 +4,7 @@
 project = 'Inoculator User Guide'
 copyright = '2025, SignatureIP'
 author = 'SignatureIP'
-release = '5.2.2'
+release = '5.2.3'
 
 # -- General configuration ---------------------------------------------------
 
@@ -35,7 +35,7 @@ html_theme_options = {
     "use_fullscreen_button": True,
     "use_sidenotes": True,
     "show_toc_level": 3,
-    "announcement": "Inoculator User Guide 5.2.2",
+    "announcement": "Inoculator User Guide 5.2.3",
     "home_page_in_toc": True,
     "repository_url": "https://github.com/signatureip/inoculator-guide",
     "repository_branch": "main",

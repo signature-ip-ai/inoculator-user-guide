@@ -107,5 +107,9 @@ This is the modification history made for the documentation.
 |                       |                                | 4. Removed the Project list display in Dashboard view.                                         |
 |                       |                                | 5. Update the link for 'Expired Link' topic to fix the error 404.                              |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.2.3                 | July 3, 2025                   | 1. Added Register Map page.                                                                    |
+|                       |                                | 2. Update screehsots of Nc-NoC System Config.                                                  |
+|                       |                                | 3. Added description of Register Map in NC-NoC System Config.                                  |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
