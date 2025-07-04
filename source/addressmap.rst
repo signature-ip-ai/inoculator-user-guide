@@ -20,14 +20,14 @@ To access this feature, navigate to the “Address Map” tab.
 There are two types of Address Maps available for the Coherent NoC topology:
 
 Home Node Address Map
---------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This map displays the address ranges of routers connected to the grid. By default, each router is labeled using its coordinate-based name, making it easier for users to identify and locate routers within the topology.
 
 
 
 Subordinate Node Address Map
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This map shows the address ranges of AXI slave devices that are connected to a specific router. It provides a clear view of how subordinate devices are mapped within the overall address space.
 
