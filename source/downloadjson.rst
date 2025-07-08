@@ -1,7 +1,7 @@
 Download JSON
 ===============================================
 
-This feature allows the user to download the current JSON of topology. 
+This feature enables the user to download the current topology as a JSON file.
 
 .. image:: images/download_json1.png
   :alt: download_json1
@@ -12,4 +12,4 @@ This feature allows the user to download the current JSON of topology.
   :align: center
 
 
-This feature is available depending on account accessibility. Please contact your group admin regarding this function, as it is managed on the group-admin side.
+This feature’s availability depends on your account permissions. Please contact your group administrator for access, as this function is managed at the group administration level.
