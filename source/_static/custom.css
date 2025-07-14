@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
 /* Sphinx Book Theme Custom CSS */
 
 :root {
@@ -31,10 +33,11 @@ body {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--pst-font-family-heading);
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-weight: 600;
 }
 
 h1 {
