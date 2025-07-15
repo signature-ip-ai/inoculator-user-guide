@@ -3,7 +3,7 @@ Delete Project
 
 To delete a project, navigate to the Dashboard and select the project you wish to remove. Click the Delete Project icon to initiate the deletion process. A confirmation prompt may appear to ensure the action is intentional.
 
-.. image:: images/delete_project.png
+.. image:: images/delete_project2.png
   :alt: delete_project
   :align: center
 
