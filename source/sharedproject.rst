@@ -5,7 +5,7 @@ This feature allows the user to share the chosen project with anyone from their 
 
 Go to dashboard and click the ‘Share Project’ icon. 
 
-.. image:: images/share_project.png
+.. image:: images/share_project2.png
   :alt: share_project
   :align: center
 
@@ -15,9 +15,9 @@ A new window will be displayed, containing all the names from the same group. Th
   :alt: share_project-group_member_list
   :align: center
 
-Tick the checkbox next to the name of the user who will receive a copy of the project. Untick the checkbox to revert the sharing.
+Tick the checkbox next to the name of the user who will receive a copy of the project. Untick the checkbox to revoke sharing. Once sharing is successful, a number will appear above the share icon on the project tile.
 
-.. image:: images/share_project-success.png
+.. image:: images/share_project-success2.png
   :alt: share_project-success
   :align: center
 
