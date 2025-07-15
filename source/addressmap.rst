@@ -33,7 +33,7 @@ This map shows the address ranges of AXI slave devices that are connected to a s
 
 Below is a sample topology design illustrating how these address maps are structured and visualized.
 
-.. image:: images/cnoc_address_map_sample.png
+.. image:: images/cnoc_address_map_sample2.png
   :alt: cnoc_address_map_sample
   :align: center
 
@@ -53,7 +53,7 @@ To configure the Subordinate Node Address Map, both the Device Protocol and Devi
 
 Other combinations of Device Protocols and Device Types do not support Address Map configuration and will disable editing capabilities.
 
-.. image:: images/cnoc_address_map2.png
+.. image:: images/cnoc_address_map3.png
   :alt: ccnoc_address_map
   :align: center
 
