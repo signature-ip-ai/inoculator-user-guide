@@ -1,7 +1,7 @@
 Address Map
 ===================================================
 
-**NC-NoC** 
+NC-NoC
 ------------------------------------------------
 
 The Address Map feature displays the address ranges assigned to all Target Devices within the topology. By default, these addresses are automatically generated. However, users have the option to manually configure the address ranges as needed.
@@ -14,7 +14,7 @@ To access this feature, navigate to the “Address Map” tab.
   :align: center
 
 
-**C-NoC** 
+C-NoC
 ------------------------------------------------
 
 There are two types of Address Maps available for the Coherent NoC topology:
