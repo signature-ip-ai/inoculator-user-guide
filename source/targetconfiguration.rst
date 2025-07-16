@@ -25,12 +25,12 @@ This is a toggle button for enabling or disabling virtual devices. The default s
 
 This topic will be discussed in **6. Virtual Devices**. 
 
-.. image:: images/target-parameters7.png
-  :alt: target-parameters3
+.. image:: images/target-parameters8.png
+  :alt: target-parameters8
   :align: center
 
 .. image:: images/target-parameters2.png
-  :alt: target-parameters4
+  :alt: target-parameters
   :align: center
 
 
@@ -59,6 +59,21 @@ This topic will be discussed in **6. Virtual Devices**.
 **Max Outstanding Writes** – The number of allowed outstanding writes limited by the system’s architecture. 
 
 **Max Outstanding Reads** – The number of allowed outstanding reads limited to help manage the bandwidth. 
+
+Additional Notes:  
+
+If exclusive access is disabled, the following should be observed:
+  -  Max allowable value of Max Outstanding Reads is 2^(Read Transaction ID Width)
+  -  Max allowable value of Max Outstanding Writes is 2^(Write Transaction ID Width)
+
+If exclusive access is enabled, the following should be observed:
+  -  Read Transaction ID Width and Write Transaction ID Width should have common value (change to R/W Transaction ID Width)
+  -  Max allowable value of Max Outstanding Reads is 2^(common ID Width-1)
+  -  Max allowable value of Max Outstanding Writes is 2^(common ID Width-1)
+  -  Max Exclusive access LUT Size is 2^(common ID Width-1)
+  -  since min value for max outstanding write/read and lut size when exclusive access is enabled is 1, if exclusive access is disabled (given that the current value is 1), it should be updated to 2 (min value when disabled)
+  -  Max Outstanding Read/Write should automatically be updated if current value > max allowable value 
+  -  When Exclusive Access is enabled, it should display R/W transaction ID Width instead of separate Read and Write Transaction Width
 
 **Out of Order Transaction** – Toggle button where user can enable or disable out of order transactions. This setting will only appear in AXI3 and AXI4-Full bus protocols.
 
