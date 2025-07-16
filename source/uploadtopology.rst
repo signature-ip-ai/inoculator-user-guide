@@ -13,7 +13,7 @@ Prepare the Excel file with the desired values. The current template file name i
 After setting up the excel sheet, go to inoculator.ai/login to log in and go to Dashboard. In Dashboard, there is a huge ‘+’ icon for creating a project. Click that icon to proceed. 
 
 
-.. image:: images/uploading_topology-create_project_icon.png
+.. image:: images/uploading_topology-create_project_icon2.png
   :alt: uploading_topology-create_project_icon
   :align: center
 
@@ -25,13 +25,13 @@ After clicking that icon, ‘Create Project’ dialog box will appear. User will
 
 After the user clicks the button, the file explorer of the machine will be displayed, allowing the user to select the desired file to upload.
 
-.. image:: images/uploading_topology-selecting_file.png
+.. image:: images/uploading_topology-selecting_file2.png
   :alt: uploading_topology-selecting_file
   :align: center
 
 Once user has selected the file to upload, click ‘Create’ to proceed with creation of project. 
 
-.. image:: images/uploading_topology-generating_topology.png
+.. image:: images/uploading_topology-generating_topology2.png
   :alt: uploading_topology-generating_topology
   :align: center
 

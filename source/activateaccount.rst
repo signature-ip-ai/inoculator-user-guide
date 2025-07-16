@@ -1,6 +1,6 @@
 Activate Account
 =====================================================
-This function handles the formal acceptance and activation of a user account in iNoCulator. To access this feature, the user must click the link in the invitation email, which will open a tab redirecting to this screen.
+This feature manages the formal acceptance and activation of a user account in iNoCulator. To begin the activation process, the user must click the link provided in the invitation email. This will open a browser tab directing the user to the Account Activation screen.
 
 .. image:: images/activate_account-fill_up_form2.png
     :alt: activate_account-fill_up_form
@@ -8,12 +8,14 @@ This function handles the formal acceptance and activation of a user account in 
 
 -------------------------------------------------------------------------
 
-Limitations:
-    - Upper case only on the first letters. (first name and last name)
-    - Use only alphanumeric keys including ñ and Ñ, spaces and no special characters.
+Input Guidelines:
+    - Capitalize only the first letter of the First Name and Last Name.
 
+    - Use alphanumeric characters only, including ñ and Ñ, and spaces.
 
-After completing the form, click the 'Activate' button to proceed with account creation. The user will receive a confirmation email indicating that the account has been successfully created.
+    - Special characters are not allowed.
+
+Once the form is completed, click the Activate button to finalize account creation. A confirmation email will be sent to indicate that the account has been successfully activated.
 
 .. image:: images/activate_account-confirmation_email.png
     :alt: activate_account-confirmation_email

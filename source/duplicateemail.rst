@@ -1,8 +1,10 @@
 Duplicate Email 
 ==============================================
-If an email address is already associated with an existing account, the system will:
-  - Detect Duplication – Identify that the email address is already in use.
-  - Provide a warning – Inform the user that the email address is already associated with an existing account. 
+If an email address is already linked to an existing account, the system will:
+
+  - Detect duplication by identifying that the email address is already in use.
+  - Provide a warning to inform the user that the email address is associated with an existing account.
+  - This behavior occurs when submitting the Request Access form.
 
 This will be encountered in Request Access form.
 
@@ -10,6 +12,11 @@ This will be encountered in Request Access form.
   :alt: request_access-duplicate_email_address
   :align: center
 
-To manage this, user must: 
-  -	Check with the support if the account has already been created
-  - Provide new email address. 
+
+**Managing Duplicate Email Addresses**
+If you encounter a duplicate email warning, please:
+
+  - Verify with support whether an account has already been created using that email address.
+  - Provide a different email address to proceed with the request.
+
+

@@ -1,4 +1,4 @@
-Log In Page
+Log In
 =================================
 
 To use the iNoCulator, user must enter valid credentials. To find the Log In Page, user must go to inoculator.ai/home and click ‘Log In’ button. 

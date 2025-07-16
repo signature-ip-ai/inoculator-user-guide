@@ -1,8 +1,9 @@
 Copy Project
 ======================================================
-This feature allows you to create a new project by copying an existing one. This function saves time by avoiding the need to redo the entire project just to modify a part of it.
+This feature allows users to create a new project by duplicating an existing one.
+It helps save time by eliminating the need to recreate the entire project when only a portion needs modification.
 
-The Copy Project function can also be used to copy a project from another owner. After copying, the ownership of the copied project will be updated.
+The Copy Project function also supports copying projects owned by other users. Once copied, ownership of the new project is transferred to the user who performed the copy.
 
 
 .. image:: images/copy_project_dashboard2.png
@@ -18,7 +19,11 @@ The Copy Project function can also be used to copy a project from another owner.
   :align: center
 
 Limitations:
-  -	Upper case only on the first letters. 
-  -	Use only alphanumeric keys including ñ and Ñ, spaces and no special characters. 
+
+  - Only the first letters should be in uppercase.
+
+  - Use alphanumeric characters only, including ñ and Ñ, and spaces.
+
+  - Special characters are not allowed.
 
 
