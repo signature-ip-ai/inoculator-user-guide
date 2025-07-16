@@ -119,6 +119,7 @@ This is the modification history made for the documentation.
 |                       |                                | 6. C-NoC RTL Export support.                                                                   |
 |                       |                                | 7. C-NoC Topology creation was changed to grid buttons.                                        |
 |                       |                                | 8. Dashboard Modification                                                                      |
+|                       |                                | 9. Changed the font style of headers.                                                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
