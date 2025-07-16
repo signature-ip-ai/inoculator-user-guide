@@ -111,5 +111,14 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Update screehsots of Nc-NoC System Config.                                                  |
 |                       |                                | 3. Added description of Register Map in NC-NoC System Config.                                  |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.2.4                 | July 16, 2025                  | 1. Improved the description of pages.                                                          |
+|                       |                                | 2. Added the function of Clear Topology.                                                       |
+|                       |                                | 3. Added the modification in Max Outstanding Reads/Writes.                                     |
+|                       |                                | 4. NodeID modification in Address Map and in C-NoC Devices.                                    |
+|                       |                                | 5. C-NoC Legends and color scheme.                                                             |
+|                       |                                | 6. C-NoC RTL Export support.                                                                   |
+|                       |                                | 7. C-NoC Topology creation was changed to grid buttons.                                        |
+|                       |                                | 8. Dashboard Modification                                                                      |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
