@@ -13,9 +13,9 @@ Configuring C-NoC Router
 
 **Device ID** – This represents the unique identifier of the selected device.
 
-**Router Type** – This is a dropdown parameter which router type to be used on the selected component. User can choose between 'Repeater', 'HN-F w/ L3', 'HN-F w/o L3', 'Device Only', or 'DVM'. 
+**Router Type** – This is a dropdown parameter which router type to be used on the selected component. User can choose between 'Repeater', 'HN-F w/ L3', 'HN-F w/o L3', or 'Device Only'. 
 
-**Device Port Settings (Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’, ‘DVM’, and ‘Repeater’)**
+**Device Port Settings (Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’ and ‘Repeater’)**
 
 **RX REQ FIFO Ptr Width** – This Pointer width to indicate depth of input request flit buffer at processor port of the NoC. Default value is 2, and user can choose from 1 to 6 as the width. 
 
@@ -29,7 +29,7 @@ Configuring C-NoC Router
 
 **Tx DAT FIFO Ptr Width** – This Pointer width to indicate depth of output data flit buffer at the processor port of the NoC. Default value is 2, and user can choose from 1 to 6 as the width. 
 
-**Interconnect Port Settings (Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’, ‘DVM’, and ‘Repeater’)**
+**Interconnect Port Settings (Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’, and ‘Repeater’)**
 
 **REQ FIFO Ptr Width** – This Pointer width to indicate depth of input request flit buffer to receive flits from neighboring cluster. Default value is 2, and user can choose from 1 to 6 as the width. 
 
