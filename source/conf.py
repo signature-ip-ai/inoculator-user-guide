@@ -66,5 +66,10 @@ html_css_files = [
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
 ]
 
+# Add custom JavaScript for scroll to top issue
+html_js_files = [
+    'custom.js'
+]
+
 # Enable permalinks with a more modern symbol
 html_add_permalinks = "🔗"
