@@ -76,7 +76,7 @@ To configure the Subordinate Node Address Map, both the Device Protocol and Devi
 
 Other combinations of Device Protocols and Device Types do not support Address Map configuration and will disable editing capabilities.
 
-🔷 Cacheable Address Map
+Cacheable Address Map
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Cacheable Address Map defines memory regions where data can be cached, improving access speed and reducing latency. It includes:
@@ -92,7 +92,7 @@ Use this map to configure, validate, and debug data transactions that benefit fr
   :align: center
 
 
-🔶 Non-Cacheable Address Map
+Non-Cacheable Address Map
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Non-Cacheable Address Map defines memory regions where caching is disabled, ensuring data consistency and direct access. It includes:
