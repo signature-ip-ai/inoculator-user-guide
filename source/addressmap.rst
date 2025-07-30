@@ -23,34 +23,6 @@ Cacheable and Non-Cacheable Address Map
 
 This user guide provides detailed information and instructions for understanding and validating the Cacheable Address Map and Non-Cacheable Address Map within the system’s interconnect or NoC (Network-on-Chip) topology. These address maps are critical for efficient memory access and data routing across home and subordinate nodes.
 
-🔷 Cacheable Address Map
-
-The Cacheable Address Map defines memory regions where data can be cached, improving access speed and reducing latency. It includes:
-
-Home Node Address Map – Specifies memory regions that are owned or managed by the local/home node.
-
-Subordinate Node Address Map – Specifies memory ranges managed by external/subordinate nodes but still marked as cacheable.
-
-Use this map to configure, validate, and debug data transactions that benefit from caching mechanisms.
-
-.. image:: images/cnoc_address_map_cacheable.png
-  :alt: cnoc_address_map_cacheable
-  :align: center
-
-
-🔶 Non-Cacheable Address Map
-
-The Non-Cacheable Address Map defines memory regions where caching is disabled, ensuring data consistency and direct access. It includes:
-
-Home Node Address Map – Points to local memory regions that must bypass caches.
-
-Subordinate Node Address Map – Indicates memory segments on remote nodes that are accessed without caching.
-
-This section is essential for critical operations requiring real-time consistency and for peripherals or memory-mapped I/O where caching is not suitable.
-
-.. image:: images/cnoc_address_map_non-cacheable.png
-  :alt: cnoc_address_map_non-cacheable
-  :align: center
 
 
 Home Node Address Map
@@ -103,6 +75,38 @@ To configure the Subordinate Node Address Map, both the Device Protocol and Devi
   - Device Type: Slave or SN
 
 Other combinations of Device Protocols and Device Types do not support Address Map configuration and will disable editing capabilities.
+
+🔷 Cacheable Address Map
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Cacheable Address Map defines memory regions where data can be cached, improving access speed and reducing latency. It includes:
+
+Home Node Address Map – Specifies memory regions that are owned or managed by the local/home node.
+
+Subordinate Node Address Map – Specifies memory ranges managed by external/subordinate nodes but still marked as cacheable.
+
+Use this map to configure, validate, and debug data transactions that benefit from caching mechanisms.
+
+.. image:: images/cnoc_address_map_cacheable.png
+  :alt: cnoc_address_map_cacheable
+  :align: center
+
+
+🔶 Non-Cacheable Address Map
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Non-Cacheable Address Map defines memory regions where caching is disabled, ensuring data consistency and direct access. It includes:
+
+Home Node Address Map – Points to local memory regions that must bypass caches.
+
+Subordinate Node Address Map – Indicates memory segments on remote nodes that are accessed without caching.
+
+This section is essential for critical operations requiring real-time consistency and for peripherals or memory-mapped I/O where caching is not suitable.
+
+.. image:: images/cnoc_address_map_non-cacheable.png
+  :alt: cnoc_address_map_non-cacheable
+  :align: center
+
 
 Editing of the Address Map is supported per region, per router, and for each Home Node and Subordinate Node individually. The tool allows users to configure or modify memory address ranges specific to their location in the system topology, enabling fine-grained control and validation of address assignments.
 
