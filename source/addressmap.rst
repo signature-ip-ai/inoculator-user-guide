@@ -53,7 +53,6 @@ This section is essential for critical operations requiring real-time consistenc
   :align: center
 
 
-
 Home Node Address Map
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -105,5 +104,16 @@ To configure the Subordinate Node Address Map, both the Device Protocol and Devi
 
 Other combinations of Device Protocols and Device Types do not support Address Map configuration and will disable editing capabilities.
 
+Editing of the Address Map is supported per region, per router, and for each Home Node and Subordinate Node individually. The tool allows users to configure or modify memory address ranges specific to their location in the system topology, enabling fine-grained control and validation of address assignments.
+
+.. image:: images/cnoc_address_map_editing_addresses.png
+  :alt: cnoc_address_map_editing_addresses
+  :align: center
+
+The tool also allows highlighting of the parent Home Node and Subordinate Nodes. This feature provides a clearer visual reference to quickly identify the allocation and address ranges associated with each node, making navigation and validation of the address map more intuitive and efficient.
+
+.. image:: images/cnoc_address_map_highlight.png
+  :alt: cnoc_address_map_highlight
+  :align: center
 
 
