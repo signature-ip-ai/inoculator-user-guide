@@ -121,5 +121,9 @@ This is the modification history made for the documentation.
 |                       |                                | 8. Dashboard Modification                                                                      |
 |                       |                                | 9. Changed the font style of headers.                                                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.2.5                 | July 30, 2025                  | 1. Add Cacheable and Non-Cacheable Address Map in C-NoC Topology.                              |
+|                       |                                | 2. Added Virtual Targets in Register Map display.                                              |
+|                       |                                | 3. Updated the Address Map descriptions for the Home Node and Subordinate Node.                |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
