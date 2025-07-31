@@ -4,7 +4,7 @@
 project = 'Inoculator User Guide'
 copyright = '2025, SignatureIP'
 author = 'SignatureIP'
-release = '5.2.4'
+release = '5.2.5'
 
 # -- General configuration ---------------------------------------------------
 
@@ -35,7 +35,7 @@ html_theme_options = {
     "use_fullscreen_button": True,
     "use_sidenotes": True,
     "show_toc_level": 3,
-    "announcement": "Inoculator User Guide 5.2.4",
+    "announcement": "Inoculator User Guide 5.2.5",
     "home_page_in_toc": True,
     "repository_url": "https://github.com/signatureip/inoculator-guide",
     "repository_branch": "main",
@@ -64,6 +64,11 @@ html_last_updated_fmt = "%b %d, %Y"
 html_css_files = [
     'custom.css',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
+]
+
+# Add custom JavaScript for scroll to top issue
+html_js_files = [
+    'custom.js'
 ]
 
 # Enable permalinks with a more modern symbol
