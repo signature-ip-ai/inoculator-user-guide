@@ -1,7 +1,7 @@
 Configuring C-NoC Router
 ===================================================
 
-.. image:: images/configuring_router1.png
+.. image:: images/configuring_router3.png
   :alt: configuring_router1
   :align: center
 
