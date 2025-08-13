@@ -11,7 +11,7 @@ Configure C-NoC Topology
 
 **Configure Topology** – This button confirms the creation of a Coherent NoC topology. Once the user clicks it, the topology will be generated on the grid based on the configured number of columns and rows.
 
-.. image:: images/sample_cnoc_topology-without_added_device5.png
+.. image:: images/sample_cnoc_topology-without_added_device6.png
   :alt: sample_cnoc_topology-without_added_device
   :align: center
 
@@ -49,7 +49,7 @@ A confirmation message will appear, asking the user to confirm before proceeding
   :alt: c_noc-delete_router_confirmation
   :align: center
 
- Clearing the Topology
+Clearing the Topology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To remove all components and start a new design, click the red "Clear Topology" button located on the left panel.
 
