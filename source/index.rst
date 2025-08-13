@@ -53,6 +53,7 @@ What's inside the iNoCulator?
    performancematrix
    registermap
    routerconfiguration
+   searchproject
    sharedproject
    simulation
    subtopologyconfiguration
