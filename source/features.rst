@@ -99,6 +99,8 @@ III. Creating a Project
 
    Q. `Delete Project <deleteproject.html>`_
 
+   R. `Search Project <searchproject.html>`_
+
 IV. `Frequently Asked Questions <faqs.html>`_
 ------------------------------------------------------
 
