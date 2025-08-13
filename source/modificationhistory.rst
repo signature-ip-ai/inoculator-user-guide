@@ -130,6 +130,6 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Function to delete a single router in C-NoC canvas                                          |
 |                       |                                | 4. Search Field in Project Page                                                                |
 |                       |                                | 5. Traffic Regulation Registers in Register Map                                                |
-|                       |                                | 6.                                                                                             |
+|                       |                                | 6. Port Data Width in CHI Protocol device in C-NoC devices                                     |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
