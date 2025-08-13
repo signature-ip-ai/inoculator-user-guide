@@ -125,5 +125,11 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Added Virtual Targets in Register Map display.                                              |
 |                       |                                | 3. Updated the Address Map descriptions for the Home Node and Subordinate Node.                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-
+| 5.3.0                 | August 13, 2025                | 1. Router Naming changed to simple incremental                                                 |
+|                       |                                | 2. Adding single router in right and top part of C-NoC canvas                                  |
+|                       |                                | 3. Function to delete a single router in C-NoC canvas                                          |
+|                       |                                | 4. Search Field in Project Page                                                                |
+|                       |                                | 5. Traffic Regulation Registers in Register Map                                                |
+|                       |                                | 6.                                                                                             |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
