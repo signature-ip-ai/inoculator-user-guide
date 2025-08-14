@@ -1,7 +1,7 @@
 Configure C-NoC Device
 ===========================================================
 
-.. image:: images/configuring_device-chi_protocol2.png
+.. image:: images/configuring_device-chi_protocol4.png
   :alt: configuring_device-chi_protocol
   :align: center
 
@@ -13,7 +13,7 @@ Configure C-NoC Device
   
 **Connected Device Type** – This is a dropdown button where the user can choose between “RN” or “SN” as the device type for the selected device.
   
-**Port Data Width** – When the selected ‘Connected Device Protocol’ is 'RN', this parameter will be a display-only item with a default value of 512, representing the Data Bus Width for the device connected to the nth port of the mth cluster. Note that the selected data width will be reflected in the displayed connection to the router.
+**Port Data Width** –When the Connected Device Protocol is set to "RN", the parameter allows the user to choose from 128, 256, or 512, representing the Data Bus Width for the device connected to the nth port of the mth cluster. The selected data width will also be visually reflected in the displayed connection to the router.
 
 **Reserved Port Data Width** - This is a dropdown button where the user can choose between 4, 8, 12, 16, or 32 as the Reserved Port Data Width for the selected device, which is reserved for future use in the data flit.
 
