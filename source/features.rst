@@ -101,6 +101,8 @@ III. Creating a Project
 
    R. `Search Project <searchproject.html>`_
 
+   S. `Project Page <projectpage.html>`_
+
 IV. `Frequently Asked Questions <faqs.html>`_
 ------------------------------------------------------
 
