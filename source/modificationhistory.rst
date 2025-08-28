@@ -133,4 +133,8 @@ This is the modification history made for the documentation.
 |                       |                                | 6. Port Data Width in CHI Protocol device in C-NoC devices                                     |
 |                       |                                | 7. Added a function to the Inoculator icon to serve as a Home button.                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.3.1                 | August 28, 2025                | 1. Additional item for Quality of Service in Register Map table.                               |
+|                       |                                | 2. Topology Validation for skipped Routers in C-NoC Topology.                                  |
+|                       |                                | 3. Filter function in Project Page.                                                            |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
