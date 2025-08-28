@@ -75,6 +75,6 @@ Filter Project
   :alt: filter_function
   :align: center
 
-.. image:: images/filter_function-dropdown.png
-  :alt: filter_function-dropdown
+.. image:: images/fiter_function-dropdown.png
+  :alt: fiter_function-dropdown
   :align: center
