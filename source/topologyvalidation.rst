@@ -22,6 +22,6 @@ The ‘Topology Validation’ button in the side navigation displays a list of i
 2. C-NoC Topology Validation 
 ------------------------------------------------------
 
-.. image:: images/cnoc_topology-validation.png
+.. image:: images/cnoc_topology-validation2.png
   :alt: cnoc-topology_validation
   :align: center

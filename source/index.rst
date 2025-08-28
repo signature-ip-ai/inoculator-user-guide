@@ -13,6 +13,7 @@ What's inside the iNoCulator?
 
    getstarted
    introduction
+   projectpage
 
 .. toctree::
    :maxdepth: 2

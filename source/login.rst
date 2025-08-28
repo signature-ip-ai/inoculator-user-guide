@@ -7,7 +7,7 @@ To use the iNoCulator, user must enter valid credentials. To find the Log In Pag
   :alt: sign_in-home_page
   :align: center
 
-.. image:: images/sign_in_page2.png
+.. image:: images/sign_in_page3.png
   :alt: sign_in_page
   :align: center
 

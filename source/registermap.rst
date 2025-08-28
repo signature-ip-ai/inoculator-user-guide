@@ -22,3 +22,11 @@ To view the Register Map, toggle on the 'Register Map Generation' from NC-NoC Sy
 .. image:: images/register_map.png
   :alt: register_map
   :align: center
+
+The behavior of the Register Map table will be affected by the following factors:
+
+1. Traffic Regulation Policy of Initiator Device 
+2. Virtual devices 
+3. Router, Initiator and Target Device
+
+
