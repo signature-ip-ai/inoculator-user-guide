@@ -11,7 +11,7 @@ Configure C-NoC Topology
 
 **Configure Topology** – This button confirms the creation of a Coherent NoC topology. Once the user clicks it, the topology will be generated on the grid based on the configured number of columns and rows.
 
-.. image:: images/sample_cnoc_topology-without_added_device6.png
+.. image:: images/sample_cnoc_topology-without_added_device7.png
   :alt: sample_cnoc_topology-without_added_device
   :align: center
 
@@ -20,7 +20,7 @@ Adding a Device
 Click the “+” button located on the edge of a Router or Device to add a new connection or component.
 Each Router and Device in the diagram can be individually configured to match the required system setup
 
-.. image:: images/c_noc-add_device.png
+.. image:: images/c_noc-add_device2.png
   :alt: c_noc-add_device
   :align: center
 
@@ -28,7 +28,7 @@ Adding a Router
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Click the “+” button located on the right or top side of any Router device to add a new router.
 
-.. image:: images/c_noc-add_router.png
+.. image:: images/c_noc-add_router2.png
   :alt: c_noc-add_router
   :align: center
 
@@ -45,7 +45,7 @@ This action will remove:
 
 A confirmation message will appear, asking the user to confirm before proceeding with the deletion. 
 
-.. image:: images/c_noc-delete_router_confirmation.png
+.. image:: images/c_noc-delete_router_confirmation2.png
   :alt: c_noc-delete_router_confirmation
   :align: center
 
@@ -57,3 +57,10 @@ To remove all components and start a new design, click the red "Clear Topology" 
   :alt: c_noc-clear_topology
   :align: center
 
+Connect to C2C Bridge
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This will be added in SWTOOLS_REL_5.3.3
+
+Connect to Adjacent Router 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This will be added in SWTOOLS_REL_5.3.3
