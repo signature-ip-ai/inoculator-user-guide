@@ -75,6 +75,6 @@ Below are the key components and features available on the Project Page:
   :alt: filter_function
   :align: center
 
-.. image:: images/fiter_functtion-dropdown.png
+.. image:: images/filter_function-dropdown.png
   :alt: fiter_functtion-dropdown
   :align: center
