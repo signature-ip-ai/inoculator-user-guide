@@ -55,10 +55,14 @@ This is the modification history made for the documentation.
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 | 3.2                   | February 6, 2025               |  Update the email address in Appendix                                                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.3                   | March 3, 2025                  | 1. Modified some figure names                                                                  |
+| 3.3                   | March 3, 2025                  | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Modified some figure names                                                                  |
 |                       |                                | 2. Update C-NoC Topology - Router and System Parameters                                        |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.4                   | March 12, 2025                 | 1. Update Screenshots of Dashboard and Grid view for NC-NoC Project.                           |
+| 3.4                   | March 12, 2025                 | *Modified Items:*                                                                              | 
+|                       |                                |                                                                                                |
+|                       |                                | 1. Update Screenshots of Dashboard and Grid view for NC-NoC Project.                           |
 |                       |                                | 2. Update the content of Performance Matrix.                                                   |
 |                       |                                | 3. Update AXI4-Full and AXI3 protocol with Out of Order parameter                              |
 |                       |                                | 4. Change screenshots related to functionality and UI improvements.                            |
@@ -67,17 +71,23 @@ This is the modification history made for the documentation.
 |                       |                                | 7. Update the UI of Coherent NoC                                                               |
 |                       |                                | 8. Add Device ID parameter in Router Configuration.                                            |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.5                   | March 26, 2025                 | 1. Added System Address Map for C-NoC Projects.                                                |
+| 3.5                   | March 26, 2025                 | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added System Address Map for C-NoC Projects.                                                |
 |                       |                                | 2. Added generateRTL for C-NoC Topology                                                        |
 |                       |                                | 3. Changed the position of NoC Data Width in Project Config.                                   |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.6                   | April 10, 2025                 | 1. Changed behavior of Frequency Validation.                                                   |
+| 3.6                   | April 10, 2025                 | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Changed behavior of Frequency Validation.                                                   |
 |                       |                                | 2. Added note for Traffic Behavior.                                                            |
 |                       |                                | 3. Changed the term used for 'Latency Clock Sync' to 'Use Subtopology Clock'.                  |
 |                       |                                | 4. Added a functionality description for Export Packages.                                      |
 |                       |                                | 5. Update the table display for GenerateRTL and Simulation.                                    |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.7                   | April 23, 2025                 | 1. Added Exclusive Access for NC-NoC Projects                                                  |
+| 3.7                   | April 23, 2025                 | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added Exclusive Access for NC-NoC Projects                                                  |
 |                       |                                | 2. Added Address Alignment for NC-NoC Projects                                                 |
 |                       |                                | 3. Changed the selection items for Data Width                                                  |
 |                       |                                | 4. Added option for Q/P Channels                                                               |
@@ -85,33 +95,45 @@ This is the modification history made for the documentation.
 |                       |                                | 6. Changed behavior for Repeater - Router Type                                                 |
 |                       |                                | 7. Copy Project icon has been removed from the Action Bar.                                     |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.8                   | May 7, 2025                    | 1. Power Voltage display in Router.                                                            |
+| 3.8                   | May 7, 2025                    | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Power Voltage display in Router.                                                            |
 |                       |                                | 2. Support of GHz in Clock Frequency.                                                          |
 |                       |                                | 3. Addition of 'Use Clock Frequency for Simulation' toggle button in Simulation.               |
 |                       |                                | 4. Read Data Buffer for Target devices and Write Data Buffer for Initiator devices.            |
 |                       |                                | 5. Modification in Exclusive Access functionality.                                             |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.9                   | May 21, 2025                   | 1. Added SystemC Cycle Accurate Model generation in generateRTL function.                      |
+| 3.9                   | May 21, 2025                   | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added SystemC Cycle Accurate Model generation in generateRTL function.                      |
 |                       |                                | 2. Change limit for Max Outstanding Reads and Max Outstanding Writes.                          |
 |                       |                                | 3. Add limit for generateRTL, simulate and export function.                                    |
 |                       |                                | 4. Copy project function for C-NoC Topologies.                                                 |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+ 
-| 5.2.1                 | May 26, 2025                   | 1. Update the  User Guide version to match the Web Inoculator version.                         |
+| 5.2.1                 | May 26, 2025                   | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Update the  User Guide version to match the Web Inoculator version.                         |
 |                       |                                | 2. Update the CSS File for some images and elements improvements.                              |
 |                       | June 3, 2025                   | 3. Additional AXI4 User Signal Parameters inside System Config of NC-NoC.                      |
 |                       |                                | 4. Additional option 'Obfuscated' to export package.                                           |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 5.2.2                 | June 19, 2025                  | 1. Update the Table of Contents to be in alphabetical order within each group.                 |
+| 5.2.2                 | June 19. 2025                  | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Update the Table of Contents to be in alphabetical order within each group.                 |
 |                       |                                | 2. Update the screenshots based on the modification in Project view.                           | 
 |                       |                                | 3. Added the collapsible left and right panel.                                                 |
 |                       |                                | 4. Removed the Project list display in Dashboard view.                                         |
 |                       |                                | 5. Update the link for 'Expired Link' topic to fix the error 404.                              |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 5.2.3                 | July 3, 2025                   | 1. Added Register Map page.                                                                    |
+| 5.2.3                 | July 3, 2025                   | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added Register Map page.                                                                    |
 |                       |                                | 2. Update screehsots of Nc-NoC System Config.                                                  |
 |                       |                                | 3. Added description of Register Map in NC-NoC System Config.                                  |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 5.2.4                 | July 16, 2025                  | 1. Improved the description of pages.                                                          |
+| 5.2.4                 | July 16, 2025                  | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Improved the description of pages.                                                          |
 |                       |                                | 2. Added the function of Clear Topology.                                                       |
 |                       |                                | 3. Added the modification in Max Outstanding Reads/Writes.                                     |
 |                       |                                | 4. NodeID modification in Address Map and in C-NoC Devices.                                    |
@@ -121,11 +143,15 @@ This is the modification history made for the documentation.
 |                       |                                | 8. Dashboard Modification                                                                      |
 |                       |                                | 9. Changed the font style of headers.                                                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 5.2.5                 | July 30, 2025                  | 1. Add Cacheable and Non-Cacheable Address Map in C-NoC Topology.                              |
+| 5.2.5                 | July 30, 2025                  | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Add Cacheable and Non-Cacheable Address Map in C-NoC Topology.                              |
 |                       |                                | 2. Added Virtual Targets in Register Map display.                                              |
 |                       |                                | 3. Updated the Address Map descriptions for the Home Node and Subordinate Node.                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 5.3.0                 | August 13, 2025                | 1. Router Naming changed to simple incremental                                                 |
+| 5.3.0                 | August 13, 2025                | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Router Naming changed to simple incremental                                                 |
 |                       |                                | 2. Adding single router in right and top part of C-NoC canvas                                  |
 |                       |                                | 3. Function to delete a single router in C-NoC canvas                                          |
 |                       |                                | 4. Search Field in Project Page                                                                |
@@ -133,8 +159,18 @@ This is the modification history made for the documentation.
 |                       |                                | 6. Port Data Width in CHI Protocol device in C-NoC devices                                     |
 |                       |                                | 7. Added a function to the Inoculator icon to serve as a Home button.                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 5.3.1                 | August 28, 2025                | 1. Additional item for Quality of Service in Register Map table.                               |
+| 5.3.1                 | August 28, 2025                | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Additional item for Quality of Service in Register Map table.                               |
 |                       |                                | 2. Topology Validation for skipped Routers in C-NoC Topology.                                  |
 |                       |                                | 3. Filter function in Project Page.                                                            |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.3.3                 | September 10, 2025             | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Canvas shape for bidirectional router interconnect port.                                    |
+|                       |                                | 2. Delete router-to-router connection is added in C-NoC Projects.                              |
+|                       |                                | 3. Highlight Search of Input Text in Search Reasult is added.                                  |
+|                       |                                | 4. Context Menu UI in Router Interconnect.                                                     |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+
 

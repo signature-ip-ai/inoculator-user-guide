@@ -10,6 +10,16 @@ The Search Project function allows users to quickly locate a specific project fr
 
 - This can be used in Personal and Shared Project tab.
 
+
+
+
 .. image:: images/search_project_page2.png
   :alt: search_project_page
+  :align: center
+
+
+- Highlighting of Search Words/Characters
+
+.. image:: images/search_project_page-highlight.png
+  :alt: search_project_page-highlight
   :align: center
