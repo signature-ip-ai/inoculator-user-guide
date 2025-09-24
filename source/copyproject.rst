@@ -18,7 +18,8 @@ The Copy Project function also supports copying projects owned by other users. O
   :alt: copy_project2
   :align: center
 
-Limitations:
+
+**Limitations:**
 
   - Only the first letters should be in uppercase.
 
