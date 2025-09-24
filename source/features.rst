@@ -61,7 +61,8 @@ III. Creating a Project
       3. `Confugure Device <configuredevicecnoc.html>`_
       4. `Configure Router <configureroutercnoc.html>`_
       5. `Configure System Parameters <configuresystemparam.html>`_
-      6. `C2C Bridge Configuration <c2cbridge.rst>`_
+      6. `C2C Bridge Configuration <c2cbridge.html>`_
+      7. `C-NoC Topology Validation <cnoctopologyvalidation.html>`_
 
    D. Performance Matrix
 
