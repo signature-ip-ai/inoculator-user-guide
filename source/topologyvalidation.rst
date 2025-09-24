@@ -1,4 +1,4 @@
-Topology Validation
+NC-NoC Topology Validation
 ====================================================
 
 This feature ensures the correct and efficient layout and connectivity of the circuit components. It involves verifying that the physical and logical connections in the design meet the desired specifications and function correctly under all operating conditions. 
@@ -9,9 +9,9 @@ This feature ensures the correct and efficient layout and connectivity of the ci
   -	Timing Analysis
   -	Power and Network Ground Validation
 
-The ‘Topology Validation’ button in the side navigation displays a list of items detailing the validations that the topology will undergo before passing. 
+The ‘Topology Validation’ button in the Action bar displays a list of items detailing the validations that the topology will undergo before passing. 
 
-1. NC-NoC Topology Validation 
+NC-NoC Topology Validation 
 -------------------------------------------------------
 
 .. image:: images/topology_validation.png
@@ -19,9 +19,3 @@ The ‘Topology Validation’ button in the side navigation displays a list of i
   :align: center
 
 
-2. C-NoC Topology Validation 
-------------------------------------------------------
-
-.. image:: images/cnoc_topology-validation2.png
-  :alt: cnoc-topology_validation
-  :align: center
