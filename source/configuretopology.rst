@@ -61,7 +61,7 @@ Connect to C2C Bridge
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This button is placed in the Interconnect Port of each Router. To add a C2C Bridge, right-click on any Interconnect Port and select Connect to C2C Bridge. A new C2C Bridge will then appear in the selected Router.
 
-.. image:: images/c-noc_c2c-bridge-adding.png
+.. image:: images/c-noc_c2c-bridge-adding2.png
   :alt: c-noc_c2c-bridge-adding
   :align: center
 
