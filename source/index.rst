@@ -74,6 +74,7 @@ What's inside the iNoCulator?
    configureroutercnoc
    configuredevicecnoc
    configuresystemparam
+   c2cbridge
 
 .. toctree::
    :maxdepth: 2
