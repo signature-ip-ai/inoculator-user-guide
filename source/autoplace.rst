@@ -5,6 +5,6 @@ The Auto-Place feature automatically determines the optimal positions for logic 
 
 Additionally, the tool focuses on efficient chip area utilization by minimizing the physical space occupied by components. This results in a more compact, cost-effective, and high-performing design. 
 
-.. image:: images/auto_place.png
+.. image:: images/auto_place_3.png
   :alt: auto_place
   :align: center
