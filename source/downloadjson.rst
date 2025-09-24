@@ -1,7 +1,7 @@
 Download JSON
 ===============================================
 
-This feature enables the user to download the current topology as a JSON file.
+This feature allows the user to download the current topology as a JSON file. The Download JSON option is available in both C-NoC and NC-NoC projects.
 
 .. image:: images/download_json1.png
   :alt: download_json1
