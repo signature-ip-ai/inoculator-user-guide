@@ -40,7 +40,7 @@ Validations
   
   - Verifies that all coordinate points in the topology have the required routers. Incomplete mesh will be validated.
 
-3. Topollgy: No disconnected paths
+3. Topology: No disconnected paths
   
   - Confirms that all routers and devices are connected, with no isolated components. All connections should be in both directions, no incomplete connections. 
 
