@@ -16,6 +16,7 @@ Below are the key components and features available on the Project Page:
   - Access to project details and configuration
 
 **Project Page Overview**
+
 The Project Page displays all available projects and provides tools for creating, managing, and navigating projects.
 
 .. image:: images/projects_page-dashboard2.png
@@ -23,6 +24,7 @@ The Project Page displays all available projects and provides tools for creating
   :align: center
 
 **Hamburger Menu** 
+
 The Hamburger Menu (☰) expands to show additional navigation options and settings.
 
 .. image:: images/projects_page-hamburger_menu2.png
@@ -30,6 +32,7 @@ The Hamburger Menu (☰) expands to show additional navigation options and setti
   :align: center
 
 **Navigation** 
+
 The Navigation bar provides quick access to key pages and features of the application.
 
 .. image:: images/projects_page-navigation2.png
@@ -37,6 +40,7 @@ The Navigation bar provides quick access to key pages and features of the applic
   :align: center
 
 **Inoculator Icon** 
+
 The Home Icon or Inoculator Icon takes you back to the main landing page of the application.
 
 .. image:: images/projects_page-home2.png
@@ -44,6 +48,7 @@ The Home Icon or Inoculator Icon takes you back to the main landing page of the 
   :align: center
 
 **Create Project Button** 
+
 Click the Create Project button to start a new project and configure its details.
 
 .. image:: images/projects_page-create_project_button2.png
@@ -51,6 +56,7 @@ Click the Create Project button to start a new project and configure its details
   :align: center
 
 **Quick Start Guide** 
+
 The Quick Start Guide provides step-by-step instructions for new users to quickly learn the tool.
 
 .. image:: images/projects_page-quick_start_guide2.png
@@ -58,6 +64,7 @@ The Quick Start Guide provides step-by-step instructions for new users to quickl
   :align: center
 
 **Email Support** 
+
 The Email Support option allows users to contact the support team for assistance.
 
 .. image:: images/projects_page-email_support2.png
@@ -65,6 +72,7 @@ The Email Support option allows users to contact the support team for assistance
   :align: center
 
 **Logout Button** 
+
 The Log Out button securely signs the user out of the application.
 
 .. image:: images/projects_page-logut_button2.png
@@ -72,6 +80,7 @@ The Log Out button securely signs the user out of the application.
   :align: center
 
 **Search Project** 
+
 Use the Search Field to quickly find a project by entering its name or keyword.
 
 .. image:: images/search_project_page3.png
@@ -79,6 +88,7 @@ Use the Search Field to quickly find a project by entering its name or keyword.
   :align: center
 
 **Filter Project** 
+
 The Filter Button allows users to refine the project list based on categories or attributes.
 
 .. image:: images/filter_function2.png
