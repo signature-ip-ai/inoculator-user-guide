@@ -11,7 +11,7 @@ Encrypted Package
 
 To export an 'Encrypted' package, tick the 'Encrypted' checkbox inside the Export Package table. 
 
-.. image:: images/export_package_button.png
+.. image:: images/export_package_button2.png
   :alt: export_package_button
   :align: center
 
