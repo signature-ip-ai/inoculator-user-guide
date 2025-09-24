@@ -165,12 +165,24 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Topology Validation for skipped Routers in C-NoC Topology.                                  |
 |                       |                                | 3. Filter function in Project Page.                                                            |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 5.3.3                 | September 10, 2025             | *Modified Items:*                                                                              |
+| 5.3.2                 | September 10, 2025             | *Modified Items:*                                                                              |
 |                       |                                |                                                                                                |
 |                       |                                | 1. Canvas shape for bidirectional router interconnect port.                                    |
 |                       |                                | 2. Delete router-to-router connection is added in C-NoC Projects.                              |
 |                       |                                | 3. Highlight Search of Input Text in Search Reasult is added.                                  |
 |                       |                                | 4. Context Menu UI in Router Interconnect.                                                     |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.3.3                 | September 24, 2025             | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added a C-NoC Topology Validation page.                                                     |
+|                       |                                | 2. Modified the NC-NoC Topology Validation page.                                               |
+|                       |                                | 3. Added the Delete Connection, Add C2C Bridge, Add Connection function in Configure           |
+|                       |                                |     Topology page.                                                                             |
+|                       |                                | 4. Modified the Project Page with updated screenshots.                                         |
+|                       |                                | 5. Modified the Register Map page with the updated specification.                              |
+|                       |                                | 6. Modified the NC-NoC Address Map page to require manual inputs.                              |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+
+
 
 
