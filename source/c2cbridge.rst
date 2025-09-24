@@ -32,7 +32,7 @@ In a C-NoC design:
 To add to the canvas, place the mouse on the Interconnect Port or any of the N, E, S, or W ports. This component can only be added in a position where no routers are connected.
 Select the 'Connect C2C Bridge' option from the context menu. 
 
-.. image:: images/c-noc_c2c-bridge-adding.png
+.. image:: images/c-noc_c2c-bridge-adding2.png
   :alt: c-noc_c2c-bridge-adding
   :align: center
 
