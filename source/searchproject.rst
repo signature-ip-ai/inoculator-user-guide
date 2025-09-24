@@ -13,13 +13,13 @@ The Search Project function allows users to quickly locate a specific project fr
 
 
 
-.. image:: images/search_project_page2.png
+.. image:: images/search_project_page3.png
   :alt: search_project_page
   :align: center
 
 
 - Highlighting of Search Words/Characters
 
-.. image:: images/search_project_page-highlight.png
+.. image:: images/search_project_page-highlight2.png
   :alt: search_project_page-highlight
   :align: center
