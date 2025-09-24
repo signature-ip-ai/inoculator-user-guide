@@ -41,7 +41,7 @@ II. Features
 
 III. Creating a Project
 -------------------------------------------------------
-   A. `Uploating a Topology <uploadtopology.html>`_
+   A. `Uploading a Topology <uploadtopology.html>`_
 
    B. Non-Coherent NoC Topology 
 
