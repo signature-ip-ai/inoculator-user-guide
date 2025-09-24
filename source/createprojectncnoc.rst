@@ -7,7 +7,8 @@ Create Project (NC-NoC Topology)
 
 The Project Settings panel allows users to configure the initial parameters before creating a topology project.
 
-Fields and Options
+**Fields and Options**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Project Type**
 - A dropdown menu that allows the user to select the type of project to design. The available options are:
