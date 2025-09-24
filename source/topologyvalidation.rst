@@ -137,4 +137,7 @@ NC-NoC Validations
   :alt: ncnoc_topology_validation
   :align: center
 
+.. image:: images/topology_validation2.png
+  :alt: topology_validation2
+  :align: center
 
