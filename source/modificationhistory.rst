@@ -176,8 +176,7 @@ This is the modification history made for the documentation.
 |                       |                                |                                                                                                |
 |                       |                                | 1. Added a C-NoC Topology Validation page.                                                     |
 |                       |                                | 2. Modified the NC-NoC Topology Validation page.                                               |
-|                       |                                | 3. Added the Delete Connection, Add C2C Bridge, Add Connection function in Configure           |
-|                       |                                |     Topology page.                                                                             |
+|                       |                                | 3. Added Delete Connection, Add C2C Bridge, Add Connection function in Configure topology.     |
 |                       |                                | 4. Modified the Project Page with updated screenshots.                                         |
 |                       |                                | 5. Modified the Register Map page with the updated specification.                              |
 |                       |                                | 6. Modified the NC-NoC Address Map page to require manual inputs.                              |
