@@ -1,4 +1,4 @@
- NC-NoC Topology Validation
+NC-NoC Topology Validation
 ====================================================
 
 The NC-NoC Topology Validation feature checks the correctness and completeness of a Non-Coherent Network-on-Chip (NC-NoC) design. It ensures that routers, devices, and address mappings are properly defined and interconnected before simulation or hardware implementation.
@@ -129,7 +129,7 @@ NC-NoC Validations
 
 35. No Devices on wrong Subtopology 
 
-  – Ensures devices are placed only in their valid subtopology.
+ – Ensures devices are placed only in their valid subtopology.
 
 
 
