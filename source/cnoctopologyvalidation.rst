@@ -29,7 +29,7 @@ The C-NoC Topology Validation feature ensures that the designed Cache-Coherent N
 
 - Users can iteratively correct and re-validate until the topology passes all checks.
 
-Validations
+C-NoC Validations
 ---------------------------------
 
 1. Meets minimum configuration 
