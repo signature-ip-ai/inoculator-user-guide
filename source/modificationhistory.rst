@@ -9,7 +9,7 @@ This is the modification history made for the documentation.
 +=======================+================================+================================================================================================+
 | 1.0                   | April 24, 2024                 |  Initial Document Release                                                                      |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 2.0                   | August 7, 2024                 |  Modified Items:                                                                               |
+| 2.0                   | August 7, 2024                 |  *Modified Items:*                                                                             |
 |                       |                                |   1. Format                                                                                    |
 |                       |                                |         1.1. Switched from PPTX to DOCX formatting style to                                    |         
 |                       |                                |         be more technically formal and presentable.                                            |
@@ -24,14 +24,14 @@ This is the modification history made for the documentation.
 |                       |                                |   6. Update Table of Contents                                                                  |
 |                       |                                |   7. Add Definition of terms                                                                   |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 2.1                   | August 15, 2024                |  Modified Items:                                                                               |
+| 2.1                   | August 15, 2024                |  *Modified Items:*                                                                             |
 |                       |                                |   1. Update format                                                                             |
 |                       |                                |   2. Update screenshots                                                                        |
 |                       |                                |   3. Add Frequently Asked Questions                                                            |
 |                       |                                |   4. Add Appendix                                                                              |
 |                       |                                |   5. Rename figures and tables                                                                 |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 2.2                   | August 20, 2024                |  Modified Items:                                                                               |
+| 2.2                   | August 20, 2024                |  *Modified Items:*                                                                             |
 |                       |                                |   1. Moved the ‘Modification History’ word in Page 2                                           | 
 |                       |                                |   2. Update ‘Terminologies’ table                                                              |      
 |                       |                                |   3. Update the crossed-out word in Page 25 and Page 62.                                       |   
@@ -40,14 +40,14 @@ This is the modification history made for the documentation.
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 | 2.3                   | August 21, 2024                |  Added Authentication and Autorization topic.                                                  |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 2.4                   | November 7, 2024               |  Modified Items:                                                                               |
+| 2.4                   | November 7, 2024               |  *Modified Items:*                                                                             |
 |                       |                                |   1. Update of Inoculator Logo and header color.                                               |
 |                       |                                |   2. Update project layout including tab view.                                                 |            
 |                       |                                |   3. Update latest screenshots                                                                 | 
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 | 2.5                   | January 14, 2025               |  Upload to Web Pages                                                                           |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 3.1                   | February 5, 2025               |  Modified Items:                                                                               |
+| 3.1                   | February 5, 2025               |  *Modified Items:*                                                                             |
 |                       |                                |    1. Added C-NoC Topology                                                                     |
 |                       |                                |    2. Update Project Creation                                                                  |
 |                       |                                |    3. Removed Auto-Address Map Feature                                                         |
