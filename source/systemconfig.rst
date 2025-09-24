@@ -3,13 +3,16 @@ System Config
 
 This feature allows the user to modify the current settings of the project. The following items are the same items set initially when creating a project. To update the settings, user must click ‘System Config’ from action bar.
 
+.. image:: images/nc_noc-system_config2.png
+  :alt: nc_noc-system_config2
+  :align: center
+
+
 .. image:: images/nc_noc-system_config12.png
   :alt: nc_noc-system_config12
   :align: center
 
-.. image:: images/nc_noc-system_config2.png
-  :alt: nc_noc-system_config2
-  :align: center
+
 
 **Address Width** – The user needs to choose either 32 or 64 as the address width for the NoC project.
 
