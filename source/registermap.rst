@@ -19,7 +19,7 @@ Key Features of the Register Map
 
 To view the Register Map, toggle on the 'Register Map Generation' from NC-NoC System Config. Register Map tab should be visible inside the NC-NoC Project. 
 
-.. image:: images/register_map.png
+.. image:: images/register_map2.png
   :alt: register_map
   :align: center
 

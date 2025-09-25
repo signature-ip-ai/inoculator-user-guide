@@ -5,8 +5,8 @@ This feature allows the user to share the chosen project with anyone from their 
 
 1. Go to dashboard and click the ‘Share Project’ icon. 
 
-.. image:: images/share_project3.png
-  :alt: share_project
+.. image:: images/projects_page-dashboard2.png
+  :alt: project_page
   :align: center
 
 2. A new window will be displayed, containing all the names from the same group. The user must choose who will receive the shared project. 

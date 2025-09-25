@@ -11,7 +11,7 @@ Encrypted Package
 
 To export an 'Encrypted' package, tick the 'Encrypted' checkbox inside the Export Package table. 
 
-.. image:: images/export_package_button.png
+.. image:: images/export_package_button2.png
   :alt: export_package_button
   :align: center
 
@@ -31,7 +31,7 @@ Obfuscated Package
 
 To export an 'Obfuscated' package, tick the box for Obfuscated inside the Export Package table.
 
-.. image:: images/export_package_button.png
+.. image:: images/export_package_button2.png
   :alt: export_package_button
   :align: center
 
@@ -51,7 +51,7 @@ Clean Package
 
 To export a 'Clean' package, tick the 'Clean' checkbox inside the Export Package box. 
 
-.. image:: images/export_package_button.png
+.. image:: images/export_package_button2.png
   :alt: export_package_button
   :align: center
 

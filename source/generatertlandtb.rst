@@ -38,8 +38,8 @@ To use it, click the ‘Generate RTL’ button in the Action Bar. An optional ch
 Then, click the ‘Generate Design’ button to start the process. The results, including timestamps for when the action started and completed, will be displayed in the same table.
 
 
-.. image:: images/c-noc_generateRTL.png
-  :alt: c-noc_generateRTL.png
+.. image:: images/c-noc_generateRTL_button.png
+  :alt: c-noc_generateRTL_button.png
   :align: center
 
 

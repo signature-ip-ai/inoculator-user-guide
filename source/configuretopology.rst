@@ -59,8 +59,30 @@ To remove all components and start a new design, click the red "Clear Topology" 
 
 Connect to C2C Bridge
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This will be added in SWTOOLS_REL_5.3.3
+This button is placed in the Interconnect Port of each Router. To add a C2C Bridge, right-click on any Interconnect Port and select Connect to C2C Bridge. A new C2C Bridge will then appear in the selected Router.
+
+.. image:: images/c-noc_c2c-bridge-adding2.png
+  :alt: c-noc_c2c-bridge-adding
+  :align: center
+
+For more details about this, redirect to this page: `C-NoC C2C Bridge <c2cbridge.html>`_
+
+Delete a Connection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This function allows the deletion of a connection between two routers. Deleting a connection is done per direction. To delete a connection, right-click on any router connection to open the context menu, then select ‘Delete Connection’ to proceed.
+
+.. image:: images/c-noc_delete-a-connection.png
+  :alt: c-noc_delete-a-connection
+  :align: center
 
 Connect to Adjacent Router 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This will be added in SWTOOLS_REL_5.3.3
+This button is placed in the Interconnect Port of each Router. To add a connection from one router to another, right-click on any Interconnect Port and select Connect to Adjacent Router. A new connection will then appear to the nearest available router in the canvas.
+This item will only be available to Routers that do not have a Router Connection.
+
+.. image:: images/c-noc_connect-to-adjacent-router.png
+  :alt: c-noc_connect-to-adjacent-router
+  :align: center
+
+
+
