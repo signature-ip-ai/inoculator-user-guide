@@ -8,8 +8,8 @@ This feature allows the user to modify the current settings of the project. The 
   :align: center
 
 
-.. image:: images/nc_noc-system_config12.png
-  :alt: nc_noc-system_config12
+.. image:: images/nc_noc-system_config3.png
+  :alt: nc_noc-system_config3
   :align: center
 
 
@@ -30,6 +30,12 @@ This feature allows the user to modify the current settings of the project. The 
 
 **User Response Width** - This is an input field for AXI4 User Signal where the user is allowed to input any value between 1 and 64.
 
+**Address Interleaving** - Refers to the technique of distributing memory address ranges across multiple targets or memory devices in a patterned or alternating manner. The default toggle setting is disabled. When enabled, the 'Interleaved Channel Size' and 'Interleaving Split' parameters will also appear.
+
+  Interleaved Channel Size - allows the user to input the desired size and the binary unit. 
+
+  Interleaving Split - defines how a memory address range is divided (or split) into smaller segments for distribution among multiple targets or subordinate nodes in a NoC (Network-on-Chip) system. The default setting is disabled. The user can enable this using a toggle button.
+    
 **Clock Frequency Validation** – When toggled on, the frequency of each component in the topology must be set individually. When toggled off, setting individual frequencies is not required.
 
 **Register Map Generation** - When toggled on, the Register Map tab becomes visible, allowing the user to view the Register Map table based on the current topology design.
