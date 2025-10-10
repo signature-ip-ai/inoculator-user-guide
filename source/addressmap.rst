@@ -9,7 +9,7 @@ The Address Map feature displays the address ranges assigned to all Target Devic
 To access this feature, navigate to the “Address Map” tab.
 
 
-.. image:: images/address_map4.png
+.. image:: images/address_map5.png
   :alt: address_map
   :align: center
 
@@ -39,6 +39,8 @@ The Home Node Address Map defines the memory address regions that are locally ow
 
 - This map applies to both cacheable and non-cacheable memory regions.
 
+- The table of Home Node includes the addresses of **Routers** and **UCIe**. 
+
 This map displays the address ranges of routers connected to the grid. By default, each router is labeled using its coordinate-based name, making it easier for users to identify and locate routers within the topology.
 
 
@@ -57,8 +59,8 @@ The Subordinate Address Map defines the memory address regions that are owned or
 
 Below is a sample topology design illustrating how these address maps are structured and visualized.
 
-.. image:: images/cnoc_address_map_sample3.png
-  :alt: cnoc_address_map_sample3
+.. image:: images/cnoc_address_map_sample4.png
+  :alt: cnoc_address_map_sample4
   :align: center
 
 To configure the Home Node Address Map, the Router Type must be set to either:
@@ -88,8 +90,8 @@ Subordinate Node Address Map – Specifies memory ranges managed by external/sub
 
 Use this map to configure, validate, and debug data transactions that benefit from caching mechanisms.
 
-.. image:: images/cnoc_address_map_cacheable.png
-  :alt: cnoc_address_map_cacheable
+.. image:: images/cnoc_address_map_cacheable2.png
+  :alt: cnoc_address_map_cacheable2
   :align: center
 
 
