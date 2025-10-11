@@ -181,7 +181,12 @@ This is the modification history made for the documentation.
 |                       |                                | 5. Modified the Register Map page with the updated specification.                              |
 |                       |                                | 6. Modified the NC-NoC Address Map page to require manual inputs.                              |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-
+| 5.3.4                 | October 10, 2025               | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added Address Map configuration for UCIe (bridge).                                          |
+|                       |                                | 2. Added Address Interleaving in NC-NoC System Parameters.                                     |
+|                       |                                | 3. Uploaded new screenshots related to added features.                                         |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 
