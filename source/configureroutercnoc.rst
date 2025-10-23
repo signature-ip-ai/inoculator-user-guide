@@ -1,16 +1,6 @@
 Configuring C-NoC Router
 ===================================================
 
-.. image:: images/configuring_router3.png
-  :alt: configuring_router1
-  :align: center
-
-.. image:: images/configuring_router2.png
-  :alt: configuring_router1
-  :align: center
-
-
-
 **Device ID** – This represents the unique identifier of the selected device.
 
 **Router Type** – This is a dropdown parameter which router type to be used on the selected component. User can choose between 'Repeater', 'HN-F w/ L3', 'HN-F w/o L3', or 'Device Only'. 
@@ -72,4 +62,13 @@ Configuring C-NoC Router
 **L3 Cache Index Width** – This Index of the cacheable physical address. 2k indicates the depth of a single cache memory in N-way set associative cache mapping scheme for L3. Default value is 10, user can choose from 1 to 20 as the width.
 
 **L3 Cache N-Set** – This Number of sets in N-way set associative cache mapping scheme for L3 cache. Number of sets is determined as 2k such that 0 ≤ k ≤ 5. This is a dropdown parameter with a selection of 1, 2, 4, 8, 16, or 32. Default value is 16.
+
+.. image:: images/configuring_router3.png
+  :alt: configuring_router1
+  :align: center
+
+.. image:: images/configuring_router2.png
+  :alt: configuring_router1
+  :align: center
+
 
