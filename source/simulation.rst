@@ -7,7 +7,7 @@ Currently, this feature is for **NC-NoC** only. (SWTOOLS_REL_5.1.1). This featur
   :alt: simulation1
   :align: center
 
-.. image:: images/simulate-results2.png
+.. image:: images/simulation5.png
   :alt: simulate-results
   :align: center
 
@@ -19,7 +19,7 @@ After configuring all columns based on user needs, click the ‘New’ button to
 All results will be displayed below the table, including Status, Start, and Completion timestamps
 
 
-.. image:: images/simulate_actions.png
+.. image:: images/simulate_actions2.png
   :alt: simulate_actions
   :align: center
 
