@@ -68,6 +68,6 @@ C-NoC Validations
 
   - Validates that each Subordinate Node address range is fully contained within a single Home Node region.
 
-.. image:: images/cnoc_topology_validation3.png
+.. image:: images/cnoc_topology-validation3.png
   :alt: cnoc_topology_validation
   :align: center
