@@ -19,7 +19,7 @@ Key Features of the Register Map
 
 To view the Register Map, toggle on the 'Register Map Generation' from NC-NoC System Config. Register Map tab should be visible inside the NC-NoC Project. 
 
-.. image:: images/register_map2.png
+.. image:: images/register_map3.png
   :alt: register_map
   :align: center
 
@@ -28,5 +28,6 @@ The behavior of the Register Map table will be affected by the following factors
 1. Traffic Regulation Policy of Initiator Device 
 2. Virtual devices 
 3. Router, Initiator and Target Device
+4. Access Map or Root Policy of each device
 
 

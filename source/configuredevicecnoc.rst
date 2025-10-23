@@ -13,7 +13,6 @@ Configure C-NoC Device
 
 **Reserved Port Data Width** - This is a dropdown button where the user can choose between 4, 8, 12, 16, or 32 as the Reserved Port Data Width for the selected device, which is reserved for future use in the data flit.
 
-
 .. image:: images/configuring_device-chi_protocol4.png
   :alt: configuring_device-chi_protocol
   :align: center
@@ -35,3 +34,4 @@ Configure C-NoC Device
 .. image:: images/configuring_device-axi_protocol2.png
   :alt: configuring_device-axi_protocol
   :align: center
+

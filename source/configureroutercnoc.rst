@@ -71,3 +71,4 @@ Configuring C-NoC Router
   :alt: configuring_router1
   :align: center
 
+
