@@ -1,13 +1,6 @@
 Configuring C-NoC System Parameters
 ===========================================
 
-.. image:: images/configuring_system_parameters.png
-  :alt: configuring_system_parameters
-  :align: center
-
-.. image:: images/configuring_system_parameters2.png
-  :alt: configuring_system_parameters2
-  :align: center
 
 **CHI Version** – Version of AMBA CHI protocol to use for the whole C-NoC. Default is E.b. User can choose from E.b and B. 
 
@@ -36,3 +29,12 @@ Configuring C-NoC System Parameters
 **Async CC Clock** – Toggle button to enable/disable SIG_PROC_ASYNCCLK. Default is disabled. 
 
 **Async Device Clock** – Toggle button to enable/disable SIG_CC_ASYNCCLK. Default is disabled. 
+
+
+.. image:: images/configuring_system_parameters.png
+  :alt: configuring_system_parameters
+  :align: center
+
+.. image:: images/configuring_system_parameters2.png
+  :alt: configuring_system_parameters2
+  :align: center
