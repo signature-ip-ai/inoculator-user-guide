@@ -44,26 +44,30 @@ C-NoC Validations
   
   - Confirms that all routers and devices are connected, with no isolated components. All connections should be in both directions, no incomplete connections. 
 
-4. Address Map: No blank addresses
+4. Bridges: All bridges positioned at mesh edge
+
+  - Confirms that all bridges are connected at the edge of each Router. 
+
+5. Address Map: No blank addresses
 
   - Checks that all address ranges are defined and not left empty.
 
-5. Address Map: No base address exceeds its limit address
+6. Address Map: No base address exceeds its limit address
 
   - Validates that each base address is smaller than or equal to its corresponding limit address.
 
-6. Address Map: No address blocks overlapping (HN)
+7. Address Map: No address blocks overlapping (HN)
 
   - Ensures that Home Node address ranges do not overlap with each other.
 
-7. Address Map: No address blocks overlapping (SN)
+8. Address Map: No address blocks overlapping (SN)
 
   - Ensures that Subordinate Node address ranges do not overlap with each other.
 
-8. Address Map: All address range of SN regions lies within exactly 1 HN region
+9. Address Map: All address range of SN regions lies within exactly 1 HN region
 
   - Validates that each Subordinate Node address range is fully contained within a single Home Node region.
 
-.. image:: images/cnoc_topology_validation.png
+.. image:: images/cnoc_topology_validation3.png
   :alt: cnoc_topology_validation
   :align: center
