@@ -187,11 +187,12 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Added Address Interleaving in NC-NoC System Parameters.                                     |
 |                       |                                | 3. Uploaded new screenshots related to added features.                                         |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 5.3.5                 | October 22, 2025               |  *modified Items:*                                                                             |
+| 5.3.5                 | October 22, 2025               | *Modified Items:*                                                                              |
 |                       |                                |                                                                                                |
 |                       |                                | 1. Added Questa as default SimRunner of NC-NoC                                                 |
 |                       |                                | 2. Added QOS and TIMEOUT in Register Map.                                                      |
 |                       |                                | 3. Added Default Value and Access display in Register Map table.                               |
+|                       |                                | 4. Added topology validation "Bridges: All bridges positioned at mesh edge" in C-NoC           |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
