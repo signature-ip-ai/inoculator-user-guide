@@ -1,8 +1,6 @@
 Configure C-NoC Device
 ===========================================================
 
-
-
 **Device Name** - Assigned for the selected device. This is an input field where only alphanumeric characters and underscores are allowed.
   
 **Device ID** – This represents the unique identifier of the selected device. 

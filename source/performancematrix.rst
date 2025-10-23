@@ -1,6 +1,6 @@
 Performance Matrix
 =========================================
-**Note: Starting from SWTOOLS_REL_5.1.1, the ‘Performance Matrix’ tab will be hidden for certain reasons. If a group needs this function, please contact support or the SignatureIP admin to request this feature.**
+**Note: Starting from SWTOOLS_REL_5.1.1, the ‘Performance Matrix’ tab will be hidden for certain reasons. If a group needs this function, please Contact Support or the SignatureIP admin to request this feature.**
 
 This feature is for viewing the performance of devices designed in the project. This has four categorizations of table: Read Bandwidth, Write Bandwidth, Read Latency and Write Latency. This can be access by selecting the “Performance Matrix” tab. 
 

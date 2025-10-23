@@ -2,7 +2,6 @@ Configuring C-NoC System Parameters
 ===========================================
 
 
-
 **CHI Version** – Version of AMBA CHI protocol to use for the whole C-NoC. Default is E.b. User can choose from E.b and B. 
 
 **NoC Address Width** – This is display-only parameter showing the Address width of the NoC. The default value is 52, equivalent to ADDR_WIDTH
