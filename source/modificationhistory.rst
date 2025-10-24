@@ -194,6 +194,10 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Added Default Value and Access display in Register Map table.                               |
 |                       |                                | 4. Added topology validation "Bridges: All bridges positioned at mesh edge" in C-NoC           |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.4.0                 |                                | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Updated all the pages with homepage to show the new landing page.                           |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 
