@@ -3,9 +3,9 @@ Request Access
 This function is a formal process for users to request permission or authorization to
 access the iNoCulator. 
 
-1. From the Home page, click the "Get Started Now!" button to begin using the tool.
+1. From the Home page, click the "Get Started" button to begin using the tool.
 
-.. image:: images/request_access-home_page.png
+.. image:: images/request_access-home_page2.png
     :alt: request_access-home_page
     :align: center
 
