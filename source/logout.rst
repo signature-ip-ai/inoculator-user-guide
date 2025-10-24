@@ -30,6 +30,6 @@ Once logged out, you will be redirected to the login screen.
 
 3.
 
-.. image:: images/ldashboard_page.png
+.. image:: images/dashboard_page.png
   :alt: dashboard_page
   :align: center
