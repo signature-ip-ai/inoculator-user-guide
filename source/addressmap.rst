@@ -9,8 +9,14 @@ The Address Map feature displays the address ranges assigned to all Target Devic
 To access this feature, navigate to the “Address Map” tab.
 
 
-.. image:: images/address_map5.png
+.. image:: images/address_map6.png
   :alt: address_map
+  :align: center
+
+To edit the addresses, click the ‘Edit’ button. A modal will appear, allowing users to configure the address map.
+
+.. image:: images/address_map_modal.png
+  :alt: address_map_modal
   :align: center
 
 
