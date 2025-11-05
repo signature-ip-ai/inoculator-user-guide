@@ -85,4 +85,22 @@ This item will only be available to Routers that do not have a Router Connection
   :align: center
 
 
+Configuring Topology Coordinates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Topology Coordinates define the physical or logical placement of routers and devices within the network-on-chip (NoC) design. Proper coordinate configuration ensures accurate routing paths and visualization of the topology. This will only configurable when UCIe Bridge is added on the topology.
+
+To configure topology coordinates:
+
+1. Add a bridge in the topology diagram.
+
+2. Enter or adjust its X and Y coordinate values.
+
+
+This configuration helps maintain an organized layout and ensures that each component is correctly mapped within the NoC grid.
+
+.. image:: images/topology_coordinates.png
+  :alt: topology_coordinates
+  :align: center
+
+
 
