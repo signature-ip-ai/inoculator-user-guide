@@ -11,7 +11,7 @@ Configure C-NoC Topology
 
 **Configure Topology** – This button confirms the creation of a Coherent NoC topology. Once the user clicks it, the topology will be generated on the grid based on the configured number of columns and rows.
 
-.. image:: images/sample_cnoc_topology-without_added_device7.png
+.. image:: images/sample_cnoc_topology-without_added_device8.png
   :alt: sample_cnoc_topology-without_added_device
   :align: center
 
@@ -28,7 +28,7 @@ Adding a Router
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Click the “+” button located on the right or top side of any Router device to add a new router.
 
-.. image:: images/c_noc-add_router2.png
+.. image:: images/c_noc-add_router3.png
   :alt: c_noc-add_router
   :align: center
 
