@@ -67,6 +67,14 @@ NC-NoC Validations
 
   – Checks that all initiators are linked to the topology.
 
+10. Initiators: No invalid read reorder buffer size 
+
+  - Checks the values of all Read Reorder Buffer Size in each Initiator. 
+
+11. Initiators: No invalid write reorder buffer size 
+
+ - Checks the values of all Write Reorder Buffer Size in each Initiator. 
+
 10. Targets: No unconnected floating Targets 
 
   – Ensures all targets are properly connected.
@@ -137,7 +145,7 @@ NC-NoC Validations
   :alt: ncnoc_topology_validation
   :align: center
 
-.. image:: images/topology_validation2.png
-  :alt: topology_validation2
+.. image:: images/topology_validation3.png
+  :alt: topology_validation3
   :align: center
 
