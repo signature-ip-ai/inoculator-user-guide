@@ -205,6 +205,8 @@ This is the modification history made for the documentation.
 |                       |                                | 1. Updated the NC-NoC Topology Validation with additional validation for Initiators.           |
 |                       |                                | 2. Added Target Address Interleaving in targetconfiguration page.                              |
 |                       |                                | 3. Added a new page for Address Interleaving.                                                  |
+|                       |                                | 4. Added the new validations for targets and initiators.                                       |
+|                       |                                | 5. Removed the Local SRAM in Initiator devices.                                                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
