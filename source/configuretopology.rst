@@ -11,7 +11,7 @@ Configure C-NoC Topology
 
 **Configure Topology** – This button confirms the creation of a Coherent NoC topology. Once the user clicks it, the topology will be generated on the grid based on the configured number of columns and rows.
 
-.. image:: images/sample_cnoc_topology-without_added_device7.png
+.. image:: images/sample_cnoc_topology-without_added_device8.png
   :alt: sample_cnoc_topology-without_added_device
   :align: center
 
@@ -28,7 +28,7 @@ Adding a Router
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Click the “+” button located on the right or top side of any Router device to add a new router.
 
-.. image:: images/c_noc-add_router2.png
+.. image:: images/c_noc-add_router3.png
   :alt: c_noc-add_router
   :align: center
 
@@ -82,6 +82,24 @@ This item will only be available to Routers that do not have a Router Connection
 
 .. image:: images/c-noc_connect-to-adjacent-router.png
   :alt: c-noc_connect-to-adjacent-router
+  :align: center
+
+
+Configuring Topology Coordinates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Topology Coordinates define the physical or logical placement of routers and devices within the network-on-chip (NoC) design. Proper coordinate configuration ensures accurate routing paths and visualization of the topology. This will only configurable when UCIe Bridge is added on the topology.
+
+To configure topology coordinates:
+
+1. Add a bridge in the topology diagram.
+
+2. Enter or adjust its X and Y coordinate values.
+
+
+This configuration helps maintain an organized layout and ensures that each component is correctly mapped within the NoC grid.
+
+.. image:: images/topology_coordinates.png
+  :alt: topology_coordinates
   :align: center
 
 

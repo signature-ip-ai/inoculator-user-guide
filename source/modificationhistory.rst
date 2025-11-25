@@ -194,6 +194,12 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Added Default Value and Access display in Register Map table.                               |
 |                       |                                | 4. Added topology validation "Bridges: All bridges positioned at mesh edge" in C-NoC           |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.4.0                 | November 5, 2025               | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Updated all the pages with homepage to show the new landing page.                           |
+|                       |                                | 2. Added the Topology Coordinates feature inside C-NoC.                                        |
+|                       |                                | 3. Update the NC-NoC Address Map configuration.                                                |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 

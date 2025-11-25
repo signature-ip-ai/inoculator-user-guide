@@ -17,6 +17,6 @@ To use iNoCulator, the user must enter valid credentials and input a valid OTP. 
 
 3. After entering the correct OTP, the Project page will be displayed.
 
-.. image:: images/successful_sign_in_screen.png
+.. image:: images/successful_sign_in_screen2.png
   :alt: successful_sign_in_screen
   :align: center
