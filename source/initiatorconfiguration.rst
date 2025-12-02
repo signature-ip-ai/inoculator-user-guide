@@ -90,30 +90,16 @@ Timing tab displays the Use Subtopology Clock and Frequency parameters. By defau
 **Device Policies** – Policy or configuration assigned for the connected Target device. This will also reflect in Target device’s setting. Choose from Passthrough, Programmable (Secure or Non-Secure), Blocked, and Fixed-Secure.
 
 
-.. image:: images/initiator-others2.png
+.. image:: images/initiator-others3.png
   :alt: initiator-others
   :align: center
 
 
-.. image:: images/initiator-others.png
-  :alt: initiator-others
-  :align: center
 
 **Traffic Regulation Policy 1&2** – Dropdown item where user can choose between ‘Disabled’, ‘Read only’, ‘Write Only’, ‘Read-Write Independent’ or ‘Read-Write Combined’. 
 
 **Traffic Regulation Policy 3** – Display-only parameter with a default value of ‘Disabled’. As of SWTOOLS_REL_5.1.1, this has not been implemented yet.
 
-**Enable Local SRAM** – This can be enabled if local SRAM is going to be used for the device. Default setting is disabled.
-
-**Address Width** – Address Width for Local SRAM. User can choose from 8, 16, 32 and 64. 
-
-**Base Address** – Starting address map for the Local SRAM when enabled. 
-
-**Limit Address** – End address map for the Local SRAM when enabled. 
-
-**Read Data Delay** – Time interval to set for a read request. User can choose either 1 or 2. 
-
-**Address Translation** – Default settings is disabled. User can choose either true or false
 
 
 

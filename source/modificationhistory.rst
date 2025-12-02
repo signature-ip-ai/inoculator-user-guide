@@ -200,6 +200,14 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Added the Topology Coordinates feature inside C-NoC.                                        |
 |                       |                                | 3. Update the NC-NoC Address Map configuration.                                                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.4.1                 | November 19, 2025              | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Updated the NC-NoC Topology Validation with additional validation for Initiators.           |
+|                       |                                | 2. Added Target Address Interleaving in targetconfiguration page.                              |
+|                       |                                | 3. Added a new page for Address Interleaving.                                                  |
+|                       |                                | 4. Added the new validations for targets and initiators.                                       |
+|                       |                                | 5. Removed the Local SRAM in Initiator devices.                                                |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 
