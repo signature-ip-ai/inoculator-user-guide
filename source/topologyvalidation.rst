@@ -111,13 +111,13 @@ NC-NoC Validations
 
   – Confirms each target is reachable through a forward path.
 
-19. Routing: All Initiators have dedicated backward routes 
-
-  – Ensures all initiators can receive return paths.
-
-20. Routing: All Routers have configured routes 
+19. Routing: All Routers have configured routes 
   
   – Validates that every router has proper routing rules set.
+
+20. Routing: All connected ports have routes
+
+  - Validated that every port connection has a configured routes either manually or by auto-route feature. 
 
 21. Routing: No Router with multiple routes toward a single Destination 
 
@@ -149,7 +149,7 @@ NC-NoC Validations
   :alt: ncnoc_topology_validation
   :align: center
 
-.. image:: images/topology_validation3.png
+.. image:: images/topology_validation4.png
   :alt: topology_validation3
   :align: center
 
