@@ -208,6 +208,12 @@ This is the modification history made for the documentation.
 |                       |                                | 4. Added the new validations for targets and initiators.                                       |
 |                       |                                | 5. Removed the Local SRAM in Initiator devices.                                                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.4.2                 | December 3, 2025               | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Updated the C-NoC System Config Parameters                                                  |
+|                       |                                | 2. Updated the C-NoC Router Parameters                                                         |
+|                       |                                | 3. Added validation related to Routers.                                                        |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 
