@@ -7,25 +7,25 @@ Configuring C-NoC Router
 
 **Device Port Settings (Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’ and ‘Repeater’)**
 
-**RX REQ FIFO Ptr Width** – This Pointer width to indicate depth of input request flit buffer at processor port of the NoC. Default value is 2, and user can choose from 1 to 6 as the width. 
+**RX REQ FIFO Ptr Width** – This Pointer width to indicate depth of input request flit buffer at processor port of the NoC. Default value is 2 and non-configurable.
 
-**Rx RSP FIFO Ptr Width** – This Pointer width to indicate depth of input response flit buffer at processor port of the NoC. Default value is 2, and user can choose from 1 to 6 as the width. 
+**Rx RSP FIFO Ptr Width** – This Pointer width to indicate depth of input response flit buffer at processor port of the NoC. Default value is 2 and non-configurable.
 
-**Rx DAT FIFO Ptr Width** – This Pointer width to indicate depth of input data flit buffer at processor port coming of the NoC. Default value is 2, and user can choose from 1 to 6 as the width. 
+**Rx DAT FIFO Ptr Width** – This Pointer width to indicate depth of input data flit buffer at processor port coming of the NoC. Default value is 2 and non-configurable.
 
-**Tx REQ FIFO Ptr Width** – This Pointer width to indicate depth of output request flit buffer at the processor port of the NoC. Default value is 2, and user can choose from 1 to 6 as the width. 
+**Tx REQ FIFO Ptr Width** – This Pointer width to indicate depth of output request flit buffer at the processor port of the NoC. Default value is 2 and non-configurable.
 
-**Tx RSP FIFO Ptr Width** – This Pointer width to indicate depth of output response flit buffer at the processor port of the NoC. Default value is 2, and user can choose from 1 to 6 as the width. 
+**Tx RSP FIFO Ptr Width** – This Pointer width to indicate depth of output response flit buffer at the processor port of the NoC. Default value is 2 and non-configurable.
 
-**Tx DAT FIFO Ptr Width** – This Pointer width to indicate depth of output data flit buffer at the processor port of the NoC. Default value is 2, and user can choose from 1 to 6 as the width. 
+**Tx DAT FIFO Ptr Width** – This Pointer width to indicate depth of output data flit buffer at the processor port of the NoC. Default value is 2 and non-configurable.
 
 **Interconnect Port Settings (Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’, and ‘Repeater’)**
 
-**REQ FIFO Ptr Width** – This Pointer width to indicate depth of input request flit buffer to receive flits from neighboring cluster. Default value is 2, and user can choose from 1 to 6 as the width. 
+**REQ FIFO Ptr Width** – This Pointer width to indicate depth of input request flit buffer to receive flits from neighboring cluster. Default value is 2 and non-configurable.
 
-**RESP FIFO Ptr Width** – This Pointer width to indicate depth of input response flit buffer to receive flits from neighboring cluster. Default value is 2, and user can choose from 1 to 6 as the width.
+**RESP FIFO Ptr Width** – This Pointer width to indicate depth of input response flit buffer to receive flits from neighboring cluster. Default value is 2 and non-configurable.
 
-**DATA FIFO Ptr Width** – This Pointer width to indicate depth of input data flit buffer to receive flits from neighboring cluster. Default value is 3, and user can choose from 1 to 6 as the width.
+**DATA FIFO Ptr Width** – This Pointer width to indicate depth of input data flit buffer to receive flits from neighboring cluster. Default value is 3 and non-configurable.
 	
 **Directory Cache Controller Settings (Available in router type 'HN-F w/ L3', 'HN-F w/o L3')**
 
@@ -47,13 +47,13 @@ Configuring C-NoC Router
 
 **Cache N-Set** – This Number of sets in N-way set associative cache mapping scheme. Number of sets is determined as 2k such that 0 ≤ k ≤ 5. This is a dropdown parameter with a selection of 1, 2, 4, 8, 16, or 32. Default value is 16.
 
-**REQ CMD FIFO Ptr Width** – This FIFO Pointer width for request flit waiting to be fed to controller pipeline process.  Default value is 4, user can choose from 1 to 5 as the width.
+**REQ CMD FIFO Ptr Width** – This FIFO Pointer width for request flit waiting to be fed to controller pipeline process.  Default value is 4 and non-configurable.
 
-**RSP CMD FIFO Ptr Width** – This FIFO Pointer width for response flit waiting to be fed to controller pipeline process. Default value is 5, user can choose from 1 to 5 as the width.
+**RSP CMD FIFO Ptr Width** – This FIFO Pointer width for response flit waiting to be fed to controller pipeline process. Default value is 5 and non-configurable.
 
-**DAT CMD FIFO Ptr Width** – This FIFO Pointer width for data response waiting to be fed to controller pipeline process. Data response is generated from data flit coming from RN (processor). Default value is 5, user can choose from 1 to 5 as the width.
+**DAT CMD FIFO Ptr Width** – This FIFO Pointer width for data response waiting to be fed to controller pipeline process. Data response is generated from data flit coming from RN (processor). Default value is 5 and non-configurable.
 
-**DAT RSP CMD FIFO Size** – This FIFO depth for memory response waiting to be fed to controller pipeline process. Memory response is generated from data flit coming from Memory IO/L3. This is a dropdown parameter with a selection of 2, 4, 8, 16, or 32. Default value is 32.
+**DAT RSP CMD FIFO Size** – This FIFO depth for memory response waiting to be fed to controller pipeline process. Memory response is generated from data flit coming from Memory IO/L3.  Default value is 32 and non-configurable.
 
 **L3 Cache Controller Settings (Available in router type 'HN-F w/ L3')**
 
@@ -63,12 +63,12 @@ Configuring C-NoC Router
 
 **L3 Cache N-Set** – This Number of sets in N-way set associative cache mapping scheme for L3 cache. Number of sets is determined as 2k such that 0 ≤ k ≤ 5. This is a dropdown parameter with a selection of 1, 2, 4, 8, 16, or 32. Default value is 16.
 
-.. image:: images/configuring_router3.png
-  :alt: configuring_router1
+.. image:: images/configuring_router4.png
+  :alt: configuring_router4
   :align: center
 
-.. image:: images/configuring_router2.png
-  :alt: configuring_router1
+.. image:: images/configuring_router5.png
+  :alt: configuring_router5
   :align: center
 
 
