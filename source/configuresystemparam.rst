@@ -20,6 +20,8 @@ Configuring C-NoC System Parameters
 
 **MPAM** – Toggle button to enable/disable CNOC_SYSCONFIG_REVEB_MPAM_ENABLED. Default is disabled and only available using CHI Version – E.b. 
 
+**UCIe Bridge** - Toggle button to be able to add C-NoC Bridge on the grid. 
+
 **Programmable SAM** – Toggle button to enable/disable PROGRAMMABLE_SAM. Default is enabled. 
 
 **Programming Interface** – Toggle button to enable/disable SIG_PROG_AXI_LITE. Default is disabled. 
@@ -30,11 +32,24 @@ Configuring C-NoC System Parameters
 
 **Async Device Clock** – Toggle button to enable/disable SIG_CC_ASYNCCLK. Default is disabled. 
 
+**APB Address Width** - Display only parameter. Default value is 32. 
 
-.. image:: images/configuring_system_parameters.png
-  :alt: configuring_system_parameters
+**APB Data Width** - Display only parameter. Default value is 32. 
+
+**Low Power Interface** - This item is a dropdown selection where user is allowed to choose from 'None', 'Q-Channel' and 'P-Channel' as the Topology Low Power Interface. 
+
+**P-Channel Width** - Display only parameter. Default value is 1. This parameter will only be visible once 'P-Channel' is selected. 
+
+**P-Channel Active Width** - Display only parameter. Default value is 1. This parameter will only be visible once 'P-Channel' is selected. 
+
+**CHI Inactive Threshold** - Default is 10000, minimum input is 0 and maximum input is up to 2^32-1 
+
+**AXI Inactive Threshold** - Default is 500, minimum input is 0 ad maximum input is up to 2^32-1
+
+.. image:: images/configuring_system_parameters3.png
+  :alt: configuring_system_parameters3
   :align: center
 
-.. image:: images/configuring_system_parameters2.png
-  :alt: configuring_system_parameters2
+.. image:: images/configuring_system_parameters4.png
+  :alt: configuring_system_parameters4
   :align: center

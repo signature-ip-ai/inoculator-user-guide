@@ -67,77 +67,89 @@ NC-NoC Validations
 
   – Checks that all initiators are linked to the topology.
 
+10. Initiators: No invalid read reorder buffer size 
+
+  - Checks the values of all Read Reorder Buffer Size in each Initiator. 
+
+11. Initiators: No invalid write reorder buffer size 
+
+ - Checks the values of all Write Reorder Buffer Size in each Initiator. 
+
 10. Targets: No unconnected floating Targets 
 
   – Ensures all targets are properly connected.
 
-11. Bridges: No Bridges with incomplete connection 
+11. Targets: No invalid minimum transaction size
+
+  - Ensures that all target devices has a valid and acceptable Minimum Transation Size.
+
+12. Bridges: No Bridges with incomplete connection 
 
   – Validates that all bridges are fully connected on both ends.
 
-12. Bridges: No connected Bridges between same Subtopologies 
+13. Bridges: No connected Bridges between same Subtopologies 
 
   – Prevents redundant or invalid bridge connections within the same subtopology.
 
-13. Address Map: No Target with blank addresses 
+14. Address Map: No Target with blank addresses 
 
   – Checks that every target has an assigned address range.
 
-14. Address Map: No base address exceeds its limit address 
+15. Address Map: No base address exceeds its limit address 
 
   – Ensures base addresses are always less than or equal to limit addresses.
 
-15. Address Map: No address greater than NoC Address Width 
+16. Address Map: No address greater than NoC Address Width 
   
   – Verifies that all addresses fall within the allowed NoC width.
 
-16. Address Map: No address blocks overlapping 
+17. Address Map: No address blocks overlapping 
 
   – Prevents overlapping memory ranges across components.
 
-17. Routing: All Targets have dedicated forward routes 
+18. Routing: All Targets have dedicated forward routes 
 
   – Confirms each target is reachable through a forward path.
-
-18. Routing: All Initiators have dedicated backward routes 
-
-  – Ensures all initiators can receive return paths.
 
 19. Routing: All Routers have configured routes 
   
   – Validates that every router has proper routing rules set.
 
-20. Routing: No Router with multiple routes toward a single Destination 
+20. Routing: All connected ports have routes
+
+  - Validated that every port connection has a configured routes either manually or by auto-route feature. 
+
+21. Routing: No Router with multiple routes toward a single Destination 
 
   – Prevents conflicting routes to the same destination.
 
-21. Components: No Port Data Width exceeds NoC Data Width 
+22. Components: No Port Data Width exceeds NoC Data Width 
 
   – Ensures port widths comply with the maximum NoC data width.
 
-22. Components: All Device IDs less than 32 
+23. Components: All Device IDs less than 32 
 
   – Verifies device IDs stay within valid range (<32).
 
-23. Components: No Duplicate Name or Device ID 
+24. Components: No Duplicate Name or Device ID 
 
   – Ensures all devices are uniquely identified.
 
-24. Clock Frequency: All values greater than 0 
+25. Clock Frequency: All values greater than 0 
 
   – Validates that all clock frequencies are properly set.
 
-35. No Devices on wrong Subtopology 
+26. No Devices on wrong Subtopology 
 
  – Ensures devices are placed only in their valid subtopology.
 
 
 
-.. image:: images/ncnoc_topology_validation.png
+.. image:: images/ncnoc_topology_validation2.png
   :alt: ncnoc_topology_validation
   :align: center
 
-.. image:: images/topology_validation2.png
-  :alt: topology_validation2
+.. image:: images/topology_validation4.png
+  :alt: topology_validation3
   :align: center
 
