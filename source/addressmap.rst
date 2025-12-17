@@ -119,7 +119,7 @@ This section is essential for critical operations requiring real-time consistenc
 
 Editing of the Address Map is supported per region, per router, and for each Home Node and Subordinate Node individually. The tool allows users to configure or modify memory address ranges specific to their location in the system topology, enabling fine-grained control and validation of address assignments.
 
-.. image:: images/cnoc_address_map_editing_addresses.png
+.. image:: images/cnoc_address_map_editing_addresses2.png
   :alt: cnoc_address_map_editing_addresses
   :align: center
 
