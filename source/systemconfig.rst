@@ -8,8 +8,8 @@ This feature allows the user to modify the current settings of the project. The 
   :align: center
 
 
-.. image:: images/nc_noc-system_config3.png
-  :alt: nc_noc-system_config3
+.. image:: images/nc_noc-system_config4.png
+  :alt: nc_noc-system_config4
   :align: center
 
 
