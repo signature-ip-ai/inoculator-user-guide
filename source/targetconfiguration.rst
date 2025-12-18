@@ -25,8 +25,8 @@ This is a toggle button for enabling or disabling virtual devices. The default s
 
 This topic will be discussed in **6. Virtual Devices**. 
 
-.. image:: images/target-parameters9.png
-  :alt: target-parameters9
+.. image:: images/target-parameters10.png
+  :alt: target-parameters10
   :align: center
 
 .. image:: images/target-parameters2.png
@@ -87,9 +87,11 @@ If exclusive access is enabled, the following should be observed:
 
 **Read Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
 
-**Target Address Interleaving** - This parameter is DISABLED and non-configurable as default. This will only be enabled when Address Interleaving in System Config is ENABLED. Please check the `Address Interleaving <addressinterleaving.html>`_ page for more information. 
+**Address Interleaving Merger** - This parameter is DISABLED and non-configurable as default. This will only be enabled when Address Interleaving in System Config is ENABLED. Please check the `Address Interleaving <addressinterleaving.html>`_ page for more information. 
 
 **Minimum Transaction Size** - This parameter is ENABLED and configurable. This will only be validated when 'Target Address Interleaving'. Check the `Address Interleaving <addressinterleaving.html>`_  page to know more. 
+
+**Number of Pipeline Stages** - This parameters allows the user to set specific number of pipeline stages for the selected Target device. 
 
 
 **Read Data Delay** – This setting is only available in ‘SRAM’ Bus Protocol. Time interval to set for a read request. User can choose either 1 or 2.
