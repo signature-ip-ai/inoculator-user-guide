@@ -3,8 +3,8 @@ Initiator Configuration
 
 Configuring an Initiator device involves various settings. The Settings tab includes sections for Parameters, Timing, Security, and Others. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. 
 
-.. image:: images/initiator-parameters4.png
-  :alt: initiator-parameters3
+.. image:: images/initiator-parameters5.png
+  :alt: initiator-parameters5
   :align: center
 
 **Subtopology** – A dropdown list allows users to change the subtopology assigned to the selected initiator. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
@@ -44,6 +44,8 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 **Write Data Buffer** – This parameter allows the user to configure the Write Data Buffer for a selected Initiator device. Toggle on to enable and toggle off to disable. This parameter is displayed in all Bus Protocols excepts in SIG_NATIVE.
 
 **Write Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
+
+**Number of Pipeline Stages** - This parameter is for assigning Pipeline Stages in the selected initiator. 
 
 
 
