@@ -39,6 +39,7 @@ What's inside the iNoCulator?
 
    accessmap
    addressmap
+   addressinterleaving
    autoplace
    bridgeconfiguration
    componentsandexplorer
@@ -51,7 +52,6 @@ What's inside the iNoCulator?
    generatertlandtb
    implement
    initiatorconfiguration
-   performancematrix
    registermap
    routerconfiguration
    searchproject
