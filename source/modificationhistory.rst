@@ -214,6 +214,18 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Updated the C-NoC Router Parameters                                                         |
 |                       |                                | 3. Added validation related to Routers.                                                        |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.4.3                 | December 18, 2025              | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added parameter Number of Pipeline Stages for Initiator and Target Devices.                 |
+|                       |                                | 2. Modified the name of "Target Address Interleaving" to "Address Interleaving Merger".        |
+|                       |                                | 3. Added System Tab inside Register Map                                                        |
+|                       |                                | 4. Modified from checkbox to toggle button of Generate Cycle Accurate Model.                   |
+|                       |                                | 5. Added the context of Topology ID in C2C Bridge.                                             |
+|                       |                                | 6. Added one topology validation for C-NoC Bridge.                                             |
+|                       |                                | 7. Updated screenshots.                                                                        |
+|                       |                                | 8. Removed the Performance Matrix page completely.                                             |
+|                       |                                | 9. Deleted old screenshots.                                                                    |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 
