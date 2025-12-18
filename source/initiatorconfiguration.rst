@@ -37,15 +37,15 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 
 **User Data Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
 
-**Read Reorder Buffer Size** – The number of read operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE. 
+**Read Reorder Buffer Size** – The number of read operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE. The value selected for this parameter will be validated once at least one target device has enabled the Address Interleaving Merger.
 
-**Write Reorder Buffer Size** – The number of write operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE.
+**Write Reorder Buffer Size** – The number of write operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE. The value selected for this parameter will be validated once at least one target device has enabled the Address Interleaving Merger.
 
 **Write Data Buffer** – This parameter allows the user to configure the Write Data Buffer for a selected Initiator device. Toggle on to enable and toggle off to disable. This parameter is displayed in all Bus Protocols excepts in SIG_NATIVE.
 
 **Write Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
 
-**Number of Pipeline Stages** - This parameter is for assigning Pipeline Stages in the selected initiator. 
+**Number of Pipeline Stages** - This parameter is for assigning Pipeline Stages in the selected initiator. This is not available in SIG_NATIVE Bus Protocol. 
 
 
 
