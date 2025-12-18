@@ -32,7 +32,7 @@ This feature allows the user to modify the current settings of the project. The 
 
 **Address Interleaving** - Refers to the technique of distributing memory address ranges across multiple targets or memory devices in a patterned or alternating manner. The default toggle setting is disabled. When enabled, the 'Interleaved Channel Size' and 'Interleaving Split' parameters will also appear.
 
-  Interleaved Channel Size - allows the user to input the desired size and the binary unit. 
+  Interleaved Channel Size - allows the user to input the desired size and with "Bytes" as unit. 
 
   Interleaving Split - defines how a memory address range is divided (or split) into smaller segments for distribution among multiple targets or subordinate nodes in a NoC (Network-on-Chip) system. The default setting is disabled. The user can enable this using a toggle button.
     
