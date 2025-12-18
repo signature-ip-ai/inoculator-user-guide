@@ -45,7 +45,7 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 
 **Write Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
 
-**Number of Pipeline Stages** - This parameter is for assigning Pipeline Stages in the selected initiator. This is not available in SIG_NATIVE Bus Protocol. 
+**Number of Pipeline Stages** - This parameter is for assigning Pipeline Stages in the selected initiator. Using AXI Protocols, default value is 1. This is not available in SIG_NATIVE Bus Protocol. 
 
 
 
