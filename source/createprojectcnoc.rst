@@ -14,6 +14,6 @@ Click the Create button to generate a Coherent NoC (C-NoC) topology. Once the pr
   :alt: coherent_noc_project-grid_view
   :align: center
 
-.. image:: images/cnoc_address_map4.png
+.. image:: images/cnoc_address_map5.png
   :alt: cnoc_address_map
   :align: center
