@@ -1,4 +1,4 @@
-Bridge Configuration
+NC-NoC Bridge Configuration
 =======================================
 
 Bridges or Pipelines are components used to connect two or more network segments or different types of buses, enabling communication and integration across subtopologies. In iNoCulator, a bridge represents the connection between two routers that belong to different subtopologies, allowing them to operate as part of a unified network.

@@ -36,6 +36,26 @@ Select the 'Connect C2C Bridge' option from the context menu.
   :alt: c-noc_c2c-bridge-adding
   :align: center
 
-.. image:: images/c-noc_c2c-bridge.png
+**C-NoC Parameters** 
+
+Connected Topology ID - single number used to represent a topology’s position by combining its X and Y coordinates. The ID should be unique within the topology. It is calculated by placing the Y coordinate in the higher bits and the X coordinate in the lower bits using this formula:
+
+  Topology ID = (Y << 2) | X
+
+In simple terms:
+
+  Multiply Y by 4
+
+  Add X
+
+  The result is the Topology ID
+
+  This makes it easy to uniquely identify a position on a small grid (where X ranges from 0 to 3) using just one number.
+
+Connected Topology X - is a dropdown field where the user will be able to select from 0 to 3. Represents the column position (left to right). It is stored in the lower bits of the Connected Topology ID.
+
+Connected Topology Y - is a dropdown field where the user will be able to select from 0 to 3. Represents the row position (top to bottom). It is stored in the higher bits of the Connected Topology ID.
+
+.. image:: images/c-noc_c2c-bridge_sample.png
   :alt: c-noc_c2c-bridge
   :align: center

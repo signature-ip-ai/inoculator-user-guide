@@ -3,8 +3,8 @@ Initiator Configuration
 
 Configuring an Initiator device involves various settings. The Settings tab includes sections for Parameters, Timing, Security, and Others. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. 
 
-.. image:: images/initiator-parameters4.png
-  :alt: initiator-parameters3
+.. image:: images/initiator-parameters5.png
+  :alt: initiator-parameters5
   :align: center
 
 **Subtopology** – A dropdown list allows users to change the subtopology assigned to the selected initiator. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
@@ -37,13 +37,15 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 
 **User Data Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
 
-**Read Reorder Buffer Size** – The number of read operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE. 
+**Read Reorder Buffer Size** – The number of read operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE. The value selected for this parameter will be validated once at least one target device has enabled the Address Interleaving Merger.
 
-**Write Reorder Buffer Size** – The number of write operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE.
+**Write Reorder Buffer Size** – The number of write operations that can be stored and reordered. This parameter is displayed in all Bus Protocols except in SIG_NATIVE. The value selected for this parameter will be validated once at least one target device has enabled the Address Interleaving Merger.
 
 **Write Data Buffer** – This parameter allows the user to configure the Write Data Buffer for a selected Initiator device. Toggle on to enable and toggle off to disable. This parameter is displayed in all Bus Protocols excepts in SIG_NATIVE.
 
 **Write Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
+
+**Number of Pipeline Stages** - This parameter is for assigning Pipeline Stages in the selected initiator. Using AXI Protocols, default value is 1. This is not available in SIG_NATIVE Bus Protocol. 
 
 
 
@@ -90,30 +92,16 @@ Timing tab displays the Use Subtopology Clock and Frequency parameters. By defau
 **Device Policies** – Policy or configuration assigned for the connected Target device. This will also reflect in Target device’s setting. Choose from Passthrough, Programmable (Secure or Non-Secure), Blocked, and Fixed-Secure.
 
 
-.. image:: images/initiator-others2.png
+.. image:: images/initiator-others3.png
   :alt: initiator-others
   :align: center
 
 
-.. image:: images/initiator-others.png
-  :alt: initiator-others
-  :align: center
 
 **Traffic Regulation Policy 1&2** – Dropdown item where user can choose between ‘Disabled’, ‘Read only’, ‘Write Only’, ‘Read-Write Independent’ or ‘Read-Write Combined’. 
 
 **Traffic Regulation Policy 3** – Display-only parameter with a default value of ‘Disabled’. As of SWTOOLS_REL_5.1.1, this has not been implemented yet.
 
-**Enable Local SRAM** – This can be enabled if local SRAM is going to be used for the device. Default setting is disabled.
-
-**Address Width** – Address Width for Local SRAM. User can choose from 8, 16, 32 and 64. 
-
-**Base Address** – Starting address map for the Local SRAM when enabled. 
-
-**Limit Address** – End address map for the Local SRAM when enabled. 
-
-**Read Data Delay** – Time interval to set for a read request. User can choose either 1 or 2. 
-
-**Address Translation** – Default settings is disabled. User can choose either true or false
 
 
 

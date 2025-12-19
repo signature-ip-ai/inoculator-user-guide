@@ -50,9 +50,10 @@ III. Creating a Project
       3. `Router Configuration <routerconfiguration.html>`_
       4. `Initiator Configuration <initiatorconfiguration.html>`_
       5. `Target Configuration <targetconfiguration.html>`_
-      6. `Virtual Device Configuration <virtualconfiguration.html>`_
-      7. `Bridge Configuration <bridgeconfiguration.html>`_
-      8. `Subtopology Configuration <subtopologyconfiguration.html>`_
+      6. `Address Interleaving <addressinterleaving.html>`_
+      7. `Virtual Device Configuration <virtualconfiguration.html>`_
+      8. `Bridge Configuration <bridgeconfiguration.html>`_
+      9. `Subtopology Configuration <subtopologyconfiguration.html>`_
 
    C. Coherent NoC Topology
 
@@ -64,46 +65,39 @@ III. Creating a Project
       6. `C2C Bridge Configuration <c2cbridge.html>`_
       7. `C-NoC Topology Validation <cnoctopologyvalidation.html>`_
 
-   D. Performance Matrix
-
-      1. `Read Bandwidth <performancematrix.html>`_
-      2. `Write Bandwidth <performancematrix.html>`_
-      3. `Read Latency <performancematrix.html>`_
-      4. `Write Latency <performancematrix.html>`_
-
-   E. Access Map
+   D. Access Map
 
       1. `Security Policy <accessmap.html>`_
 
-   F. `Address Map <addressmap.html>`_
+   E. `Address Map <addressmap.html>`_
 
-   G. `Topology Validation <topologyvalidation.html>`_
+   F. `Topology Validation <topologyvalidation.html>`_
 
-   H. Generating RTL Files and Testbench  
+   G. Generating RTL Files and Testbench  
 
       1. `Download and viewing JSON <generatertlandtb.html>`_
 
-   I. `Simulation <simulation.html>`_
+   H. `Simulation <simulation.html>`_
 
-   J. `Download JSON <downloadjson.html>`_
+   I. `Download JSON <downloadjson.html>`_
 
-   K. `Implement <implement.html>`_
+   J. `Implement <implement.html>`_
 
-   L. `Project Configuration <projectconfig.html>`_
+   K. `Project Configuration <projectconfig.html>`_
 
-   M. `Copy Project <copyproject.html>`_
+   L. `Copy Project <copyproject.html>`_
 
-   N. `Floor Plan <floorplan.html>`_
+   M. `Floor Plan <floorplan.html>`_
 
-   O. `Auto-Place <autoplace.html>`_
+   N. `Auto-Place <autoplace.html>`_
 
-   P. `Shared Project <sharedproject.html>`_
+   O. `Shared Project <sharedproject.html>`_
 
-   Q. `Delete Project <deleteproject.html>`_
+   P. `Delete Project <deleteproject.html>`_
 
-   R. `Search Project <searchproject.html>`_
+   Q. `Search Project <searchproject.html>`_
 
-   S. `Project Page <projectpage.html>`_
+   R. `Project Page <projectpage.html>`_
 
 IV. `Frequently Asked Questions <faqs.html>`_
 ------------------------------------------------------

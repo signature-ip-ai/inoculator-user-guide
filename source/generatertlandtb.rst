@@ -14,12 +14,12 @@ Then, click the ‘Generate Design’ button to start the process. The results, 
   :align: center
  
 
-.. image:: images/generate_rtl_files_and_testbench3.png  
+.. image:: images/generate_rtl_files_and_testbench4.png  
   :alt: generate_rtl_files_and_testbench
   :align: center
 
 
-.. image:: images/generate_rtl_actions2.png  
+.. image:: images/generate_rtl_actions3.png  
   :alt: generate_rtl_actions
   :align: center
 
@@ -43,12 +43,12 @@ Then, click the ‘Generate Design’ button to start the process. The results, 
   :align: center
 
 
-.. image:: images/c-noc_generateRTL3.png
+.. image:: images/c-noc_generateRTL4.png
   :alt: c-noc_generateRTL2.png
   :align: center
 
 
-.. image:: images/c-noc_generateRTL_actions2.png  
+.. image:: images/c-noc_generateRTL_actions4.png  
   :alt: c-noc_generateRTL_actions
   :align: center
 
