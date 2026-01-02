@@ -48,7 +48,7 @@ Then, click the ‘Generate Design’ button to start the process. The results, 
   :align: center
 
 
-.. image:: images/c-noc_generateRTL_actions4.png  
+.. image:: images/c-noc_generateRTL_actions3.png  
   :alt: c-noc_generateRTL_actions
   :align: center
 
