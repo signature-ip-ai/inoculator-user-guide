@@ -226,6 +226,13 @@ This is the modification history made for the documentation.
 |                       |                                | 8. Removed the Performance Matrix page completely.                                             |
 |                       |                                | 9. Deleted old screenshots.                                                                    |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 5.4.4                 | January 14, 2026               | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Deleted all unnecessary files (screenshots, unused pages, etc.,)                            |  
+|                       |                                | 2. Updated Register Map with latest specification.                                             |
+|                       |                                | 3. Update Project Page UI.                                                                     |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+
 
 
 
