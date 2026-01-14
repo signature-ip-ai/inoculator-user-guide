@@ -19,7 +19,7 @@ Below are the key components and features available on the Project Page:
 
 The Project Page displays all available projects and provides tools for creating, managing, and navigating projects.
 
-.. image:: images/projects_page-dashboard2.png
+.. image:: images/projects_page-dashboard3.png
   :alt: projects_page-dashboard
   :align: center
 
@@ -51,7 +51,7 @@ The Home Icon or Inoculator Icon takes you back to the main landing page of the 
 
 Click the Create Project button to start a new project and configure its details.
 
-.. image:: images/projects_page-create_project_button2.png
+.. image:: images/projects_page-create_project_button3.png
   :alt: projects_page-create_project_button
   :align: center
 
@@ -91,6 +91,6 @@ Use the Search Field to quickly find a project by entering its name or keyword.
 
 The Filter Button allows users to refine the project list based on categories or attributes.
 
-.. image:: images/filter_function2.png
+.. image:: images/filter_function3.png
   :alt: filter_function
   :align: center
