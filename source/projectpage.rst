@@ -83,7 +83,7 @@ The Log Out button securely signs the user out of the application.
 
 Use the Search Field to quickly find a project by entering its name or keyword.
 
-.. image:: images/search_project_page3.png
+.. image:: images/search_project_page4.png
   :alt: search_project_page2
   :align: center
 
