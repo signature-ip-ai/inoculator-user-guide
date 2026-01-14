@@ -231,6 +231,7 @@ This is the modification history made for the documentation.
 |                       |                                | 1. Deleted all unnecessary files (screenshots, unused pages, etc.,)                            |  
 |                       |                                | 2. Updated Register Map with latest specification.                                             |
 |                       |                                | 3. Update Project Page UI.                                                                     |
+|                       |                                | 4. Updated the window design for generateRTL, Simulate and ExportRTL.                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
