@@ -139,17 +139,13 @@ NC-NoC Validations
 
   – Validates that all clock frequencies are properly set.
 
-26. No Devices on wrong Subtopology 
-
- – Ensures devices are placed only in their valid subtopology.
 
 
-
-.. image:: images/ncnoc_topology_validation2.png
+.. image:: images/ncnoc_topology_validation.png
   :alt: ncnoc_topology_validation
   :align: center
 
-.. image:: images/topology_validation4.png
+.. image:: images/ncnoc_topology_validation_list.png
   :alt: topology_validation3
   :align: center
 
