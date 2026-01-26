@@ -233,7 +233,10 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Update Project Page UI.                                                                     |
 |                       |                                | 4. Updated the window design for generateRTL, Simulate and ExportRTL.                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-
+| 5.4.5                 | January 28, 2026               | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Removed "No Devices on wrong Subtopology" in Topology Validation.                           |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 
