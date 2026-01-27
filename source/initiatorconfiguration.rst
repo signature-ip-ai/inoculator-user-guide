@@ -100,7 +100,6 @@ Timing tab displays the Use Subtopology Clock and Frequency parameters. By defau
 
 **Traffic Regulation Policy 1&2** – Dropdown item where user can choose between ‘Disabled’, ‘Read only’, ‘Write Only’, ‘Read-Write Independent’ or ‘Read-Write Combined’. 
 
-**Traffic Regulation Policy 3** – Display-only parameter with a default value of ‘Disabled’. As of SWTOOLS_REL_5.1.1, this has not been implemented yet.
 
 
 
