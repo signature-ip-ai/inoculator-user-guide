@@ -46,10 +46,23 @@ Configuring C-NoC System Parameters
 
 **AXI Inactive Threshold** - Default is 500, minimum input is 0 ad maximum input is up to 2^32-1
 
+**Disable Assertions** - Default toggle button is enabled, means Assertion is disabled. When disabled, assertion is enabled. 
+
+**Address Translation** - Default toggle button is disabled. User is allowed to enable this parameter. 
+
+**Async Bridge Ports** - Default toggle button is disabled. User is allowed to enable this parameter. 
+
+**Performance Monitoring** - Default toggle button is disabled. User is allowed to enable this parameter. 
+
+
 .. image:: images/configuring_system_parameters3.png
   :alt: configuring_system_parameters3
   :align: center
 
 .. image:: images/configuring_system_parameters4.png
   :alt: configuring_system_parameters4
+  :align: center
+
+.. image:: images/cnoc_system_parameters4.png
+  :alt: cnoc_system_parameters4
   :align: center
