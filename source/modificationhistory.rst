@@ -236,6 +236,9 @@ This is the modification history made for the documentation.
 | 5.4.5                 | January 28, 2026               | *Modified Items:*                                                                              |
 |                       |                                |                                                                                                |
 |                       |                                | 1. Removed "No Devices on wrong Subtopology" in Topology Validation.                           |
+|                       |                                | 2. Update Initiator and Target right panel display.                                            |
+|                       |                                | 3. Added new parameters in C-NoC System Config.                                                |
+|                       |                                | 4. Add Autofill function in NC-NoC Address Map.                                                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
