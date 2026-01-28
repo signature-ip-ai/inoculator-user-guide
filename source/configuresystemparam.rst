@@ -63,6 +63,6 @@ Configuring C-NoC System Parameters
   :alt: configuring_system_parameters4
   :align: center
 
-.. image:: images/cnoc_system_parameters4.png
-  :alt: cnoc_system_parameters4
+.. image:: images/cnoc_system_parameters.png
+  :alt: cnoc_system_parameters
   :align: center
