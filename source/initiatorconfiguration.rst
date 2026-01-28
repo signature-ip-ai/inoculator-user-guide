@@ -3,11 +3,9 @@ Initiator Configuration
 
 Configuring an Initiator device involves various settings. The Settings tab includes sections for Parameters, Timing, Security, and Others. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. 
 
-.. image:: images/initiator-parameters5.png
+.. image:: images/initiator-parameters6.png
   :alt: initiator-parameters5
   :align: center
-
-**Subtopology** – A dropdown list allows users to change the subtopology assigned to the selected initiator. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
   
 **Name** – Label name assigned for selected initiator. This is an input field where only alphanumeric keys and underscores are allowed.
   
@@ -70,7 +68,7 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 
 
 
-.. image:: images/initiator-timing3.png
+.. image:: images/initiator-timing4.png
   :alt: initiator-timing
   :align: center
 
@@ -81,7 +79,7 @@ Timing tab displays the Use Subtopology Clock and Frequency parameters. By defau
 **Frequency** – TThis refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field can be modified if 'Use Subtopology Clock' is disabled. 
 
 
-.. image:: images/initiator-security2.png
+.. image:: images/initiator-security3.png
   :alt: initiator-security
   :align: center
 
@@ -92,7 +90,7 @@ Timing tab displays the Use Subtopology Clock and Frequency parameters. By defau
 **Device Policies** – Policy or configuration assigned for the connected Target device. This will also reflect in Target device’s setting. Choose from Passthrough, Programmable (Secure or Non-Secure), Blocked, and Fixed-Secure.
 
 
-.. image:: images/initiator-others3.png
+.. image:: images/initiator-others4.png
   :alt: initiator-others
   :align: center
 
