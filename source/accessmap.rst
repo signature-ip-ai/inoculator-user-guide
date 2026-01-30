@@ -21,7 +21,7 @@ Users can select from the following four policies:
 
 Cells that appear greyed out indicate that the corresponding device is not reachable from that port.
 
-.. image:: images/access_map-security_policy4.png
+.. image:: images/access_map-security_policy.png
   :alt: access_map-security_policy
   :align: center
 

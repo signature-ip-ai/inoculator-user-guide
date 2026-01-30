@@ -8,7 +8,7 @@ Default Target - A device that acts as the default communication slave in a mast
 Target Device - The device that is currently being controlled or receiving commands from the master.
 
 
-.. image:: images/target-default_slave.png
+.. image:: images/target-default_slave1.png
   :alt: target-default_slave
   :align: center
 
@@ -16,7 +16,7 @@ Target Device - The device that is currently being controlled or receiving comma
 
 **Bus Protocol** – This read-only parameter displays the name "Default", representing the Default Slave
 
-.. image:: images/target-enable_virtual_device.png
+.. image:: images/target-enable_virtual_device1.png
   :alt: target-enable_virtual_device
   :align: center
 
@@ -25,11 +25,11 @@ This is a toggle button for enabling or disabling virtual devices. The default s
 
 This topic will be discussed in **6. Virtual Devices**. 
 
-.. image:: images/target-parameters10.png
+.. image:: images/target-parameters11.png
   :alt: target-parameters10
   :align: center
 
-.. image:: images/target-parameters2.png
+.. image:: images/target-SRAM.png
   :alt: target-parameters
   :align: center
 
@@ -119,7 +119,7 @@ If exclusive access is enabled, the following should be observed:
 +------------------+--------------------------+----------------------+
 
 
-.. image:: images/target-timing3.png
+.. image:: images/target-timing4.png
   :alt: target-timing
   :align: center
 
@@ -129,7 +129,7 @@ Timing tab displays the Use Subtopology Clock and Frequency parameters. By defau
 
 **Frequency** – This refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field will be available if 'Use Subtopology Clock' is disabled.
 
-.. image:: images/target-security.png
+.. image:: images/target-security1.png
   :alt: target-security
   :align: center
 
