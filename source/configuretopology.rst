@@ -11,7 +11,7 @@ Configure C-NoC Topology
 
 **Configure Topology** – This button confirms the creation of a Coherent NoC topology. Once the user clicks it, the topology will be generated on the grid based on the configured number of columns and rows.
 
-.. image:: images/sample_cnoc_topology-without_added_device8.png
+.. image:: images/sample_cnoc_topology-without_added_device9.png
   :alt: sample_cnoc_topology-without_added_device
   :align: center
 
@@ -28,7 +28,7 @@ Adding a Router
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Click the “+” button located on the right or top side of any Router device to add a new router.
 
-.. image:: images/c_noc-add_router3.png
+.. image:: images/c_noc-add_router4.png
   :alt: c_noc-add_router
   :align: center
 
@@ -61,7 +61,7 @@ Connect to C2C Bridge
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This button is placed in the Interconnect Port of each Router. To add a C2C Bridge, right-click on any Interconnect Port and select Connect to C2C Bridge. A new C2C Bridge will then appear in the selected Router.
 
-.. image:: images/c-noc_c2c-bridge-adding2.png
+.. image:: images/c-noc_c2c-bridge-adding3.png
   :alt: c-noc_c2c-bridge-adding
   :align: center
 
@@ -71,7 +71,7 @@ Delete a Connection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This function allows the deletion of a connection between two routers. Deleting a connection is done per direction. To delete a connection, right-click on any router connection to open the context menu, then select ‘Delete Connection’ to proceed.
 
-.. image:: images/c-noc_delete-a-connection.png
+.. image:: images/c-noc_delete-a-connection2.png
   :alt: c-noc_delete-a-connection
   :align: center
 
@@ -80,7 +80,7 @@ Connect to Adjacent Router
 This button is placed in the Interconnect Port of each Router. To add a connection from one router to another, right-click on any Interconnect Port and select Connect to Adjacent Router. A new connection will then appear to the nearest available router in the canvas.
 This item will only be available to Routers that do not have a Router Connection.
 
-.. image:: images/c-noc_connect-to-adjacent-router.png
+.. image:: images/c-noc_connect-to-adjacent-router2.png
   :alt: c-noc_connect-to-adjacent-router
   :align: center
 
