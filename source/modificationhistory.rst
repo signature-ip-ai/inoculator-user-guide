@@ -240,6 +240,12 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Added new parameters in C-NoC System Config.                                                |
 |                       |                                | 4. Add Autofill function in NC-NoC Address Map.                                                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.1.0                 | February 11, 2026              | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Modified Router Configuration, moved Routing Table to tab and Pipeline Stages.              |
+|                       |                                | 2. Project Count Badge in the Projects Page                                                    |
+|                       |                                | 3. Auto Route menu modification                                                                |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 
