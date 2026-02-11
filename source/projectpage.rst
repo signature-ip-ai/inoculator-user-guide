@@ -15,6 +15,8 @@ Below are the key components and features available on the Project Page:
 
   - Access to project details and configuration
 
+  - Projects count badge 
+
 **Project Page Overview**
 
 The Project Page displays all available projects and provides tools for creating, managing, and navigating projects.
