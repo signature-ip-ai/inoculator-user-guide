@@ -37,7 +37,7 @@ II. Features
       2. `Suspended Account <suspendedaccount.html>`_
       3. `Invalid Credentials <invalidcredentials.html>`_
       4. `Duplicate Email <duplicateemail.html>`_
-      5. `Expired Link <expiredlink.html>`_
+      5. `Expired Activation Link <expiredlink.html>`_
 
 III. Creating a Project
 -------------------------------------------------------

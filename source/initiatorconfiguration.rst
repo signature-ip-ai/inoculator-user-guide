@@ -3,7 +3,7 @@ Initiator Configuration
 
 Configuring an Initiator device involves various settings. The Settings tab includes sections for Parameters, Timing, Security, and Others. The Timing section is available only if the 'Disable Frequency Validation' checkbox in the 'Create Project' settings is checked. The Traffic Behavior section is available only if the corresponding checkbox in the 'Create Project' settings is enabled. 
 
-.. image:: images/initiator-parameters6.png
+.. image:: images/initiator-parameters7.png
   :alt: initiator-parameters5
   :align: center
   
@@ -42,9 +42,6 @@ Configuring an Initiator device involves various settings. The Settings tab incl
 **Write Data Buffer** – This parameter allows the user to configure the Write Data Buffer for a selected Initiator device. Toggle on to enable and toggle off to disable. This parameter is displayed in all Bus Protocols excepts in SIG_NATIVE.
 
 **Write Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
-
-**Number of Pipeline Stages** - This parameter is for assigning Pipeline Stages in the selected initiator. Using AXI Protocols, default value is 1. This is not available in SIG_NATIVE Bus Protocol. 
-
 
 
 

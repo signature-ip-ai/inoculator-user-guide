@@ -1,4 +1,4 @@
-Expired Link
+Expired Activation Link
 ================================================
 
 Activating an account with an expired link occurs when a user tries to activate or verify their account using an email link that has passed its validity period.
