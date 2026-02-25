@@ -246,6 +246,13 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Project Count Badge in the Projects Page                                                    |
 |                       |                                | 3. Auto Route menu modification                                                                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.1.1                 | February 25, 2026              | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added tabs in C-NoC System Config.                                                          |
+|                       |                                | 2. Added C-NoC Pipeline Stages.                                                                |
+|                       |                                | 3. Added C-NoC Address Interleaving.                                                           |
+|                       |                                |                                                                                                |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 
