@@ -1,4 +1,4 @@
-Address Interleaving 
+NC-NoC Address Interleaving 
 ========================================================
 
 System Config 
