@@ -1,6 +1,9 @@
-Configuring C-NoC System Parameters
+Configuring C-NoC System Config
 ===========================================
 
+
+Parameters Tab
+----------------------------------------------
 
 **CHI Version** – Version of AMBA CHI protocol to use for the whole C-NoC. Default is E.b. User can choose from E.b and B. 
 
@@ -36,6 +39,22 @@ Configuring C-NoC System Parameters
 
 **APB Data Width** - Display only parameter. Default value is 32. 
 
+**Disable Assertions** - Default toggle button is enabled, means Assertion is disabled. When disabled, assertion is enabled. 
+
+**Address Translation** - Default toggle button is disabled. User is allowed to enable this parameter. 
+
+**Async Bridge Ports** - Default toggle button is disabled. User is allowed to enable this parameter. 
+
+**Performance Monitoring** - Default toggle button is disabled. User is allowed to enable this parameter. 
+
+.. image:: images/system_config_parameters.png
+  :alt: system_config_parameters
+  :align: center
+
+
+Q/P Channel Tab
+--------------------------------------------------
+
 **Low Power Interface** - This item is a dropdown selection where user is allowed to choose from 'None', 'Q-Channel' and 'P-Channel' as the Topology Low Power Interface. 
 
 **P-Channel Width** - Display only parameter. Default value is 1. This parameter will only be visible once 'P-Channel' is selected. 
@@ -46,23 +65,44 @@ Configuring C-NoC System Parameters
 
 **AXI Inactive Threshold** - Default is 500, minimum input is 0 ad maximum input is up to 2^32-1
 
-**Disable Assertions** - Default toggle button is enabled, means Assertion is disabled. When disabled, assertion is enabled. 
 
-**Address Translation** - Default toggle button is disabled. User is allowed to enable this parameter. 
-
-**Async Bridge Ports** - Default toggle button is disabled. User is allowed to enable this parameter. 
-
-**Performance Monitoring** - Default toggle button is disabled. User is allowed to enable this parameter. 
-
-
-.. image:: images/configuring_system_parameters3.png
-  :alt: configuring_system_parameters3
+.. image:: images/system_config_qpchannel.png
+  :alt: system_config_qpchannel
   :align: center
 
-.. image:: images/configuring_system_parameters4.png
-  :alt: configuring_system_parameters4
+
+Pipeline Tab
+-----------------------------------------------
+
+**Number of Pipeline Stages** - This input field determine the number of stages assigned for the whole C-NoC Topology. 
+
+
+.. image:: images/system_config_pipeline.png
+  :alt: system_config_pipeline
   :align: center
 
-.. image:: images/cnoc_system_parameters.png
-  :alt: cnoc_system_parameters
+
+Interleaving Tab
+-----------------------------------------------
+
+**Interleaved Full Base Address** - This input field determine the Interleaved Base Address. This should consists 13 hex characters. Base Address should not be more than Limit Address. 
+
+**Interleaved Full Limit Address** - This input field determine the Interleaved Limit Address. This should consists 13 hex characters. Limit Address should not be less than Base Address. 
+
+**Interleaved Subordinate Node** - This is an input field. Maximum number allowed depends on the number of SN or Slave on the topology. 
+
+**Interleaved Step Size** - Default is 64 bytes. User can configure from 64 bytes, 128 bytes, 256 bytes, 512 bytes, 1kb, 2kb, or 4kb. 
+
+**Hashed Full Base Address** - This input field determine the Hashed Base Address. This should consists 13 hex characters. Base Address should not be more than Limit Address. 
+
+**Hashed Full Limit Address** - This input field determine the Hashed Limit Address. This should consists 13 hex characters. Limit Address should not be less than Base Address. 
+
+**Hashed Subordinate Node** - This is an input field. Maximum number allowed depends on the number of SN or Slave on the topology. 
+
+**Hashed Step Size** - Default is 64 bytes. User can configure from 64 bytes, 128 bytes, 256 bytes, 512 bytes, 1kb, 2kb, or 4kb. 
+
+
+.. image:: images/system_config_interleaving.png
+  :alt: system_config_interleaving
   :align: center
+
