@@ -1,4 +1,4 @@
-Configuring C-NoC System Config
+C-NoC System Config
 ===========================================
 
 
