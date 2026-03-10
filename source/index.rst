@@ -71,9 +71,9 @@ What's inside the iNoCulator?
 
    createprojectcnoc
    cnoctopology
-   configureroutercnoc
+   cnocrouter
    cnocdevice
-   configuresystemparam
+   cnocsystemconifg
    c2cbridge
    cnoctopologyvalidation
 
