@@ -1,4 +1,4 @@
-Configuring C-NoC Router
+C-NoC Router
 ===================================================
 
 **Device ID** – This represents the unique identifier of the selected device.
