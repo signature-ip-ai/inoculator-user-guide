@@ -1,4 +1,4 @@
-Configure C-NoC Topology
+C-NoC Topology
 =======================================================
 
 .. image:: images/c_noc-configure_topology2.png
