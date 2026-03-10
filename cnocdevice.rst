@@ -13,8 +13,9 @@ C-NoC Device
 
 **Reserved Port Data Width** - This is a dropdown button where the user can choose between 4, 8, 12, 16, or 32 as the Reserved Port Data Width for the selected device, which is reserved for future use in the data flit.
 
+
 .. image:: images/configuring_device-chi_protocol4.png
-  :alt: configuring_device-chi_protocol
+  :alt: configuring_device-chi_protocol4
   :align: center
 
 
@@ -31,7 +32,8 @@ C-NoC Device
 
 **User Width** - This is a display-only parameter showing the user-defined signal width of the AXI port connected to the nth port of the mth cluster.
 
+
 .. image:: images/configuring_device-axi_protocol2.png
-  :alt: configuring_device-axi_protocol
+  :alt: configuring_device-axi_protocol2
   :align: center
 
