@@ -59,12 +59,13 @@ III. Creating a Project
 
       1. `Create C-NoC Project <createprojectcnoc.html>`_
       2. `Configure Topologoy <cnoctopology.html>`_
-      3. `Confugure Device <cnocdevice.html>`_
+      3. `Configure Device <cnocdevice.html>`_
       4. `Configure Router <cnocrouter.html>`_
       5. `C-NoC System Config <cnocsystemconfig.html>`_
       6. `C2C Bridge Configuration <c2cbridge.html>`_
       7. `C-NoC Topology Validation <cnoctopologyvalidation.html>`_
       8. `C-NoC Address Interleaving <cnocinterleaving.html>`_
+      9. `C-NoC Address Map <cnocaddressmap.html>`_
 
    D. Access Map
 
