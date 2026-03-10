@@ -70,9 +70,9 @@ What's inside the iNoCulator?
    :caption: C-NoC
 
    createprojectcnoc
-   configuretopology
+   cnoctopology
    configureroutercnoc
-   configuredevicecnoc
+   cnocdevice
    configuresystemparam
    c2cbridge
    cnoctopologyvalidation
