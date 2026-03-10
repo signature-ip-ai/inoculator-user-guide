@@ -64,6 +64,7 @@ III. Creating a Project
       5. `C-NoC System Config <cnocsystemconfig.html>`_
       6. `C2C Bridge Configuration <c2cbridge.html>`_
       7. `C-NoC Topology Validation <cnoctopologyvalidation.html>`_
+      8. `C-NoC Address Interleaving <cnocinterleaving.html>`_
 
    D. Access Map
 
