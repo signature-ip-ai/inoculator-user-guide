@@ -58,8 +58,8 @@ III. Creating a Project
    C. Coherent NoC Topology
 
       1. `Create a C-NoC Project <createprojectcnoc.html>`_
-      2. `Configure Topologoy <configuretopology.html>`_
-      3. `Confugure Device <configuredevicecnoc.html>`_
+      2. `Configure Topologoy <cnoctopology.html>`_
+      3. `Confugure Device <cnocdevice.html>`_
       4. `Configure Router <configureroutercnoc.html>`_
       5. `Configure System Parameters <configuresystemparam.html>`_
       6. `C2C Bridge Configuration <c2cbridge.html>`_
