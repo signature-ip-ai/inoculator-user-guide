@@ -77,6 +77,7 @@ What's inside the iNoCulator?
    c2cbridge
    cnoctopologyvalidation
    cnocinterleaving
+   cnocaddressmap
 
 .. toctree::
    :maxdepth: 2
