@@ -124,6 +124,8 @@ It specifies which memory ranges are subject to snoop transactions to maintain d
 
 - Supports AXI Master cache operations across the system.
 
+All devices with AXI Master as the device type will be configured in the Request Node Address Map table. All address maps should reside within the Home Node Address Map and may overlap.
+
 .. image:: images/cnoc_snoopable_address.png
   :alt: cnoc_snoopable_address
   :align: center
