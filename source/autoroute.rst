@@ -30,8 +30,8 @@ The feature provides status indicators to show the progress and result of the ro
 
 **Updated** – Connections changed, user must re-run the Auto Route or update the routing table.
 
-.. image:: images/auto_route_updated.png
-  :alt: auto_route_updated
+.. image:: images/auto_route_updated_routes.png
+  :alt: auto_route_updated_routes
   :align: center
 
 
