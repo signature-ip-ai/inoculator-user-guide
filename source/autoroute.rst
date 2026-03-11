@@ -10,32 +10,32 @@ It simplifies router configuration by calculating routes based on the topology, 
 
 The feature provides status indicators to show the progress and result of the routing process:
 
-Cached – Routes have already been calculated and stored; no new computation was needed.
+**Cached** – Routes have already been calculated and stored; no new computation was needed.
 
 .. image:: images/auto_route_cached.png
   :alt: auto_route_cached
   :align: center
 
-Success – Routing completed successfully and all paths are valid.
+**Success** – Routing completed successfully and all paths are valid.
 
 .. image:: images/auto_route_success.png
   :alt: auto_route_success
   :align: center
 
-Warning – Routing completed, but some issues or potential conflicts were detected.
+**Warning** – Routing completed, but some issues or potential conflicts were detected.
 
 .. image:: images/auto_route_success_with_warning.png
   :alt: auto_route_success_with_warning
   :align: center
 
-Updated – Connections changed, user must re-run the Auto Route or update the routing table.
+**Updated** – Connections changed, user must re-run the Auto Route or update the routing table.
 
 .. image:: images/auto_route_updated.png
   :alt: auto_route_updated
   :align: center
 
 
-Failed – Routing could not be completed; manual intervention may be required.
+**Failed** – Routing could not be completed; manual intervention may be required.
 
 .. image:: images/auto_route_failed.png
   :alt: auto_route_failed
