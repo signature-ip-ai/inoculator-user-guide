@@ -75,31 +75,33 @@ III. Creating a Project
 
    F. `Topology Validation <topologyvalidation.html>`_
 
-   G. Generating RTL Files and Testbench  
+   G. `Auto-Route <autoroute.html>`_
+
+   H. Generating RTL Files and Testbench  
 
       1. `Download and viewing JSON <generatertlandtb.html>`_
 
-   H. `Simulation <simulation.html>`_
+   I. `Simulation <simulation.html>`_
 
-   I. `Download JSON <downloadjson.html>`_
+   J. `Download JSON <downloadjson.html>`_
 
-   J. `Implement <implement.html>`_
+   K. `Implement <implement.html>`_
 
-   K. `Project Configuration <projectconfig.html>`_
+   L. `Project Configuration <projectconfig.html>`_
 
-   L. `Copy Project <copyproject.html>`_
+   M. `Copy Project <copyproject.html>`_
 
-   M. `Floor Plan <floorplan.html>`_
+   N. `Floor Plan <floorplan.html>`_
 
-   N. `Auto-Place <autoplace.html>`_
+   O. `Auto-Place <autoplace.html>`_
 
-   O. `Shared Project <sharedproject.html>`_
+   P. `Shared Project <sharedproject.html>`_
 
-   P. `Delete Project <deleteproject.html>`_
+   Q. `Delete Project <deleteproject.html>`_
 
-   Q. `Search Project <searchproject.html>`_
+   R. `Search Project <searchproject.html>`_
 
-   R. `Projects Page <projectspage.html>`_
+   S. `Projects Page <projectspage.html>`_
 
 IV. `Frequently Asked Questions <faqs.html>`_
 ------------------------------------------------------
