@@ -47,7 +47,6 @@ What's inside the iNoCulator?
    copyproject
    createprojectncnoc
    deleteproject
-   downloadjson
    exportpackage
    floorplan
    generatertlandtb
