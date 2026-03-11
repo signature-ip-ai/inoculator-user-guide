@@ -253,6 +253,17 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Added C-NoC Address Interleaving.                                                           |
 |                       |                                |                                                                                                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.1.2                 | March 11, 2026                 | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added C-NoC Address Interleaving                                                            |
+|                       |                                | 2. Added C-NoC Snoopable Address Map                                                           |
+|                       |                                | 3. Updated C-NoC Topology Validation                                                           |
+|                       |                                | 4. Added separate page for Auto Route                                                          |
+|                       |                                | 5. Modified the Device Protocol and Connected Device Type in right panel                       |
+|                       |                                | 6. Added the C-NoC Parameters - Hashed HN and Interleaved SN                                   |
+|                       |                                | 7. Added the Starred Project in Projects page                                                  |
+|                       |                                | 8. Modified the display of UCIe bride in Address Map table                                     |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 
