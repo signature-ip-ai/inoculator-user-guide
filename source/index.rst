@@ -74,7 +74,7 @@ What's inside the iNoCulator?
    cnoctopology
    cnocrouter
    cnocdevice
-   cnocsystemconifg
+   cnocsystemconfig
    c2cbridge
    cnoctopologyvalidation
    cnocinterleaving
