@@ -41,6 +41,7 @@ What's inside the iNoCulator?
    addressmap
    addressinterleaving
    autoplace
+   autoroute
    bridgeconfiguration
    componentsandexplorer
    copyproject
