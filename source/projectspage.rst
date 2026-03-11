@@ -49,9 +49,9 @@ The Home Icon or Inoculator Icon takes you back to the main landing page of the 
   :alt: projects_page-home
   :align: center
 
-**Create Project Button** 
+**Add New Project Button** 
 
-Click the Create Project button to start a new project and configure its details.
+Click the Add New Project button to start a new project and configure its details.
 
 .. image:: images/projects_page-add_new_project.png
   :alt: projects_page-add_new_project
