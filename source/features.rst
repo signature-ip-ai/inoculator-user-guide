@@ -99,7 +99,7 @@ III. Creating a Project
 
    Q. `Search Project <searchproject.html>`_
 
-   R. `Project Page <projectpage.html>`_
+   R. `Projects Page <projectspage.html>`_
 
 IV. `Frequently Asked Questions <faqs.html>`_
 ------------------------------------------------------
