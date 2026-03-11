@@ -9,7 +9,6 @@ release = '6.1.2'
 # -- General configuration ---------------------------------------------------
 
 extensions = [
-    'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
