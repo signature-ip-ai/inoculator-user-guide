@@ -10,7 +10,6 @@ Cacheable and Non-Cacheable Address Map
 This user guide provides detailed information and instructions for understanding and validating the Cacheable Address Map and Non-Cacheable Address Map within the system’s interconnect or NoC (Network-on-Chip) topology. These address maps are critical for efficient memory access and data routing across home and subordinate nodes.
 
 
-
 Home Node Address Map
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -24,7 +23,7 @@ The Home Node Address Map defines the memory address regions that are locally ow
 
 - This map applies to both cacheable and non-cacheable memory regions.
 
-- The table of Home Node includes the addresses of **Routers** and **UCIe**. 
+- The table of Home Node includes the addresses of **Routers**. 
 
 This map displays the address ranges of routers connected to the grid. By default, each router is labeled using its coordinate-based name, making it easier for users to identify and locate routers within the topology.
 
@@ -42,10 +41,12 @@ The Subordinate Address Map defines the memory address regions that are owned or
 
 - This map is essential for enabling inter-node communication and access in systems with distributed memory architecture.
 
+- The table of Subordinate Node includes the addresses of **AXI Slave**. **CHI SN** and **UCIe Bridge**. 
+
 Below is a sample topology design illustrating how these address maps are structured and visualized.
 
-.. image:: images/cnoc_address_map_sample4.png
-  :alt: cnoc_address_map_sample4
+.. image:: images/cnoc_address_map_sample5.png
+  :alt: cnoc_address_map_sample5
   :align: center
 
 To configure the Home Node Address Map, the Router Type must be set to either:
@@ -62,6 +63,8 @@ To configure the Subordinate Node Address Map, both the Device Protocol and Devi
 
   - Device Type: Slave or SN
 
+  - UCIe bridge
+
 Other combinations of Device Protocols and Device Types do not support Address Map configuration and will disable editing capabilities.
 
 Cacheable Address Map
@@ -75,8 +78,8 @@ Subordinate Node Address Map – Specifies memory ranges managed by external/sub
 
 Use this map to configure, validate, and debug data transactions that benefit from caching mechanisms.
 
-.. image:: images/cnoc_address_map_cacheable2.png
-  :alt: cnoc_address_map_cacheable2
+.. image:: images/cnoc_address_map_cacheable3.png
+  :alt: cnoc_address_map_cacheable3
   :align: center
 
 
@@ -91,8 +94,8 @@ Subordinate Node Address Map – Indicates memory segments on remote nodes that 
 
 This section is essential for critical operations requiring real-time consistency and for peripherals or memory-mapped I/O where caching is not suitable.
 
-.. image:: images/cnoc_address_map_non-cacheable.png
-  :alt: cnoc_address_map_non-cacheable
+.. image:: images/cnoc_address_map_non-cacheable2.png
+  :alt: cnoc_address_map_non-cacheable2
   :align: center
 
 
@@ -122,10 +125,10 @@ It specifies which memory ranges are subject to snoop transactions to maintain d
 
 - Controls which addresses follow coherency protocols.
 
-- Supports AXI Master cache operations across the system.
+- Supports **AXI Master** cache operations across the system.
 
 All devices with AXI Master as the device type will be configured in the Request Node Address Map table. All address maps should reside within the Home Node Address Map and may overlap.
 
-.. image:: images/cnoc_snoopable_address.png
-  :alt: cnoc_snoopable_address
+.. image:: images/cnoc_snoopable_address2.png
+  :alt: cnoc_snoopable_address2
   :align: center
