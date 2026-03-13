@@ -253,6 +253,7 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Added C-NoC Address Interleaving.                                                           |
 |                       |                                |                                                                                                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+<<<<<<< HEAD
 | 6.1.2                 | March 11, 2026                 | *Modified Items:*                                                                              |
 |                       |                                |                                                                                                |
 |                       |                                | 1. Added C-NoC Address Interleaving                                                            |
@@ -264,6 +265,8 @@ This is the modification history made for the documentation.
 |                       |                                | 7. Added the Starred Project in Projects page                                                  |
 |                       |                                | 8. Modified the display of UCIe bride in Address Map table                                     |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+=======
+>>>>>>> origin/main
 
 
 

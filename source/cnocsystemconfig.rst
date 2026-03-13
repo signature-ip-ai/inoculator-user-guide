@@ -1,4 +1,8 @@
+<<<<<<< HEAD:source/cnocsystemconfig.rst
 C-NoC System Config
+=======
+Configuring C-NoC System Config
+>>>>>>> origin/main:source/configuresystemparam.rst
 ===========================================
 
 
