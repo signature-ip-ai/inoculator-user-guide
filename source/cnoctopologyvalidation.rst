@@ -72,6 +72,10 @@ C-NoC Validations
 
   - Validates that each Subordinate Node address range is fully contained within a single Home Node region.
 
-.. image:: images/cnoc_topology-validation4.png
+11. Address Map: All address range of RN regions lies within exactly 1 HN region
+
+  - Validates that each Request Node Address range is fully contained within a single Home Node region. 
+
+.. image:: images/cnoc_topology-validation5.png
   :alt: cnoc_topology_validation
   :align: center

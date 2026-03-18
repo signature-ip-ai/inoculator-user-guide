@@ -1,4 +1,4 @@
-System Config
+NC-NoC System Config
 ==========================================
 
 This feature allows the user to modify the current settings of the project. The following items are the same items set initially when creating a project. To update the settings, user must click ‘System Config’ from action bar.

@@ -57,13 +57,15 @@ III. Creating a Project
 
    C. Coherent NoC Topology
 
-      1. `Create a C-NoC Project <createprojectcnoc.html>`_
-      2. `Configure Topologoy <configuretopology.html>`_
-      3. `Confugure Device <configuredevicecnoc.html>`_
-      4. `Configure Router <configureroutercnoc.html>`_
-      5. `Configure System Parameters <configuresystemparam.html>`_
+      1. `Create C-NoC Project <createprojectcnoc.html>`_
+      2. `Configure Topologoy <cnoctopology.html>`_
+      3. `Configure Device <cnocdevice.html>`_
+      4. `Configure Router <cnocrouter.html>`_
+      5. `C-NoC System Config <cnocsystemconfig.html>`_
       6. `C2C Bridge Configuration <c2cbridge.html>`_
       7. `C-NoC Topology Validation <cnoctopologyvalidation.html>`_
+      8. `C-NoC Address Interleaving <cnocinterleaving.html>`_
+      9. `C-NoC Address Map <cnocaddressmap.html>`_
 
    D. Access Map
 
@@ -73,31 +75,33 @@ III. Creating a Project
 
    F. `Topology Validation <topologyvalidation.html>`_
 
-   G. Generating RTL Files and Testbench  
+   G. `Auto-Route <autoroute.html>`_
+
+   H. Generating RTL Files and Testbench  
 
       1. `Download and viewing JSON <generatertlandtb.html>`_
 
-   H. `Simulation <simulation.html>`_
+   I. `Simulation <simulation.html>`_
 
-   I. `Download JSON <downloadjson.html>`_
+   J. `Download JSON <downloadjson.html>`_
 
-   J. `Implement <implement.html>`_
+   K. `Implement <implement.html>`_
 
-   K. `Project Configuration <projectconfig.html>`_
+   L. `Project Configuration <projectconfig.html>`_
 
-   L. `Copy Project <copyproject.html>`_
+   M. `Copy Project <copyproject.html>`_
 
-   M. `Floor Plan <floorplan.html>`_
+   N. `Floor Plan <floorplan.html>`_
 
-   N. `Auto-Place <autoplace.html>`_
+   O. `Auto-Place <autoplace.html>`_
 
-   O. `Shared Project <sharedproject.html>`_
+   P. `Shared Project <sharedproject.html>`_
 
-   P. `Delete Project <deleteproject.html>`_
+   Q. `Delete Project <deleteproject.html>`_
 
-   Q. `Search Project <searchproject.html>`_
+   R. `Search Project <searchproject.html>`_
 
-   R. `Project Page <projectpage.html>`_
+   S. `Projects Page <projectspage.html>`_
 
 IV. `Frequently Asked Questions <faqs.html>`_
 ------------------------------------------------------

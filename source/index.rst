@@ -13,7 +13,7 @@ What's inside the iNoCulator?
 
    getstarted
    introduction
-   projectpage
+   projectspage
 
 .. toctree::
    :maxdepth: 2
@@ -41,12 +41,12 @@ What's inside the iNoCulator?
    addressmap
    addressinterleaving
    autoplace
+   autoroute
    bridgeconfiguration
    componentsandexplorer
    copyproject
    createprojectncnoc
    deleteproject
-   downloadjson
    exportpackage
    floorplan
    generatertlandtb
@@ -70,12 +70,14 @@ What's inside the iNoCulator?
    :caption: C-NoC
 
    createprojectcnoc
-   configuretopology
-   configureroutercnoc
-   configuredevicecnoc
-   configuresystemparam
+   cnoctopology
+   cnocrouter
+   cnocdevice
+   cnocsystemconfig
    c2cbridge
    cnoctopologyvalidation
+   cnocinterleaving
+   cnocaddressmap
 
 .. toctree::
    :maxdepth: 2

@@ -1,9 +1,13 @@
-Configuring C-NoC Router
+C-NoC Router
 ===================================================
 
 **Device ID** – This represents the unique identifier of the selected device.
 
+**Cluster ID** - Cluster ID is an identifier assigned to a router to indicate the cluster or group it belongs to within the Coherent NoC topology. It helps organize routers into clusters for routing, coherency management, and system organization.
+
 **Router Type** – This is a dropdown parameter which router type to be used on the selected component. User can choose between 'Repeater', 'HN-F w/ L3', 'HN-F w/o L3', or 'Device Only'. 
+
+**Hashed Home Node** - This toggle button will only appear when the selected Router Type is either ‘HN-F w/ L3’ or ‘HN-F w/o L3’
 
 **Device Port Settings (Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’ and ‘Repeater’)**
 
@@ -63,12 +67,12 @@ Configuring C-NoC Router
 
 **L3 Cache N-Set** – This Number of sets in N-way set associative cache mapping scheme for L3 cache. Number of sets is determined as 2k such that 0 ≤ k ≤ 5. This is a dropdown parameter with a selection of 1, 2, 4, 8, 16, or 32. Default value is 16.
 
-.. image:: images/configuring_router4.png
-  :alt: configuring_router4
+.. image:: images/configuring_router6.png
+  :alt: configuring_router6
   :align: center
 
-.. image:: images/configuring_router5.png
-  :alt: configuring_router5
+.. image:: images/configuring_router7.png
+  :alt: configuring_router7
   :align: center
 
 

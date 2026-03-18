@@ -1,4 +1,4 @@
-Project Page
+Projects Page
 =============================
 
 This section describes the Project Page of the Inoculator Web, including its UI layout and UX flow.
@@ -21,7 +21,7 @@ Below are the key components and features available on the Project Page:
 
 The Project Page displays all available projects and provides tools for creating, managing, and navigating projects.
 
-.. image:: images/projects_page-dashboard4.png
+.. image:: images/projects_page-dashboard5.png
   :alt: projects_page-dashboard
   :align: center
 
@@ -29,7 +29,7 @@ The Project Page displays all available projects and provides tools for creating
 
 The Hamburger Menu (☰) expands to show additional navigation options and settings.
 
-.. image:: images/projects_page-hamburger_menu2.png
+.. image:: images/projects_page-hamburger_menu3.png
   :alt: projects_page-hamburger_menu
   :align: center
 
@@ -37,7 +37,7 @@ The Hamburger Menu (☰) expands to show additional navigation options and setti
 
 The Navigation bar provides quick access to key pages and features of the application.
 
-.. image:: images/projects_page-navigation2.png
+.. image:: images/projects_page-navigation3.png
   :alt: projects_page-navigation
   :align: center
 
@@ -45,16 +45,24 @@ The Navigation bar provides quick access to key pages and features of the applic
 
 The Home Icon or Inoculator Icon takes you back to the main landing page of the application.
 
-.. image:: images/projects_page-home2.png
+.. image:: images/projects_page-home3.png
   :alt: projects_page-home
   :align: center
 
-**Create Project Button** 
+**Add New Project Button** 
 
-Click the Create Project button to start a new project and configure its details.
+Click the Add New Project button to start a new project and configure its details.
 
-.. image:: images/projects_page-create_project_button3.png
-  :alt: projects_page-create_project_button
+.. image:: images/projects_page-add_new_project.png
+  :alt: projects_page-add_new_project
+  :align: center
+
+**Starred Project** 
+
+Click the tab for the list of Starred Projects or the favorites project. 
+
+.. image:: images/projects_page-starred_project.png
+  :alt: projects_page-starred_project
   :align: center
 
 **Quick Start Guide** 
@@ -85,7 +93,7 @@ The Log Out button securely signs the user out of the application.
 
 Use the Search Field to quickly find a project by entering its name or keyword.
 
-.. image:: images/search_project_page4.png
+.. image:: images/search_project_page5.png
   :alt: search_project_page2
   :align: center
 
@@ -93,6 +101,6 @@ Use the Search Field to quickly find a project by entering its name or keyword.
 
 The Filter Button allows users to refine the project list based on categories or attributes.
 
-.. image:: images/filter_function3.png
+.. image:: images/filter_function4.png
   :alt: filter_function
   :align: center
