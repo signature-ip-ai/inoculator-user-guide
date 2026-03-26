@@ -3,7 +3,7 @@ C-NoC System Config
 
 
 Parameters Tab
-----------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **CHI Version** – Version of AMBA CHI protocol to use for the whole C-NoC. Default is E.b. User can choose from E.b and B. 
 
@@ -20,6 +20,8 @@ Parameters Tab
 **DATACHECK in Data Flit** – Toggle button to enable/disable CNOC_SYSCONFIG_DAT_DATACHECK_ENABLED. Default is disabled. 
 
 **POISON in Data Flit** – Toggle button to enable/disable CNOC_SYSCONFIG_DAT_POISON_ENABLED. Default is disabled. 
+
+**7Bit Node ID Width** - Toggle button to enable/disable nodeIdWidth7BitEnabled. Default is disabled. 
 
 **MPAM** – Toggle button to enable/disable CNOC_SYSCONFIG_REVEB_MPAM_ENABLED. Default is disabled and only available using CHI Version – E.b. 
 
@@ -47,13 +49,27 @@ Parameters Tab
 
 **Performance Monitoring** - Default toggle button is disabled. User is allowed to enable this parameter. 
 
-.. image:: images/system_config_parameters.png
+.. image:: images/system_config_parameters2.png
   :alt: system_config_parameters
+  :align: center
+
+Timing Tab
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Timing tab lets you set clock frequencies for the system.
+
+**Subtopology Clock Frequency** – Sets the operating speed of the selected subtopology.
+
+**AXI Clock Frequency** – Sets the speed of the AXI interface for data transfers.
+
+
+.. image:: images/system_config_timing.png
+  :alt: system_config_timing
   :align: center
 
 
 Q/P Channel Tab
---------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Low Power Interface** - This item is a dropdown selection where user is allowed to choose from 'None', 'Q-Channel' and 'P-Channel' as the Topology Low Power Interface. 
 
@@ -66,13 +82,13 @@ Q/P Channel Tab
 **AXI Inactive Threshold** - Default is 500, minimum input is 0 ad maximum input is up to 2^32-1
 
 
-.. image:: images/system_config_qpchannel.png
+.. image:: images/system_config_qpchannel2.png
   :alt: system_config_qpchannel
   :align: center
 
 
 Pipeline Tab
------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Number of Pipeline Stages** - This input field determine the number of stages assigned for the whole C-NoC Topology. 
 
@@ -83,7 +99,8 @@ Pipeline Tab
 
 
 Interleaving Tab
------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 **Interleaved Full Base Address** - This input field determine the Interleaved Base Address. This should consists 13 hex characters. Base Address should not be more than Limit Address. 
 
