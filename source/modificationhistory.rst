@@ -264,6 +264,13 @@ This is the modification history made for the documentation.
 |                       |                                | 7. Added the Starred Project in Projects page                                                  |
 |                       |                                | 8. Modified the display of UCIe bride in Address Map table                                     |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.1.3                 | March 25, 2026                 | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added 7Bit Node ID Width and Address Translation in System Config.                          |
+|                       |                                | 2. Added Upload to FTP Function in Export RTL.                                                 |
+|                       |                                | 3. Added Brigde Type in C-NoC C2C Bridge.                                                      |
+|                       |                                | 4. Updated related screenshots.                                                                |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
 

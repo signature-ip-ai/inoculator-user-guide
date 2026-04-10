@@ -81,3 +81,7 @@ Select 'Download' to download the exported RTL result for the selected file.
 Select 'Delete' to remove the selected file from the Export Design table.
 
 
+Upload to FTP 
+----------------------------------------------------------------
+Future feature. 
+
