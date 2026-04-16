@@ -1,4 +1,4 @@
-Virtual Device Configuration
+Virtual Device
 ======================================
 
 .. image:: images/virtual_device-toggle_on.png
@@ -33,3 +33,9 @@ Two tabs are available for configuration in the Virtual Device: 'Parameter' and 
   :align: center
 
 Ensure that all added virtual devices are deleted before disabling the Virtual Device toggle. 
+
+When Address Translation is enabled, Virtual Targets cannot be enabled.
+
+.. image:: images/virtual_device-address_translation.png
+  :alt: virtual_device-address_translation
+  :align: center
