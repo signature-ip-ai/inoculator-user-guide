@@ -86,8 +86,8 @@ Upload to FTP
 
 The Upload to FTP Server function will be enabled once the group configuration allows FTP uploads. Once enabled and configured, this will be reflected in the UI.
 
-.. image:: images/upload_to_ftp.png
-  :alt: upload_to_ftp
+.. image:: images/upload_to_FTP.png
+  :alt: upload_to_FTP
   :align: center
 
 The button is labeled based on the Export Package results being uploaded to the FTP server. The result status will also be displayed in the column.
