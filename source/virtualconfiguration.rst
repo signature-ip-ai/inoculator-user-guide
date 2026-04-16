@@ -1,7 +1,7 @@
 Virtual Device
 ======================================
 
-.. image:: images/virtual_device-toggle_on.png
+.. image:: images/virtual_device-toggle_on1.png
   :alt: virtual_device-toggle_on
   :align: center
 
@@ -12,12 +12,12 @@ Virtual Device or Virtual Target Device refers to a software-defined device that
 3.	Click the 'Add Virtual Device' button to configure a new virtual device.
 4.	A new collapsible menu will be displayed below the Target device with the default name 'Target_X_vdev_1'.
 
-.. image:: images/virtual_device-settings5.png
-  :alt: virtual_device-settings
+.. image:: images/virtual_device-parameters.png
+  :alt: virtual_device-parameters
   :align: center
 
-.. image:: images/virtual_device-settings4.png
-  :alt: virtual_device-settings2
+.. image:: images/virtual_device-security.png
+  :alt: virtual_device-security
   :align: center
 
 Two tabs are available for configuration in the Virtual Device: 'Parameter' and 'Security'.
@@ -28,8 +28,8 @@ Two tabs are available for configuration in the Virtual Device: 'Parameter' and 
 
 **Note:** Enabling Virtual Device restricts the user from disabling it without first deleting the added virtual devices. A reminder will appear when the toggle button is clicked.
 
-.. image:: images/virtual_device-toggle_on_reminder.png
-  :alt: virtual_device-toggle_on_reminder
+.. image:: images/virtual_device-toggle_on_reminder1.png
+  :alt: virtual_device-toggle_on_reminder1
   :align: center
 
 Ensure that all added virtual devices are deleted before disabling the Virtual Device toggle. 
