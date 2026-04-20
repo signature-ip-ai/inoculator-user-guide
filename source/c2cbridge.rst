@@ -3,7 +3,7 @@ C2C Bridge Configuration
 
 The C2C Bridge, also known as the CHI-to-CPI Bridge, provides seamless protocol conversion between CHI (Coherent Hub Interface) and CPI (Coherent Port Interface) within C-NoC (Cache-Coherent Network-on-Chip) topologies.
 
-**Purpose**
+Purpose
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -12,7 +12,7 @@ The C2C Bridge, also known as the CHI-to-CPI Bridge, provides seamless protocol 
 - Ensures data integrity, protocol compliance, and transaction consistency across interconnected subsystems.
 
 
-**Key Functions**
+Key Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -24,7 +24,7 @@ The C2C Bridge, also known as the CHI-to-CPI Bridge, provides seamless protocol 
 
 - Scalability: Allows system architects to integrate heterogeneous IP blocks and scale up multi-cluster designs.
 
-**Use in Topology**
+use in Topology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -44,7 +44,7 @@ Select the 'Connect C2C Bridge' option from the context menu.
   :align: center
 
 
-**C-NoC Parameters** 
+C-NoC Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
