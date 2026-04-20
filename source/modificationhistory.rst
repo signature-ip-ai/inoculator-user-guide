@@ -271,6 +271,12 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Added Brigde Type in C-NoC C2C Bridge.                                                      |
 |                       |                                | 4. Updated related screenshots.                                                                |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-
+| 6.1.4                 | April 16, 2026                 | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Update the Virtual target configuration and screenshots.                                    |
+|                       |                                | 2. Update Uplooad Topology to include Upload JSON function.                                    |
+|                       |                                | 3. Added Export Package to FTP                                                                 |
+|                       |                                | 4. Added C-NoC Register Map                                                                    |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 

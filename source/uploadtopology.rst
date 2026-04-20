@@ -1,9 +1,11 @@
 Uploading a Topology 
 ========================================================
 
+
+Using Excel file 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To design a topology, uploading an excel file with set values will generate a topology instantly. Follow the steps below to generate a topology from an excel file. 
 Prepare the Excel file with the desired values. The current template file name is 'nc-noc_topology_generator_v1.4,' which is used for designing a topology from the Excel file. Instructions are included inside the file that user may follow. Sample values that need to modify are: 
-
 
 
 .. image:: images/uploading_topology-excel_sheet.png
@@ -41,3 +43,27 @@ After verification, if the generated file has no issues, it will proceed to the 
   :alt: uploading_topology-successful_generation
   :align: center
 
+
+Using JSON file 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+From your computer, select any JSON file that corresponds to an NC-NoC project.
+
+
+.. image:: images/upload_json_file.png
+  :alt: upload_json_file
+  :align: center
+
+When the JSON file is updated to match the current schema, the project can be successfully uploaded to the Inoculator web.
+
+.. image:: images/upload_json_success.png
+  :alt: upload_json_success
+  :align: center
+
+However, if the JSON file is outdated and not updated, the upload may fail
+
+.. image:: images/upload_json_fail.png
+  :alt: upload_json_fail
+  :align: center
+
+Note that when uploading a JSON file, the ‘JSON File’ option should be visible on the button. If it is not visible, please contact the admin for configuration. 
