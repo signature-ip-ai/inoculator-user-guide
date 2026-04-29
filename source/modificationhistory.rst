@@ -278,5 +278,14 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Added Export Package to FTP                                                                 |
 |                       |                                | 4. Added C-NoC Register Map                                                                    |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.1.5                 | April 29, 2026                 | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added Node ID and Location ID in C-NoC Bridge right panel.                                  |
+|                       |                                | 2. Added the Explorer View in C-NoC Project.                                                   |
+|                       |                                | 3. Change the Autofill Address in NC-NoC Address Map.                                          |
+|                       |                                | 4. Removed the Security Policy button inside Access Map.                                       |
+|                       |                                | 5. Update the save button of Copy Project.                                                     |
+|                       |                                | 6. Removal of UCIE Bridge in System Config.                                                    |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
 
