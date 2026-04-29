@@ -16,8 +16,8 @@ The Project Settings panel allows users to configure the initial parameters befo
 
   - Integration (currently not implemented)
 
-**Upload Topology XLSX File**
-- A field or button that enables the user to upload an Excel file (.xlsx) to auto-generate a topology.
+**Upload Topology XLSX File and Upload JSON file**
+- more information in `Uploading a Topology <uploadtopology.html>`_ Page
 
 **Project Name**
   - A required input field to assign a name to the project.
