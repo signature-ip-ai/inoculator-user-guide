@@ -11,8 +11,8 @@ C-NoC Topology
 
 **Configure Topology** – This button confirms the creation of a Coherent NoC topology. Once the user clicks it, the topology will be generated on the grid based on the configured number of columns and rows.
 
-.. image:: images/sample_cnoc_topology-without_added_device9.png
-  :alt: sample_cnoc_topology-without_added_device
+.. image:: images/cnoc_topology-without_device.png
+  :alt: cnoc_topology-without_device
   :align: center
 
 Adding a Device 
@@ -28,8 +28,8 @@ Adding a Router
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Click the “+” button located on the right or top side of any Router device to add a new router.
 
-.. image:: images/c_noc-add_router4.png
-  :alt: c_noc-add_router
+.. image:: images/cnoc_add_router.png
+  :alt: cnoc_add_router
   :align: center
 
 Deleting a Router
@@ -61,8 +61,8 @@ Connect to C2C Bridge
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This button is placed in the Interconnect Port of each Router. To add a C2C Bridge, right-click on any Interconnect Port and select Connect to C2C Bridge. A new C2C Bridge will then appear in the selected Router.
 
-.. image:: images/c-noc_c2c-bridge-adding3.png
-  :alt: c-noc_c2c-bridge-adding
+.. image:: images/cnoc_add_bridge.png
+  :alt: cnoc_add_bridge
   :align: center
 
 For more details about this, redirect to this page: `C-NoC C2C Bridge <c2cbridge.html>`_
@@ -98,8 +98,8 @@ To configure topology coordinates:
 
 This configuration helps maintain an organized layout and ensures that each component is correctly mapped within the NoC grid.
 
-.. image:: images/topology_coordinates.png
-  :alt: topology_coordinates
+.. image:: images/cnoc_topology_coordinates.png
+  :alt: cnoc_topology_coordinates
   :align: center
 
 
