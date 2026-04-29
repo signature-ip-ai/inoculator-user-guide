@@ -1,375 +1,278 @@
-/* ============================================================
-   SignatureIP — Inoculator User Guide
-   custom.css  |  Sphinx Book Theme overrides
-   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
 
-/* ── 1. Design tokens ──────────────────────────────────────── */
+/* Sphinx Book Theme Custom CSS */
+
 :root {
-  /* Brand palette */
-  --sig-ink:        #0f1923;   /* near-black for text */
-  --sig-blue:       #1a56db;   /* primary action / links */
-  --sig-blue-dark:  #1340b0;
-  --sig-blue-light: #e8f0fe;
-  --sig-teal:       #0e9f9f;   /* accent */
-  --sig-border:     #dde3ed;
-  --sig-surface:    #f7f9fc;
-  --sig-white:      #ffffff;
+  --pst-color-primary: #0072b5;         /* Main brand color */
+  --pst-color-secondary: #4d9fff;       /* Secondary brand color */
+  --pst-color-success: #00a064;         /* Success color */
+  --pst-color-info: #2e6295;            /* Info color */
+  --pst-color-warning: #cd6d00;         /* Warning color */
+  --pst-color-danger: #b20000;          /* Danger/error color */
+  --pst-color-text-base: #1f1f1f;       /* Base text color */
+  --pst-color-h1: var(--pst-color-primary);  /* Heading color */
+  --pst-color-h2: var(--pst-color-primary);  /* Heading color */
+  --pst-color-h3: var(--pst-color-text-base);  /* Heading color */
 
-  /* Typography */
-  --sig-font-body:    'DM Sans', system-ui, sans-serif;
-  --sig-font-mono:    'DM Mono', 'Fira Code', monospace;
-  --sig-font-display: 'Playfair Display', Georgia, serif;
+  /* Fonts */
+  --pst-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --pst-font-family-heading: var(--pst-font-family-base);
+  --pst-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  /* Spacing / radius */
-  --sig-radius:  6px;
-  --sig-radius-lg: 10px;
+  /* Layout */
+  --pst-sidebar-width: 14em;
 }
 
-/* ── 2. Base typography ────────────────────────────────────── */
+/* Main typography */
 body {
-  font-family: var(--sig-font-body);
-  color: var(--sig-ink);
-  font-size: 16px;
-  line-height: 1.75;
-  -webkit-font-smoothing: antialiased;
+  font-family: var(--pst-font-family-base);
+  color: var(--pst-color-text-base);
+  line-height: 1.6;
+  font-size: 14px;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--sig-font-body);
-  font-weight: 600;
-  line-height: 1.25;
-  color: var(--sig-ink);
-  letter-spacing: -0.015em;
-}
-
-/* Article h1 gets a display-font touch */
-article h1:first-of-type {
-  font-family: var(--sig-font-display);
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
-}
-
-code, pre, kbd, samp {
-  font-family: var(--sig-font-mono);
-  font-size: 0.875em;
-}
-
-/* ── 3. Links — clear, accessible, not underlined by default ── */
-a {
-  color: var(--sig-blue);
-  text-decoration: none;
-  border-bottom: 1.5px solid transparent;
-  transition: border-color 0.15s, color 0.15s;
-}
-
-a:hover,
-a:focus-visible {
-  color: var(--sig-blue-dark);
-  border-bottom-color: var(--sig-blue-dark);
-  outline: none;
-}
-
-a:focus-visible {
-  outline: 2px solid var(--sig-blue);
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-/* ── 4. Permalink (section link) ───────────────────────────── */
-/*  The permalink appears to the right of every heading.
-    We make it visible, large enough to click, and accessible. */
-a.headerlink,
-.sig-permalink {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0.4em;
-  width: 1.6em;
-  height: 1.6em;
-  border-radius: var(--sig-radius);
-  font-size: 0.7em;
-  color: transparent;           /* hidden until heading is hovered */
-  background: transparent;
-  border: 1.5px solid transparent;
-  vertical-align: middle;
-  transition: color 0.15s, background 0.15s, border-color 0.15s;
-  cursor: pointer;
-  text-decoration: none !important;
-  border-bottom: none !important;
-}
-
-h1:hover a.headerlink,
-h2:hover a.headerlink,
-h3:hover a.headerlink,
-h4:hover a.headerlink,
-h5:hover a.headerlink,
-h6:hover a.headerlink,
-a.headerlink:focus-visible {
-  color: var(--sig-blue);
-  background: var(--sig-blue-light);
-  border-color: var(--sig-blue);
-}
-
-a.headerlink:active {
-  background: var(--sig-blue);
-  color: var(--sig-white);
-}
-
-/* Tooltip label for keyboard / screen-reader users */
-a.headerlink::after {
-  content: attr(title);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateY(-130%);
-  background: var(--sig-ink);
-  color: var(--sig-white);
-  font-size: 0.7rem;
-  padding: 3px 8px;
-  border-radius: 4px;
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.15s;
-}
-
-a.headerlink:focus-visible::after {
-  opacity: 1;
-}
-
-/* ── 5. Announcement banner ────────────────────────────────── */
-.bd-header-announcement {
-  background: linear-gradient(90deg, var(--sig-blue) 0%, var(--sig-teal) 100%);
-  color: var(--sig-white) !important;
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 6px 0;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-weight: 700 !important;
   letter-spacing: 0.01em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: var(--pst-color-h1);
+  font-size: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  color: var(--pst-color-h2);
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: var(--pst-color-h3);
+  font-size: 1.3rem;
+}
+
+/* Links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Code styling */
+code {
+  font-family: var(--pst-font-family-monospace);
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1em;
+  font-size: 85%;
+  overflow-x: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+/* Images */
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* Sidebar styling */
+.bd-sidebar {
+  width: var(--pst-sidebar-width);
+  border-right: 1px solid #e5e7eb;
+}
+
+.bd-sidebar label {
+  color: var(--pst-color-primary);
+}
+
+.bd-sidebar a {
+  transition: color 0.15s ease-in-out;
+}
+
+/* TOC on right */
+.bd-toc {
+  padding-top: 1.5rem;
+  border-left: 1px solid #e5e7eb;
+}
+
+.toc-h2 {
+  font-size: 0.9rem;
+}
+
+.toc-h3 {
+  font-size: 0.8rem;
+}
+
+/* Notes and admonitions */
+.admonition {
+  border-radius: 4px;
+  margin: 1.5em 0;
+  padding: 0 1em 0.5em 1em;
+}
+
+.admonition-title {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.note {
+  border-left: 4px solid var(--pst-color-info);
+  background-color: rgba(46, 98, 149, 0.1);
+}
+
+.warning {
+  border-left: 4px solid var(--pst-color-warning);
+  background-color: rgba(205, 109, 0, 0.1);
+}
+
+.danger {
+  border-left: 4px solid var(--pst-color-danger);
+  background-color: rgba(178, 0, 0, 0.1);
+}
+
+.tip, .hint {
+  border-left: 4px solid var(--pst-color-success);
+  background-color: rgba(0, 160, 100, 0.1);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--pst-color-primary);
+  border-color: var(--pst-color-primary);
+}
+
+.btn-outline-primary {
+  color: var(--pst-color-primary);
+  border-color: var(--pst-color-primary);
+}
+
+/* Announcement banner */
+div.announcement {
+  background-color: var(--pst-color-primary);
+  color: white;
+  padding: 0.5em 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Figure captions */
+.figure {
+  margin: 2em 0;
   text-align: center;
 }
 
-.bd-header-announcement a {
-  color: var(--sig-white);
-  border-bottom-color: rgba(255,255,255,0.5);
+.figure .caption {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5em;
 }
 
-/* ── 6. Navbar / header ────────────────────────────────────── */
-.bd-header {
-  background: var(--sig-white);
-  border-bottom: 1.5px solid var(--sig-border);
-  box-shadow: 0 1px 4px rgba(15,25,35,0.06);
+/* Content area */
+.bd-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.navbar-brand {
-  font-family: var(--sig-font-display);
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--sig-ink) !important;
-  letter-spacing: -0.01em;
-}
-
-/* ── 7. Left sidebar ───────────────────────────────────────── */
-.bd-sidebar-primary {
-  background: var(--sig-surface);
-  border-right: 1.5px solid var(--sig-border);
-  font-size: 0.875rem;
-}
-
-/* Current page / active item */
-.bd-sidebar-primary .current > a,
-.bd-sidebar-primary .current > a:hover {
-  color: var(--sig-blue);
-  font-weight: 600;
-  background: var(--sig-blue-light);
-  border-radius: var(--sig-radius);
-}
-
-/* All sidebar links */
-.bd-sidebar-primary nav a {
-  color: #374151;
-  padding: 3px 8px;
-  border-radius: var(--sig-radius);
-  display: block;
-  transition: background 0.12s, color 0.12s;
-}
-
-.bd-sidebar-primary nav a:hover {
-  background: var(--sig-blue-light);
-  color: var(--sig-blue);
-  border-bottom: none;
-}
-
-/* Section captions in the TOC */
-.bd-sidebar-primary .caption-text {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #9ca3af;
-  margin-top: 1.25rem;
-  padding-left: 8px;
-}
-
-/* ── 8. Right (in-page) TOC ────────────────────────────────── */
-.bd-sidebar-secondary {
-  font-size: 0.82rem;
-  border-left: 1.5px solid var(--sig-border);
-}
-
-.bd-toc .nav a {
-  color: #6b7280;
-  padding: 2px 6px;
-  border-radius: var(--sig-radius);
-  transition: color 0.12s;
-}
-
-.bd-toc .nav a:hover,
-.bd-toc .nav a.active {
-  color: var(--sig-blue);
-  font-weight: 500;
-}
-
-/* ── 9. Content area ───────────────────────────────────────── */
-.bd-content article {
-  max-width: 780px;
-}
-
-/* ── 10. Code blocks ───────────────────────────────────────── */
-div[class*='highlight'] {
-  border-radius: var(--sig-radius-lg);
-  border: 1px solid var(--sig-border);
-  overflow: hidden;
-}
-
-div[class*='highlight'] pre {
-  padding: 1.1rem 1.25rem;
-  font-size: 0.83rem;
-  line-height: 1.65;
-}
-
-/* Inline code */
-code.literal {
-  background: var(--sig-blue-light);
-  color: var(--sig-blue-dark);
-  border-radius: 4px;
-  padding: 1px 5px;
-  font-size: 0.875em;
-}
-
-/* Copy button (sphinx-copybutton) */
-.copybtn {
-  border-radius: var(--sig-radius) !important;
-  background: var(--sig-surface) !important;
-  border: 1px solid var(--sig-border) !important;
-  transition: background 0.15s !important;
-}
-
-.copybtn:hover {
-  background: var(--sig-blue-light) !important;
-  border-color: var(--sig-blue) !important;
-}
-
-/* ── 11. Admonitions ───────────────────────────────────────── */
-.admonition {
-  border-radius: var(--sig-radius-lg);
-  border-left-width: 4px;
-  padding: 0.85rem 1rem;
-  font-size: 0.92rem;
-}
-
-.admonition.note   { border-left-color: var(--sig-blue);  background: var(--sig-blue-light); }
-.admonition.tip    { border-left-color: var(--sig-teal);  background: #e6f7f7; }
-.admonition.warning { border-left-color: #f59e0b; background: #fefce8; }
-.admonition.danger  { border-left-color: #ef4444; background: #fef2f2; }
-
-/* ── 12. Tables ────────────────────────────────────────────── */
-table.docutils {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9rem;
-  border-radius: var(--sig-radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--sig-border);
-}
-
-table.docutils th {
-  background: var(--sig-surface);
-  font-weight: 600;
-  padding: 10px 14px;
-  border-bottom: 2px solid var(--sig-border);
-  text-align: left;
-}
-
-table.docutils td {
-  padding: 9px 14px;
-  border-bottom: 1px solid var(--sig-border);
-}
-
-table.docutils tr:last-child td {
-  border-bottom: none;
-}
-
-table.docutils tr:hover td {
-  background: var(--sig-blue-light);
-}
-
-/* ── 13. Footer ────────────────────────────────────────────── */
-.bd-footer {
-  background: var(--sig-surface);
-  border-top: 1.5px solid var(--sig-border);
-  font-size: 0.82rem;
-  color: #6b7280;
-}
-
-/* ── 14. Scroll-to-top button (injected by custom.js) ─────── */
-#scroll-to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--sig-blue);
-  color: var(--sig-white);
-  border: none;
-  cursor: pointer;
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(26,86,219,0.35);
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity 0.2s, transform 0.2s;
-  z-index: 999;
-}
-
-#scroll-to-top.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#scroll-to-top:hover {
-  background: var(--sig-blue-dark);
-}
-
-/* ── 15. Dark mode ─────────────────────────────────────────── */
+/* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --sig-ink:        #e5eaf2;
-    --sig-blue:       #5b8dee;
-    --sig-blue-dark:  #7aaeff;
-    --sig-blue-light: #1a2540;
-    --sig-teal:       #2ec4b6;
-    --sig-border:     #2a3347;
-    --sig-surface:    #161e2d;
-    --sig-white:      #0f1923;
+  img {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
-
-  .bd-header {
-    background: #0f1923;
+  
+  .figure .caption {
+    color: #9ca3af;
   }
-
-  code.literal {
-    color: var(--sig-blue-dark);
+  
+  a {
+    color: #60a5fa;
+  }
+  
+  a:hover {
+    color: #93c5fd;
+  }
+  
+  th {
+    background-color: #1f2937;
+  }
+  
+  th, td {
+    border-color: #374151;
   }
 }
