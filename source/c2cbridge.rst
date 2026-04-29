@@ -66,24 +66,24 @@ In simple terms:
 
 Purpose:
 
-Uniquely identifies a node within the system
-Encodes hierarchical location (e.g., topology + cluster position)
-Enables efficient hardware/software communication and routing
+  Uniquely identifies a node within the system
+  Encodes hierarchical location (e.g., topology + cluster position)
+  Enables efficient hardware/software communication and routing
 
-Typical structure (example): {top_y, clus_y, top_x, clus_x, port_direction}
+  Typical structure (example): {top_y, clus_y, top_x, clus_x, port_direction}
 
 Each field occupies a fixed number of bits, allowing all location details to be packed into one numeric ID.
 
 **Location ID** - The Location ID represents the physical or logical placement of a component within the system. Unlike Node ID (which is encoded and compact), Location ID is typically used for:
 
-Human-readable identification of position
-Mapping components in the UI or topology view
-Debugging and validation
+  Human-readable identification of position
+  Mapping components in the UI or topology view
+  Debugging and validation
 
 Key difference from Node ID:
 
-Location ID → descriptive / positional reference
-Node ID → encoded / system-level identifier
+  Location ID → descriptive / positional reference
+  Node ID → encoded / system-level identifier
 
 **Bridge Type** - is a dropdown field where the user will be able to select between UCIE or CXL.
 
