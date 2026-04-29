@@ -1,102 +1,48 @@
-/* ============================================================
-   SignatureIP — Inoculator User Guide
-   custom.js  |  Scroll-to-top + permalink copy helper
-   ============================================================ */
-
-document.addEventListener('DOMContentLoaded', () => {
-
-  /* ── 1. Scroll-to-top button ─────────────────────────────── */
-  const btn = document.createElement('button');
-  btn.id = 'scroll-to-top';
-  btn.setAttribute('aria-label', 'Scroll to top');
-  btn.setAttribute('title', 'Back to top');
-  btn.innerHTML = '↑';
-  document.body.appendChild(btn);
-
-  const toggleBtn = () => {
-    if (window.scrollY > 300) {
-      btn.classList.add('visible');
-    } else {
-      btn.classList.remove('visible');
-    }
-  };
-
-  window.addEventListener('scroll', toggleBtn, { passive: true });
-  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-
-  /* ── 2. Permalink copy-to-clipboard ──────────────────────── */
-  /*  Clicking any section heading anchor copies the full URL   */
-  document.querySelectorAll('a.headerlink').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      const url = anchor.href;
-
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(url).then(() => showToast('Link copied!')).catch(() => fallbackCopy(url));
-      } else {
-        fallbackCopy(url);
-      }
-
-      // Still navigate the browser so the URL bar updates
-      history.pushState(null, '', anchor.getAttribute('href'));
-    });
-  });
-
-
-  /* ── 3. Toast notification ───────────────────────────────── */
-  function showToast(message) {
-    const existing = document.getElementById('sig-toast');
-    if (existing) existing.remove();
-
-    const toast = document.createElement('div');
-    toast.id = 'sig-toast';
-    toast.textContent = message;
-
-    Object.assign(toast.style, {
-      position:     'fixed',
-      bottom:       '5rem',
-      right:        '2rem',
-      background:   '#0f1923',
-      color:        '#fff',
-      padding:      '8px 16px',
-      borderRadius: '6px',
-      fontSize:     '0.82rem',
-      fontFamily:   'DM Sans, system-ui, sans-serif',
-      fontWeight:   '500',
-      boxShadow:    '0 4px 12px rgba(0,0,0,0.25)',
-      opacity:      '0',
-      transition:   'opacity 0.2s',
-      zIndex:       '1000',
-      pointerEvents:'none',
+// Custom JavaScript to prevent automatic scroll-to-top on navigation
+document.addEventListener('DOMContentLoaded', function() {
+    // Prevent automatic scrolling when clicking on sidebar navigation links
+    const sidebarLinks = document.querySelectorAll('.bd-sidebar a[href]');
+    
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Only prevent scroll for internal links (same page navigation)
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    // Smooth scroll to the target without jumping to top
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
     });
 
-    document.body.appendChild(toast);
-    requestAnimationFrame(() => { toast.style.opacity = '1'; });
-
-    setTimeout(() => {
-      toast.style.opacity = '0';
-      setTimeout(() => toast.remove(), 250);
-    }, 2000);
-  }
-
-
-  /* ── 4. Fallback copy (older browsers) ───────────────────── */
-  function fallbackCopy(text) {
-    const ta = document.createElement('textarea');
-    ta.value = text;
-    ta.style.position = 'fixed';
-    ta.style.opacity = '0';
-    document.body.appendChild(ta);
-    ta.select();
-    try {
-      document.execCommand('copy');
-      showToast('Link copied!');
-    } catch (_) {
-      showToast('Copy failed — try manually.');
+    // Override the default sphinx-book-theme scroll behavior
+    // This prevents the automatic scroll-to-top when navigating between pages
+    if (typeof window.history !== 'undefined' && window.history.pushState) {
+        const originalPushState = window.history.pushState;
+        window.history.pushState = function(state, title, url) {
+            // Store current scroll position before navigation
+            const currentScrollY = window.scrollY;
+            
+            // Call the original pushState
+            originalPushState.call(this, state, title, url);
+            
+            // Restore scroll position after a short delay
+            setTimeout(() => {
+                window.scrollTo(0, currentScrollY);
+            }, 100);
+        };
     }
-    document.body.removeChild(ta);
-  }
 
-});
+    // Additional fix for sphinx-book-theme specific behavior
+    // Prevent scroll restoration on page load
+    if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'manual';
+    }
+}); 
