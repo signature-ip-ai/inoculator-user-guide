@@ -34,7 +34,7 @@ Turning this on will also validates the values in Minimum Transaction Size, Read
 This sets the minimum allowed transaction size for interleaving.
 
 Dependencies when Target Address Interleaving is Enabled
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------
 
 If Address Interleaving = ON, the following rules must be met:
 
