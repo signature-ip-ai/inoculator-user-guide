@@ -14,8 +14,8 @@ The Copy Project function also supports copying projects owned by other users. O
   :alt: copy_project_cnoc
   :align: center
 
-.. image:: images/copy_project2.png
-  :alt: copy_project2
+.. image:: images/copy_project_modal.png
+  :alt: copy_project_modal
   :align: center
 
 
