@@ -4,9 +4,6 @@ The Access Map feature provides a matrix view of the policy assigned to each dev
 
 To access this feature, navigate to the “Access Map” tab.
 
-Security Policy
-----------------------------------------------------
-
 This section defines the security policy assigned to each device. The Security Device itself is excluded from the matrix view.
 
 Users can select from the following four policies:
@@ -21,7 +18,7 @@ Users can select from the following four policies:
 
 Cells that appear greyed out indicate that the corresponding device is not reachable from that port.
 
-.. image:: images/access_map-security_policy.png
-  :alt: access_map-security_policy
+.. image:: images/access_map.png
+  :alt: access_map
   :align: center
 
