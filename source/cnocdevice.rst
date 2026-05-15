@@ -13,7 +13,7 @@ C-NoC Device
 
 Sample parameters when CHI RN is selected. 
 
-.. image:: images/configuring_device-chi_protocol5.png
+.. image:: images/cnoc_device_chiRN.png
   :alt: configuring_device-chi_protocol5
   :align: center
 
@@ -32,7 +32,7 @@ When the Connected Device Protocol is set to AXI Master, the available Port Data
 
 Sample parameters when AXI Master is selected. 
 
-.. image:: images/configuring_device-axi_protocol3.png
+.. image:: images/cnoc_device_AXIMaster.png
   :alt: configuring_device-axi_protocol3
   :align: center
 
@@ -42,10 +42,10 @@ When the Connected Device Protocol is set to either CHI SN or AXI Slave, a toggl
 
 **Address Translation** - This is a toggle button where automatically translates or remaps user-defined addresses into a different address space used by the system or hardware.
 
-.. image:: images/configuring_device-CHISN.png
+.. image:: images/cnoc_device_chiSN.png
   :alt: configuring_device-CHISN
   :align: center
 
-.. image:: images/configuring_device-axislave.png
+.. image:: images/cnoc_device_AXISlave.png
   :alt: configuring_device-axislave
   :align: center
