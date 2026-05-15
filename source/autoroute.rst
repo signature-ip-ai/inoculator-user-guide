@@ -22,12 +22,6 @@ The feature provides status indicators to show the progress and result of the ro
   :alt: auto_route_success
   :align: center
 
-**Warning** – Routing completed, but some issues or potential conflicts were detected.
-
-.. image:: images/auto_route_success_with_warning.png
-  :alt: auto_route_success_with_warning
-  :align: center
-
 **Updated** – Connections changed, user must re-run the Auto Route or update the routing table.
 
 .. image:: images/auto_route_updated_routes1.png
