@@ -24,9 +24,11 @@ When the Connected Device Protocol is set to AXI Master, the available Port Data
 
 **Reserved Port Data Width** - This is a dropdown button where the user can choose between 4, 8, 12, 16, or 32 as the Reserved Port Data Width for the selected device, which is reserved for future use in the data flit.
 
-**Transaction ID Width** - This is a display-only parameter showing the ID width of the AXI port connected to the nth port of the mth cluster.
+**Transaction ID Width** - This is an input field parameter showing the ID width of the AXI port connected to the nth port of the mth cluster. User can input from 1 to 12 ID Value.
 
-**User Width** - This is a display-only parameter showing the user-defined signal width of the AXI port connected to the nth port of the mth cluster.
+**User Width** - This is an input field parameter showing the user-defined signal width of the AXI port connected to the nth port of the mth cluster. User can input from 1 to 32 Width value. 
+
+**Address Width** - This is an input field parameter where defines the number of bits used for an address in the system. User can input from 1 to 52 width value. 
 
 Sample parameters when AXI Master is selected. 
 
@@ -37,6 +39,8 @@ Sample parameters when AXI Master is selected.
 When the Connected Device Protocol is set to either CHI SN or AXI Slave, a toggle button will be available to enable or disable the Interleaved Subordinate Node. 
 
 **Interleaved Subordinate Node** - An Interleaved Subordinate Node is a target device that participates in address interleaving. It receives transactions for specific portions of an interleaved address range, allowing memory accesses to be distributed across multiple nodes to improve bandwidth and performance.
+
+**Address Translation** - This is a toggle button where automatically translates or remaps user-defined addresses into a different address space used by the system or hardware.
 
 .. image:: images/configuring_device-CHISN.png
   :alt: configuring_device-CHISN
