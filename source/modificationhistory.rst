@@ -291,9 +291,10 @@ This is the modification history made for the documentation.
 |                       |                                |                                                                                                |
 |                       |                                | 1. Update Auto-Route wordings.                                                                 |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 6.2.1                 | May 26, 2026                   | *Modified Items*                                                                               | 
+| 6.2.1                 | May 28, 2026                   | *Modified Items*                                                                               | 
 |                       |                                |                                                                                                |
 |                       |                                | 1. Added Project Type: Integration                                                             |
 |                       |                                | 2. Updated C-NoC Router Parameters                                                             |
+|                       |                                | 3. Update the Request Access flow.                                                             |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
