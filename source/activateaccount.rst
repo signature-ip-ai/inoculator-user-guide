@@ -2,7 +2,7 @@ Activate Account
 =====================================================
 This feature manages the formal acceptance and activation of a user account in iNoCulator. To begin the activation process, the user must click the link provided in the invitation email. This will open a browser tab directing the user to the Account Activation screen.
 
-.. image:: images/activate_account-fill_up_form2.png
+.. image:: images/activate_account-fill_up_form3.png
     :alt: activate_account-fill_up_form
     :align: center
 

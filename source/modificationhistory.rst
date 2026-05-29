@@ -287,5 +287,14 @@ This is the modification history made for the documentation.
 |                       |                                | 5. Update the save button of Copy Project.                                                     |
 |                       |                                | 6. Removal of UCIE Bridge in System Config.                                                    |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-
+| 6.2.0                 | May 14, 2026                   | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Update Auto-Route wordings.                                                                 |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.2.1                 | May 28, 2026                   | *Modified Items*                                                                               | 
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added Project Type: Integration                                                             |
+|                       |                                | 2. Updated C-NoC Router Parameters                                                             |
+|                       |                                | 3. Update the Request Access flow.                                                             |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
