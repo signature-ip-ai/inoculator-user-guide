@@ -58,6 +58,10 @@ C. Reorder Buffers must be large enough
 
   If different slaves have different transaction sizes, the smallest one is used for checking.
 
+Address Interleaving Merger
+-------------------------------------------------------------------------------------
+When NoC Data Width is set as *1024* and Target Port Data with is *32* , Address Interleaving Merger toggle button is *disabled*. 
+
 
 
 

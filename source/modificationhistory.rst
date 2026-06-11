@@ -297,4 +297,9 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Updated C-NoC Router Parameters                                                             |
 |                       |                                | 3. Update the Request Access flow.                                                             |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-
+| 6.2.2                 | June 11, 2026                  | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Modified the Routers, Initiator and Targets up to 128.                                      |
+|                       |                                | 2. Added validation for Address Interleaving Merger.                                           |
+|                       |                                | 3. Modified the Project Sharing with Project Collaboration.                                    |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
