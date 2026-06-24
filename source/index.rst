@@ -1,106 +1,112 @@
-.. Inoculator User Guide documentation master file, created by
-   sphinx-quickstart on Mon Jan 13 00:01:51 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+==================================
+iNoCulator User Guide
+==================================
 
-What's inside the iNoCulator? 
-===================================
+Welcome to the official iNoCulator documentation. iNoCulator is a comprehensive design and configuration platform for Network-on-Chip (NoC) architectures, supporting both NC-NoC and C-NoC workflows.
 
+Use the navigation menu or the sections below to get started with setting up your account, managing projects, and designing your topology.
 
 .. toctree::
    :maxdepth: 2
    :caption: Overview
 
-   getstarted
    introduction
+   getstarted
    projectspage
 
 .. toctree::
    :maxdepth: 2
-   :caption: Using iNoCulator
+   :caption: Account Management
 
-   activateaccount
-   inviteuser   
-   login
-   logout
-   otp
    requestaccess
-      
+   activateaccount
+   login
+   otp
+   logout
+   inviteuser   
 
 .. toctree::
    :maxdepth: 2
-   :caption: Design Your Project
+   :caption: Core Architecture
 
    features
 
 .. toctree::
    :maxdepth: 2
-   :caption: NC-NoC
+   :caption: NC-NoC Design Workflow
 
-   accessmap
+   createprojectncnoc
+   uploadtopology
+   systemconfig
+   componentsandexplorer
+   initiatorconfiguration
+   targetconfiguration
+   routerconfiguration
+   subtopologyconfiguration
+   bridgeconfiguration
+   virtualconfiguration
    addressmap
+   accessmap
+   registermap
    addressinterleaving
    autoplace
    autoroute
-   bridgeconfiguration
-   componentsandexplorer
-   copyproject
-   createprojectncnoc
-   deleteproject
-   exportpackage
    floorplan
+   topologyvalidation
+   simulation
    generatertlandtb
    implement
-   initiatorconfiguration
-   registermap
-   routerconfiguration
+   exportpackage
    searchproject
+   copyproject
    sharedproject
-   simulation
-   subtopologyconfiguration
-   systemconfig
-   targetconfiguration
-   topologyvalidation
-   uploadtopology
-   virtualconfiguration
-
+   deleteproject
 
 .. toctree::
    :maxdepth: 2
-   :caption: C-NoC
+   :caption: C-NoC Design Workflow
 
    createprojectcnoc
+   cnocsystemconfig
    cnoctopology
    cnocrouter
    cnocdevice
-   cnocsystemconfig
    c2cbridge
-   cnoctopologyvalidation
-   cnocinterleaving
    cnocaddressmap
+   cnocinterleaving
+   cnoctopologyvalidation
+   cnocregistermap
+   cnocgeneratertlandtb
 
 .. toctree::
    :maxdepth: 2
-   :caption: TroubleShoot
+   :caption: Troubleshooting
 
+   invalidcredentials
+   forgotpassword
    duplicateemail
    expiredaccount
    expiredlink
-   forgotpassword
-   invalidcredentials
    suspendedaccount
 
 .. toctree::
    :maxdepth: 2
-   :caption: Support
+   :caption: Support & Resources
 
-   appendix
    faqs
-
+   quicklinks
+   appendix
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Reference
 
    modificationhistory
-   
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

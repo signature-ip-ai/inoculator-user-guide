@@ -303,3 +303,9 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Added validation for Address Interleaving Merger.                                           |
 |                       |                                | 3. Modified the Project Sharing with Project Collaboration.                                    |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.2.3                 | June 24, 2026                  | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Modified the C-NoC and NC-NoC Address Map to add Size Column.                               |
+|                       |                                | 2. Update the Layout of Web.                                                                   |
+|                       |                                | 3. Added Quick Links for Video Guide.                                                          |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+

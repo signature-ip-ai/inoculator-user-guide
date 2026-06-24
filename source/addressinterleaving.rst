@@ -1,7 +1,7 @@
 NC-NoC Address Interleaving 
 ========================================================
 
-System Config 
+I. System Config 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Address Interleaving is a system-level feature that allows memory or address ranges to be split and distributed across multiple target (slave) ports.
 This must be enabled first before you can configure Target Address Interleaving in the Address Map.
@@ -13,7 +13,7 @@ This must be enabled first before you can configure Target Address Interleaving 
 Turning this on allows the corresponding slave port to use Target Address Interleaving.
 
 
-Target Address Interleaving
+II. Target Address Interleaving
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Target Address Interleaving allows a specific slave port (target) to receive memory or address ranges in smaller alternating segments instead of one continuous block.
 When enabled, the address map can split and distribute traffic more evenly across multiple ports, improving bandwidth and balancing load.

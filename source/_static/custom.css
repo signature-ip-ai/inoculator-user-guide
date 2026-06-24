@@ -120,19 +120,6 @@ img:hover {
   transform: scale(1.02);
 }
 
-/* Sidebar styling */
-.bd-sidebar {
-  width: var(--pst-sidebar-width);
-  border-right: 1px solid #e5e7eb;
-}
-
-.bd-sidebar label {
-  color: var(--pst-color-primary);
-}
-
-.bd-sidebar a {
-  transition: color 0.15s ease-in-out;
-}
 
 /* TOC on right */
 .bd-toc {
@@ -243,10 +230,10 @@ div.announcement {
   margin-top: 0.5em;
 }
 
-/* Content area */
+/* Content area - UPDATED for full width */
 .bd-content {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 100% !important;
+  margin: 0;
   padding: 2rem;
 }
 
@@ -275,4 +262,45 @@ div.announcement {
   th, td {
     border-color: #374151;
   }
+}
+
+/* ==========================================================================
+   Full Screen & Maximum Width Layout Overrides
+   ========================================================================== */
+
+/* Overrides the maximum restriction container on the main layout page grid */
+.bd-page-width {
+  max-width: 100% !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Forces the actual article body text block to stretch to fill the container */
+.bd-main .bd-content .bd-article-container {
+  max-width: 100% !important;
+}
+
+/* Sidebar styling */
+.bd-sidebar {
+  width: var(--pst-sidebar-width);
+  border-right: 1px solid #e5e7eb;
+  
+  /* --- FREEZE SIDEBAR IN PLACE --- */
+  position: sticky;
+  top: 0;                     /* Keeps it locked to the top of the viewport */
+  height: 100vh;              /* Forces it to match the screen height */
+  overflow-y: auto;           /* Adds an isolated scrollbar if TOC list is too long */
+}
+
+/* Ensure the primary navigation wrapper inside the sidebar behaves correctly */
+.bd-sidebar__sidebar {
+  height: 100%;
+}
+
+.bd-sidebar label {
+  color: var(--pst-color-primary);
+}
+
+.bd-sidebar a {
+  transition: color 0.15s ease-in-out;
 }

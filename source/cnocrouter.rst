@@ -9,8 +9,10 @@ C-NoC Router
 
 **Hashed Home Node** - This toggle button will only appear when the selected Router Type is either ‘HN-F w/ L3’ or ‘HN-F w/o L3’
 
-**Device Port (Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’ and ‘Repeater’)**
+I. Device Port
 ---------------------------------------------------------------------------------------------------------------------
+
+Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’ and ‘Repeater’
 
 .. image:: images/cnoc_router_devicePort.png
   :alt: cnoc_router_devicePort
@@ -29,8 +31,10 @@ C-NoC Router
 
 **Tx DAT FIFO Ptr Width** – This Pointer width to indicate depth of output data flit buffer at the processor port of the NoC. Default value is 2 and can be configure from 1 to 5. 
 
-**Interconnect Port (Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’, and ‘Repeater’)**
+II. Interconnect Port
 --------------------------------------------------------------------------------------------------------------------
+
+Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’, and ‘Repeater’
 
 .. image:: images/cnoc_router_interconnectPort.png
   :alt: cnoc_router_interconnectPort
@@ -43,8 +47,10 @@ C-NoC Router
 
 **DATA FIFO Ptr Width** – This Pointer width to indicate depth of input data flit buffer to receive flits from neighboring cluster. Default value is 2 and can be configure from 1 to 5. 
 	
-**Directory Cache Controller (Available in router type 'HN-F w/ L3', 'HN-F w/o L3')**
+III. Directory Cache Controller
 ---------------------------------------------------------------------------------------------
+
+Available in router type 'HN-F w/ L3', 'HN-F w/o L3'
 
 .. image:: images/cnoc_router_directory.png
   :alt: cnoc_router_directory
@@ -89,8 +95,10 @@ C-NoC Router
 
 **HDR FIFO Ptr Width** - This FIFO pointer defines the pointer width used for managing the header FIFO buffer entries. User can set from 1 to 5 and 2 as the default value. 
 
-**L3 Cache Controller Settings (Available in router type 'HN-F w/ L3')**
+IV. L3 Cache Controller Settings
 ----------------------------------------------------------------------------
+
+Available in router type 'HN-F w/ L3'
 
 .. image:: images/cnoc_router_l3cache.png
   :alt: cnoc_router_l3cache

@@ -15,7 +15,7 @@ C-NoC Topology
   :alt: cnoc_topology-without_device
   :align: center
 
-Adding a Device 
+I. Adding a Device 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Click the “+” button located on the edge of a Router or Device to add a new connection or component.
 Each Router and Device in the diagram can be individually configured to match the required system setup
@@ -24,7 +24,7 @@ Each Router and Device in the diagram can be individually configured to match th
   :alt: c_noc-add_device
   :align: center
 
-Adding a Router
+II. Adding a Router
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Click the “+” button located on the right or top side of any Router device to add a new router.
 
@@ -32,7 +32,7 @@ Click the “+” button located on the right or top side of any Router device t
   :alt: cnoc_add_router
   :align: center
 
-Deleting a Router
+III. Deleting a Router
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 From any selected router, right-click on the component to open the context menu and choose "Delete Component".
 This action will remove:
@@ -49,7 +49,7 @@ A confirmation message will appear, asking the user to confirm before proceeding
   :alt: c_noc-delete_router_confirmation
   :align: center
 
-Clearing the Topology
+IV. Clearing the Topology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To remove all components and start a new design, click the red "Clear Topology" button located on the left panel.
 
@@ -57,7 +57,7 @@ To remove all components and start a new design, click the red "Clear Topology" 
   :alt: c_noc-clear_topology
   :align: center
 
-Connect to C2C Bridge
+V. Connect to C2C Bridge
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This button is placed in the Interconnect Port of each Router. To add a C2C Bridge, right-click on any Interconnect Port and select Connect to C2C Bridge. A new C2C Bridge will then appear in the selected Router.
 
@@ -67,7 +67,7 @@ This button is placed in the Interconnect Port of each Router. To add a C2C Brid
 
 For more details about this, redirect to this page: `C-NoC C2C Bridge <c2cbridge.html>`_
 
-Delete a Connection
+VI. Delete a Connection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This function allows the deletion of a connection between two routers. Deleting a connection is done per direction. To delete a connection, right-click on any router connection to open the context menu, then select ‘Delete Connection’ to proceed.
 
@@ -75,7 +75,7 @@ This function allows the deletion of a connection between two routers. Deleting 
   :alt: c-noc_delete-a-connection
   :align: center
 
-Connect to Adjacent Router 
+VII. Connect to Adjacent Router 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This button is placed in the Interconnect Port of each Router. To add a connection from one router to another, right-click on any Interconnect Port and select Connect to Adjacent Router. A new connection will then appear to the nearest available router in the canvas.
 This item will only be available to Routers that do not have a Router Connection.
@@ -85,7 +85,7 @@ This item will only be available to Routers that do not have a Router Connection
   :align: center
 
 
-Configuring Topology Coordinates
+VIII. Configuring Topology Coordinates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The Topology Coordinates define the physical or logical placement of routers and devices within the network-on-chip (NoC) design. Proper coordinate configuration ensures accurate routing paths and visualization of the topology. This will only configurable when UCIe Bridge is added on the topology.
 

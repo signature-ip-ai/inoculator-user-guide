@@ -2,7 +2,7 @@ C-NoC System Config
 =================================================
 
 
-Parameters Tab
+I. Parameters Tab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **CHI Version** – Version of AMBA CHI protocol to use for the whole C-NoC. Default is E.b. User can choose from E.b and B. 
@@ -53,7 +53,7 @@ Parameters Tab
   :alt: system_config_parameters
   :align: center
 
-Timing Tab
+II. Timing Tab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Timing tab lets you set clock frequencies for the system.
@@ -68,7 +68,7 @@ Timing tab lets you set clock frequencies for the system.
   :align: center
 
 
-Q/P Channel Tab
+III. Q/P Channel Tab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Low Power Interface** - This item is a dropdown selection where user is allowed to choose from 'None', 'Q-Channel' and 'P-Channel' as the Topology Low Power Interface. 
@@ -87,7 +87,7 @@ Q/P Channel Tab
   :align: center
 
 
-Pipeline Tab
+IV. Pipeline Tab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Number of Pipeline Stages** - This input field determine the number of stages assigned for the whole C-NoC Topology. 
@@ -98,7 +98,7 @@ Pipeline Tab
   :align: center
 
 
-Interleaving Tab
+V. Interleaving Tab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
