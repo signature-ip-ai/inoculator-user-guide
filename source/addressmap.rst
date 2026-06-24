@@ -1,8 +1,7 @@
 Address Map
 ===================================================
 
-NC-NoC
-------------------------------------------------
+**NC-NoC**
 
 The Address Map feature displays the address ranges assigned to all Target Devices, including Virtual Devices within the topology. By default, these addresses are not automatically generated; users must manually configure the address ranges.
 
