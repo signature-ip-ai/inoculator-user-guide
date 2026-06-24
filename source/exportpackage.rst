@@ -6,7 +6,7 @@ The type of package depends on the settings of the group the user belongs to. Th
 
 Users can select which package to export from the table. Up to three packages can be run simultaneously, if available.
 
-Encrypted Package 
+I. Encrypted Package 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To export an 'Encrypted' package, tick the 'Encrypted' checkbox inside the Export Package table. 
@@ -26,7 +26,7 @@ Click the 'Export Package' button to export the RTL, and wait for the result in 
   :alt: export_package_encrypted_result
   :align: center
 
-Obfuscated Package
+II. Obfuscated Package
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To export an 'Obfuscated' package, tick the box for Obfuscated inside the Export Package table.
@@ -46,7 +46,7 @@ Click the 'Export Package' button to export the RTL, and wait for the result in 
   :align: center
 
 
-Clean Package 
+III. Clean Package 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To export a 'Clean' package, tick the 'Clean' checkbox inside the Export Package box. 
@@ -68,7 +68,7 @@ Click the 'Export Package' button to export the RTL, and wait for the result in 
   :align: center
 
 
-Results
+IV. Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the Export Design table, each package result has an 'Actions' column. Click the three dots in this column to choose an action.
@@ -81,7 +81,7 @@ Select 'Download' to download the exported RTL result for the selected file.
 Select 'Delete' to remove the selected file from the Export Design table.
 
 
-Upload to FTP 
+V. Upload to FTP 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Upload to FTP Server function will be enabled once the group configuration allows FTP uploads. Once enabled and configured, this will be reflected in the UI.
