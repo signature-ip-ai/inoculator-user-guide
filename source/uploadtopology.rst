@@ -2,7 +2,7 @@ Uploading a Topology
 ========================================================
 
 
-Using Excel file 
+I. Using Excel file 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To design a topology, uploading an excel file with set values will generate a topology instantly. Follow the steps below to generate a topology from an excel file. 
 Prepare the Excel file with the desired values. The current template file name is 'nc-noc_topology_generator_v1.4,' which is used for designing a topology from the Excel file. Instructions are included inside the file that user may follow. Sample values that need to modify are: 
@@ -44,7 +44,7 @@ After verification, if the generated file has no issues, it will proceed to the 
   :align: center
 
 
-Using JSON file 
+II. Using JSON file 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 From your computer, select any JSON file that corresponds to an NC-NoC project.
