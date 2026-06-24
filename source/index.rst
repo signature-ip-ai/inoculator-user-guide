@@ -96,7 +96,7 @@ What's inside the iNoCulator?
 
    appendix
    faqs
-
+   quicklinks
 
 .. toctree::
    :maxdepth: 2
