@@ -78,8 +78,8 @@ Subordinate Node Address Map – Specifies memory ranges managed by external/sub
 
 Use this map to configure, validate, and debug data transactions that benefit from caching mechanisms.
 
-.. image:: images/cnoc_address_map_cacheable3.png
-  :alt: cnoc_address_map_cacheable3
+.. image:: images/cnoc_address_map_cacheable_withSize.png
+  :alt: cnoc_address_map_cacheable_withSize
   :align: center
 
 
@@ -94,21 +94,27 @@ Subordinate Node Address Map – Indicates memory segments on remote nodes that 
 
 This section is essential for critical operations requiring real-time consistency and for peripherals or memory-mapped I/O where caching is not suitable.
 
-.. image:: images/cnoc_address_map_non-cacheable2.png
-  :alt: cnoc_address_map_non-cacheable2
+.. image:: images/cnoc_address_map_noncacheable_withSize.png
+  :alt: cnoc_address_map_noncacheable_withSize
   :align: center
 
 
 Editing of the Address Map is supported per region, per router, and for each Home Node and Subordinate Node individually. The tool allows users to configure or modify memory address ranges specific to their location in the system topology, enabling fine-grained control and validation of address assignments.
 
-.. image:: images/cnoc_address_map_editing_addresses2.png
-  :alt: cnoc_address_map_editing_addresses
+.. image:: images/cnoc_address_map_edit.png
+  :alt: cnoc_address_map_edit
   :align: center
+
+The Size column represents the address range between the Start Address and End Address. Users can configure the Size value, and the End Address will be calculated automatically.
+
+Note:
+  * When End Address is edited, the Size will auto-compute. 
+  * When Size is edited, the End Address will auto-compute. 
 
 The tool also allows highlighting of the parent Home Node and Subordinate Nodes. This feature provides a clearer visual reference to quickly identify the allocation and address ranges associated with each node, making navigation and validation of the address map more intuitive and efficient.
 
-.. image:: images/cnoc_address_map_highlight.png
-  :alt: cnoc_address_map_highlight
+.. image:: images/cnoc_address_map_highlight1.png
+  :alt: cnoc_address_map_highlight1
   :align: center
 
 
