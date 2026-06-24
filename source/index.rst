@@ -75,6 +75,7 @@ Use the navigation menu or the sections below to get started with setting up you
    cnocaddressmap
    cnocinterleaving
    cnoctopologyvalidation
+   cnocregistermap
 
 .. toctree::
    :maxdepth: 2
