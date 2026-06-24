@@ -135,6 +135,6 @@ It specifies which memory ranges are subject to snoop transactions to maintain d
 
 All devices with AXI Master as the device type will be configured in the Request Node Address Map table. All address maps should reside within the Home Node Address Map and may overlap.
 
-.. image:: images/cnoc_snoopable_address2.png
-  :alt: cnoc_snoopable_address2
+.. image:: images/snoopable_address.png
+  :alt: snoopable_address
   :align: center
