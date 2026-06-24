@@ -1,4 +1,4 @@
-Create Project (NC-NoC Topology)
+Create Project- Non Coherent NoC Topology
 ====================================================
 
 .. image:: images/nc_noc-create_project_prompt3.png
