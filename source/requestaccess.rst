@@ -17,8 +17,8 @@ access the iNoCulator.
 
 3. This is the Request Access form. Fill out all required fields to request access to the Inoculator Web.
 
-.. image:: images/request_access_page4.png
-    :alt: request_access_page
+.. image:: images/request_access_page_update.png
+    :alt: request_access_page_update
     :align: center
 
 
