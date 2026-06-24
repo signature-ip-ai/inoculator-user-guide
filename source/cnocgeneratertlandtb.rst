@@ -1,4 +1,4 @@
-Generating RTL and Testbench (Coherent-NoC)
+Generating RTL and Testbench - Coherent-NoC
 =========================================================
 
 This feature generates RTL files and a testbench for the created C-NoC topology.
