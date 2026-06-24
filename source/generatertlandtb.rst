@@ -1,4 +1,4 @@
-Generating RTL and Testbench (Non-Coherent NoC)
+Generating RTL and Testbench - Non-Coherent NoC
 =========================================================
 
 I. Generate RTL and Testbench
