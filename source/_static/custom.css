@@ -120,19 +120,6 @@ img:hover {
   transform: scale(1.02);
 }
 
-/* Sidebar styling */
-.bd-sidebar {
-  width: var(--pst-sidebar-width);
-  border-right: 1px solid #e5e7eb;
-}
-
-.bd-sidebar label {
-  color: var(--pst-color-primary);
-}
-
-.bd-sidebar a {
-  transition: color 0.15s ease-in-out;
-}
 
 /* TOC on right */
 .bd-toc {
