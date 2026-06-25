@@ -60,7 +60,7 @@ The duplication engine fully supports copying projects owned by other collaborat
 
 --------------------------------------------------------------------------------
 
-⚠️ String Validation & Naming Constraints
+⚠️ String Validations
 =========================================
 
 The database validation engine reviews your new title entry in real time. Your entry must comply with the formatting boundaries listed below to avoid generation errors:
