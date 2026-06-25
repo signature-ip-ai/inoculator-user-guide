@@ -11,26 +11,41 @@ Within the iNoCulator framework, a bridge specifically establishes a point-to-po
 🛠️ Adding a Bridge to the Design Canvas
 =======================================
 
-<Sequence>
-{/* Reason: Multi-step interactive canvas operation where order and target selection rules are strict to create valid connections. */}
-  <Step title="Place the Component" subtitle="Canvas Input">
-    Select the **Bridge** icon from the left-side Components menu and place it onto your active design grid canvas.
-  </Step>
-  <Step title="Attach the Primary Segment" subtitle="Connection 1">
-    Drag a connection line from one end of the bridge and snap it into any available port on your starting router.
-  </Step>
-  <Step title="Bridge the Subtopology Boundary" subtitle="Connection 2">
-    Drag the opposing end of the bridge and snap it into a port on a different router that **belongs to an entirely separate subtopology**.
-  </Step>
-  <Step title="Verify Visual Linkage" subtitle="Validation">
-    Confirm that the grid canvas visually registers the bridge connection across the shaded subtopology boundaries.
-    
-    .. image:: images/sample_topology_with_bridge2.png
-       :alt: iNoCulator Topology showing cross-subtopology Bridge linkage
-       :align: center
-       :width: 90%
-  </Step>
-</Sequence>
+.. grid:: 1
+   :gutter: 3
+
+   .. grid-item-card:: Step 1: Place the Component
+      :class-header: bg-light font-weight-bold
+
+      **Canvas Input**
+      
+      Select the **Bridge** icon from the left-side Components menu and place it onto your active design grid canvas.
+
+   .. grid-item-card:: Step 2: Attach the Primary Segment
+      :class-header: bg-light font-weight-bold
+
+      **Connection 1**
+      
+      Drag a connection line from one end of the bridge and snap it into any available port on your starting router.
+
+   .. grid-item-card:: Step 3: Bridge the Subtopology Boundary
+      :class-header: bg-light font-weight-bold
+
+      **Connection 2**
+      
+      Drag the opposing end of the bridge and snap it into a port on a different router that **belongs to an entirely separate subtopology**.
+
+   .. grid-item-card:: Step 4: Verify Visual Linkage
+      :class-header: bg-light font-weight-bold
+
+      **Validation**
+      
+      Confirm that the grid canvas visually registers the bridge connection across the shaded subtopology boundaries.
+      
+      .. image:: images/sample_topology_with_bridge2.png
+         :alt: iNoCulator Topology showing cross-subtopology Bridge linkage
+         :align: center
+         :width: 90%
 
 --------------------------------------------------------------------------------
 
