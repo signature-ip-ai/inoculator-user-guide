@@ -1,38 +1,63 @@
-NC-NoC Bridge Configuration
+===========================
+Bridge Configuration
+===========================
+
+Bridges (or Pipelines) are structural components used to link two or more separate network segments or distinct bus protocols, enabling fluid communication and integration across complex subtopologies. 
+
+Within the iNoCulator framework, a bridge specifically establishes a point-to-point connection between two routers residing in **different subtopologies**, binding them into a unified, coherent network fabric.
+
+--------------------------------------------------------------------------------
+
+🛠️ Adding a Bridge to the Design Canvas
 =======================================
 
-Bridges or Pipelines are components used to connect two or more network segments or different types of buses, enabling communication and integration across subtopologies. In iNoCulator, a bridge represents the connection between two routers that belong to different subtopologies, allowing them to operate as part of a unified network.
+<Sequence>
+{/* Reason: Multi-step interactive canvas operation where order and target selection rules are strict to create valid connections. */}
+  <Step title="Place the Component" subtitle="Canvas Input">
+    Select the **Bridge** icon from the left-side Components menu and place it onto your active design grid canvas.
+  </Step>
+  <Step title="Attach the Primary Segment" subtitle="Connection 1">
+    Drag a connection line from one end of the bridge and snap it into any available port on your starting router.
+  </Step>
+  <Step title="Bridge the Subtopology Boundary" subtitle="Connection 2">
+    Drag the opposing end of the bridge and snap it into a port on a different router that **belongs to an entirely separate subtopology**.
+  </Step>
+  <Step title="Verify Visual Linkage" subtitle="Validation">
+    Confirm that the grid canvas visually registers the bridge connection across the shaded subtopology boundaries.
+    
+    .. image:: images/sample_topology_with_bridge2.png
+       :alt: iNoCulator Topology showing cross-subtopology Bridge linkage
+       :align: center
+       :width: 90%
+  </Step>
+</Sequence>
 
-To Add a Bridge in the Design:
-  1. Select the Bridge icon from the Components menu and place it onto the grid.
+--------------------------------------------------------------------------------
 
-  2. Connect one end of the bridge to a router by dragging it to any available port.
+🎛️ Side Panel Parameter Definitions
+====================================
 
-  3. Connect the other end of the bridge to a port on a different router that belongs to another subtopology.
-
-  4. The topology will then visually reflect a connection between two routers with different subtopologies.
-
-
-
-.. image:: images/sample_topology_with_bridge2.png
-  :alt: sample_topology_with_bridge2
-  :align: center
+To customize your bridge latency and routing tags, single-click the bridge component on the canvas grid. This action populates the **Side Panel** workspace on the right side of your screen.
 
 .. image:: images/bridge_configuration.png
-  :alt: bridge_configuration
-  :align: center
+   :alt: iNoCulator Bridge Configuration Property Side Panel
+   :align: center
+   :width: 60%
 
-To configure a bridge, click the bridge placed on the grid. This action will open the **Side Panel** on the right, where configuration options are available.
+.. list-table:: Bridge Configuration Attributes
+   :widths: 30 70
+   :header-rows: 1
 
-- **Name**  
-  The label assigned to the selected bridge. This is a user-editable input field that accepts only **alphanumeric characters** and **underscores** (`_`). Special characters are not allowed.
+   * - Configuration Property
+     - Rules & Valid Constraints
+   * - **Name**
+     - The custom system string assigned to this bridge instance. Accepts **alphanumeric characters** and **underscores** (``_``) only. Special symbols and spaces are forbidden.
+   * - **Incoming Link**
+     - A read-only hardware attribute specifying the exact source router connection serving as the incoming ingress node.
+   * - **Outgoing Link**
+     - A read-only hardware attribute specifying the exact destination router connection serving as the outgoing egress node.
+   * - **Number of Pipeline Stages**
+     - A numeric input determining structural registers for timing closure. Valid integer range is **0 to 65,535**.
 
-- **Incoming Link**  
-  Specifies the router connection serving as the **incoming link** to the bridge.
-
-- **Outgoing Link**  
-  Specifies the router that serves as the **outgoing link** from the bridge.
-
-- **Number of Pipeline Stages**  
-  Defines the number of pipeline stages for the bridge. This is a numeric input field with a valid range of **0 to 65,535**.				
-
+.. important::
+   Increasing the **Number of Pipeline Stages** helps resolve critical path timing violations across long physical distances, but introduces additional clock cycles of latency to packet traversal.
