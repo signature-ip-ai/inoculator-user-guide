@@ -36,7 +36,7 @@ Follow this sequential workflow to initialize structural folder partitions insid
 --------------------------------------------------------------------------------
 
 🎛️ Subtopology Property Settings Matrix
-========================================
+==========================================
 
 Clicking any subtopology container node inside the Explorer layout populated a contextual properties inspector panel on the right-hand side of the workspace.
 
@@ -46,7 +46,7 @@ Clicking any subtopology container node inside the Explorer layout populated a c
    :width: 80%
 
 🌐 Global & Clocking Parameters
-------------------------------
+----------------------------------
 
 Name
    The custom string label assigned to the subtopology directory folder. The input parser restricts strings strictly to **alphanumeric keys and underscores** (no spaces or special symbols).
@@ -89,7 +89,7 @@ To support structural power-down states, you can deploy hardware sideband handsh
 --------------------------------------------------------------------------------
 
 ⚠️ Voltage Range Validation Safeguards
-=======================================
+========================================
 
 .. warning::
    **Strict Physical Design Thresholds:**
