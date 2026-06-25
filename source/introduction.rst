@@ -9,7 +9,7 @@ Welcome to the **iNoCulator** User Guide. This section establishes the architect
 .. _terminologies:
 
 📖 A. Terminologies & System Nomenclature
-========================================
+===========================================
 
 The following definition matrix establishes the technical abbreviations and architectural primitives utilized throughout the iNoCulator interface, configuration files, and validation modules:
 
@@ -54,7 +54,7 @@ The following definition matrix establishes the technical abbreviations and arch
 .. _user-description:
 
 👥 B. Target User Persona Profiles
-===================================
+====================================
 
 The iNoCulator application is explicitly provisioned to cross-link workflows among multi-disciplinary hardware and software development paths:
 
