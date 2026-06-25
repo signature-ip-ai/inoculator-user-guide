@@ -1,69 +1,88 @@
-NC-NoC Address Interleaving 
+========================================================
+NC-NoC Address Interleaving
 ========================================================
 
-I. System Config 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Address Interleaving is a system-level feature that allows memory or address ranges to be split and distributed across multiple target (slave) ports.
-This must be enabled first before you can configure Target Address Interleaving in the Address Map.
+Address Interleaving is a system-level feature that allows memory ranges to be split and distributed across multiple target (slave) ports. Instead of assigning one continuous block of memory to a single target, traffic is sent in alternating segments. This optimizes total system bandwidth and balances traffic loads across the network-on-chip fabric.
 
-1. Enable Address Interleaving 
-  - Values: 0 = Off, 1 = On
-  - Default: 0
+--------------------------------------------------------------------------------
 
-Turning this on allows the corresponding slave port to use Target Address Interleaving.
+⚙️ Phase 1: System Configuration
+=================================
 
+Before configuring specific hardware endpoints, interleaving must be unlocked globally within the **System Config** dashboard.
 
-II. Target Address Interleaving
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Target Address Interleaving allows a specific slave port (target) to receive memory or address ranges in smaller alternating segments instead of one continuous block.
-When enabled, the address map can split and distribute traffic more evenly across multiple ports, improving bandwidth and balancing load.
+.. list-table:: Global Interleaving Parameter
+   :widths: 25 25 50
+   :header-rows: 1
 
-This feature becomes configurable only if Address Interleaving is enabled in System Config.
-Users can also set the Minimum Transaction Size, which determines how small each interleaved segment can be.
+   * - Parameter
+     - Allowed Values
+     - Default Value
+   * - **Address Interleaving**
+     - ``0`` (Off), ``1`` (On)
+     - ``0`` (Off)
 
-1. Enable Address Interleaving 
-  - Values: 0 = Off, 1 = On
-  - Default: 0
+.. note::
+   Enabling this parameter globally is a strict prerequisite. If set to ``0``, all downstream Target Address Interleaving settings in the Address Map remain locked.
 
-Turning this on will also validates the values in Minimum Transaction Size, Read Reorder Buffer Size, Write Reorder Buffer Size, Flit Write Packet Size and Flit Read Buffer Size, together with NoC Data Width and Port Data Width. 
+--------------------------------------------------------------------------------
 
-2. Minimum Transaction Size 
-  -  Default: 128 
-  - Valid Values: 16, 32, 64, 128, 256, 512, 1024, 2048
+🎯 Phase 2: Target Address Interleaving
+=======================================
 
-This sets the minimum allowed transaction size for interleaving.
+Once globally enabled, individual slave ports can be configured for interleaved reception. Activating this feature triggers cross-validation checks across multiple systemic parameters, including: NoC Data Width, Port Data Width, Read/Write Reorder Buffer Sizes, and Flit Buffer Sizes.
 
-Dependencies when Target Address Interleaving is Enabled
-----------------------------------------------------------
+Parameters
+----------
 
-If Address Interleaving = ON, the following rules must be met:
+.. list-table:: Target Interleaving Control Space
+   :widths: 25 35 40
+   :header-rows: 1
 
-A. Transaction size must fit initiator buffer limits
+   * - Parameter
+     - Valid Range / Options
+     - Functional Default
+   * - **Enable Address Interleaving**
+     - ``0`` (Off), ``1`` (On)
+     - ``0``
+   * - **Minimum Transaction Size**
+     - ``16``, ``32``, ``64``, ``128``, ``256``, ``512``, ``1024``, ``2048``
+     - ``128``
 
-  - Minimum Transaction Size must be less than or equal to both:
-      - Initiator Flit Read Buffer Size
-      - Initiator Flit Write Packet Size
+--------------------------------------------------------------------------------
 
-  The system uses the smallest available value if different initiators exist.
+⚠️ Critical Architectural Dependencies
+=====================================
 
-B. Additional rule for Rate Matching (if NOC_DATA_WIDTH ≠ SLV_DATA_WIDTH)
+When a target port has **Address Interleaving** set to ``1`` (ON), the structural topology compiler strictly enforces the following architectural rules:
 
-  - Minimum Transaction Size must also be ≤:
-    256 / (NOC_DATA_WIDTH / SLV_DATA_WIDTH)
+A. Initiator Buffer Bounds
+--------------------------
+The configured **Minimum Transaction Size** must be less than or equal to both core initiator flit metric constraints. If multiple distinct initiators route to this target, the compiler uses the smallest available value:
 
-C. Reorder Buffers must be large enough
+$$\text{Minimum Transaction Size} \le \text{Initiator Flit Read Buffer Size}$$
+$$\text{Minimum Transaction Size} \le \text{Initiator Flit Write Packet Size}$$
 
-  - Write Reorder Buffer Size must be ≥ 4096 / Minimum Transaction Size
-  - Read Reorder Buffer Size must be ≥ 4096 / Minimum Transaction Size
+B. Rate Matching Boundary Condition
+-----------------------------------
+If the main network width differs from the target slave width ($NOC\_DATA\_WIDTH \neq SLV\_DATA\_WIDTH$), the **Minimum Transaction Size** must scale to protect the bus rate matching logic:
 
-  If different slaves have different transaction sizes, the smallest one is used for checking.
+$$\text{Minimum Transaction Size} \le \frac{256}{\left(\frac{NOC\_DATA\_WIDTH}{SLV\_DATA\_WIDTH}\right)}$$
 
-Address Interleaving Merger
--------------------------------------------------------------------------------------
-When NoC Data Width is set as *1024* and Target Port Data with is *32* , Address Interleaving Merger toggle button is *disabled*. 
+C. Reorder Buffer Sizing Minimums
+---------------------------------
+To prevent network head-of-line blocking during segment split transactions, the tracking reorder structures must meet or exceed these depth thresholds:
 
+$$\text{Write Reorder Buffer Size} \ge \frac{4096}{\text{Minimum Transaction Size}}$$
+$$\text{Read Reorder Buffer Size} \ge \frac{4096}{\text{Minimum Transaction Size}}$$
 
+.. hint::
+   If target slave endpoints within the same interleaved network specify varying segment sizes, the compiler selects the absolute smallest size value to run these validation sweeps.
 
+--------------------------------------------------------------------------------
 
+🧩 Address Interleaving Merger
+==============================
 
-
+.. warning::
+   When the global **NoC Data Width** is provisioned at exactly ``1024`` and the matching **Target Port Data Width** is specified as ``32``, the **Address Interleaving Merger** toggle button is automatically **disabled** and bypassed by the hardware compilation engine.
