@@ -1,26 +1,62 @@
-Forgot Password
 ===================================================================================================================
-This feature is designed to help users recover access to their accounts if they forget their passwords. 
+Account Recovery and Password Reset
+===================================================================================================================
 
-  1. From Sign in Page, click ‘Forgot Password’ to access the form. 
-  2. When ‘Forgot Password’ is clicked, Forgot Password page will be displayed.
+The **Forgot Password** self-service pipeline provides an automated, secure recovery path to restore platform access if you have misplaced your login credentials. 
 
-  .. image:: images/forgot_password-reset_your_password_page3.png
-    :alt: forgot_password-reset_your_password_page
-    :align: center
+--------------------------------------------------------------------------------
 
+🔑 Self-Service Credential Reset Procedure
+===========================================
 
-  3. After sending the valid email, user will receive email notification which includes the link for resetting password.
+Follow this sequence to clear your lost credential keys and securely nominate a new platform password:
 
-  .. image:: images/forgot_password-email_notification2.png
-    :alt: forgot_password-email_notification
-    :align: center
+.. grid:: 1
+   :gutter: 3
 
-  4. Click the button ‘Reset your password’ and it will be redirected to a page to reset the user’s password. 
+   .. grid-item-card:: Step 1: Submit Your Identity Token
+      :class-header: bg-light font-weight-bold
 
-  .. image:: images/forgot_password-reset_password_page2.png
-    :alt: forgot_password-reset_password_page
-    :align: center
+      **Accessing the Request Portal**
+      
+      Navigate to the main **Sign In** landing page and click the **Forgot Password** link. Enter your active corporate email address into the input field and click the **Send Reset Link** action button.
+      
+      .. image:: images/forgot_password-reset_your_password_page3.png
+         :alt: Forgot Password email identity submission form interface
+         :align: center
+         :width: 65%
 
-  5. User will be able to nominate the new password. Click ‘Reset’ button to confirm the new password. After completing the reset password, page will be redirected to Sign In page. That means that the password has been successfully reset.
+   .. grid-item-card:: Step 2: Intercept the Security Handshake Email
+      :class-header: bg-light font-weight-bold
 
+      **Verification Verification Link**
+      
+      The system verification layer will process your request and dispatch an automated transaction token to your inbox. Open the message and click the **Reset your password** primary button.
+      
+      .. image:: images/forgot_password-email_notification2.png
+         :alt: Automated password reset confirmation email notification block layout
+         :align: center
+         :width: 80%
+
+      *(Note: Reset link strings carry a strict security timeout stamp. Complete the handshake promptly to prevent token expiration).*
+
+   .. grid-item-card:: Step 3: Nominate and Confirm New Credentials
+      :class-header: bg-light font-weight-bold
+
+      **Database Password Update**
+      
+      The email token will securely redirect your browser to the password entry dashboard. Input your new password string into both fields, ensuring it satisfies your enterprise complexity rules, then click **Reset**.
+      
+      .. image:: images/forgot_password-reset_password_page2.png
+         :alt: Setting new secure account password criteria fields inside the reset form
+         :align: center
+         :width: 65%
+
+--------------------------------------------------------------------------------
+
+✅ Verification of Success
+===========================
+
+Upon clicking the final **Reset** button, the authentication engine commits your updated credential string to the master database. 
+
+The application will immediately redirect you back to the primary **Sign In** portal. This automatic routing change serves as verification that your password update was written successfully; you can now log in using your fresh active credentials.
