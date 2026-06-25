@@ -41,7 +41,7 @@ The **Delete Project** routine permanently removes a Network-on-Chip (NoC) desig
 ⚠️ Critical Operational Checklist
 ===================================
 
-.. critical::
+.. error::
    **Project deletion is absolute and entirely irreversible.** The system cannot recover a design once its database entry has been wiped from the server cluster. 
 
 Before committing to a canvas or repository purge, ensure your engineering team checks off the following mandatory workspace protocols:
