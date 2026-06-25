@@ -1,133 +1,195 @@
-Target Configuration
+===========================================
+Target Interface Configuration
 ===========================================
 
-Configuring a Target device involves various settings. There are two types of targets: Default Target and Target. 
+Configuring a Target (Slave) device involves defining its signaling protocol rules, outstanding transaction queues, physical buffer profiles, security policies, and clock domains. The system parses target configurations using two distinct structural classifications:
 
-Default Target - A device that acts as the default communication slave in a master-slave setup. 
+Default Target
+   A specialized, fail-safe communication block that handles unmapped or dangling transactions. It acts as the ultimate catch-all slave in a master-slave topology layout.
 
-Target Device - The device that is currently being controlled or receiving commands from the master.
+Target Device
+   A standard memory-mapped peripheral block (e.g., DRAM controllers, SRAM arrays, or high-speed hardware blocks) receiving commands from initiating master devices across the fabric.
 
+--------------------------------------------------------------------------------
+
+🎯 Default Target Constraints
+==============================
+
+The Default Target acts as a system fallback node and enforces fixed, unalterable base properties to guarantee error trapping:
 
 .. image:: images/target-default_slave1.png
-  :alt: target-default_slave
-  :align: center
+   :alt: Configuration layout for the system Default Slave node showing unmodifiable parameters
+   :align: center
+   :width: 85%
 
-**Device ID** – Device ID “0” is for reserved for Default Slave only. 
+* **Device ID Mapping:** The identifier value ``0`` is strictly reserved by the structural compilation tool for the **Default Slave** block. No regular target node can claim this index.
+* **Protocol Assignment:** Renders a read-only parameter string showing ``Default``, identifying its role as port ``E0``'s error handling anchor.
 
-**Bus Protocol** – This read-only parameter displays the name "Default", representing the Default Slave
+--------------------------------------------------------------------------------
 
-.. image:: images/target-enable_virtual_device1.png
-  :alt: target-enable_virtual_device
-  :align: center
+🎛️ Primary Target Parameter Specifications
+==========================================
 
-
-This is a toggle button for enabling or disabling virtual devices. The default setting is disabled. When the user enables this button, adding virtual devices to the specific target becomes possible.
-
-This topic will be discussed in **6. Virtual Devices**. 
+Clicking a standard Target module on the visual canvas populates a detailed multi-tab properties inspector on the right-hand panel.
 
 .. image:: images/target-parameters12.png
-  :alt: target-parameters10
-  :align: center
+   :alt: Main properties sheet for a standard Target component mapping name, device ID, and bus configuration fields
+   :align: center
+   :width: 85%
+
+Subtopology
+   A dropdown field to change or assign the component's parent subtopology directory. The node will dynamically inherit its parent's power and clock behaviors upon reallocation.
+
+Name
+   The unique string label assigned to the target instance. The input field accepts **alphanumeric keys and underscores** (``_``) only.
+
+Device ID
+   An uneditable, unique integer index assigned automatically to distinguish the block across the global NoC registry.
+
+Bus Protocol, Version, & Variants
+   Defines the physical signaling protocol standard used to link the target to the outer router fabric interface. Available iterations scale dynamically based on your selection matrix:
+
+   .. list-table:: Supported Interconnect Protocols Matrix
+      :widths: 30 30 40
+      :header-rows: 1
+      :stub-columns: 1
+
+      * - Bus Protocol
+        - Protocol Version
+        - Bus Variant Options
+      * - **AXI**
+        - ``3``, ``4``
+        - ``Full``, ``Lite``, ``Stream`` *(Stream/Lite unique to v4)*
+      * - **AHB**
+        - ``3``, ``5``
+        - ``Lite`` *(v3 only)*, ``N/A``
+      * - **APB**
+        - ``3``, ``5``
+        - ``N/A``
+      * - **SIG_NATIVE**
+        - *N/A*
+        - ``N/A`` (Proprietary Signature IP protocol)
+      * - **SRAM**
+        - *N/A*
+        - ``N/A`` (Direct memory array macro interface)
+
+--------------------------------------------------------------------------------
+
+🔌 Signaling and Transaction Queuing Controls
+=============================================
+
+.. image:: images/target-enable_virtual_device1.png
+   :alt: Target parameter panel showing the toggle button mechanism to enable structural Virtual Devices
+   :align: center
+   :width: 85%
+
+Virtual Devices Toggle
+   Enables or disables multi-channel virtual device overlays on this explicit endpoint target block. Once activated, developers can append logical channels to slice peripheral spaces *(For complete structural rules, see Section 6: Virtual Devices)*.
+
+Write / Read Transaction ID Width
+   Specifies the exact bit allocation designated to trace concurrent master transactions. Higher values permit greater scheduling flexibility but expand the synthesized logic surface area.
+
+Port Data Width
+   Declares the raw line width of the physical data bus block. Selection capabilities adapt to your specified bus protocol, capped by the absolute global **Data Width** restriction established within the master System Configuration. *(Hidden for SIG_NATIVE setups)*.
+
+User Request / Data Width
+   Accessible explicitly when compiling under **AHB** or **APB** environments. Restricts structural sideband signal metadata processing paths strictly to **16-bit** or **32-bit** options.
+
+Max Outstanding Writes / Reads
+   Imposes hard architectural queue limits on parallel transaction tracking. These knobs prevent master nodes from flooding peripheral buffers, balancing traffic throughput against structural logic saturation.
+
+--------------------------------------------------------------------------------
+
+🛠️ Exclusive Access Configuration & ID Balancing
+===================================================
+
+When tuning targets under **AXI3** or **AXI4-Full** architectures, you can activate specialized transaction tracking levers to govern out-of-order execution states:
+
+Out of Order Transaction
+   Toggle feature enabling or disabling non-sequential transaction processing paths across the target block interface.
+
+Exclusive Access
+   A binary toggle allowing the target to track semaphore-locked atomic actions across multi-core elements. Can only be enabled when **Out of Order Transaction** is active.
+
+.. list-table:: Exclusive Access Architectural Constraints
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Exclusive Access DISABLED
+     - Exclusive Access ENABLED
+   * - Max Outstanding Reads $\le 2^{\text{Read ID Width}}$
+     - Separate ID widths unify into a combined **R/W Transaction ID Width** field.
+   * - Max Outstanding Writes $\le 2^{\text{Write ID Width}}$
+     - Max Outstanding Reads $\le 2^{(\text{Common ID Width} - 1)}$
+   * - Default lower boundary limit values scale to a minimum baseline index of **2**.
+     - Max Outstanding Writes $\le 2^{(\text{Common ID Width} - 1)}$
+   * - *Note: The layout automatically pulls down values if properties exceed maximum mathematical boundaries.*
+     - **Exclusive Access LUT Size:** New input field unlocks. Limits the target lock table entry size from **2 to 256** slots ($\le 2^{(\text{Common ID Width} - 1)}$).
+
+--------------------------------------------------------------------------------
+
+📦 Buffer Allocations & Memory-Interleaving Overrides
+======================================================
 
 .. image:: images/target-SRAM.png
-  :alt: target-parameters
-  :align: center
+   :alt: Properties configuration panel specific to an SRAM memory macro target block configuration
+   :align: center
+   :width: 85%
 
+Aligned Addresses
+   Enforces alignment restrictions on inbound bursts. Displayed for all protocols except ``SIG-NATIVE``.
 
-**Subtopology** –A dropdown list allows users to change the subtopology assigned to the selected target. This dropdown can be modified and reassigned to another available subtopology based on the topology configuration.
-  
-**Name** – Label name assigned for selected target. This is an input field where only alphanumeric keys and underscores are allowed.
-  
-**Device Id** – This ID is unique for each component.
+Read Data Buffer & Depth
+   Unlocks a dedicated internal queue array block to buffer out-of-order read data streams before driving lines back onto the router fabric. Fully supported from a depth parameter scale of **2 to 256** entries. *(Omitted for SIG_NATIVE and SRAM interfaces)*.
 
-**Bus Protocol** – The selected item here will be assigned as the protocol for the Initiator device. The available selections are AXI, AHB, APB, SIG_NATIVE, SRAM and ‘Default’. ‘Default’ will be unavailable once it was already selected in port ‘E0’. 
+Address Interleaving Merger
+   A system-locked conditional parameter. Remains unconfigurable and grayed-out by default. Unlocks dynamically *only* when the global **Address Interleaving** flag is enabled inside the master System Config workspace panel.
 
-**Bus Protocol Version** – The list of versions depends in ‘Bus Protocol’ that has been selected. Please check the table below as reference.
+Minimum Transaction Size
+   The validation limit for interleaved packet framing. Active exclusively during interleaved target routing routines.
 
-**Bus Variant** – The list of variants for the selected 'Bus Protocol' will be displayed here. Please check the table below as reference. 
+SRAM Specific Controls
+   When the target protocol is set to direct ``SRAM`` macros, specialized memory-cell configuration fields appear:
+   
+   * **Read Data Delay:** Dictates the exact latency cycle delay step (choose **1** or **2** cycles) required to sample data bits out of the memory array.
+   * **Channel Typology:** Configures the RAM physical array port access type. Select between ``1RW`` (Single shared Read/Write port) or ``1R1W`` (Dedicated concurrent 1-Read / 1-Write port tracks).
 
-**Write Transaction ID Width** – Refers to the number of bits allocated to identify write transactions. 
+--------------------------------------------------------------------------------
 
-**Read Transaction ID Width** – Refers to the number of bits used to identify read transaction. 
+⏱️ Timing and Security Frameworks
+===================================
 
-**Port Data Width** – Refers to the Data Width you will be assigned to the connected port.  Available list will depend on what Bus Protocol was selected. This is not displayed in SIG-NATIVE. Maximum possible value depends on the 'Data Width' set in System Configuration.
-
-**User Request Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
-
-**User Data Width** – This parameter is available in AHB or APB bus protocol. User can choose between 16 or 32 bits. 
-
-**Max Outstanding Writes** – The number of allowed outstanding writes limited by the system’s architecture. 
-
-**Max Outstanding Reads** – The number of allowed outstanding reads limited to help manage the bandwidth. 
-
-Additional Notes:  
-
-If exclusive access is disabled, the following should be observed:
-  -  Max allowable value of Max Outstanding Reads is 2^(Read Transaction ID Width)
-  -  Max allowable value of Max Outstanding Writes is 2^(Write Transaction ID Width)
-
-If exclusive access is enabled, the following should be observed:
-  -  Read Transaction ID Width and Write Transaction ID Width should have common value (change to R/W Transaction ID Width)
-  -  Max allowable value of Max Outstanding Reads is 2^(common ID Width-1)
-  -  Max allowable value of Max Outstanding Writes is 2^(common ID Width-1)
-  -  Max Exclusive access LUT Size is 2^(common ID Width-1)
-  -  since min value for max outstanding write/read and lut size when exclusive access is enabled is 1, if exclusive access is disabled (given that the current value is 1), it should be updated to 2 (min value when disabled)
-  -  Max Outstanding Read/Write should automatically be updated if current value > max allowable value 
-  -  When Exclusive Access is enabled, it should display R/W transaction ID Width instead of separate Read and Write Transaction Width
-
-**Out of Order Transaction** – Toggle button where user can enable or disable out of order transactions. This setting will only appear in AXI3 and AXI4-Full bus protocols.
-
-**Exclusive Access** – This parameter is a toggle button where user can enable or disable the Exclusive Access function. Default is disabled and can only be enabled when 'Out of Order Transaction' is enabled. When enabled, user must input the ‘Exclusive Access LUT Size’. This parameter is configurable only using AXI3 and AXI4-Full bus protocols. 
-
-**Exclusive Access LUT Size** – This input field is displayed when ‘Exclusive Access’ is enabled. User can input from 2 to 256 as the size. 
-
-**Aligned Addresses** – This parameter is displayed for all target devices except in SIG-NATIVE devices. 
-
-**Read Data Buffer** – This parameter allows the user to configure the Read Data Buffer for a selected Target device. Toggle on to enable and toggle off to disable. This parameter is displayed in all Bus Protocols except in SIG_NATIVE and SRAM.
-
-**Read Data Buffer Depth** – This parameter is an input field that defines the data buffer size for the selected device. Supported values range from 2 to 256. 
-
-**Address Interleaving Merger** - This parameter is DISABLED and non-configurable as default. This will only be enabled when Address Interleaving in System Config is ENABLED. Please check the `Address Interleaving <addressinterleaving.html>`_ page for more information. 
-
-**Minimum Transaction Size** - This parameter is ENABLED and configurable. This will only be validated when 'Target Address Interleaving'. Check the `Address Interleaving <addressinterleaving.html>`_  page to know more. 
-
-**Read Data Delay** – This setting is only available in ‘SRAM’ Bus Protocol. Time interval to set for a read request. User can choose either 1 or 2.
-
-**Channel** – This setting is only available in ‘SRAM’ Bus Protocol. User can choose either 1RW (1 Read/Write) or 1R1W (1 Read 1 Write). 
-
-+------------------+--------------------------+----------------------+
-| **Bus Protocol** | **Bus Protocol Version** |    **Bus Variant**   |
-+==================+==========================+======================+
-|      AXI         |           3              |          N/A         |
-+------------------+--------------------------+----------------------+
-|                  |           4              |  Full, Lite, Stream  |
-+------------------+--------------------------+----------------------+
-|      AHB         |           3              |        Lite          |
-+------------------+--------------------------+----------------------+
-|                  |           5              |          N/A         |
-+------------------+--------------------------+----------------------+
-|      APB         |           3              |          N/A         |
-+------------------+--------------------------+----------------------+
-|                  |           5              |          N/A         |
-+------------------+--------------------------+----------------------+
-|    SIG_NATIVE    |          N/A             |          N/A         |
-+------------------+--------------------------+----------------------+
-|    SRAM          |          N/A             |          N/A         |
-+------------------+--------------------------+----------------------+
-
+The sub-panels manage downstream physical integration properties:
 
 .. image:: images/target-timing4.png
-  :alt: target-timing
-  :align: center
+   :alt: Target Timing panel displaying clock inheritances and custom frequency input parameters
+   :align: center
+   :width: 85%
 
-Timing tab displays the Use Subtopology Clock and Frequency parameters. By default, Use Subtopology Clock is enabled, and the Frequency value follows the frequency set in the Subtopology folder.
+Timing Configuration
+---------------------
 
-**Use Subtopology Clock** – When enabled, the Frequency will be the same as the Subtopology clock. When disabled, the Frequency must be set in MHz.
-
-**Frequency** – This refers to the speed at which a processor can execute instructions. By default, the value displayed here follows the value set in the Subtopology folder. This field will be available if 'Use Subtopology Clock' is disabled.
+* **Use Subtopology Clock:** Enabled by default. Forces the component interface to seamlessly inherit the master clock profile assigned to its parent Subtopology directory. Disabling this block unlocks local overrides.
+* **Frequency:** Active solely when the tracking check box above is cleared. Allows designers to type a unique local performance rating scaled directly in **MHz**.
 
 .. image:: images/target-security1.png
-  :alt: target-security
-  :align: center
+   :alt: Target Security policy manager panel defining initiator access rights boundaries
+   :align: center
+   :width: 85%
 
-**Device Policy** – Policy or configuration assigned for the connected Initiator device. This will also reflect in Initiator device’s setting. Choose from Passthrough, Programmable (Interface Security: Secure or Non-Secure), Blocked, and Fixed-Secure.
+Security Configuration
+-----------------------
+
+**Device Policy:** Dictates the access boundaries enforced against incoming initiator requests attempting to drive transactions onto this target block. The dropdown menu provides four security profiles:
+
+Passthrough
+   Forwards all inbound transaction payloads raw without inspecting or scrubbing security bit tags.
+
+Programmable
+   Unlocks dynamic software-defined control. Evaluates individual transaction streams as explicitly **Secure** or **Non-Secure** on-the-fly.
+
+Blocked
+   Completely severs access. Isolates the target from all master blocks on the active topology layout grid.
+
+Fixed-Secure
+   Locks hardware access down. Rejects all non-secure master transactions automatically, generating an instant fabric error line flag.
