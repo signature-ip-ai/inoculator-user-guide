@@ -61,7 +61,7 @@ This knowledge base addresses common questions regarding account provisioning, o
 
    Profile locks are automatically triggered by protective firewall layers (such as consecutive invalid password attempts) or security administration directives. 
    
-   .. critical::
+   .. error::
       **Self-Service Bypass Prohibited:** Locked or suspended user accounts cannot be overridden using standard password recovery links. 
       
       You must connect directly with the **Signature IP Support Team** or your designated site administrator. They will audit the security logs to determine why the profile was flagged, confirm your identity, and manually flip your database status back to an active state.
