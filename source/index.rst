@@ -1,5 +1,5 @@
 ==================================
-iNoCulator User Guide
+Inoculator User Guide
 ==================================
 
 Welcome to the official iNoCulator documentation. iNoCulator is a comprehensive design and configuration platform for Network-on-Chip (NoC) architectures, supporting both NC-NoC and C-NoC workflows.
