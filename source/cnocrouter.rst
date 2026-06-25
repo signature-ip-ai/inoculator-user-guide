@@ -1,117 +1,246 @@
-C-NoC Router
+===================================================
+C-NoC Router Configuration
 ===================================================
 
-**Device ID** – This represents the unique identifier of the selected device.
+The **C-NoC Router** properties panel manages identification, messaging queue depths, internal arbitration FIFO sizing, and coherent tracking buffers across individual network nodes.
 
-**Cluster ID** - Cluster ID is an identifier assigned to a router to indicate the cluster or group it belongs to within the Coherent NoC topology. It helps organize routers into clusters for routing, coherency management, and system organization.
+.. list-table:: Core Identification Attributes
+   :widths: 25 75
+   :header-rows: 1
 
-**Router Type** – This is a dropdown parameter which router type to be used on the selected component. User can choose between 'Repeater', 'HN-F w/ L3', 'HN-F w/o L3', or 'Device Only'. 
+   * - Parameter Name
+     - Validation Constraints & Architecture Rules
+   * - **Device ID**
+     - A read-only, system-assigned unique hardware token mapping this instance to the fabric grid layout.
+   * - **Cluster ID**
+     - Groups specific sets of routers into a local coherency management and routing tracking zone.
+   * - **Router Type**
+     - Dropdown selector determining the protocol capabilities of this node:
+       
+       * ``HN-F w/ L3`` — Home Node Fully Coherent with dedicated Directory and L3 Cache.
+       * ``HN-F w/o L3`` — Home Node Fully Coherent with dedicated Directory but no L3 Cache.
+       * ``Device Only`` — Low-overhead direct endpoint attachment pass-through interface.
+       * ``Repeater`` — Pure pipeline register staging hop used for timing closure.
+   * - **Hashed Home Node**
+     - **Dynamic Toggle.** Visually populates only when **Router Type** is specified as either ``HN-F w/ L3`` or ``HN-F w/o L3``. Enrolls this node in hash-based cache line traffic splitting.
 
-**Hashed Home Node** - This toggle button will only appear when the selected Router Type is either ‘HN-F w/ L3’ or ‘HN-F w/o L3’
+--------------------------------------------------------------------------------
 
-I. Device Port
----------------------------------------------------------------------------------------------------------------------
+🚪 I. Device Port Parameters
+============================
 
-Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’ and ‘Repeater’
+*Available for: All Router Types (``HN-F w/ L3``, ``HN-F w/o L3``, ``Device Only``, ``Repeater``)*
+
+This block customizes the pointer widths controlling the queue depth allocations for flits directly interfacing with processor clusters and local bus devices.
 
 .. image:: images/cnoc_router_devicePort.png
-  :alt: cnoc_router_devicePort
-  :align: center
+   :alt: C-NoC Router Device Port Interface Queue Adjustments
+   :align: center
+   :width: 80%
 
+.. list-table:: Ingress & Egress Device FIFO Settings
+   :widths: 30 20 20 30
+   :header-rows: 1
 
-**RX REQ FIFO Ptr Width** – This Pointer width to indicate depth of input request flit buffer at processor port of the NoC. Default value is 2 and can be configure from 1 to 5. 
+   * - Parameter Name
+     - Default Ptr Width
+     - Valid Range
+     - Hardware Depth Description
+   * - **Rx REQ FIFO Ptr Width**
+     - ``2``
+     - ``1`` to ``5``
+     - Inbound Request flit storage allocation.
+   * - **Rx RSP FIFO Ptr Width**
+     - ``2``
+     - ``1`` to ``5``
+     - Inbound Response flit storage allocation.
+   * - **Rx DAT FIFO Ptr Width**
+     - ``2``
+     - ``1`` to ``5``
+     - Inbound Data flit storage allocation.
+   * - **Tx REQ FIFO Ptr Width**
+     - ``2``
+     - ``1`` to ``5``
+     - Outbound Request flit storage allocation.
+   * - **Tx RSP FIFO Ptr Width**
+     - ``2``
+     - ``1`` to ``5``
+     - Outbound Response flit storage allocation.
+   * - **Tx DAT FIFO Ptr Width**
+     - ``2``
+     - ``1`` to ``5``
+     - Outbound Data flit storage allocation.
 
-**Rx RSP FIFO Ptr Width** – This Pointer width to indicate depth of input response flit buffer at processor port of the NoC. Default value is 2 and can be configure from 1 to 5. 
+--------------------------------------------------------------------------------
 
-**Rx DAT FIFO Ptr Width** – This Pointer width to indicate depth of input data flit buffer at processor port coming of the NoC. Default value is 2 and can be configure from 1 to 5. 
+🌐 II. Interconnect Port Parameters
+===================================
 
-**Tx REQ FIFO Ptr Width** – This Pointer width to indicate depth of output request flit buffer at the processor port of the NoC. Default value is 2 and can be configure from 1 to 5. 
+*Available for: All Router Types (``HN-F w/ L3``, ``HN-F w/o L3``, ``Device Only``, ``Repeater``)*
 
-**Tx RSP FIFO Ptr Width** – This Pointer width to indicate depth of output response flit buffer at the processor port of the NoC. Default value is 2 and can be configure from 1 to 5. 
-
-**Tx DAT FIFO Ptr Width** – This Pointer width to indicate depth of output data flit buffer at the processor port of the NoC. Default value is 2 and can be configure from 1 to 5. 
-
-II. Interconnect Port
---------------------------------------------------------------------------------------------------------------------
-
-Available in router type 'HN-F w/ L3', 'HN-F w/o L3', ‘Device Only’, and ‘Repeater’
+Regulates buffer queues managing inter-switch structural traces connecting this router instance to neighboring clusters across the mesh network topology grid.
 
 .. image:: images/cnoc_router_interconnectPort.png
-  :alt: cnoc_router_interconnectPort
-  :align: center
+   :alt: C-NoC Router Mesh Interconnect Inbound Channel Sizing
+   :align: center
+   :width: 75%
 
+.. list-table:: Neighboring Cluster Ingress Channels
+   :widths: 30 20 20 30
+   :header-rows: 1
 
-**REQ FIFO Ptr Width** – This Pointer width to indicate depth of input request flit buffer to receive flits from neighboring cluster. Default value is 2 and can be configure from 1 to 5. 
+   * - Parameter Name
+     - Default Ptr Width
+     - Valid Range
+     - Inter-switch Hardware Queue Purpose
+   * - **REQ FIFO Ptr Width**
+     - ``2``
+     - ``1`` to ``5``
+     - Incoming inter-cluster network Request buffer depth.
+   * - **RESP FIFO Ptr Width**
+     - ``2``
+     - ``1`` to ``5``
+     - Incoming inter-cluster network Response buffer depth.
+   * - **DATA FIFO Ptr Width**
+     - ``2``
+     - ``1`` to ``5``
+     - Incoming inter-cluster network Data flit buffer depth.
 
-**RESP FIFO Ptr Width** – This Pointer width to indicate depth of input response flit buffer to receive flits from neighboring cluster. Default value is 2 and can be configure from 1 to 5. 
+--------------------------------------------------------------------------------
 
-**DATA FIFO Ptr Width** – This Pointer width to indicate depth of input data flit buffer to receive flits from neighboring cluster. Default value is 2 and can be configure from 1 to 5. 
-	
-III. Directory Cache Controller
----------------------------------------------------------------------------------------------
+📂 III. Directory Cache Controller
+==================================
 
-Available in router type 'HN-F w/ L3', 'HN-F w/o L3'
+*Available for: Home Node Profiles (``HN-F w/ L3``, ``HN-F w/o L3``)*
+
+Configures internal channels, hash parameters, tracking arrays, and state collision limits for maintaining coherent system consistency loops.
 
 .. image:: images/cnoc_router_directory.png
-  :alt: cnoc_router_directory
-  :align: center
+   :alt: Coherent Directory Cache Controller Pipeline Properties
+   :align: center
+   :width: 85%
 
+Internal Channel Arbitration Queues
+-----------------------------------
+Tracks post-arbitration flit staging before feeding entries into the central cache logic.
 
-**Rx REQ FIFO Ptr Width** – This Pointer width to indicate buffer depth to hold input request flit coming to CC port from internal channel after arbitration between multiple sources. Default value is 3, and user can choose from 1 to 5 as the width. 
+.. list-table:: Internal Channel Arbitration Arrays
+   :widths: 30 20 20 30
+   :header-rows: 1
 
-**Rx RSP FIFO Ptr Width** – This Pointer width to indicate buffer depth to hold input response flit coming to CC port from internal channel after arbitration between multiple sources. Default value is 3, user can choose from 1 to 5 as the width.
+   * - Parameter Name
+     - Default Ptr Width
+     - Valid Range
+     - Operational Domain
+   * - **Rx REQ / RSP / DAT FIFO Ptr Width**
+     - ``3``
+     - ``1`` to ``5``
+     - Inbound channels from internal arbiter to CC port.
+   * - **Tx REQ / RSP / DAT FIFO Ptr Width**
+     - ``3``
+     - ``1`` to ``5``
+     - Outbound channels moving from CC port to fabric.
 
-**Rx DAT FIFO Ptr Width** – This Pointer width to indicate buffer depth to hold input data flit coming to CC port from internal channel after arbitration between multiple sources. Default value is 3, user can choose from 1 to 5 as the width. 
+Directory Mapping & Associativity Rules
+---------------------------------------
+Enforces physical mapping dimensions for cache lookup routines. Associativity sizing follows a power-of-two formula:
 
-**Tx REQ FIFO Ptr Width** – This Pointer width of output request flit buffer coming from CC Port to internal channel. Default value is 3, user can choose from 1 to 5 as the width.
+$$\text{Sizing Factor} = 2^k \quad \text{where } 0 \le k \le 5$$
 
-**Tx RSP FIFO Ptr Width** – This Pointer width of output response flit buffer coming from CC Port to internal channel. Default value is 3, user can choose from 1 to 5 as the width.
+.. list-table:: Cache Index Space Array Geometry
+   :widths: 30 20 20 30
+   :header-rows: 1
 
-**Tx DAT FIFO Ptr Width** – This Pointer width of output data flit buffer coming from CC Port to internal channel. Default value is 3, user can choose from 1 to 5 as the width.
+   * - Parameter Name
+     - Default Value
+     - Valid Range
+     - Mapping Definition / Choices
+   * - **Cache Byte Offset Width**
+     - ``6``
+     - ``1`` to ``10``
+     - Byte offset portion of a physical address line.
+   * - **Cache Index Width**
+     - ``10``
+     - ``1`` to ``20``
+     - Row index indicator for $N$-way set lookups.
+   * - **Cache N-Set**
+     - ``16``
+     - Dropdown
+     - Select from: ``1``, ``2``, ``4``, ``8``, ``16``, or ``32`` sets.
 
-**Cache Byte Offset Width** – This Byte offset of the cacheable physical address for 64 Byte cache line. Default value is 6 and can be configure from 1 to 10. 
+Pipeline Sizing & Flight Trackers
+---------------------------------
 
-**Cache Index Width** – This Index of the cacheable physical address. 2k indicates the depth of a single cache memory in N-way set associative cache mapping scheme. Default value is 10, user can choose from 1 to 20 as the width.
+.. list-table:: In-Flight Command Pipelines and Trackers
+   :widths: 35 20 20 25
+   :header-rows: 1
 
-**Cache N-Set** – This Number of sets in N-way set associative cache mapping scheme. Number of sets is determined as 2k such that 0 ≤ k ≤ 5. This is a dropdown parameter with a selection of 1, 2, 4, 8, 16, or 32. Default value is 16.
+   * - Parameter Name
+     - Default Ptr Width
+     - Structural Size
+     - Configuration State
+   * - **REQ CMD FIFO**
+     - ``4`` *(Range: 1–5)*
+     - **16**
+     - Pointer configurable; size locked.
+   * - **RSP CMD FIFO**
+     - ``5`` *(Range: 1–5)*
+     - **32**
+     - Pointer configurable; size locked.
+   * - **DAT CMD FIFO**
+     - ``5`` *(Range: 1–5)*
+     - **32**
+     - Pointer configurable; size locked.
+   * - **DAT RSP CMD FIFO Size**
+     - *N/A*
+     - **32**
+     - Dropdown: ``2``, ``4``, ``8``, ``16``, or ``32``.
+   * - **REQ Collision Buffer Size**
+     - *N/A*
+     - **8** *(Range: 1–32)*
+     - Buffers conflicting address lines.
+   * - **REQ Outstanding Buffer Size**
+     - *N/A*
+     - **16** *(Range: 1–32)*
+     - Limits maximum parallel pending transactions.
+   * - **HDR FIFO Ptr Width**
+     - ``2`` *(Range: 1–5)*
+     - *Dynamic*
+     - Regulates individual header packet buffers.
 
-**REQ CMD FIFO Ptr Width** – This FIFO Pointer width for request flit waiting to be fed to controller pipeline process.  Default value is 4 and can be configure from 1 to 5.
+--------------------------------------------------------------------------------
 
-**REQ CMD FIFO Size** - This FIFO size is non-configurable and default value is 16. 
+🧠 IV. L3 Cache Controller Settings
+===================================
 
-**RSP CMD FIFO Ptr Width** – This FIFO Pointer width for response flit waiting to be fed to controller pipeline process. Default value is 5 and can be configure from 1 to 5.
+*Available for: ``HN-F w/ L3`` exclusive profiles*
 
-**RSP CMD FIFO Size** - This FIFO Size is non-configurable and default value is 32. 
+Provides a high-capacity last-level cache layer within the home node structure. Just like the baseline directory parameters, its set mapping layout sizes scale according to the exponential function:
 
-**DAT CMD FIFO Ptr Width** – This FIFO Pointer width for data response waiting to be fed to controller pipeline process. Data response is generated from data flit coming from RN (processor). Default value is 5 and can be configure from 1 to 5. 
-
-**DAT CMD FIFO Size** - This FIFO Size is non-configurable and default value is 32. 
-
-**DAT RSP CMD FIFO Size** – This FIFO depth for memory response waiting to be fed to controller pipeline process. Memory response is generated from data flit coming from Memory IO/L3.  Default value is 32 and can be select other value from 2, 4, 8, 16 and 32. 
-
-**REQ Collision Buffer Size** - This Buffer size defines the buffer capacity used to handle request collisions and avoid data conflicts during processing. User can set the value from 1 to 32 and 8 as the default value size.
-
-**REQ Outstanding Buffer Size** - This buffer size defines the maximum number of pending request transactions that can be stored and processed simultaneously. User can set from 1 to 32 and 16 ad the default value. 
-
-**HDR FIFO Ptr Width** - This FIFO pointer defines the pointer width used for managing the header FIFO buffer entries. User can set from 1 to 5 and 2 as the default value. 
-
-IV. L3 Cache Controller Settings
-----------------------------------------------------------------------------
-
-Available in router type 'HN-F w/ L3'
+$$\text{L3 Sets} = 2^k \quad \text{where } 0 \le k \le 5$$
 
 .. image:: images/cnoc_router_l3cache.png
-  :alt: cnoc_router_l3cache
-  :align: center
+   :alt: L3 Cache Array Associativity Parameter Controls
+   :align: center
+   :width: 80%
 
+.. list-table:: L3 Physical Address Array Constraints
+   :widths: 35 20 20 25
+   :header-rows: 1
 
-**L3 Cache Byte Offset Width** – This Byte offset of the cacheable physical address for 64 Byte cache line for L3. Default value is 6, user can choose from 1 to 20 as the width.
-
-**L3 Cache Index Width** – This Index of the cacheable physical address. 2k indicates the depth of a single cache memory in N-way set associative cache mapping scheme for L3. Default value is 10, user can choose from 1 to 20 as the width.
-
-**L3 Cache N-Set** – This Number of sets in N-way set associative cache mapping scheme for L3 cache. Number of sets is determined as 2k such that 0 ≤ k ≤ 5. This is a dropdown parameter with a selection of 1, 2, 4, 8, 16, or 32. Default value is 16.
-
-
-
-
-
+   * - Parameter Name
+     - Default Value
+     - Valid Range
+     - Geometry Allocation Role
+   * - **L3 Cache Byte Offset Width**
+     - ``6``
+     - ``1`` to ``20``
+     - L3 block address offset bit width.
+   * - **L3 Cache Index Width**
+     - ``10``
+     - ``1`` to ``20``
+     - Total entry line depth of a single cache block.
+   * - **L3 Cache N-Set**
+     - ``16``
+     - Dropdown
+     - Dropdown list options: ``1``, ``2``, ``4``, ``8``, ``16``, or ``32``.
