@@ -94,7 +94,6 @@ Welcome to the definitive system administration and engineering design manual fo
    autoroute
    generatertlandtb
    simulation
-   downloadjson
    implement
 
 --------------------------------------------------------------------------------
@@ -104,7 +103,6 @@ Welcome to the definitive system administration and engineering design manual fo
    :caption: VIII. Project Life-Cycle & Collaborative Administration
    :numbered:
 
-   projectconfig
    copyproject
    floorplan
    autoplace
