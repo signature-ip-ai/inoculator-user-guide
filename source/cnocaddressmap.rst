@@ -1,140 +1,122 @@
-C-NoC Address Map 
+========================================================
+C-NoC Address Map Space
 ========================================================
 
+The **C-NoC Address Map** framework manages address allocation across three distinct transactional domains: **Cacheable**, **Non-Cacheable**, and **Snoopable** spaces. Memory segments are distributed across local and remote nodes using a specialized architectural layout.
 
-There are three types of Address Map tables within the C-NoC topology: Cacheable, Non-Cacheable and Snoopable Address Maps. Each type contains two tables: the Home Node Address Map, the Subordinate Node Address Map and Request Node Address Map.
+--------------------------------------------------------------------------------
 
-I. Cacheable and Non-Cacheable
---------------------------------------------------------------
+📊 Core Node Mapping Matrix
+===========================
 
-This user guide provides detailed information and instructions for understanding and validating the Cacheable Address Map and Non-Cacheable Address Map within the system’s interconnect or NoC (Network-on-Chip) topology. These address maps are critical for efficient memory access and data routing across home and subordinate nodes.
+.. list-table:: Address Table Mappings & Target Hardware
+   :widths: 20 25 35 20
+   :header-rows: 1
 
+   * - Map Scope
+     - Internal Table Name
+     - Target Hardware Endpoints Covered
+     - Operational Context
+   * - **Cacheable** & **Non-Cacheable**
+     - Home Node (HN) Address Map
+     - **Routers** (Identified by grid coordinate strings)
+     - Local system space owned & managed by current node.
+   * - **Cacheable** & **Non-Cacheable**
+     - Subordinate Node (SN) Address Map
+     - **AXI Slaves**, **CHI SNs**, and **UCIe Bridges**
+     - Remote system memory spaces residing in external targets.
+   * - **Snoopable**
+     - Request Node (RN) Address Map
+     - **AXI Masters**
+     - Coherey domains monitored for cache-line state changes.
 
-Home Node Address Map
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------------------------------
 
-The Home Node Address Map defines the memory address regions that are locally owned, managed, or controlled by the current node. This map is used to determine which memory addresses are directly handled within the node, and it plays a critical role in:
+⚙️ System Hardware Configuration Prerequisites
+=============================================
 
-- Routing memory access requests to the correct internal resource.
+The configuration engine locks editing capabilities unless your hardware blocks are provisioned with specific, compliant protocol roles:
 
-- Enabling proper cache coherence and memory consistency within the local domain.
+.. list-table:: Configuration Enablement Constraints
+   :widths: 35 65
+   :header-rows: 1
 
-- Identifying which address ranges are considered "home" during system operation.
-
-- This map applies to both cacheable and non-cacheable memory regions.
-
-- The table of Home Node includes the addresses of **Routers**. 
-
-This map displays the address ranges of routers connected to the grid. By default, each router is labeled using its coordinate-based name, making it easier for users to identify and locate routers within the topology.
-
-
-Subordinate Node Address Map
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The Subordinate Address Map defines the memory address regions that are owned or managed by external nodes (i.e., remote or subordinate nodes). This map helps the local node route memory access requests that fall outside of its domain, and it is used for:
-
-- Forwarding transactions to the appropriate external node.
-
-- Maintaining accurate access to distributed memory in multi-node systems.
-
-- Supporting both cacheable and non-cacheable transactions based on the system configuration.
-
-- This map is essential for enabling inter-node communication and access in systems with distributed memory architecture.
-
-- The table of Subordinate Node includes the addresses of **AXI Slave**. **CHI SN** and **UCIe Bridge**. 
-
-Below is a sample topology design illustrating how these address maps are structured and visualized.
+   * - Selected Table
+     - Hard Prerequisites Required to Enable Editing Controls
+   * - **Home Node Map**
+     - The **Router Type** must be configured explicitly as:
+       
+       * ``HN-F w/ L3`` (Home Node Fully Coherent with L3 Cache)
+       * ``HN-F w/o L3`` (Home Node Fully Coherent without L3 Cache)
+       
+       *(Device Only and Repeater profiles disable this map)*
+   * - **Subordinate Node Map**
+     - Target blocks must match one of the following structures:
+       
+       * **Device Protocol:** ``AXI`` or ``CHI`` **and** **Device Type:** ``Slave`` or ``SN``
+       * **Standalone Node Type:** ``UCIe Bridge``
+   * - **Request Node Map**
+     - Enabled exclusively when at least one active node on the canvas layout grid is provisioned as an **AXI Master**.
 
 .. image:: images/cnoc_address_map_sample5.png
-  :alt: cnoc_address_map_sample5
-  :align: center
+   :alt: Structural relationship between C-NoC Home, Subordinate, and Request nodes
+   :align: center
+   :width: 100%
 
-To configure the Home Node Address Map, the Router Type must be set to either:
+--------------------------------------------------------------------------------
 
-  - HN-F w/ L3 or
+🧠 Domain Classifications
+=========================
 
-  - HN-F w/o L3
-
-Other Router Types—such as Device Only and Repeater- do not support Address Map configuration and will not allow user modifications.
-
-To configure the Subordinate Node Address Map, both the Device Protocol and Device Type must be set as follows:
-
-  - Device Protocol: AXI or CHI
-
-  - Device Type: Slave or SN
-
-  - UCIe bridge
-
-Other combinations of Device Protocols and Device Types do not support Address Map configuration and will disable editing capabilities.
-
-Cacheable Address Map
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The Cacheable Address Map defines memory regions where data can be cached, improving access speed and reducing latency. It includes:
-
-Home Node Address Map – Specifies memory regions that are owned or managed by the local/home node.
-
-Subordinate Node Address Map – Specifies memory ranges managed by external/subordinate nodes but still marked as cacheable.
-
-Use this map to configure, validate, and debug data transactions that benefit from caching mechanisms.
+### 1. Cacheable Address Map
+Defines the memory footprints where caching layers are active. Transactions passing through this space exploit high-speed localized caches to drop multi-hop access latencies.
 
 .. image:: images/cnoc_address_map_cacheable_withSize.png
-  :alt: cnoc_address_map_cacheable_withSize
-  :align: center
+   :alt: C-NoC Cacheable Mapping Matrix Workspace View
+   :align: center
+   :width: 90%
 
-
-Non-Cacheable Address Map
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The Non-Cacheable Address Map defines memory regions where caching is disabled, ensuring data consistency and direct access. It includes:
-
-Home Node Address Map – Points to local memory regions that must bypass caches.
-
-Subordinate Node Address Map – Indicates memory segments on remote nodes that are accessed without caching.
-
-This section is essential for critical operations requiring real-time consistency and for peripherals or memory-mapped I/O where caching is not suitable.
+### 2. Non-Cacheable Address Map
+Enforces strong cache-bypass mechanics. Used specifically for memory-mapped I/O (MMIO), system peripherals, and runtime operations demanding direct, unbuffered reads/writes to ensure instantaneous data consistency.
 
 .. image:: images/cnoc_address_map_noncacheable_withSize.png
-  :alt: cnoc_address_map_noncacheable_withSize
-  :align: center
+   :alt: C-NoC Non-Cacheable Allocation Workspace View
+   :align: center
+   :width: 90%
 
+### 3. Snoopable Address Map
+Governs regions subject to multi-core cache coherency interventions. The engine places all hardware elements configured as **AXI Masters** into this dedicated Request Node (RN) map.
 
-Editing of the Address Map is supported per region, per router, and for each Home Node and Subordinate Node individually. The tool allows users to configure or modify memory address ranges specific to their location in the system topology, enabling fine-grained control and validation of address assignments.
-
-.. image:: images/cnoc_address_map_edit.png
-  :alt: cnoc_address_map_edit
-  :align: center
-
-The Size column represents the address range between the Start Address and End Address. Users can configure the Size value, and the End Address will be calculated automatically.
-
-Note:
-  * When End Address is edited, the Size will auto-compute. 
-  * When Size is edited, the End Address will auto-compute. 
-
-The tool also allows highlighting of the parent Home Node and Subordinate Nodes. This feature provides a clearer visual reference to quickly identify the allocation and address ranges associated with each node, making navigation and validation of the address map more intuitive and efficient.
-
-.. image:: images/cnoc_address_map_highlight1.png
-  :alt: cnoc_address_map_highlight1
-  :align: center
-
-
-II. Snoopable
-------------------------------------------------------------------
-
-The Snoopable Address Map defines the address regions that support cache coherency and can be snooped by other devices in the Coherent NoC. 
-This option is available only when at least one device in the C-NoC topology is configured as an AXI Master. 
-It specifies which memory ranges are subject to snoop transactions to maintain data consistency across the system.
-
-- Defines memory regions that support cache coherency.
-
-- Enables snoop transactions to maintain data consistency.
-
-- Controls which addresses follow coherency protocols.
-
-- Supports **AXI Master** cache operations across the system.
-
-All devices with AXI Master as the device type will be configured in the Request Node Address Map table. All address maps should reside within the Home Node Address Map and may overlap.
+.. warning::
+   **Architectural Overlap Constraint:** All addresses allocated within the **Snoopable/Request Node Address Map** must physically reside within the bounds of your configured **Home Node Address Map** space. Overlapping ranges across these specific maps is structurally expected.
 
 .. image:: images/snoopable_address.png
-  :alt: snoopable_address
-  :align: center
+   :alt: Snoopable request mapping space validation interface
+   :align: center
+   :width: 90%
+
+--------------------------------------------------------------------------------
+
+🛠️ Editing Mechanics & Visual Guidance
+=======================================
+
+Clicking **Edit** on a specific layout region, router node, or individual endpoint card launches the granular allocation modal.
+
+.. image:: images/cnoc_address_map_edit.png
+   :alt: Granular address range cell configuration modal
+   :align: center
+   :width: 80%
+
+Bidirectional Field Syncing
+   The allocation table evaluates and locks space parameters via a responsive bidirectional formula:
+
+   * Modifying the **Size** column automatically calculates and inputs the **End Address** boundaries.
+   * Modifying the **End Address** box recalculates the **Size** memory range.
+
+Parent Hierarchy Highlighting
+   To accelerate manual routing inspections, selecting an allocation row dynamically highlights its master parent **Home Node** or corresponding **Subordinate Node** elements across your active schematic view.
+
+.. image:: images/cnoc_address_map_highlight1.png
+   :alt: Highlight tool reflecting parent node boundaries inside the main grid view
+   :align: center
+   :width: 90%
