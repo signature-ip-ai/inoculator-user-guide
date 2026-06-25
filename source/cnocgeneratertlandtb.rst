@@ -1,27 +1,72 @@
-Generating RTL and Testbench - Coherent-NoC
+=========================================================
+Generating RTL and Testbench (C-NoC)
 =========================================================
 
-This feature generates RTL files and a testbench for the created C-NoC topology.
-To use it, click the ‘Generate RTL’ button in the Action Bar. An optional checkbox labeled ‘Include Cycle Accurate Model’ allows you to include the model in the generation—tick the checkbox to include it, or leave it unticked to exclude it.
+The **RTL and Testbench Generation** feature compiles your finalized Coherent-NoC topology into hardware description files and verification environments, allowing you to move from architecture design directly to hardware implementation.
 
+--------------------------------------------------------------------------------
 
-Then, click the ‘Generate Design’ button to start the process. The results, including timestamps for when the action started and completed, will be displayed in the same table.
+🛠️ The Generation Workflow
+===========================
 
+.. grid:: 1
+   :gutter: 3
 
-.. image:: images/c-noc_generateRTL_button.png
-  :alt: c-noc_generateRTL_button.png
-  :align: center
+   .. grid-item-card:: Step 1: Open the Generation Menu
+      :class-header: bg-light font-weight-bold
 
+      **Action Bar Trigger**
+      
+      Locate and click the **Generate RTL** button within the primary top Action Bar to pull up your design compiler panel.
+      
+      .. image:: images/c-noc_generateRTL_button.png
+         :alt: iNoCulator Generate RTL Button Trigger
+         :align: center
+         :width: 40%
 
-.. image:: images/c-noc_generateRTL5.png
-  :alt: c-noc_generateRTL2.png
-  :align: center
+   .. grid-item-card:: Step 2: Configure Cycle-Accurate Simulation (Optional)
+      :class-header: bg-light font-weight-bold
 
+      **Compiler Options**
+      
+      An optional checkbox labeled **Include Cycle Accurate Model** is available. 
+      
+      * **Tick the checkbox** if you want to bundle a high-fidelity performance simulation model with your source code.
+      * **Leave it unticked** to keep the footprint lightweight and skip model synthesis.
+
+   .. grid-item-card:: Step 3: Trigger the Build Process
+      :class-header: bg-light font-weight-bold
+
+      **Design Compilation**
+      
+      Click the final **Generate Design** button to kick off the background compilation process. 
+      
+      The system will automatically log and display real-time progress timestamps indicating exactly when the synthesis action started and completed.
+      
+      .. image:: images/c-noc_generateRTL5.png
+         :alt: iNoCulator Generation Progress and Timestamp Dashboard
+         :align: center
+         :width: 90%
+
+--------------------------------------------------------------------------------
+
+📂 Managing Compiled Build Artifacts
+=====================================
+
+Once compilation completes successfully, a new row entry populated with tracking data will map to your history space. 
 
 .. image:: images/c-noc_generateRTL_actions4.png  
-  :alt: c-noc_generateRTL_actions
-  :align: center
+   :alt: Output Build Management Options (Download & Delete)
+   :align: center
+   :width: 80%
 
+Each generation record exposes specific controls under the **Action** column:
 
-Each result includes an ‘Action’ column, where the user can choose to either ‘Download’ or ‘Delete’ the result. The download option depends on the license assigned to the user’s group.
+📥 Download
+   Packs the output RTL files, verification testbenches, and optional simulation modules into a structural zip package.
 
+🗑️ Delete
+   Permanently wipes the specific build artifact row and cached files from the cloud workspace directory.
+
+.. note::
+   **Access Control Notice:** The availability of the **Download** action button is governed by individual team organizational permission structures. Download functionality depends directly on the active license tier assigned to your user group.
