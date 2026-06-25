@@ -28,7 +28,7 @@ Before configuring specific hardware endpoints, interleaving must be unlocked gl
 --------------------------------------------------------------------------------
 
 🎯 Phase 2: Target Address Interleaving
-=======================================
+=========================================
 
 Once globally enabled, individual slave ports can be configured for interleaved reception. Activating this feature triggers cross-validation checks across multiple systemic parameters, including: NoC Data Width, Port Data Width, Read/Write Reorder Buffer Sizes, and Flit Buffer Sizes.
 
@@ -52,7 +52,7 @@ Parameters
 --------------------------------------------------------------------------------
 
 ⚠️ Critical Architectural Dependencies
-=====================================
+========================================
 
 When a target port has **Address Interleaving** set to ``1`` (ON), the structural topology compiler strictly enforces the following architectural rules:
 
