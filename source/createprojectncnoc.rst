@@ -1,37 +1,70 @@
-Create Project- Non Coherent NoC Topology
+====================================================
+Creating a Non-Coherent NoC Project
 ====================================================
 
+The **Create Project** configuration workflow initializes a clean design canvas explicitly optimized for **Non-Coherent NoC (NC-NoC)** topologies. This setup loads standard memory-mapped packet structures and routing interfaces (such as standard AXI or AHB) for architectures that do not require hardware-managed cache coherence.
+
+--------------------------------------------------------------------------------
+
+🎛️ Project Settings Configuration Options
+=========================================
+
+The Project Settings wizard panel allows you to configure essential design rules and data sources before generating your hardware canvas layout.
+
 .. image:: images/nc_noc-create_project_prompt3.png
-  :alt: nc_noc-create_project_prompt
-  :align: center
+   :alt: Non-Coherent NoC project wizard configuration options modal
+   :align: center
+   :width: 65%
 
-The Project Settings panel allows users to configure the initial parameters before creating a topology project.
+.. list-table:: Project Configuration Form Matrix
+   :widths: 25 25 50
+   :header-rows: 1
 
-**Project Type**
-- A dropdown menu that allows the user to select the type of project to design. The available options are:
+   * - Field Parameter
+     - Setting Input Type
+     - Description & Platform Entry Constraints
+   * - **Project Type**
+     - Dropdown Selector
+     - Selects the target fabric architecture. Options include:
+       
+       * **Non-Coherent NoC** — Activates memory-mapped routing.
+       * **Coherent NoC** — Toggles cache-coherent (CHI) structures.
+       * *Integration* — *(Currently not implemented).*
+   * - **Project Name**
+     - String Input Block
+     - **Required Field.** Enter a unique layout identifier name. 
+       
+       *(Subject to strict naming constraints below).*
+   * - **Upload Topology XLSX / JSON**
+     - File Upload Actions
+     - Optional configuration paths. Allows you to skip manual mesh generation by seeding your fabric directly from pre-defined hardware spreadsheets.
 
-  - Non-Coherent NoC
+.. seealso::
+   For detailed formatting templates and strict file rules regarding automated netlist importing, visit the complete :doc:`Uploading a Topology <uploadtopology>` user guide page.
 
-  - Coherent NoC
+--------------------------------------------------------------------------------
 
-  - Integration (currently not implemented)
+⚠️ String Validation & Naming Constraints
+=========================================
 
-**Upload Topology XLSX File and Upload JSON file**
-- more information in `Uploading a Topology <uploadtopology.html>`_ Page
+The database registration engine enforces strict validation rules on the project name field. Input strings failing these constraints will trigger submission blocks:
 
-**Project Name**
-  - A required input field to assign a name to the project.
+.. warning::
+   **Project Naming Constraints:**
+   
+   * **Space Prohibition:** Whitespace characters are strictly forbidden anywhere inside the project name string field (e.g., use ``My_NC_NoC`` or ``MyNCNoC`` instead of ``My NC NoC``).
+   * **Allowed Characters:** The input processor handles standard **alphanumeric characters only**. Special symbols, punctuation marks, and mathematical operators are completely prohibited.
 
-  - Spaces are not allowed
+--------------------------------------------------------------------------------
 
-  - Only alphanumeric characters are permitted
+🚀 Launching Your Interconnect Workspace
+========================================
 
-**Creating the Project**
-- After configuring the project settings, click the Create button. A new project tile will appear on the Dashboard. Click this tile to begin designing the topology within the selected project.
-
+Once you have verified all configuration parameters and file upload pointers, click the **Create** action button at the bottom of the form panel. 
 
 .. image:: images/non_coherent_noc_project-grid_view2.png
-  :alt: non_coherent_noc_project-grid_view
-  :align: center
+   :alt: Freshly initialized Non-Coherent NoC project container visible on user dashboard
+   :align: center
+   :width: 85%
 
-
+The tool will compile your project database and place a fresh, independent design tile container on your primary tracking dashboard. Simply click the new repository tile to expand the workspace and begin routing your mesh architecture.
