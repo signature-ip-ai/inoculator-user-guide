@@ -4,7 +4,7 @@ C-NoC Address Map
 
 There are three types of Address Map tables within the C-NoC topology: Cacheable, Non-Cacheable and Snoopable Address Maps. Each type contains two tables: the Home Node Address Map, the Subordinate Node Address Map and Request Node Address Map.
 
-I. Cacheable and Non-Cacheable Address Map
+I. Cacheable and Non-Cacheable
 --------------------------------------------------------------
 
 This user guide provides detailed information and instructions for understanding and validating the Cacheable Address Map and Non-Cacheable Address Map within the system’s interconnect or NoC (Network-on-Chip) topology. These address maps are critical for efficient memory access and data routing across home and subordinate nodes.
@@ -118,7 +118,7 @@ The tool also allows highlighting of the parent Home Node and Subordinate Nodes.
   :align: center
 
 
-II. Snoopable Address Map 
+II. Snoopable
 ------------------------------------------------------------------
 
 The Snoopable Address Map defines the address regions that support cache coherency and can be snooped by other devices in the Coherent NoC. 
