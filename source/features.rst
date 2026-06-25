@@ -1,110 +1,133 @@
-.. Inoculator User Guide documentation master file, created by
-   sphinx-quickstart on Mon Jan 13 00:01:51 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. iNoCulator User Guide documentation master file, template initialized
+   by sphinx-quickstart on Mon Jan 13 00:01:51 2025.
+   Cleaned, optimized, and structured with professional enterprise layout semantics.
 
-User Guide
-===================================
+================================================================================
+iNoCulator Platform Documentation
+================================================================================
 
-I. Introduction
---------------------------------------
-   A. `Terminologies <introduction.html>`_
-   B. `User Description <introduction.html>`_
-   C. `Overview <introduction.html>`_
-   D. `Confidentiality Notice <introduction.html>`_
+Welcome to the definitive system administration and engineering design manual for **iNoCulator**—the comprehensive Network-on-Chip (NoC) architectural workspace tool. This documentation environment guides hardware design leads, verification engineers, and workspace managers through deployment pipelines, validation paradigms, and RTL generation procedures.
 
-II. Features
--------------------------------------
-   A. Creating an account 
+--------------------------------------------------------------------------------
 
-      1. `Request Access <requestaccess.html>`_
-      2. `Invite User <inviteuser.html>`_
-      3. `Activate Account <activateaccount>`_
+.. toctree::
+   :maxdepth: 2
+   :caption: I. Introduction
+   :numbered:
 
-   B. Log in, OTP (One-time Pin) and Logout
+   introduction
 
-      1. `Log in <login.html>`_
-      2. `One-Time Pin <otp.html>`_
-      3. `Log out <logount.html>`_
+--------------------------------------------------------------------------------
 
-   C. Recovery
+.. toctree::
+   :maxdepth: 2
+   :caption: II. Core Authentication & Platform Access
+   :numbered:
 
-      1. `Forgot Password <forgotpassword.html>`_
+   requestaccess
+   inviteuser
+   activateaccount
+   login
+   otp
+   logout
+   forgotpassword
 
-   D. Authorization and Authentication
+.. toctree::
+   :maxdepth: 2
+   :caption: III. Identity Validation & Security Exceptions
 
-      1. `Expired Account <expiredaccount.html>`_
-      2. `Suspended Account <suspendedaccount.html>`_
-      3. `Invalid Credentials <invalidcredentials.html>`_
-      4. `Duplicate Email <duplicateemail.html>`_
-      5. `Expired Activation Link <expiredlink.html>`_
+   expiredaccount
+   suspendedaccount
+   invalidcredentials
+   duplicateemail
+   expiredlink
 
-III. Creating a Project
--------------------------------------------------------
-   A. `Uploading a Topology <uploadtopology.html>`_
+--------------------------------------------------------------------------------
 
-   B. Non-Coherent NoC Topology 
+.. toctree::
+   :maxdepth: 2
+   :caption: IV. Workspace Topology Pipelines
+   :numbered:
 
-      1. `Create NC-NoC Project <createprojectncnoc.html>`_
-      2. `Components and Explorer <componentsandexplorer.html>`_
-      3. `Router Configuration <routerconfiguration.html>`_
-      4. `Initiator Configuration <initiatorconfiguration.html>`_
-      5. `Target Configuration <targetconfiguration.html>`_
-      6. `Address Interleaving <addressinterleaving.html>`_
-      7. `Virtual Device Configuration <virtualconfiguration.html>`_
-      8. `Bridge Configuration <bridgeconfiguration.html>`_
-      9. `Subtopology Configuration <subtopologyconfiguration.html>`_
+   uploadtopology
 
-   C. Coherent NoC Topology
+.. toctree::
+   :maxdepth: 2
+   :caption: V. Non-Coherent NoC (NC-NoC) Architectures
+   :numbered:
 
-      1. `Create C-NoC Project <createprojectcnoc.html>`_
-      2. `Configure Topologoy <cnoctopology.html>`_
-      3. `Configure Device <cnocdevice.html>`_
-      4. `Configure Router <cnocrouter.html>`_
-      5. `C-NoC System Config <cnocsystemconfig.html>`_
-      6. `C2C Bridge Configuration <c2cbridge.html>`_
-      7. `C-NoC Topology Validation <cnoctopologyvalidation.html>`_
-      8. `C-NoC Address Interleaving <cnocinterleaving.html>`_
-      9. `C-NoC Address Map <cnocaddressmap.html>`_
+   createprojectncnoc
+   componentsandexplorer
+   routerconfiguration
+   initiatorconfiguration
+   targetconfiguration
+   addressinterleaving
+   virtualconfiguration
+   bridgeconfiguration
+   subtopologyconfiguration
 
-   D. Access Map
+.. toctree::
+   :maxdepth: 2
+   :caption: VI. Coherent NoC (C-NoC) Architectures
+   :numbered:
 
-      1. `Security Policy <accessmap.html>`_
+   createprojectcnoc
+   cnoctopology
+   cnocdevice
+   cnocrouter
+   cnocsystemconfig
+   c2cbridge
+   cnoctopologyvalidation
+   cnocinterleaving
+   cnocaddressmap
 
-   E. `Address Map <addressmap.html>`_
+--------------------------------------------------------------------------------
 
-   F. `Topology Validation <topologyvalidation.html>`_
+.. toctree::
+   :maxdepth: 2
+   :caption: VII. Floorplanning, Validation, & Automation Build Pipelines
+   :numbered:
 
-   G. `Auto-Route <autoroute.html>`_
+   accessmap
+   addressmap
+   topologyvalidation
+   autoroute
+   generatertlandtb
+   simulation
+   downloadjson
+   implement
 
-   H. Generating RTL Files and Testbench  
+--------------------------------------------------------------------------------
 
-      1. `Download and viewing JSON <generatertlandtb.html>`_
+.. toctree::
+   :maxdepth: 2
+   :caption: VIII. Project Life-Cycle & Collaborative Administration
+   :numbered:
 
-   I. `Simulation <simulation.html>`_
+   projectconfig
+   copyproject
+   floorplan
+   autoplace
+   sharedproject
+   deleteproject
+   searchproject
+   projectspage
 
-   J. `Download JSON <downloadjson.html>`_
+--------------------------------------------------------------------------------
 
-   K. `Implement <implement.html>`_
+.. toctree::
+   :maxdepth: 1
+   :caption: IX. Knowledge Base & References
 
-   L. `Project Configuration <projectconfig.html>`_
+   faqs
+   appendix
 
-   M. `Copy Project <copyproject.html>`_
+--------------------------------------------------------------------------------
 
-   N. `Floor Plan <floorplan.html>`_
+Indices and Tables
+==================
 
-   O. `Auto-Place <autoplace.html>`_
+Use the automated platform indices below to quickly query specific hardware component terms, configuration routines, or validation error tracking metrics:
 
-   P. `Shared Project <sharedproject.html>`_
-
-   Q. `Delete Project <deleteproject.html>`_
-
-   R. `Search Project <searchproject.html>`_
-
-   S. `Projects Page <projectspage.html>`_
-
-IV. `Frequently Asked Questions <faqs.html>`_
-------------------------------------------------------
-
-V. `Appendix <appendix.html>`_
-------------------------------------------------------
+* :ref:`genindex`
+* :ref:`search`
