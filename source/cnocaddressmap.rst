@@ -33,7 +33,7 @@ The **C-NoC Address Map** framework manages address allocation across three dist
 --------------------------------------------------------------------------------
 
 ⚙️ System Hardware Configuration Prerequisites
-=============================================
+=================================================
 
 The configuration engine locks editing capabilities unless your hardware blocks are provisioned with specific, compliant protocol roles:
 
@@ -66,7 +66,7 @@ The configuration engine locks editing capabilities unless your hardware blocks 
 --------------------------------------------------------------------------------
 
 🧠 Domain Classifications
-=========================
+===========================
 
 ### 1. Cacheable Address Map
 Defines the memory footprints where caching layers are active. Transactions passing through this space exploit high-speed localized caches to drop multi-hop access latencies.
