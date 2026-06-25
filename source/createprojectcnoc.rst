@@ -1,5 +1,5 @@
 Create Project - Coherent NoC Topology
-==================================
+========================================
 
 This feature allows users to design a topology for a Coherent NoC. It can be accessed by selecting "Coherent NoC" from the Project Type dropdown menu.
 
