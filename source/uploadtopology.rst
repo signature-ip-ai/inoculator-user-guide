@@ -11,9 +11,9 @@ Instead of placing elements onto the canvas grid manually, iNoCulator Web suppor
 
 Choose your target structural data file format using the workspace selectors below to review the explicit configuration and verification pipelines:
 
-.. tabs::
+.. tab-set::
 
-   .. tab:: 📊 I. Using Excel file (XLSX)
+   .. tab-item:: 📊 I. Using Excel file (XLSX)
 
       To generate a complete, connected Network-on-Chip canvas instantly from standardized register tables, leverage the active system spreadsheet matrix template.
 
@@ -65,7 +65,7 @@ Choose your target structural data file format using the workspace selectors bel
             :align: center
             :width: 90%
 
-   .. tab:: ⚙️ II. Using JSON file
+   .. tab-item:: ⚙️ II. Using JSON file
 
       For scripting workflows, continuous integration pipelines, or transferring legacy iNoCulator setups, you can pipe a native serialization object into the database engine.
 
