@@ -55,7 +55,7 @@ Follow this operational flow to retrieve your verification key and access your e
 ⏳ Technical Execution & Token Lifecycle Rules
 ==============================================
 
-.. critical::
+.. error::
    **Token Expiration Threshold:**
    Each dispatched security PIN is generated with a strict time-to-live (TTL) expiration window (typically 5 to 10 minutes). 
    
