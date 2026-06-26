@@ -38,9 +38,9 @@ The system supports up to three distinct structural variants when packaging your
 
 Select the tab matching your required output profile to see the specific check-box configuration path:
 
-.. tabs::
+.. tab-set::
 
-   .. tab:: Encrypted Package
+   .. tab-item:: Encrypted Package
 
       To compile a protected IEEE-encrypted bundle:
       
@@ -65,7 +65,7 @@ Select the tab matching your required output profile to see the specific check-b
          :align: center
          :width: 80%
 
-   .. tab:: Obfuscated Package
+   .. tab-item:: Obfuscated Package
 
       To compile a scrubbed, functionally randomized hardware bundle:
       
@@ -90,7 +90,7 @@ Select the tab matching your required output profile to see the specific check-b
          :align: center
          :width: 80%
 
-   .. tab:: Clean Package
+   .. tab-item:: Clean Package
 
       To compile an open-source, production-ready tape-out bundle:
       
