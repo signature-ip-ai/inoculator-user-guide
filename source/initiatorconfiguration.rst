@@ -11,9 +11,9 @@ An **Initiator** element represents a master intellectual property (IP) core—s
 
 Configure your target Initiator node by selecting its contextual tabs within the device properties inspector panel.
 
-.. tabs::
+.. tab-set::
 
-   .. tab:: 📋 Core Parameters
+   .. tab-item:: 📋 Core Parameters
 
       The **Parameters** workspace governs protocol mappings, data bus geometries, buffer depths, and tracking parameters.
 
@@ -48,7 +48,7 @@ Configure your target Initiator node by selecting its contextual tabs within the
       * - **Write Data Buffer & Buffer Depth**
         - Toggles an independent FIFO container loop to smooth over network routing stalls. Supports explicit depths from ``2`` to ``256`` entries.
 
-   .. tab:: ⏱️ Timing Domain Setup
+   .. tab-item:: ⏱️ Timing Domain Setup
 
       .. image:: images/initiator-timing4.png
          :alt: Initiator node clock domain and timing constraint options panel
@@ -63,7 +63,7 @@ Configure your target Initiator node by selecting its contextual tabs within the
       * - **Frequency**
         - Sets the active target speed in Megahertz (``MHz``). Becomes interactive only when *Use Subtopology Clock* is disabled, permitting localized asynchronous clock-domain crossing (CDC) isolation.
 
-   .. tab:: 🔒 Security Policies
+   .. tab-item:: 🔒 Security Policies
 
       .. image:: images/initiator-security3.png
          :alt: Security token mapping rules and device target access controls interface
@@ -82,7 +82,7 @@ Configure your target Initiator node by selecting its contextual tabs within the
       * - **Device Policies**
         - Defines explicit security access expectations mapped against bound downstream destination hardware slaves. Changes here propagate to your destination *Target Configuration* blocks.
 
-   .. tab:: 🔀 Traffic Regulation
+   .. tab-item:: 🔀 Traffic Regulation
 
       .. image:: images/initiator-others4.png
          :alt: Traffic behavior shaping policies and secondary options configuration panel
