@@ -8,9 +8,6 @@ Use the quick links below to jump straight to your workspace or explore the full
 
 --------------------------------------------------------------------------------
 
-.. The grid organizes your documentation visually without long lists of text.
-.. Note: Requires 'sphinx-design' extension. If not installed, you can use a raw table.
-
 .. grid:: 3
    :gutter: 3
 
@@ -23,6 +20,7 @@ Use the quick links below to jump straight to your workspace or explore the full
       * :doc:`introduction`
       * :doc:`getstarted`
       * :doc:`projectspage`
+      * :doc:`quicklinks`
 
    .. grid-item-card:: ⚙️ NC-NoC Workflow
       :link: createprojectncnoc
@@ -53,6 +51,11 @@ Use the quick links below to jump straight to your workspace or explore the full
 
       Manage your user profile, request access, configure OTP, and manage team invitations.
 
+      * :doc:`login`
+      * :doc:`requestaccess`
+      * :doc:`otp`
+      * :doc:`inviteuser`
+
    .. grid-item-card:: 🛠️ Troubleshooting & FAQ
       :link: faqs
       :link-type: doc
@@ -64,6 +67,9 @@ Use the quick links below to jump straight to your workspace or explore the full
       :link-type: doc
 
       Access the appendix, quick links, and review the framework modification history.
+
+      * :doc:`appendix`
+      * :doc:`quicklinks`
 
 --------------------------------------------------------------------------------
 
