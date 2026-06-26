@@ -67,7 +67,7 @@ Clock Frequency
 
 To support structural power-down states, you can deploy hardware sideband handshakes across the subtopology boundary by setting up standard AMBA Low Power State Control interfaces:
 
-.. tab-sets::
+.. tab-set::
 
    .. tab-item:: 💤 Quiescence & Power Tunnels
 
