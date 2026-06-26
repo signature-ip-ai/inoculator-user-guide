@@ -62,6 +62,11 @@ Use the quick links below to jump straight to your workspace or explore the full
 
       Resolve credential errors, handling expired accounts, and find answers to common questions.
 
+      * :doc:`expiredaccount`
+      * :doc:`expiredlink`
+      * :doc:`duplicateemail`
+      * :doc:`forgotpassword`
+
    .. grid-item-card:: 📚 Resources & History
       :link: appendix
       :link-type: doc
@@ -70,6 +75,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 
       * :doc:`appendix`
       * :doc:`quicklinks`
+      * :doc:`modificationhistory`
 
 --------------------------------------------------------------------------------
 
