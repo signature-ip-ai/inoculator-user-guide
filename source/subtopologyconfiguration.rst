@@ -67,14 +67,14 @@ Clock Frequency
 
 To support structural power-down states, you can deploy hardware sideband handshakes across the subtopology boundary by setting up standard AMBA Low Power State Control interfaces:
 
-.. tabs::
+.. tab-sets::
 
-   .. tab:: 💤 Quiescence & Power Tunnels
+   .. tab-item:: 💤 Quiescence & Power Tunnels
 
       * **Q/P Channels Dropdown:** Configures the hardware sideband coordination mechanism. Select between ``None``, ``Q-Channel`` (for clock gating and simple quiescence handling), or ``P-Channel`` (for power/voltage domain transitions).
       * **Number of Sync Stages:** Active when either Q or P handshaking channels are configured. Specifies the length of the internal flip-flop synchronization pipeline register string to prevent metastability across asynchronous boundaries. Accepts integer constraints from ``0`` to ``32``.
 
-   .. tab:: ⚡ Power Infrastructure Overrides
+   .. tab-item:: ⚡ Power Infrastructure Overrides
 
       .. image:: images/subtopology-properties_with_power_voltage4.png
          :alt: Expanded property sheet showing independent power grid net definitions and operating voltage bounds
