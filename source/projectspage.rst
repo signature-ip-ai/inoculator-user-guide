@@ -6,7 +6,7 @@ The **Project Page** serves as the central control plane for iNoCulator Web. Thi
 
 --------------------------------------------------------------------------------
 
-📊 Core Dashboard Features
+Core Dashboard Features
 ===========================
 
 The control hub unifies configuration management and profile navigation layers through the following primary interface primitives:
@@ -23,7 +23,7 @@ The control hub unifies configuration management and profile navigation layers t
 
 --------------------------------------------------------------------------------
 
-🕹️ Global Control Toolbar & Workspace Navigation
+Global Control Toolbar & Workspace Navigation
 =================================================
 
 .. grid:: 2
@@ -71,7 +71,7 @@ The control hub unifies configuration management and profile navigation layers t
 
 --------------------------------------------------------------------------------
 
-➕ Project Creation & Resource Indexing
+Project Creation & Resource Indexing
 ========================================
 
 .. list-table:: Management & Search Infrastructure Matrix
@@ -104,7 +104,7 @@ The control hub unifies configuration management and profile navigation layers t
 
 --------------------------------------------------------------------------------
 
-🖥️ Help Desk Utility & Session Termination
+Help Desk Utility & Session Termination
 =============================================
 
 The global dashboard footer and peripheral drop panels group utility hooks to optimize designer onboarding paths and guarantee secure session boundaries:
