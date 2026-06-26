@@ -72,7 +72,7 @@ Non-Coherent NoC (NC-NoC)
       :columns: 6
 
       .. backup badge to distinguish workflows visually
-      :bdg-primary: `NC-NoC`
+      :bdg-primary: `NC-NoC` 
 
       A complete walkthrough of creating your very first Non-Coherent NoC design workspace from scratch.
       
