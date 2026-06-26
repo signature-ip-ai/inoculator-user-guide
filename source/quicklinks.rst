@@ -1,5 +1,5 @@
 ============================================
-🎬 Quick Links: User Guide Videos
+Quick Links: User Guide Videos
 ============================================
 
 Welcome to the iNoCulator video library. Browse the categories below to find step-by-step video walkthroughs for account setups, project management, and hardware configuration workflows.
