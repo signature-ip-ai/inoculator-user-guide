@@ -8,7 +8,7 @@ Welcome to the **iNoCulator** User Guide. This section establishes the architect
 
 .. _terminologies:
 
-📖 A. Terminologies & System Nomenclature
+📖 A. Terminologies 
 ===========================================
 
 The following definition matrix establishes the technical abbreviations and architectural primitives utilized throughout the iNoCulator interface, configuration files, and validation modules:
@@ -53,7 +53,7 @@ The following definition matrix establishes the technical abbreviations and arch
 
 .. _user-description:
 
-👥 B. Target User Persona Profiles
+👥 B. Target User Profiles
 ====================================
 
 The iNoCulator application is explicitly provisioned to cross-link workflows among multi-disciplinary hardware and software development paths:
@@ -97,4 +97,4 @@ This document contains proprietary information that is the exclusive intellectua
 
 All rights to underlying structural concepts, processing engines, and terminology systems are strictly reserved by Signature IP. This user guide serves informational purposes exclusively and is subject to continuous modification across platform release milestones without prior notice obligation.
 
-By interacting with this manual or its accompanying workspaces, you consent to fulfill the complete confidentiality boundaries outlined above. For clarification inquiries, document distribution permissions, or targeted technical support tickets, contact the central administration bureau at: contact@signatureip.ai.
+By interacting with this manual or its accompanying workspaces, you consent to fulfill the complete confidentiality boundaries outlined above. For clarification inquiries, document distribution permissions, or targeted technical support tickets, contact the administrators at: contact@signatureip.ai.
