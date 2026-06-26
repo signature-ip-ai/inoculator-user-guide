@@ -8,7 +8,7 @@ Welcome to the **iNoCulator** User Guide. This section establishes the architect
 
 .. _terminologies:
 
-📖 A. Terminologies 
+A. Terminologies 
 ===========================================
 
 The following definition matrix establishes the technical abbreviations and architectural primitives utilized throughout the iNoCulator interface, configuration files, and validation modules:
@@ -53,7 +53,7 @@ The following definition matrix establishes the technical abbreviations and arch
 
 .. _user-description:
 
-👥 B. Target User Profiles
+B. Target User Profiles
 ====================================
 
 The iNoCulator application is explicitly provisioned to cross-link workflows among multi-disciplinary hardware and software development paths:
@@ -78,7 +78,7 @@ The iNoCulator application is explicitly provisioned to cross-link workflows amo
 
 .. _overview:
 
-🌐 C. Architectural Tool Overview
+C. Architectural Tool Overview
 ===================================
 
 The **iNoCulator** platform delivers a centralized, web-accessible workbench optimized for interactive, full-cycle Network-on-Chip (NoC) architectural definition. By replacing brittle static spreadsheets with an active, canvas-based graph engine, the application dynamically manages the binding paths, buffer depths, and protocol translations between heterogeneous collections of Initiators, Routers, Targets, and Bridges, guaranteeing error-free compilation to synthesizable RTL code blocks.
@@ -87,7 +87,7 @@ The **iNoCulator** platform delivers a centralized, web-accessible workbench opt
 
 .. _confidentiality-notice:
 
-🔒 D. Proprietary Status & Confidentiality Notice
+D. Proprietary Status & Confidentiality Notice
 ===================================================
 
 This document contains proprietary information that is the exclusive intellectual property of Signature IP. The specifications, instructions, and descriptions enclosed herein are intended solely for authorized personnel registered under verified tenant accounts. 
