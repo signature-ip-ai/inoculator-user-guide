@@ -13,7 +13,6 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 2
    :caption: I. Introduction
-   :numbered:
 
    introduction
 
@@ -22,7 +21,6 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 2
    :caption: II. Core Authentication & Platform Access
-   :numbered:
 
    requestaccess
    inviteuser
@@ -35,7 +33,6 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 2
    :caption: III. Identity Validation & Security Exceptions
-   :numbered:
 
    expiredaccount
    suspendedaccount
@@ -48,14 +45,12 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 2
    :caption: IV. Workspace Topology Pipelines
-   :numbered:
 
    uploadtopology
 
 .. toctree::
    :maxdepth: 2
    :caption: V. Non-Coherent NoC (NC-NoC) Architectures
-   :numbered:
 
    createprojectncnoc
    componentsandexplorer
@@ -70,7 +65,6 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 2
    :caption: VI. Coherent NoC (C-NoC) Architectures
-   :numbered:
 
    createprojectcnoc
    cnoctopology
@@ -87,7 +81,7 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 2
    :caption: VII. Floorplanning, Validation, & Automation Build Pipelines
-   :numbered:
+
 
    accessmap
    addressmap
@@ -102,7 +96,6 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 2
    :caption: VIII. Project Life-Cycle & Collaborative Administration
-   :numbered:
 
    copyproject
    floorplan
@@ -117,7 +110,6 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 1
    :caption: IX. Knowledge Base & References
-   :numbered:
 
    faqs
    appendix
