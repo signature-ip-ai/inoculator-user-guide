@@ -86,7 +86,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :caption: Overview
-   :hidden:
+   
 
    introduction
    getstarted
@@ -95,7 +95,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :caption: Account Management
-   :hidden:
+   
 
    requestaccess
    inviteuser   
@@ -108,14 +108,14 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :caption: Core Architecture
-   :hidden:
+   
 
    features
 
 .. toctree::
    :maxdepth: 2
    :caption: NC-NoC Design Workflow
-   :hidden:
+   
 
    createprojectncnoc
    uploadtopology
@@ -150,7 +150,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :caption: C-NoC Design Workflow
-   :hidden:
+   
 
    createprojectcnoc
    cnoctopology
@@ -168,7 +168,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :caption: Troubleshooting
-   :hidden:
+   
 
    invalidcredentials
    forgotpassword
@@ -180,7 +180,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :caption: Support & Resources
-   :hidden:
+   
 
    faqs
    quicklinks
@@ -189,6 +189,6 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 1
    :caption: Reference
-   :hidden:
+   
 
    modificationhistory
