@@ -6,7 +6,7 @@ During the portal login sequence, the security infrastructure strictly validates
 
 --------------------------------------------------------------------------------
 
-🔒 Authentication Failure Interface
+Authentication Failure Interface
 ====================================
 
 When an authentication mismatch occurs, the login script halts execution, flushes the password buffer field, and generates a prominent error message banner directly on the access portal layout.
@@ -18,7 +18,7 @@ When an authentication mismatch occurs, the login script halts execution, flushe
 
 --------------------------------------------------------------------------------
 
-🛠️ Step-by-Step Login Troubleshooting Matrix
+Step-by-Step Login Troubleshooting Matrix
 =============================================
 
 If the interface flags your input as invalid, systematically work through the baseline system checks detailed in the matrix below:
@@ -40,7 +40,7 @@ If the interface flags your input as invalid, systematically work through the ba
 
 --------------------------------------------------------------------------------
 
-⚠️ Character Rules & Technical Considerations
+Character Rules & Technical Considerations
 ==============================================
 
 The authentication processing cluster interprets inbound character strings using strict parsing rules:
