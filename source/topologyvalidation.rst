@@ -6,7 +6,7 @@ The **Non-Coherent Network-on-Chip (NC-NoC) Topology Validation** feature checks
 
 --------------------------------------------------------------------------------
 
-🎯 Validation Purpose & Objective Profiles
+Validation Purpose & Objective Profiles
 ===========================================
 
 * **Detect configuration errors** early in the design phase.
@@ -16,7 +16,7 @@ The **Non-Coherent Network-on-Chip (NC-NoC) Topology Validation** feature checks
 
 --------------------------------------------------------------------------------
 
-🔄 Interactive DRC Workflow Sequence
+Interactive DRC Workflow Sequence
 ======================================
 
 The platform design loop relies on an iterative validation sign-off cycle:
@@ -39,7 +39,7 @@ The platform design loop relies on an iterative validation sign-off cycle:
 
 --------------------------------------------------------------------------------
 
-📋 Comprehensive Rule Matrix Categories
+Comprehensive Rule Matrix Categories
 ==========================================
 
 When initialized, the validation subsystem evaluates the netlist file across the following exact functional parameters. Every tracking item must clear successfully to pass total validation:
