@@ -6,7 +6,7 @@ The **C-NoC Register Map** provides an interactive, structured hierarchy of all 
 
 --------------------------------------------------------------------------------
 
-🛠️ Activation Rules
+Activation Rules
 ===================
 
 By default, the Register Map tracking workspace is hidden to optimize browser canvas rendering performance.
@@ -23,7 +23,7 @@ By default, the Register Map tracking workspace is hidden to optimize browser ca
 
 --------------------------------------------------------------------------------
 
-📂 Navigating Register Tab Categories
+Navigating Register Tab Categories
 ======================================
 
 The register space partitions memory-mapped registers into specific tabs according to their structural domain roles:
