@@ -6,7 +6,7 @@ The platform enforces a secure, credentialed access pipeline. To load your cloud
 
 --------------------------------------------------------------------------------
 
-🔐 Step-by-Step Portal Access Workflow
+Step-by-Step Portal Access Workflow
 =======================================
 
 Follow the sequence detailed below to complete your primary authentication handshake:
@@ -40,7 +40,7 @@ Follow the sequence detailed below to complete your primary authentication hands
 
 --------------------------------------------------------------------------------
 
-💡 Pro-Tip for Seamless Access
+Pro-Tip for Seamless Access
 ==============================
 
 .. hint::
