@@ -6,7 +6,7 @@ Configuring a network-on-chip (NoC) router requires defining its subtopology anc
 
 --------------------------------------------------------------------------------
 
-🛠️ Router Configuration Tabs
+Router Configuration Tabs
 ==============================
 
 The configuration inspector splits localized router parameters across three dedicated contextual viewports:
@@ -46,7 +46,7 @@ The configuration inspector splits localized router parameters across three dedi
 
 --------------------------------------------------------------------------------
 
-⏱️ Protocol Pipeline Stage Reference Metrics
+Protocol Pipeline Stage Reference Metrics
 =============================================
 
 Pipeline stage distributions vary by protocol class to match standard bus timing and buffer requirements across structural clock crossings:
@@ -70,7 +70,7 @@ Pipeline stage distributions vary by protocol class to match standard bus timing
 
 --------------------------------------------------------------------------------
 
-⚡ Node Parameter Specifications
+Node Parameter Specifications
 =================================
 
 The properties panel exposes the following precise parameters for fine-tuning router behavior:
