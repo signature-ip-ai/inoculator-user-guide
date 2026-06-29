@@ -6,7 +6,7 @@ The **Create Project** configuration workflow initializes a clean design canvas 
 
 --------------------------------------------------------------------------------
 
-🎛️ Project Settings Configuration Options
+Project Settings Configuration Options
 =========================================
 
 The Project Settings wizard panel allows you to configure essential design rules and data sources before generating your hardware canvas layout.
@@ -44,7 +44,7 @@ The Project Settings wizard panel allows you to configure essential design rules
 
 --------------------------------------------------------------------------------
 
-⚠️ String Validation & Naming Constraints
+String Validation & Naming Constraints
 =========================================
 
 The database registration engine enforces strict validation rules on the project name field. Input strings failing these constraints will trigger submission blocks:
@@ -57,7 +57,7 @@ The database registration engine enforces strict validation rules on the project
 
 --------------------------------------------------------------------------------
 
-🚀 Launching Your Interconnect Workspace
+Launching Your Interconnect Workspace
 ========================================
 
 Once you have verified all configuration parameters and file upload pointers, click the **Create** action button at the bottom of the form panel. 
