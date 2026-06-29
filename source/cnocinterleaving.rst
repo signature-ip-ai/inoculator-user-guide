@@ -8,7 +8,7 @@ This mechanism optimizes system performance by enabling simultaneous parallel me
 
 --------------------------------------------------------------------------------
 
-🛠️ Accessing the Settings Workspace
+Accessing the Settings Workspace
 =====================================
 
 To configure interleaving layouts, navigate to the following path in the property manager:
@@ -22,7 +22,7 @@ To configure interleaving layouts, navigate to the following path in the propert
 
 --------------------------------------------------------------------------------
 
-🎛️ Mapping Architecture Settings
+Mapping Architecture Settings
 ==================================
 
 The Interleaving panel is split into two primary configuration blocks depending on whether the routing targets are subordinate targets or coherent cache home nodes.
