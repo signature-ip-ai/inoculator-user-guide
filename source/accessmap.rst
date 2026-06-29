@@ -11,7 +11,7 @@ This matrix dynamically displays policies associated with every supported device
 
 --------------------------------------------------------------------------------
 
-📋 Supported Security Policies
+Supported Security Policies
 ==============================
 
 You can configure and assign one of four distinct security policies to any reachable device path:
@@ -26,7 +26,7 @@ You can configure and assign one of four distinct security policies to any reach
 
 --------------------------------------------------------------------------------
 
-🖱️ How to Use the Map
+How to Use the Map
 =====================
 
 1. Navigate to the **Access Map** tab in the main configuration workspace menu.
