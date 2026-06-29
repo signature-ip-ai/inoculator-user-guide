@@ -6,7 +6,7 @@ To maintain structural data integrity and satisfy corporate security compliance 
 
 --------------------------------------------------------------------------------
 
-🔒 Secure Logout Sequence
+Secure Logout Sequence
 ==========================
 
 Follow this simple confirmation sequence to safely close your authenticated cloud workspace:
@@ -40,7 +40,7 @@ Follow this simple confirmation sequence to safely close your authenticated clou
 
 --------------------------------------------------------------------------------
 
-📋 Post-Termination Behavior
+Post-Termination Behavior
 ============================
 
 Once you confirm the command, the central authentication layer invalidates your active session cookies, flushes local memory cache allocations, and drops your active security token block.
