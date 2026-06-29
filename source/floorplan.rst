@@ -6,7 +6,7 @@ The **Floor Plan** panel provides an advanced physical design canvas under activ
 
 --------------------------------------------------------------------------------
 
-🔮 Hardware-Aware Layout Framework
+Hardware-Aware Layout Framework
 ===================================
 
 Future platform iterations will expand beyond purely logical network topologies into physical-aware design spaces. This bridge connects early architectural exploration directly with down-stream physical implementation and silicon place-and-route realities.
@@ -21,7 +21,7 @@ Future platform iterations will expand beyond purely logical network topologies 
 
 --------------------------------------------------------------------------------
 
-🛰️ Roadmap Architecture Objectives
+Roadmap Architecture Objectives
 ===================================
 
 Once finalized, the integrated physical canvas will expose native controls to model and validate floorplan layouts directly within the tool:
