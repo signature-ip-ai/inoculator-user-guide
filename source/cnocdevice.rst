@@ -6,7 +6,7 @@ When configuring a device node within the **C-NoC** framework, the side property
 
 --------------------------------------------------------------------------------
 
-🆔 Baseline Device Attributes
+Baseline Device Attributes
 =============================
 
 Regardless of the protocol choice, every device node requires these core layout identifiers:
@@ -26,7 +26,7 @@ Regardless of the protocol choice, every device node requires these core layout 
 
 --------------------------------------------------------------------------------
 
-⚡ Dynamic Protocol Parameter Spaces
+Dynamic Protocol Parameter Spaces
 ====================================
 
 Selecting a specific protocol type updates your property inspector panel to match the requirements below:
