@@ -6,7 +6,7 @@ The **C-NoC Address Map** framework manages address allocation across three dist
 
 --------------------------------------------------------------------------------
 
-📊 Core Node Mapping Matrix
+Core Node Mapping Matrix
 ===========================
 
 .. list-table:: Address Table Mappings & Target Hardware
@@ -32,7 +32,7 @@ The **C-NoC Address Map** framework manages address allocation across three dist
 
 --------------------------------------------------------------------------------
 
-⚙️ System Hardware Configuration Prerequisites
+System Hardware Configuration Prerequisites
 =================================================
 
 The configuration engine locks editing capabilities unless your hardware blocks are provisioned with specific, compliant protocol roles:
@@ -65,7 +65,7 @@ The configuration engine locks editing capabilities unless your hardware blocks 
 
 --------------------------------------------------------------------------------
 
-🧠 Domain Classifications
+Domain Classifications
 ===========================
 
 ### 1. Cacheable Address Map
@@ -97,7 +97,7 @@ Governs regions subject to multi-core cache coherency interventions. The engine 
 
 --------------------------------------------------------------------------------
 
-🛠️ Editing Mechanics & Visual Guidance
+Editing Mechanics & Visual Guidance
 =======================================
 
 Clicking **Edit** on a specific layout region, router node, or individual endpoint card launches the granular allocation modal.
