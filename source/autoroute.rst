@@ -15,7 +15,7 @@ To execute a routing sweep, utilize the primary action trigger:
 
 --------------------------------------------------------------------------------
 
-🚦 Engine Routing Status Indicators
+Engine Routing Status Indicators
 =====================================
 
 The engine returns real-time status feedback badges upon evaluation. Use this matrix to identify routing health and determine required actions:
