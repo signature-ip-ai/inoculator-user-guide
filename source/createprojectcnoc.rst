@@ -6,7 +6,7 @@ The **Create Project** workspace allows you to initialize a dedicated design can
 
 --------------------------------------------------------------------------------
 
-🔄 The Project Initialization Workflow
+The Project Initialization Workflow
 =======================================
 
 .. grid:: 1
@@ -35,7 +35,7 @@ The **Create Project** workspace allows you to initialize a dedicated design can
 
 --------------------------------------------------------------------------------
 
-🚀 Launching Your Interactive Canvas
+Launching Your Interactive Canvas
 ====================================
 
 Once initialization completes, your new architecture workspace maps directly onto the primary tracking panel grid as an independent repository tile.
