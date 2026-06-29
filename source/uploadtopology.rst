@@ -6,7 +6,7 @@ Instead of placing elements onto the canvas grid manually, iNoCulator Web suppor
 
 --------------------------------------------------------------------------------
 
-📥 Automated Import Pipelines
+Automated Import Pipelines
 ==============================
 
 Choose your target structural data file format using the workspace selectors below to review the explicit configuration and verification pipelines:
