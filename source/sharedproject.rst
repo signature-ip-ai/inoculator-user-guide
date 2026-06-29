@@ -6,7 +6,7 @@ The **Shared Project** subsystem facilitates seamless cross-functional collabora
 
 --------------------------------------------------------------------------------
 
-👥 Initiating an Assets Share Request
+Initiating an Assets Share Request
 ======================================
 
 Follow this sequential workflow to grant canvas access permissions to internal or external collaborators:
@@ -65,12 +65,12 @@ Follow this sequential workflow to grant canvas access permissions to internal o
 
 --------------------------------------------------------------------------------
 
-📬 Automated Transactional Email Lifecycles
+Automated Transactional Email Lifecycles
 =============================================
 
 The identity registry engine dispatches automated notifications across the sharing lifetime to audit permissions modifications and preserve systemic data security boundaries.
 
-.. dropdown:: 📁 Sharing Initialization Receipts
+.. dropdown:: Sharing Initialization Receipts
    :open:
 
    When authorization fields are saved, the system issues a confirmation email to the recipient's secure corporate address folder. This establishes a clear trail of collaboration control.
@@ -80,7 +80,7 @@ The identity registry engine dispatches automated notifications across the shari
       :align: center
       :width: 80%
 
-.. dropdown:: 📁 Share Revocation and Discontinuation Notifications
+.. dropdown:: Share Revocation and Discontinuation Notifications
 
    If the project owner clears a collaborator's check box within the share manager modal, the system instantly drops the target security block and fires an automated alert confirming the removal.
 
@@ -89,7 +89,7 @@ The identity registry engine dispatches automated notifications across the shari
       :align: center
       :width: 80%
 
-.. dropdown:: 📁 Source Disposal Actions
+.. dropdown:: Source Disposal Actions
 
    If the master project owner deletes the source canvas from their database index completely, the platform deletes all shared downstream instances and emails recipients to flag the final removal of the asset.
 
