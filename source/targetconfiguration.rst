@@ -12,7 +12,7 @@ Target Device
 
 --------------------------------------------------------------------------------
 
-🎯 Default Target Constraints
+Default Target Constraints
 ==============================
 
 The Default Target acts as a system fallback node and enforces fixed, unalterable base properties to guarantee error trapping:
@@ -27,7 +27,7 @@ The Default Target acts as a system fallback node and enforces fixed, unalterabl
 
 --------------------------------------------------------------------------------
 
-🎛️ Primary Target Parameter Specifications
+Primary Target Parameter Specifications
 ==========================================
 
 Clicking a standard Target module on the visual canvas populates a detailed multi-tab properties inspector on the right-hand panel.
@@ -75,7 +75,7 @@ Bus Protocol, Version, & Variants
 
 --------------------------------------------------------------------------------
 
-🔌 Signaling and Transaction Queuing Controls
+Signaling and Transaction Queuing Controls
 =============================================
 
 .. image:: images/target-enable_virtual_device1.png
@@ -100,7 +100,7 @@ Max Outstanding Writes / Reads
 
 --------------------------------------------------------------------------------
 
-🛠️ Exclusive Access Configuration & ID Balancing
+Exclusive Access Configuration & ID Balancing
 ===================================================
 
 When tuning targets under **AXI3** or **AXI4-Full** architectures, you can activate specialized transaction tracking levers to govern out-of-order execution states:
@@ -128,7 +128,7 @@ Exclusive Access
 
 --------------------------------------------------------------------------------
 
-📦 Buffer Allocations & Memory-Interleaving Overrides
+Buffer Allocations & Memory-Interleaving Overrides
 ======================================================
 
 .. image:: images/target-SRAM.png
@@ -156,7 +156,7 @@ SRAM Specific Controls
 
 --------------------------------------------------------------------------------
 
-⏱️ Timing and Security Frameworks
+Timing and Security Frameworks
 ===================================
 
 The sub-panels manage downstream physical integration properties:
