@@ -6,7 +6,7 @@ The **System Config** workspace acts as the global architectural registry file f
 
 --------------------------------------------------------------------------------
 
-🛠️ Editing the Global Configuration Fabric
+Editing the Global Configuration Fabric
 =============================================
 
 To modify established top-level properties after initial project instantiations, click the **System Config** control button located on the primary action bar panel.
@@ -23,7 +23,7 @@ To modify established top-level properties after initial project instantiations,
 
 --------------------------------------------------------------------------------
 
-🧱 Foundational Data and Address Geometries
+Foundational Data and Address Geometries
 ============================================
 
 The core structural dimensions of the memory-mapped transport layers are governed by two definitive bit-width configurations:
@@ -39,7 +39,7 @@ Data Width
 
 --------------------------------------------------------------------------------
 
-⚡ Global Electrical and Power Grid Net Mapping
+Global Electrical and Power Grid Net Mapping
 ================================================
 
 When configuring the top-level macro-power mesh layout, the system enforces strict physical bounds to prevent logic state collapse:
@@ -56,12 +56,12 @@ When configuring the top-level macro-power mesh layout, the system enforces stri
 
 --------------------------------------------------------------------------------
 
-🔌 Advanced Protocol Extensions & Memory Stripping
+Advanced Protocol Extensions & Memory Stripping
 ====================================================
 
 .. tab-set::
 
-   .. tab-item:: 🆔 AXI4 User Signals
+   .. tab-item:: AXI4 User Signals
 
       When utilizing extended AMBA AXI4 protocol interfaces, you can allocate dedicated sideband bit lines to carry proprietary transaction metadata (such as custom security tokens, cache allocation tags, or internal routing keys).
       
@@ -69,14 +69,14 @@ When configuring the top-level macro-power mesh layout, the system enforces stri
       * **User Data Width:** Input field establishing sideband bits for write data channel annotations. Accepts integer values from ``1`` to ``64``.
       * **User Response Width:** Input field establishing sideband bits for transaction acknowledgment channel tracing. Accepts integer values from ``1`` to ``64``.
 
-   .. tab-item:: 🔀 Address Interleaving
+   .. tab-item:: Address Interleaving
 
       **Address Interleaving** splits consecutive memory access blocks across parallel destination target slices or separate storage endpoints to bypass physical hardware bottlenecks and maximize memory channel utilization.
 
       * **Interleaved Channel Size:** Defines the linear stride size step mapped in **Bytes** across alternating memory targets.
       * **Interleaving Split:** Toggles an active address segment division routine. When enabled via the toggle control, it activates smaller structural segment distribution blocks across bound downstream slave blocks.
 
-   .. tab-item:: 🖥️ Validation & Feature Generative Toggles
+   .. tab-item:: Validation & Feature Generative Toggles
 
       * **Clock Frequency Validation:** * **Toggled ON:** Unlocks independent local control clocks. Every discrete IP node dropped on the canvas grid must be configured with a localized frequency setting.
          * **Toggled OFF:** Standardizes clocking. Eliminates localized clock input constraints to streamline basic verification steps.
