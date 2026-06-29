@@ -305,3 +305,15 @@ div.announcement {
   transition: color 0.15s ease-in-out;
 }
 
+/* Hide numbers inside the sidebar navigation */
+.bd-sidebar-primary .toctree-l1 > a .number,
+.bd-sidebar-primary .toctree-l2 > a .number,
+.bd-sidebar-primary .toctree-l3 > a .number,
+.bd-sidebar-primary .toctree-l1::before,
+.bd-sidebar-primary .toctree-l2::before {
+    display: none !important;
+}
+
+.bd-sidebar-primary .nav-link > span.number {
+    display: none !important;
+}
