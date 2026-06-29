@@ -6,7 +6,7 @@ The **Copy Project** feature allows you to duplicate an existing Network-on-Chip
 
 --------------------------------------------------------------------------------
 
-👥 Cross-User Sharing & Ownership Transfer
+Cross-User Sharing & Ownership Transfer
 ===========================================
 
 The duplication engine fully supports copying projects owned by other collaborators within your organizational network. 
@@ -16,7 +16,7 @@ The duplication engine fully supports copying projects owned by other collaborat
 
 --------------------------------------------------------------------------------
 
-🔄 Project Duplication Workflow
+Project Duplication Workflow
 ================================
 
 .. grid:: 1
@@ -60,7 +60,7 @@ The duplication engine fully supports copying projects owned by other collaborat
 
 --------------------------------------------------------------------------------
 
-⚠️ String Validations
+String Validations
 =========================================
 
 The database validation engine reviews your new title entry in real time. Your entry must comply with the formatting boundaries listed below to avoid generation errors:
