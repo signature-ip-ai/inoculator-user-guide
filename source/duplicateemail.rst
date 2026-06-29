@@ -6,7 +6,7 @@ During the account registration or workspace onboarding process, the platform en
 
 --------------------------------------------------------------------------------
 
-🔍 System Validation Behavior
+System Validation Behavior
 ==============================
 
 When you submit a new application via the **Request Access** form, the authentication layer automatically scans existing identity records.
@@ -20,7 +20,7 @@ When you submit a new application via the **Request Access** form, the authentic
 
 --------------------------------------------------------------------------------
 
-🛠️ Resolution Paths for Users
+Resolution Paths for Users
 ===============================
 
 If the interface displays a duplicate email address error during your registration workflow, adopt one of the standard recovery paths detailed below:
