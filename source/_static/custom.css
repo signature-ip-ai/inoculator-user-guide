@@ -304,3 +304,16 @@ div.announcement {
 .bd-sidebar a {
   transition: color 0.15s ease-in-out;
 }
+
+/* Remove numbers from sidebar list items */
+.toctree-l1, .toctree-l2, .toctree-l3 {
+    list-style-type: none !important;
+}
+
+.sidebar-navigation-items li {
+    counter-increment: none !important;
+}
+
+.sidebar-navigation-items li::before {
+    content: none !important;
+}
