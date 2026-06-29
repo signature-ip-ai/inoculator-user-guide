@@ -8,7 +8,7 @@ Within the iNoCulator framework, a bridge specifically establishes a point-to-po
 
 --------------------------------------------------------------------------------
 
-🛠️ Adding a Bridge to the Design Canvas
+Adding a Bridge to the Design Canvas
 =======================================
 
 .. grid:: 1
@@ -49,7 +49,7 @@ Within the iNoCulator framework, a bridge specifically establishes a point-to-po
 
 --------------------------------------------------------------------------------
 
-🎛️ Side Panel Parameter Definitions
+Side Panel Parameter Definitions
 ====================================
 
 To customize your bridge latency and routing tags, single-click the bridge component on the canvas grid. This action populates the **Side Panel** workspace on the right side of your screen.
