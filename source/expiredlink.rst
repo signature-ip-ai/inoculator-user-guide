@@ -6,7 +6,7 @@ An **Expired Activation Link** error occurs when a user attempts to verify and i
 
 --------------------------------------------------------------------------------
 
-🔒 System Security & Link Expiry Behavior
+System Security & Link Expiry Behavior
 =========================================
 
 To safeguard corporate engineering workspaces and prevent unauthorized account hijacking, the system applies a strict time-to-live (TTL) timestamp to all email verification tokens. 
@@ -20,7 +20,7 @@ To safeguard corporate engineering workspaces and prevent unauthorized account h
 
 --------------------------------------------------------------------------------
 
-🛠️ Standard Account Recovery Paths
+Standard Account Recovery Paths
 ====================================
 
 Because an expired security token cannot be manually overridden or extended, you must initiate a new authentication handshake to complete your onboarding workflow.
