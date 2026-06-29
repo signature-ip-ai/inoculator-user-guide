@@ -6,7 +6,7 @@ New users must complete a formal account onboarding request and identity verific
 
 --------------------------------------------------------------------------------
 
-🗺️ Entry Vectors & Submission Workflow
+Entry Vectors & Submission Workflow
 =========================================
 
 The platform provides two distinct entry avenues to initiate an access request. Follow these sequential steps to navigate to the registration form and submit your profile:
@@ -51,7 +51,7 @@ The platform provides two distinct entry avenues to initiate an access request. 
 
 --------------------------------------------------------------------------------
 
-🔒 Input Validation Constraints & Limitations
+Input Validation Constraints & Limitations
 =============================================
 
 .. important::
@@ -63,7 +63,7 @@ The platform provides two distinct entry avenues to initiate an access request. 
 
 --------------------------------------------------------------------------------
 
-📩 Post-Submission Review and Email Validation
+Post-Submission Review and Email Validation
 ================================================
 
 Once the database processes your submission, the interface transitions to an administrative hold state while asynchronous notification routines route the request details to your workspace managers:
@@ -71,7 +71,7 @@ Once the database processes your submission, the interface transitions to an adm
 .. grid:: 2
    :gutter: 3
 
-   .. grid-item-card:: 🖥️ On-Screen Intercept Message
+   .. grid-item-card:: On-Screen Intercept Message
       :class-header: bg-light font-weight-bold
 
       The active browser tab immediately locks and renders a confirmation overlay, verifying that your registration payload has entered the global administrator ticket queue for structural evaluation.
@@ -81,7 +81,7 @@ Once the database processes your submission, the interface transitions to an adm
          :align: center
          :width: 85%
 
-   .. grid-item-card:: 📬 Account Activation Link
+   .. grid-item-card:: Account Activation Link
       :class-header: bg-light font-weight-bold
 
       Upon administrator validation and approval, an invitation message lands in your corporate inbox. This dispatch includes a unique, secure activation link to initialize your credentials.
