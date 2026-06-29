@@ -8,7 +8,7 @@ It acts as a hardware translation layer to maintain data integrity, protocol com
 
 --------------------------------------------------------------------------------
 
-🎯 Key Architecture Roles
+Key Architecture Roles
 ==========================
 
 Protocol Conversion
@@ -19,7 +19,7 @@ Multi-Cluster Scalability
 
 --------------------------------------------------------------------------------
 
-🛠️ Canvas Integration Workflow
+Canvas Integration Workflow
 =================================
 
 To append a C2C Bridge instance to your architecture canvas:
@@ -38,7 +38,7 @@ To append a C2C Bridge instance to your architecture canvas:
 
 --------------------------------------------------------------------------------
 
-🎛️ C-NoC Protocol & Routing Parameters
+C-NoC Protocol & Routing Parameters
 ========================================
 
 When configuring a C2C Bridge, the side property panel controls structural addressing, coordinate packing, and physical protocol constraints.
@@ -70,7 +70,7 @@ When configuring a C2C Bridge, the side property panel controls structural addre
 
 --------------------------------------------------------------------------------
 
-🆔 Architectural Identification Schema
+Architectural Identification Schema
 ======================================
 
 The platform tracks components using two distinct ID metrics to separate hardware routing paths from user-facing layout views:
