@@ -35,6 +35,7 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 2
    :caption: III. Identity Validation & Security Exceptions
+   :numbered:
 
    expiredaccount
    suspendedaccount
@@ -116,6 +117,7 @@ Welcome to the definitive system administration and engineering design manual fo
 .. toctree::
    :maxdepth: 1
    :caption: IX. Knowledge Base & References
+   :numbered:
 
    faqs
    appendix
