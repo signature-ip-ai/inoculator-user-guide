@@ -6,7 +6,7 @@ The **Search Project** utility delivers a real-time indexing engine across your 
 
 --------------------------------------------------------------------------------
 
-🔍 Query Execution & Tab Support
+Query Execution & Tab Support
 =================================
 
 The lookahead search system is embedded natively across your primary project partitions. You can execute localized keyword queries within both the **Personal Projects** repository and the **Shared Projects** collaboration space.
@@ -40,7 +40,7 @@ The lookahead search system is embedded natively across your primary project par
 
 --------------------------------------------------------------------------------
 
-💡 Dynamic Indexing Capabilities
+Dynamic Indexing Capabilities
 =================================
 
 .. hint::
