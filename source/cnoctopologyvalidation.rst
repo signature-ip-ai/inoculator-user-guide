@@ -8,7 +8,7 @@ Running a validation check isolates design implementation flaws before they prog
 
 --------------------------------------------------------------------------------
 
-🎯 Evaluation Architecture
+Evaluation Architecture
 ==========================
 
 Purpose
@@ -27,7 +27,7 @@ System Interaction
 
 --------------------------------------------------------------------------------
 
-📋 Standard Validation Test Routines
+Standard Validation Test Routines
 ====================================
 
 The compiler evaluates the active layout schema against 11 strict structural rules. Every criteria must clear to move forward with RTL compilation.
