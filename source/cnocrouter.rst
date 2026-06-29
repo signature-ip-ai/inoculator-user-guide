@@ -26,7 +26,7 @@ The **C-NoC Router** properties panel manages identification, messaging queue de
 
 --------------------------------------------------------------------------------
 
-🚪 I. Device Port Parameters
+I. Device Port Parameters
 ============================
 
 *Available for: All Router Types (``HN-F w/ L3``, ``HN-F w/o L3``, ``Device Only``, ``Repeater``)*
@@ -73,7 +73,7 @@ This block customizes the pointer widths controlling the queue depth allocations
 
 --------------------------------------------------------------------------------
 
-🌐 II. Interconnect Port Parameters
+II. Interconnect Port Parameters
 ===================================
 
 *Available for: All Router Types (``HN-F w/ L3``, ``HN-F w/o L3``, ``Device Only``, ``Repeater``)*
@@ -108,7 +108,7 @@ Regulates buffer queues managing inter-switch structural traces connecting this 
 
 --------------------------------------------------------------------------------
 
-📂 III. Directory Cache Controller
+III. Directory Cache Controller
 ==================================
 
 *Available for: Home Node Profiles (``HN-F w/ L3``, ``HN-F w/o L3``)*
@@ -210,7 +210,7 @@ Pipeline Sizing & Flight Trackers
 
 --------------------------------------------------------------------------------
 
-🧠 IV. L3 Cache Controller Settings
+IV. L3 Cache Controller Settings
 ===================================
 
 *Available for: ``HN-F w/ L3`` exclusive profiles*
