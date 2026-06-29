@@ -6,7 +6,7 @@ The **Forgot Password** self-service pipeline provides an automated, secure reco
 
 --------------------------------------------------------------------------------
 
-🔑 Self-Service Credential Reset Procedure
+Self-Service Credential Reset Procedure
 ===========================================
 
 Follow this sequence to clear your lost credential keys and securely nominate a new platform password:
@@ -54,7 +54,7 @@ Follow this sequence to clear your lost credential keys and securely nominate a 
 
 --------------------------------------------------------------------------------
 
-✅ Verification of Success
+Verification of Success
 ===========================
 
 Upon clicking the final **Reset** button, the authentication engine commits your updated credential string to the master database. 
