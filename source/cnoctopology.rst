@@ -6,7 +6,7 @@ The **C-NoC Topology** canvas provides an interactive graphical layout to instan
 
 --------------------------------------------------------------------------------
 
-📐 Grid Initialization
+Grid Initialization
 =======================
 
 Before placing functional hardware, you must define the structural matrix dimensions of your baseline mesh network using the left-side controller panel.
@@ -27,7 +27,7 @@ Before placing functional hardware, you must define the structural matrix dimens
 
 --------------------------------------------------------------------------------
 
-🖱️ Canvas Interactive Manipulations
+Canvas Interactive Manipulations
 ====================================
 
 Modify your network architecture using these grid mechanics and context actions:
@@ -80,7 +80,7 @@ Modify your network architecture using these grid mechanics and context actions:
 
 --------------------------------------------------------------------------------
 
-🔗 Interconnect and Bridging Routines
+Interconnect and Bridging Routines
 ======================================
 
 .. grid:: 1
@@ -122,7 +122,7 @@ Modify your network architecture using these grid mechanics and context actions:
 
 --------------------------------------------------------------------------------
 
-🗺️ VIII. Topology Coordinates & Die Placement
+Topology Coordinates & Die Placement
 ==============================================
 
 The Topology Coordinates inspector controls the exact macro grid placement properties of subtopology arrays across your package substrate.
