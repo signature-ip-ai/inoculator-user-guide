@@ -6,7 +6,7 @@ The **Implement** pipeline bridges your finalized logical Network-on-Chip (NoC) 
 
 --------------------------------------------------------------------------------
 
-🛠️ Implementation Configuration Workflow
+Implementation Configuration Workflow
 =========================================
 
 .. grid:: 1
@@ -52,7 +52,7 @@ The **Implement** pipeline bridges your finalized logical Network-on-Chip (NoC) 
 
 --------------------------------------------------------------------------------
 
-📋 Fabrication Preparation Pre-requisites
+Fabrication Preparation Pre-requisites
 =========================================
 
 .. note::
