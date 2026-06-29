@@ -6,7 +6,7 @@ The **Export Package** suite compiles your Non-Coherent NoC (NC-NoC) or Coherent
 
 --------------------------------------------------------------------------------
 
-📦 RTL IP Package Formats
+RTL IP Package Formats
 =========================
 
 The system supports up to three distinct structural variants when packaging your compiled network design for synthesis and simulation pipelines.
@@ -33,7 +33,7 @@ The system supports up to three distinct structural variants when packaging your
 
 --------------------------------------------------------------------------------
 
-🚀 Package Generation Workflows
+Package Generation Workflows
 ===============================
 
 Select the tab matching your required output profile to see the specific check-box configuration path:
@@ -117,7 +117,7 @@ Select the tab matching your required output profile to see the specific check-b
 
 --------------------------------------------------------------------------------
 
-📥 Managing Export Deliverables
+Managing Export Deliverables
 ================================
 
 Every completed or active compilation job populates a tracking line inside the permanent **Export Design** table. Each row includes a dedicated contextual control hub.
@@ -134,7 +134,7 @@ Click the **three vertical dots (ellipsis)** icon in the *Actions* column to man
 
 --------------------------------------------------------------------------------
 
-📡 Secure Server Delivery (Upload to FTP)
+Secure Server Delivery (Upload to FTP)
 ===========================================
 
 For high-throughput delivery to automated continuous-integration (CI) pipelines or on-premise compute farms, the platform can stream build packages directly over network interfaces.
