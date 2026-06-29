@@ -8,7 +8,7 @@ A **Virtual Device** (or Virtual Target) is a software-defined endpoint abstract
 
 --------------------------------------------------------------------------------
 
-⚙️ Instantiation Workflow
+Instantiation Workflow
 ==========================
 
 You can instantiate up to **64 virtual devices** per physical target node. Follow these steps to configure them:
@@ -24,7 +24,7 @@ You can instantiate up to **64 virtual devices** per physical target node. Follo
 
 --------------------------------------------------------------------------------
 
-📋 Virtual Device Property Matrix
+Virtual Device Property Matrix
 =================================
 
 Once instantiated, each virtual device displays two configuration tabs:
@@ -32,12 +32,12 @@ Once instantiated, each virtual device displays two configuration tabs:
 .. grid:: 2
    :gutter: 3
 
-   .. grid-item-card:: 🧩 Parameters Tab
+   .. grid-item-card::  Parameters Tab
       :class-header: bg-light font-weight-bold
 
       Displays the assigned **Device ID**. Virtual device IDs maintain an incremental numerical sequence following the parent physical target's ID to ensure system-wide uniqueness.
 
-   .. grid-item-card:: 🔒 Security Tab
+   .. grid-item-card::  Security Tab
       :class-header: bg-light font-weight-bold
 
       Allows localized configuration of **Device Policies** (Passthrough, Programmable, Blocked, or Fixed-Secure). This enables granular security isolation—you can apply a unique security policy to each virtual device independent of the parent target.
