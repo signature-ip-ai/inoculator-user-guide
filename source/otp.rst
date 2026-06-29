@@ -6,7 +6,7 @@ To protect system access and proprietary Network-on-Chip (NoC) design IP, the pl
 
 --------------------------------------------------------------------------------
 
-🔒 Step-by-Step Verification Sequence
+Step-by-Step Verification Sequence
 ======================================
 
 Follow this operational flow to retrieve your verification key and access your engineering workspace:
@@ -52,7 +52,7 @@ Follow this operational flow to retrieve your verification key and access your e
 
 --------------------------------------------------------------------------------
 
-⏳ Technical Execution & Token Lifecycle Rules
+Technical Execution & Token Lifecycle Rules
 ==============================================
 
 .. error::
