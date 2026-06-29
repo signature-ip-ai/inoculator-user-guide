@@ -8,7 +8,7 @@ Rather than forcing manual component placement, the placement engine runs a glob
 
 --------------------------------------------------------------------------------
 
-🎯 Optimization Objectives
+Optimization Objectives
 ===========================
 
 The placement engine simultaneously solves for three primary physical design parameters:
@@ -27,7 +27,7 @@ Area Utilization
 
 --------------------------------------------------------------------------------
 
-🖥️ Workspace View
+Workspace View
 ==================
 
 .. image:: images/auto_place_3.png
