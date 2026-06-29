@@ -6,7 +6,7 @@ The **RTL and Testbench Generation** feature compiles your finalized Coherent-No
 
 --------------------------------------------------------------------------------
 
-🛠️ The Generation Workflow
+The Generation Workflow
 ===========================
 
 .. grid:: 1
@@ -50,7 +50,7 @@ The **RTL and Testbench Generation** feature compiles your finalized Coherent-No
 
 --------------------------------------------------------------------------------
 
-📂 Managing Compiled Build Artifacts
+Managing Compiled Build Artifacts
 =====================================
 
 Once compilation completes successfully, a new row entry populated with tracking data will map to your history space. 
