@@ -13,7 +13,7 @@ This feature manages the formal acceptance and activation of a user account with
 
 -------------------------------------------------------------------------
 
-🔄 The Activation Process
+The Activation Process
 =========================
 
 .. grid:: 1
