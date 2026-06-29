@@ -6,7 +6,7 @@ An account enters an **Expired** state when its active runtime window closes. Th
 
 --------------------------------------------------------------------------------
 
-🔒 System Authentication Behavior
+System Authentication Behavior
 ==================================
 
 When an account lifecycle window closes, the platform's central authentication layer blocks access to the design workspace. 
@@ -20,7 +20,7 @@ When an account lifecycle window closes, the platform's central authentication l
 
 --------------------------------------------------------------------------------
 
-🛠️ Resolution and Renewal Pipeline
+Resolution and Renewal Pipeline
 ====================================
 
 Because account expiration is directly tied to platform-level software licensing, users cannot self-remedy this state from the standard account settings panel. 
