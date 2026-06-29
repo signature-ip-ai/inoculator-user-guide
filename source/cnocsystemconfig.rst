@@ -6,7 +6,7 @@ The **C-NoC System Config** properties panel governs global architectural defini
 
 --------------------------------------------------------------------------------
 
-📊 I. Parameters Tab
+I. Parameters Tab
 ====================
 
 This tab sets the global baseline protocol parameters, bit-widths, sideband signal features, and clock boundaries across the fabric.
@@ -106,7 +106,7 @@ Functional Sideband & Feature Toggles
 
 --------------------------------------------------------------------------------
 
-⏱️ II. Timing Tab
+II. Timing Tab
 =================
 
 Configures the decoupled clock domains providing timing reference points across boundaries.
@@ -121,7 +121,7 @@ Configures the decoupled clock domains providing timing reference points across 
 
 --------------------------------------------------------------------------------
 
-💤 III. Q/P Channel Tab
+III. Q/P Channel Tab
 =======================
 
 Manages hardware low-power handshake protocols for progressive power-gating or clock-throttling when interfaces stay idle.
@@ -156,7 +156,7 @@ Manages hardware low-power handshake protocols for progressive power-gating or c
 
 --------------------------------------------------------------------------------
 
-🏗️ IV. Pipeline Tab
+IV. Pipeline Tab
 ====================
 
 .. image:: images/system_config_pipeline.png
@@ -168,7 +168,7 @@ Manages hardware low-power handshake protocols for progressive power-gating or c
 
 --------------------------------------------------------------------------------
 
-🧩 V. Interleaving Tab
+V. Interleaving Tab
 ======================
 
 Defines the master baseline boundaries for structural data distribution. Base addresses must match a exact hexadecimal layout width.
