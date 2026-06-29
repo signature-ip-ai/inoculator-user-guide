@@ -6,7 +6,7 @@ The **Delete Project** routine permanently removes a Network-on-Chip (NoC) desig
 
 --------------------------------------------------------------------------------
 
-🗑️ Project Deletion Workflow
+Project Deletion Workflow
 ============================
 
 .. grid:: 1
@@ -38,7 +38,7 @@ The **Delete Project** routine permanently removes a Network-on-Chip (NoC) desig
 
 --------------------------------------------------------------------------------
 
-⚠️ Critical Operational Checklist
+Critical Operational Checklist
 ===================================
 
 .. error::
