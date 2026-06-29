@@ -6,7 +6,7 @@ An account enters a **Suspended** state when security policies, administrative b
 
 --------------------------------------------------------------------------------
 
-🚨 Suspended System Identification
+Suspended System Identification
 ==================================
 
 When a restricted profile attempts to authenticate or load the main engineering dashboard layout, the platform blocks entry and displays a system isolation banner.
@@ -27,7 +27,7 @@ When a restricted profile attempts to authenticate or load the main engineering 
 
 --------------------------------------------------------------------------------
 
-🛠️ Resolution & Restoration Procedures
+Resolution & Restoration Procedures
 ======================================
 
 To restore full canvas editing permissions, you must contact your authorized domain control team to lift the suspension state. Review the matrix below to pinpoint your primary escalation path depending on your deployment model:
@@ -35,21 +35,21 @@ To restore full canvas editing permissions, you must contact your authorized dom
 .. grid:: 3
    :gutter: 3
 
-   .. grid-item-card:: 👥 Group Administrator
+   .. grid-item-card:: Group Administrator
       :class-header: bg-light font-weight-bold
 
       **Internal Tenant Level**
       
       If your workstation belongs to a shared corporate team workspace, your local **Group Admin** can audit your profile state, check internal compliance issues, and toggle your access toggle back to active.
 
-   .. grid-item-card:: 🏢 Signature IP Admin
+   .. grid-item-card:: Signature IP Admin
       :class-header: bg-light font-weight-bold
 
       **Platform Licensing Level**
       
       For issues linked to core IP block access boundaries, evaluation license expiration dates, or site contract limits, request an audit from the **Signature IP Administrator**.
 
-   .. grid-item-card:: ✉️ Global Support Desk
+   .. grid-item-card:: Global Support Desk
       :class-header: bg-light font-weight-bold
 
       **Infrastructure Helpdesk**
