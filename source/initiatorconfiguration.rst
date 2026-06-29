@@ -6,7 +6,7 @@ An **Initiator** element represents a master intellectual property (IP) core—s
 
 --------------------------------------------------------------------------------
 
-🎛️ Multi-Tab Parameter Configuration Interface
+Multi-Tab Parameter Configuration Interface
 ===============================================
 
 Configure your target Initiator node by selecting its contextual tabs within the device properties inspector panel.
@@ -97,7 +97,7 @@ Configure your target Initiator node by selecting its contextual tabs within the
 
 --------------------------------------------------------------------------------
 
-📊 Protocol & Interface Compatibility Matrix
+Protocol & Interface Compatibility Matrix
 =============================================
 
 The application architecture limits versioning properties based on your selected transaction standard:
