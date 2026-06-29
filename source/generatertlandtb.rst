@@ -6,7 +6,7 @@ The **RTL Generation Engine** compiles your finalized Non-Coherent NoC (NC-NoC) 
 
 --------------------------------------------------------------------------------
 
-🚀 Compilation and Build Pipeline
+Compilation and Build Pipeline
 =================================
 
 .. grid:: 1
@@ -57,7 +57,7 @@ The **RTL Generation Engine** compiles your finalized Non-Coherent NoC (NC-NoC) 
 
 --------------------------------------------------------------------------------
 
-📦 Archive Extraction and File Inspection
+Archive Extraction and File Inspection
 ==========================================
 
 .. note::
@@ -83,7 +83,7 @@ The compiler outputs all hardware files inside a compressed Tape Archive GNU zip
 
 --------------------------------------------------------------------------------
 
-🗂️ Compiled Output Directory Structures
+Compiled Output Directory Structures
 =========================================
 
 The exact file mapping tree unpacked inside your local folder depends entirely on your project type selection and the cycle-accuracy parameters toggled before compilation.
