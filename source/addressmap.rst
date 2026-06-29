@@ -13,7 +13,7 @@ By default, addresses are not pre-allocated; network architects must define thei
 
 --------------------------------------------------------------------------------
 
-🔄 Bidirectional Field Synchronization
+Bidirectional Field Synchronization
 ========================================
 
 The address grid features dynamic recalculation logic to maintain system consistency. Modifying either field updates its counterpart instantly:
@@ -31,7 +31,7 @@ The address grid features dynamic recalculation logic to maintain system consist
 
 --------------------------------------------------------------------------------
 
-🛠️ Manual and Automated Workflows
+Manual and Automated Workflows
 ===================================
 
 To alter the memory layout properties, click the **Edit** button. A modal configuration interface will launch, providing two methods of execution:
