@@ -11,7 +11,7 @@ The **Components** panel and **Project Explorer** work together to help you buil
 
 --------------------------------------------------------------------------------
 
-🧩 Design Canvas Hardware Components
+Design Canvas Hardware Components
 ====================================
 
 These structural building blocks can be dragged directly from the panel onto the design grid to assemble your interconnect fabric:
@@ -35,7 +35,7 @@ These structural building blocks can be dragged directly from the panel onto the
 
 --------------------------------------------------------------------------------
 
-📁 Project Explorer & Subtopology Tracking
+Project Explorer & Subtopology Tracking
 ==========================================
 
 As your network design scales up, managing hundreds of routers on a single canvas becomes difficult. The tool resolves this by grouping related sections into modular layers.
