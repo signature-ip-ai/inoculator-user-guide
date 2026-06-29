@@ -6,7 +6,7 @@ The **Invite User** protocol allows platform administrators to transition an onb
 
 --------------------------------------------------------------------------------
 
-🔒 Administrative Provisioning Pipeline
+Administrative Provisioning Pipeline
 =========================================
 
 .. note::
@@ -38,7 +38,7 @@ The **Invite User** protocol allows platform administrators to transition an onb
 
 --------------------------------------------------------------------------------
 
-⚖️ Legal Compliance & Activation Frameworks
+Legal Compliance & Activation Frameworks
 ============================================
 
 The automated notification email functions as a formal onboarding gateway. To satisfy international corporate compliance rules and data protection boundaries, the transmission hard-links directly to your legal infrastructure records:
