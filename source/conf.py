@@ -96,5 +96,4 @@ html_css_files = [
 # JavaScript — scroll-to-top + permalink copy helper
 html_js_files = [
     'custom.js',
-    'sidebar-scroll.js'
 ]
