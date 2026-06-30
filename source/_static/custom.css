@@ -305,12 +305,3 @@ div.announcement {
   transition: color 0.15s ease-in-out;
 }
 
-/* For sidebar to stick on the selected page */
-
-.sphinxsidebar {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
-    top: 0;
-    height: 100vh; /* Keeps the sidebar the height of the screen */
-    overflow-y: auto; /* Allows scrolling inside the sidebar if it's long */
-}
