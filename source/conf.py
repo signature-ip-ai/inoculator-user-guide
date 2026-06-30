@@ -55,7 +55,7 @@ html_theme_options = {
     "use_repository_button": True,
     "use_source_button": True,
 
-    # Primary color — overridden further in custom.css, but sets the base
+    # Primary color —
     "primary_sidebar_end": ["indices.html", "sidebar-ethical-ads.html"],
 
     # Footer
@@ -83,17 +83,16 @@ html_title = "Inoculator User Guide"
 html_favicon = "_static/favicon.ico"
 html_last_updated_fmt = "%B %d, %Y"
 
-# Permalinks — use a clean chain-link icon (visible and accessible)
+
 html_permalinks_icon = '<span class="sig-permalink" aria-label="Permalink" title="Copy link to section">⬡</span>'
 
-# CSS — load our custom sheet AFTER the theme so overrides work
+
 html_css_files = [
     'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600&display=swap',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
     'custom.css',
 ]
 
-# JavaScript — scroll-to-top + permalink copy helper
 html_js_files = [
     'custom.js',
 ]
