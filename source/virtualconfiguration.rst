@@ -53,7 +53,7 @@ Once instantiated, each virtual device displays two configuration tabs:
 
 --------------------------------------------------------------------------------
 
-⚠️ Operational Constraints & Guardrails
+Operational Constraints & Guardrails
 =======================================
 
 .. warning::
