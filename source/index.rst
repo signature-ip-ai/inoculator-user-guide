@@ -108,8 +108,9 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :caption: NC-NoC Design Workflow
+   :glob: 
    
-
+   *
    createprojectncnoc
    uploadtopology
    componentsandexplorer
