@@ -111,35 +111,6 @@ Use the quick links below to jump straight to your workspace or explore the full
    :glob: 
    
    *
-   createprojectncnoc
-   uploadtopology
-   componentsandexplorer
-   routerconfiguration
-   initiatorconfiguration
-   targetconfiguration
-   addressinterleaving
-   virtualconfiguration
-   bridgeconfiguration
-   subtopologyconfiguration
-
-   accessmap
-   addressmap
-   topologyvalidation   
-   autoroute
-   generatertlandtb
-   simulation
-   implement
-   
-   copyproject
-   floorplan
-   autoplace
-   sharedproject
-   deleteproject
-   searchproject
-   
-   systemconfig
-   registermap
-   exportpackage
 
 .. toctree::
    :maxdepth: 2
