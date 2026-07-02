@@ -95,7 +95,7 @@ Choose your target structural data file format using the workspace selectors bel
 
 --------------------------------------------------------------------------------
 
-⚠️ Tenant Accessibility & Gateway Restrictions
+Tenant Accessibility & Gateway Restrictions
 ===============================================
 
 .. note::
