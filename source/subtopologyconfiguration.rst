@@ -88,7 +88,7 @@ To support structural power-down states, you can deploy hardware sideband handsh
 
 --------------------------------------------------------------------------------
 
-⚠️ Voltage Range Validation Safeguards
+Voltage Range Validation Safeguards
 ========================================
 
 .. warning::
