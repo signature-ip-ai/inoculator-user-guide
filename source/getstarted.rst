@@ -6,7 +6,7 @@ Welcome to the iNoCulator onboarding landing page. This section covers the archi
 
 --------------------------------------------------------------------------------
 
-🚀 Platform Onboarding Matrices
+Platform Onboarding Matrices
 ================================
 
 Select an active administrative track below to review step-by-step instructions:
