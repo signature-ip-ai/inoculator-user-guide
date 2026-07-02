@@ -107,13 +107,6 @@ Use the quick links below to jump straight to your workspace or explore the full
 
 .. toctree::
    :maxdepth: 2
-   :caption: Core Architecture
-   
-
-   features
-
-.. toctree::
-   :maxdepth: 2
    :caption: NC-NoC Design Workflow
    
 
