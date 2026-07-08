@@ -21,7 +21,7 @@ Follow this sequence to clear your lost credential keys and securely nominate a 
       
       Navigate to the main **Sign In** landing page and click the **Forgot Password** link. Enter your active corporate email address into the input field and click the **Send Reset Link** action button.
       
-      .. image:: images/forgot_password-reset_your_password_page3.png
+      .. image:: images/reset_your_password.png
          :alt: Forgot Password email identity submission form interface
          :align: center
          :width: 65%
@@ -47,7 +47,7 @@ Follow this sequence to clear your lost credential keys and securely nominate a 
       
       The email token will securely redirect your browser to the password entry dashboard. Input your new password string into both fields, ensuring it satisfies your enterprise complexity rules, then click **Reset**.
       
-      .. image:: images/forgot_password-reset_password_page2.png
+      .. image:: images/set_new_password.png
          :alt: Setting new secure account password criteria fields inside the reset form
          :align: center
          :width: 65%
