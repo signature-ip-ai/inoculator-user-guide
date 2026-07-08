@@ -33,7 +33,7 @@ Follow the sequence detailed below to complete your primary authentication hands
       
       Once the server redirects you to the secure sub-domain gateway, enter your fully registered corporate email address and unique password string into their respective input fields. Click the primary **Sign In** button to complete authentication.
       
-      .. image:: images/sign_in_page3.png
+      .. image:: images/log_in_page.png
          :alt: Secure portal login input forms and verification gateway overlay
          :align: center
          :width: 65%
