@@ -21,7 +21,7 @@ Follow this operational flow to retrieve your verification key and access your e
       
       Upon successful password validation, the system stalls portal access and displays the **OTP Verification** screen. The system holds your session in a pending state until a valid numerical key is submitted.
       
-      .. image:: images/sign_in-otp_page3.png
+      .. image:: images/otp_page.png
          :alt: Multi-factor authentication input form for entering the One-Time PIN
          :align: center
          :width: 65%
