@@ -73,7 +73,7 @@ Configures the endpoint as a standard non-coherent bus master master interface.
      - Integers from **1 to 52**
      - Absolute physical addressing bit width constraint limits for the system space.
 
-.. image:: images/cnoc_device_AXIMaster.png
+.. image:: images/cnoc_device_AXIMaster1.png
    :alt: Property panel profile with AXI Master parameters activated
    :align: center
    :width: 75%
@@ -98,7 +98,7 @@ Configures the device node to act as a target memory destination block. Selectin
    :align: center
    :width: 48%
 
-.. image:: images/cnoc_device_AXISlave.png
+.. image:: images/cnoc_device_AXISlave1.png
    :alt: Side panel displaying AXI Slave configuration fields
    :align: center
    :width: 48%
