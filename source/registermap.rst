@@ -1,77 +1,101 @@
-Register Map - Non Coherent NoC
-=========================================================================
+=========================================================
+Register Map - Non-Coherent NoC (NC-NoC)
+=========================================================
 
-The Register Map is a list of all the registers (settings or control points) inside a hardware component or chip. It helps engineers and developers understand how to communicate with the hardware. Each register usually shows its address, Register ID/name, how it can be accessed (like Read or Write), its default value, and details about each bit it contains.
+The **Register Map** functions as the definitive hardware-software interface (HSI) specification for the Non-Coherent Network-on-Chip (NC-NoC) fabric workspace. It itemizes the software-accessible control, status, and configuration registers embedded within the NoC sub-systems, giving firmware developers and system architects a clear roadmap to program and orchestrate the underlying silicon.
 
-In the semiconductor industry, the Register Map acts like a guide between the software and hardware. It lets users configure, control, check status, and troubleshoot different features of the chip, like power settings, clock signals, and input/output behavior.
+--------------------------------------------------------------------------------
 
-Key Features of the Register Map
+Architectural Significance & Attributes
+=============================================
 
-- Address Offsets: Each register is mapped to a specific memory address.
+In modern system-on-chip (SoC) integration workflows, the Register Map acts as a programmatic bridge. It exposes runtime levers to dynamically adjust power profiles, throttle clock domains, audit performance counters, and isolate transport errors across the switch fabric.
 
-- Access Types: Indicates if the register is Read-only (RO), Write-only (WO), Read/Write (RW), or Read-Clear (RC).
+**Core Technical Attributes:**
 
-- Bit-field Details: Provides field-level control and status information with descriptions for each bit or group of bits.
+* **Address Offsets:** Relative memory-mapped offsets calculated directly against the block's base address pointer.
+* **Access Directives:** Explicit permissions identifying fields as Read-Only (RO), Write-Only (WO), Read/Write (RW), or Read-to-Clear (RC).
+* **Bit-Field Detail Vectors:** Granular, bit-level masking boundaries establishing field limits and slice behavior profiles.
+* **Reset/Default States:** Deterministic register values loaded into the flip-flop arrays immediately following an un-reset or cold power-up cycle.
 
-- Reset/Default Values: Indicates the initial value after power-up or reset.
+--------------------------------------------------------------------------------
 
-- Usage Context: Specifies functional groupings or relevant modules where the registers apply.
+Activating Register Map Generation
+=======================================
 
-To view the Register Map, toggle on the 'Register Map Generation' from NC-NoC System Config. Register Map tab should be visible inside the NC-NoC Project. 
+To compile, view, and export the register map structure for your current NC-NoC design instance, fulfill the following configuration requirements:
+
+1. Open your active **NC-NoC System Configuration** workspace panel.
+2. Toggle the **Register Map Generation** property field to an active state.
+3. Access the dynamically compiled layout from the newly instantiated **Register Map** project tab.
 
 .. image:: images/register_map_system2.png
-  :alt: register_map
-  :align: center
+   :alt: Enabling Register Map Generation inside the NC-NoC System Configuration viewport panel
+   :align: center
+   :width: 85%
 
 .. image:: images/register_map4.png
-  :alt: register_map
-  :align: center
+   :alt: Main Register Map exploration grid interface showing compiled address blocks
+   :align: center
+   :width: 95%
 
+--------------------------------------------------------------------------------
 
-Table display information contains:
+UI Layout & Data Column Schema
+===================================
 
-+-----------------+-----------------------------------------------------------------------+
-| **Column**      | **Description**                                                       |
-+-----------------+-----------------------------------------------------------------------+
-| Register ID     | Logical Name of Register                                              |
-+-----------------+-----------------------------------------------------------------------+
-| Address         | Register Address relative to base                                     |
-+-----------------+-----------------------------------------------------------------------+
-| Default Value   | Reset Value of the field                                              |
-+-----------------+-----------------------------------------------------------------------+
-| Access Type     | RO, WO, R/W etc.,                                                     |
-+-----------------+-----------------------------------------------------------------------+
-| Bit Range       | Bit position                                                          |
-+-----------------+-----------------------------------------------------------------------+
+The Register Map explorer grid formats structural data inside a scannable table matrix. The standard interface includes the following tracking columns:
 
+Register ID
+   The unique, human-readable logical identifier or mnemonic code assigned to the hardware register (e.g., ``NI_CTRL_REG0``).
 
-**Target vs Initiator Registers**
+Address
+   The exact hexadecimal memory offset relative to the block's assigned peripheral base address location.
 
-Some registers are grouped as:
+Default Value
+   The initialized, hardwired hardware state loaded on the release of a global master reset signal line.
 
-  - Target-related registers – Used when the block operates as a target
+Access Type
+   The hardcoded hardware security permissions boundary regulating read/write cycles (RO, WO, R/W, RC).
 
-  - Initiator-related registers – Used when the block operates as an initiator
+Bit Range
+   The specific bit position slice (e.g., ``[31:0]`` or ``[15:8]``) targeted by the sub-field property string.
 
-These groups are displayed only when the corresponding mode is enabled or applicable.
+--------------------------------------------------------------------------------
 
-**Conditional Registers**
+Behavioral Logic & Topology Variances
+=========================================
 
-Some fields or registers are displayed only if certain features are enabled, such as:
+.. grid:: 2
+   :gutter: 3
 
-  - Optional IP features
+   .. grid-item-card:: Target vs. Initiator Slices
+      :class-header: bg-light font-weight-bold
 
-  - Configuration parameters
+      The interface filters software-facing registers depending on the functional operating mode of the endpoint instance:
+      
+      * **Target-Related Slices:** Displayed solely when the peripheral block functions as an address target interface node.
+      * **Initiator-Related Slices:** Injected into the table layout only when the underlying node executes master transactions across the grid.
 
-  - Compile-time or fuse-based options
+   .. grid-item-card:: Conditional Register Triggers
+      :class-header: bg-light font-weight-bold
 
-These conditions are usually described in the Remarks or Description columns.
+      To minimize configuration bloat, specific bit-fields or whole address zones alter their layout visibility dynamically based on your compile-time flags:
+      
+      * Optional IP subsystem attachments.
+      * Hardware parameter overrides.
+      * Fuse-blown options or static hardware straps.
 
-The behavior of the Register Map table will be affected by the following factors:
+--------------------------------------------------------------------------------
 
-1. Traffic Regulation Policy of Initiator Device 
-2. Virtual devices 
-3. Count of Router, Initiator and Target Device on the grid
-4. Access Map or Root Policy of each device
-5. Address Interleaving
+Upstream Factors Distorting the Register Layout
+===================================================
 
+.. warning::
+   The final generated row count, base addressing intervals, and field offsets are directly affected by upstream network architecture decisions. Changes to the following parameters will trigger an automated redraw and recalculation of your map parameters:
+
+* **Initiator Traffic Regulation:** Injection rate-limiting and bandwidth allocation limits add performance counter tracking registers.
+* **Virtualization Topologies:** Incorporating virtual devices replicates target memory space parameters across separate software layers.
+* **Grid Component Density:** The total instance count of routers, initiators, and targets scales the master address offset map linearly.
+* **Access Control Lists (ACLs):** Local device root policies restrict or permit visibility of specific address slices based on endpoint privileges.
+* **Address Interleaving Patterns:** Stripping address segments across memory boundaries changes how consecutive base indices appear inside your map.

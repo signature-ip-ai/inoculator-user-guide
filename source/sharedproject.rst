@@ -1,47 +1,141 @@
-Shared Project
+===================================================
+Project Collaboration and Shared Workspaces
+===================================================
+
+The **Shared Project** subsystem facilitates seamless cross-functional collaboration by letting you share individual Network-on-Chip (NoC) canvas configurations with other engineers. Project assets can be securely shared with members inside your immediate organizational team or with authorized external cross-functional groups.
+
+--------------------------------------------------------------------------------
+
+Initiating an Assets Share Request
+======================================
+
+Follow this sequential workflow to grant canvas access permissions to internal or external collaborators:
+
+.. grid:: 1
+   :gutter: 3
+
+   .. grid-item-card:: Step 1: Initialize the Sharing Modal
+      :class-header: bg-light font-weight-bold
+
+      **Dashboard Trigger**
+      
+      Navigate to your project dashboard layout. Identify the specific project tile you wish to distribute and click its dedicated **Share Project** icon.
+      
+      .. image:: images/projects_page-dashboard4.png
+         :alt: Locating the primary sharing workspace trigger on the individual project tile layout
+         :align: center
+         :width: 85%
+
+   .. grid-item-card:: Step 2: Allocate Permissions Across Tenant Boundaries
+      :class-header: bg-light font-weight-bold
+
+      **Internal Tenant Sharing**
+      
+      The interface launches an overlay window split into two target workspace directories. Under the default **Internal** tab view, select your local organizational directory peers to grant immediate access.
+      
+      .. image:: images/share_project-internal.png
+         :alt: Share project modal displaying the primary internal organization user list directory
+         :align: center
+         :width: 75%
+
+      .. rst-class:: mt-3
+      
+      **External Cross-Functional Collaborators**
+      
+      To bridge across distinct group clusters, toggle to the secondary **Collaborated** tab layer. This roster details approved external ecosystem partners clear to accept shared design matrices.
+      
+      .. image:: images/share_project-external.png
+         :alt: Selecting external engineering partners through the secondary collaborated accounts group panel
+         :align: center
+         :width: 75%
+
+   .. grid-item-card:: Step 3: Validate Active Sharing Assignments
+      :class-header: bg-light font-weight-bold
+
+      **Checkbox Controls & Seeding Badge**
+      
+      Tick the check box located immediately adjacent to a user's name to compile their access token. To strip access permissions after the fact, un-check the target entry. 
+      
+      Upon successful commit configuration, the main project card updates with an active numeric badge overlay reflecting the count of external users holding shared keys.
+      
+      .. image:: images/share_project-success2.png
+         :alt: Project card interface showing the update badge tracking active recipient count matches
+         :align: center
+         :width: 75%
+
+--------------------------------------------------------------------------------
+
+Project Collaboration & Re-sharing Policy
+=========================================
+
+The platform enforces a strict permission hierarchy and defined re-sharing pathways to ensure data security across organizational boundaries.
+
+Role-Based Access Hierarchy
+---------------------------
+
+Access capabilities are determined by the user's specific role within the project workspace:
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Role
+     - Capabilities
+   * - **Primary Owner**
+     - Full control: Can **Delete**, **Share**, and **Edit**.
+   * - **Co-Owner**
+     - Administrative: Can **Share** and **Edit**.
+   * - **Collaborator**
+     - Functional: Can **Edit** assigned project assets.
+
+Re-sharing Governance
+---------------------
+
+Re-sharing is permitted only when specific cross-functional group requirements are met. Use the following logic to determine if a share action is valid:
+
+* **SigIP to SigIP**
+   Re-sharing is allowed only if there is an active **Project Collaboration** established between the Co-Owner's group and the target SigIP group.
+
+* **External to External**
+   Re-sharing is allowed only if the target External group belongs to the same **Project Collaboration** shared by both the Sharer and the Co-Owner.
+
+* **SigIP to External**
+   Allowed when the target External group belongs to the same **Project Collaboration**.
+
+* **External to SigIP**
+   Follows the same requirement as **External → External**; the target must be part of the shared project collaboration structure.
+
+--------------------------------------------------------------------------------
+
+Automated Transactional Email Lifecycles
 =============================================
 
-This feature allows the user to share the chosen project with anyone from their group. To execute this, follow the steps below. 
+The identity registry engine dispatches automated notifications across the sharing lifetime to audit permissions modifications and preserve systemic data security boundaries.
 
-1. Go to dashboard and click the ‘Share Project’ icon. 
+.. dropdown:: Sharing Initialization Receipts
+   :open:
 
-.. image:: images/projects_page-dashboard4.png
-  :alt: project_page
-  :align: center
+   When authorization fields are saved, the system issues a confirmation email to the recipient's secure corporate address folder. This establishes a clear trail of collaboration control.
 
-2. A new window will be displayed, containing all the names from the same group. The user must choose who will receive the shared project. 
+   .. image:: images/share_project-email_notification.png
+      :alt: Sample transaction message verifying initial receipt of shared design access
+      :align: center
+      :width: 80%
 
-.. image:: images/share_project-internal.png
-  :alt: share_project-internal
-  :align: center
+.. dropdown:: Share Revocation and Discontinuation Notifications
 
-3. On the other tab, containing all the names from the collaborated group. The user can also choose who will receive the shared project. 
+   If the project owner clears a collaborator's check box within the share manager modal, the system instantly drops the target security block and fires an automated alert confirming the removal.
 
-.. image:: images/share_project-external.png
-  :alt: sshare_project-external
-  :align: center
+   .. image:: images/share_project-stop_sharing_project_notification.png
+      :alt: System notification confirming sharing termination has executed successfully
+      :align: center
+      :width: 80%
 
+.. dropdown:: Source Disposal Actions
 
-4. Tick the checkbox next to the name of the user who will receive a copy of the project. Untick the checkbox to revoke sharing. Once sharing is successful, a number will appear above the share icon on the project tile.
+   If the master project owner deletes the source canvas from their database index completely, the platform deletes all shared downstream instances and emails recipients to flag the final removal of the asset.
 
-.. image:: images/share_project-success2.png
-  :alt: share_project-success
-  :align: center
-
-5. An email notification will be received once the sharing is successful, confirming that the user has performed the action.
-
-.. image:: images/share_project-email_notification.png
-  :alt: share_project-email_notification
-  :align: center
-
-6. Another email notification will be received once the owner stops sharing the project, serving as confirmation that the sharing has been discontinued. 
-
-.. image:: images/share_project-stop_sharing_project_notification.png
-  :alt: share_project-stop_sharing_project_notification
-  :align: center
-
-7. Once a shared project is deleted by the owner, the recipient receives an email notification informing them that the shared project was removed or deleted.
-
-.. image:: images/share_project-removed_project_notification.png
-  :alt: share_project-removed_project_notification
-  :align: center
+   .. image:: images/share_project-removed_project_notification.png
+      :alt: Automated notice tracking full data purging events due to parent project deletion
+      :align: center
+      :width: 80%

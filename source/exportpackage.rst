@@ -1,94 +1,148 @@
-Export Package
+========================================
+Exporting RTL Design Packages
 ========================================
 
-iNoCulator offers three types of export packages: Encrypted, Obfuscated and Clean.
-The type of package depends on the settings of the group the user belongs to. This function is available for NC-NoC and C-NoC projects.
+The **Export Package** suite compiles your Non-Coherent NoC (NC-NoC) or Coherent NoC (C-NoC) topology configurations into deployable hardware IP deliverables. The specific package flavors accessible to your account are determined dynamically by your organizational group's subscription tier and security clearance profiles.
 
-Users can select which package to export from the table. Up to three packages can be run simultaneously, if available.
+--------------------------------------------------------------------------------
 
-I. Encrypted Package 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RTL IP Package Formats
+=========================
 
-To export an 'Encrypted' package, tick the 'Encrypted' checkbox inside the Export Package table. 
+The system supports up to three distinct structural variants when packaging your compiled network design for synthesis and simulation pipelines.
 
-.. image:: images/export_package_button2.png
-  :alt: export_package_button
-  :align: center
+.. list-table:: Available RTL Generation Profiles
+   :widths: 20 50 30
+   :header-rows: 1
 
+   * - Package Type
+     - Architectural & Functional Characteristics
+     - Target Use Case
+   * - **Encrypted**
+     - Source code blocks are protected via hardware-standard IEEE encryption envelopes. Core functional algorithms remain hidden.
+     - Early-stage vendor evaluations or protected testing sandboxes.
+   * - **Obfuscated**
+     - Human-readable code is systematically scrubbed. Signal identifiers, module labels, and logic routing paths are completely randomized.
+     - Verification cycles where logic tracing is restricted but synthesis pipelines are required.
+   * - **Clean**
+     - Fully open, production-ready, human-readable source code featuring pristine formatting and fully documented signal buses.
+     - Production sign-off, ASIC tape-out, or deep intra-system debugging.
 
-.. image:: images/export_package_encrypted2.png
-  :alt: export_package_encrypted
-  :align: center
+.. note::
+   **Parallel Processing Limits:** The platform's compilation cluster supports concurrency. You can select and generate up to **three separate packages simultaneously** if permitted by your group license boundaries.
 
-Click the 'Export Package' button to export the RTL, and wait for the result in the Export Design table.
+--------------------------------------------------------------------------------
 
-.. image:: images/export_package_encrypted_result3.png
-  :alt: export_package_encrypted_result
-  :align: center
+Package Generation Workflows
+===============================
 
-II. Obfuscated Package
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Select the tab matching your required output profile to see the specific check-box configuration path:
 
-To export an 'Obfuscated' package, tick the box for Obfuscated inside the Export Package table.
+.. tab-set::
 
-.. image:: images/export_package_button2.png
-  :alt: export_package_button
-  :align: center
+   .. tab-item:: Encrypted Package
 
-.. image:: images/export_package_obfuscated.png
-  :alt: export_package_obfuscated
-  :align: center
+      To compile a protected IEEE-encrypted bundle:
+      
+      1. Toggle open the export configuration window by clicking the **Export Package** button.
+      2. Check the **Encrypted** selection box inside the generation row matrix.
+      3. Click the primary **Export Package** button to dispatch the design to the compilation cluster.
 
-Click the 'Export Package' button to export the RTL, and wait for the result in the Export Design table.
+      .. image:: images/export_package_button2.png
+         :alt: Launching the Export Package configuration window panel
+         :align: center
+         :width: 70%
 
-.. image:: images/export_package_obfuscated_result2.png
-  :alt: export_package_obfuscated
-  :align: center
+      .. image:: images/export_package_encrypted2.png
+         :alt: Checking the Encrypted format modifier checkbox option
+         :align: center
+         :width: 70%
 
+      Monitor your background build progression directly from the **Export Design** tracking table.
 
-III. Clean Package 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      .. image:: images/export_package_encrypted_result3.png
+         :alt: Successful compilation tracking entry within the Export Design matrix
+         :align: center
+         :width: 80%
 
-To export a 'Clean' package, tick the 'Clean' checkbox inside the Export Package box. 
+   .. tab-item:: Obfuscated Package
 
-.. image:: images/export_package_button2.png
-  :alt: export_package_button
-  :align: center
+      To compile a scrubbed, functionally randomized hardware bundle:
+      
+      1. Toggle open the export configuration window by clicking the **Export Package** button.
+      2. Check the **Obfuscated** selection box inside the generation row matrix.
+      3. Click the primary **Export Package** button to dispatch the design to the compilation cluster.
 
+      .. image:: images/export_package_button2.png
+         :alt: Launching the Export Package configuration window panel
+         :align: center
+         :width: 70%
 
-.. image:: images/export_package_clean.png
-  :alt: export_package_clean
-  :align: center
+      .. image:: images/export_package_obfuscated.png
+         :alt: Checking the Obfuscated format modifier checkbox option
+         :align: center
+         :width: 70%
 
+      Monitor your background build progression directly from the **Export Design** tracking table.
 
-Click the 'Export Package' button to export the RTL, and wait for the result in the Export Design table.
+      .. image:: images/export_package_obfuscated_result2.png
+         :alt: Successful compilation tracking entry within the Export Design matrix
+         :align: center
+         :width: 80%
 
-.. image:: images/export_package_clean_result2.png
-  :alt: export_package_clean_result
-  :align: center
+   .. tab-item:: Clean Package
 
+      To compile an open-source, production-ready tape-out bundle:
+      
+      1. Toggle open the export configuration window by clicking the **Export Package** button.
+      2. Check the **Clean** selection box inside the generation row matrix.
+      3. Click the primary **Export Package** button to dispatch the design to the compilation cluster.
 
-IV. Results
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      .. image:: images/export_package_button2.png
+         :alt: Launching the Export Package configuration window panel
+         :align: center
+         :width: 70%
 
-In the Export Design table, each package result has an 'Actions' column. Click the three dots in this column to choose an action.
+      .. image:: images/export_package_clean.png
+         :alt: Checking the Clean format modifier checkbox option
+         :align: center
+         :width: 70%
+
+      Monitor your background build progression directly from the **Export Design** tracking table.
+
+      .. image:: images/export_package_clean_result2.png
+         :alt: Successful compilation tracking entry within the Export Design matrix
+         :align: center
+         :width: 80%
+
+--------------------------------------------------------------------------------
+
+Managing Export Deliverables
+================================
+
+Every completed or active compilation job populates a tracking line inside the permanent **Export Design** table. Each row includes a dedicated contextual control hub.
 
 .. image:: images/export_package_actionbuttons3.png
-  :alt: export_package_actionbuttons
-  :align: center
+   :alt: Contextual Actions drop-down selector options inside the design tracking index table
+   :align: center
+   :width: 80%
 
-Select 'Download' to download the exported RTL result for the selected file.
-Select 'Delete' to remove the selected file from the Export Design table.
+Click the **three vertical dots (ellipsis)** icon in the *Actions* column to manage your generated file system:
 
+* **Download:** Fetches the targeted compiled tarball or zip folder containing your complete RTL environment files directly to your machine storage.
+* **Delete:** Permanently purges the selected package container block from your remote cloud workspace dashboard to clean up your repository index.
 
-V. Upload to FTP 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------------------------------
 
-The Upload to FTP Server function will be enabled once the group configuration allows FTP uploads. Once enabled and configured, this will be reflected in the UI.
+Secure Server Delivery (Upload to FTP)
+===========================================
+
+For high-throughput delivery to automated continuous-integration (CI) pipelines or on-premise compute farms, the platform can stream build packages directly over network interfaces.
 
 .. image:: images/upload_to_FTP.png
-  :alt: upload_to_FTP
-  :align: center
+   :alt: FTP remote server distribution controls interface block
+   :align: center
+   :width: 85%
 
-The button is labeled based on the Export Package results being uploaded to the FTP server. The result status will also be displayed in the column.
-
+.. hint::
+   **Automatic Activation:** The **Upload to FTP Server** action controls lock and unlock dynamically based on your enterprise group's global infrastructure profiles. Once your network administrator provisions valid server IP paths, port gates, and authorization tokens, this system control block lights up automatically inside your workflow dashboard, displaying live transfer states.

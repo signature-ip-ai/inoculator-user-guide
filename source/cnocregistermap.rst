@@ -1,44 +1,78 @@
-Register Map - Coherent NoC
+============================================
+Register Map (C-NoC)
 ============================================
 
+The **C-NoC Register Map** provides an interactive, structured hierarchy of all memory-mapped registers driving the Configurable Network-on-Chip fabric. This interface simplifies manual validation, registers exploration during post-silicon bring-up, and diagnostic debugging.
 
-The C-NoC Register Map provides a structured view of all registers used in the C-NoC (Configurable Network-on-Chip) system. It allows users to view, configure, and validate register settings for system setup, debugging, and validation.
+--------------------------------------------------------------------------------
 
-Structured Register View
+Activation Rules
+===================
 
-  - Displays all registers in an organized hierarchy (by module/block)
+By default, the Register Map tracking workspace is hidden to optimize browser canvas rendering performance.
 
-  - Groups related registers for easier navigation
+.. grid:: 1
+   :gutter: 2
 
-To view the Register Map, toggle on the 'Register Map Generation' from C-NoC System Config. Register Map tab should be visible inside the C-NoC Project. 
+   .. grid-item-card:: Unlocking the Register Workspace
+      :class-header: bg-light font-weight-bold
 
-**System tab** - This will display the registers for Performance Monitor, Recovery and QOS Control, and System Control.
+      1. Navigate to the primary left-side settings tree and select **C-NoC System Config**.
+      2. Toggle the switch or checkbox labeled **Register Map Generation** to the **ON** position.
+      3. A new **Register Map** workspace view tab will instantly generate and embed itself inside your active C-NoC project panel tree.
+
+--------------------------------------------------------------------------------
+
+Navigating Register Tab Categories
+======================================
+
+The register space partitions memory-mapped registers into specific tabs according to their structural domain roles:
+
+System Tab
+----------
+Houses global control logic registers responsible for fabric-wide behavior, diagnostics, and data policing.
+   
+* **Performance Monitor:** Captures throughput metrics, flit counts, and cycle stall rates across individual routers.
+* **Recovery & QoS Control:** Handles system error logging, timeout diagnostics, and Quality of Service priority weights.
+* **System Control:** Main configuration vectors for resetting or clock-gating localized portions of the fabric.
 
 .. image:: images/register_map_cnoc.png
-  :alt: register_map_cnoc
-  :align: center
+   :alt: Global system parameters panel in the Register Map workspace
+   :align: center
+   :width: 85%
 
-**Home Node** - Registers that define and control the primary (home) node responsible for managing and coordinating system-level operations and data ownership within the network.
+Home Node (HN) Tab
+------------------
+Groups registers that configure, manage, and coordinate transaction ownership, coherence tracking vectors, and home directory slice allocations across the local network.
 
 .. image:: images/register_map_home.png
-  :alt: register_map_home
-  :align: center
+   :alt: Coherent Home Node configuration space view
+   :align: center
+   :width: 85%
 
-**Subordinate Node** - Registers used to configure and monitor secondary nodes that operate under the home node, handling delegated tasks and supporting system scalability.
+Subordinate Node (SN) Tab
+-------------------------
+Groups registers used to calibrate, monitor, and scale secondary memory endpoints or peripheral device adapters operating underneath the home hierarchy.
 
 .. image:: images/register_map_subordinate.png
-  :alt: register_map_subordinate
-  :align: center
+   :alt: Subordinate node target address space settings panel
+   :align: center
+   :width: 85%
 
-
-**Request Node** - Registers that manage transaction or access requests initiated by nodes, including routing, tracking, and arbitration of requests within the system.
+Request Node (RN) Tab
+---------------------
+Exposes registers regulating transaction generation, entry scheduling, outstanding tracker allocation boundaries, and priority arbitration weights for master interfaces.
 
 .. image:: images/register_map_requestnode.png
-  :alt: register_map_requestnode
-  :align: center
+   :alt: Requester tracking register map list layout
+   :align: center
+   :width: 85%
 
-**C2C Bridge** - Registers that control and configure the Chip-to-Chip (C2C) bridge interface, enabling communication and data transfer between two separate chips or subsystems.
+C2C Bridge Tab
+--------------
+Exposes protocol interface registers managing chiplet-to-chiplet or die-to-die bridge connections, monitoring link training states, boundary buffering, and translation synchronization metrics.
 
 .. image:: images/register_map_c2cbridge.png
-  :alt: register_map_c2cbridge
-  :align: center
+   :alt: Chip-to-Chip layout register tracking inspector layout
+   :align: center
+   :width: 85%

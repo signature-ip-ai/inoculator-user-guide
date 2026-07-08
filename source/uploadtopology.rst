@@ -1,69 +1,105 @@
-Uploading a Topology 
+========================================================
+Automated Topology Generation via File Upload
 ========================================================
 
+Instead of placing elements onto the canvas grid manually, iNoCulator Web supports rapid programmatic layout instantiation through external spreadsheet templates or structural object notation models. This allows engineering teams to parse matrix designs or historical device lists into active, editable visual configurations instantly.
 
-I. Using Excel file 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To design a topology, uploading an excel file with set values will generate a topology instantly. Follow the steps below to generate a topology from an excel file. 
-Prepare the Excel file with the desired values. The current template file name is 'nc-noc_topology_generator_v1.4,' which is used for designing a topology from the Excel file. Instructions are included inside the file that user may follow. Sample values that need to modify are: 
+--------------------------------------------------------------------------------
 
+Automated Import Pipelines
+==============================
 
-.. image:: images/uploading_topology-excel_sheet.png
-  :alt: uploading_topology-excel_sheet
-  :align: center
+Choose your target structural data file format using the workspace selectors below to review the explicit configuration and verification pipelines:
 
-After setting up the excel sheet, go to inoculator.ai/login to log in and go to Dashboard. In Dashboard, there is a huge ‘+’ icon for creating a project. Click that icon to proceed. 
+.. tab-set::
 
+   .. tab-item:: 📊 I. Using Excel file (XLSX)
 
-.. image:: images/uploading_topology-create_project_icon3.png
-  :alt: uploading_topology-create_project_icon
-  :align: center
+      To generate a complete, connected Network-on-Chip canvas instantly from standardized register tables, leverage the active system spreadsheet matrix template.
 
-After clicking that icon, ‘Create Project’ dialog box will appear. User will find a button to upload the file. Click ‘Upload Topology XLSX file’. 
+      **Step 1: Populate the Template Spreadsheet Matrix**
+         Prepare your parameters using the authorized spreadsheet template file (current release: ``nc-noc_topology_generator_v1.4``). Follow the precise formatting instructions embedded within the asset sheet headers to populate component records.
 
-.. image:: images/uploading_topology-create_project_prompt2.png
-  :alt: uploading_topology-create_project_prompt
-  :align: center
+         .. image:: images/uploading_topology-excel_sheet.png
+            :alt: Structured rows mapping router links and device properties inside the Excel matrix template
+            :align: center
+            :width: 85%
 
-After the user clicks the button, the file explorer of the machine will be displayed, allowing the user to select the desired file to upload.
+      **Step 2: Initialize Project Core Creation**
+         Navigate to your browser interface at ``inoculator.ai/login``, log in with your credentials, and land on the main Project Dashboard view. Click the prominent **+** tile card icon to generate a fresh canvas instance.
 
-.. image:: images/uploading_topology-selecting_file3.png
-  :alt: uploading_topology-selecting_file
-  :align: center
+         .. image:: images/uploading_topology-create_project_icon3.png
+            :alt: Location of the macro add-project action tile card button on the dashboard grid layout
+            :align: center
+            :width: 75%
 
-Once user has selected the file to upload, click ‘Create’ to proceed with creation of project. 
+      **Step 3: Access the Spreadsheet Attachment Vector**
+         When the **Create Project** modal overlay dialog box surfaces, identify the custom upload handle block. Click the button labeled **Upload Topology XLSX file**.
 
-.. image:: images/uploading_topology-generating_topology3.png
-  :alt: uploading_topology-generating_topology
-  :align: center
+         .. image:: images/uploading_topology-create_project_prompt2.png
+            :alt: Dialog prompt options highlighting the explicit Excel source file selection button
+            :align: center
+            :width: 80%
 
-After verification, if the generated file has no issues, it will proceed to the creation of the project. The grid view of iNoCulator must be displayed, allowing the user to see the topology. Each component must be editable, including the settings of each. 
+      **Step 4: Execute File System Selection**
+         The application prompts your local operating system's native file examiner utility window. Highlight your completed configuration spreadsheet and submit the selection.
 
-.. image:: images/uploading_topology-successful_generation.png
-  :alt: uploading_topology-successful_generation
-  :align: center
+         .. image:: images/uploading_topology-selecting_file3.png
+            :alt: Native OS file explorer viewport targeting the local topology template spreadsheet
+            :align: center
+            :width: 80%
 
+      **Step 5: Process and Instantiate the Netlist Canvas**
+         Once the filename mounts successfully within the input form field, click the primary **Create** button to dispatch the structural parser logic.
 
-II. Using JSON file 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         .. image:: images/uploading_topology-generating_topology3.png
+            :alt: Submitting the populated form to trigger database netlist extraction logic
+            :align: center
+            :width: 80%
 
-From your computer, select any JSON file that corresponds to an NC-NoC project.
+      **Step 6: Audit the Compiled Visual Grid Layout**
+         If the syntax checker verifies the row values without errors, the engine updates your account registry and builds out the interactive floorplan grid. Every extracted router, bridge, and endpoint node drops into its designated subtopology zone and remains fully editable via the inspector panels.
 
+         .. image:: images/uploading_topology-successful_generation.png
+            :alt: Populated active design grid canvas showing successfully extracted and linked hardware nodes
+            :align: center
+            :width: 90%
 
-.. image:: images/upload_json_file.png
-  :alt: upload_json_file
-  :align: center
+   .. tab-item:: ⚙️ II. Using JSON file
 
-When the JSON file is updated to match the current schema, the project can be successfully uploaded to the Inoculator web.
+      For scripting workflows, continuous integration pipelines, or transferring legacy iNoCulator setups, you can pipe a native serialization object into the database engine.
 
-.. image:: images/upload_json_success.png
-  :alt: upload_json_success
-  :align: center
+      **File System Selection**
+         From your computer's storage path, stage any structural JavaScript Object Notation (``.json``) tracking text block that maps strictly to an NC-NoC format.
 
-However, if the JSON file is outdated and not updated, the upload may fail
+         .. image:: images/upload_json_file.png
+            :alt: Locating and mounting a structured JSON design representation schema file
+            :align: center
+            :width: 85%
 
-.. image:: images/upload_json_fail.png
-  :alt: upload_json_fail
-  :align: center
+      **Successful Data Tree Extraction**
+         When your JSON file matches the latest schema signature, the platform ingests the node tree effortlessly, populating your system configuration tables and workspace maps.
 
-Note that when uploading a JSON file, the ‘JSON File’ option should be visible on the button. If it is not visible, please contact the admin for configuration. 
+         .. image:: images/upload_json_success.png
+            :alt: System success prompt acknowledging the data migration passed validation checks
+            :align: center
+            :width: 85%
+
+      **Structural Out-of-Date Discrepancies**
+         If your JSON code contains legacy database keys, broken parameter brackets, or outdated property names from previous tool updates, the intake logic will block ingestion and generate a file verification fault.
+
+         .. image:: images/upload_json_fail.png
+            :alt: Error warning screen generated when parsing broken or legacy JSON properties sets
+            :align: center
+            :width: 85%
+
+--------------------------------------------------------------------------------
+
+Tenant Accessibility & Gateway Restrictions
+===============================================
+
+.. note::
+   **Interface Control Field Visibility Rules:**
+   When using object file injections, the explicit **JSON File** toggle control option must be visible on your upload prompt box. 
+   
+   If this selection control is missing or remains completely hidden from view, your current group license level or user profile tier lacks programmatic import privileges. Contact your System Administrator or Group Manager to activate API and script upload features on your tenant node.

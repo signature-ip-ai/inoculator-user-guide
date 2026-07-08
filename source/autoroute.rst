@@ -1,36 +1,52 @@
-NC-NoC Auto Route 
+==================================================
+Auto Route (NC-NoC)
 ==================================================
 
-The NC-NoC Auto Route feature automatically generates the optimal paths for data traffic between devices in the Network-on-Chip. 
-It simplifies router configuration by calculating routes based on the topology, reducing manual setup, and ensuring efficient communication across the system.
+The **NC-NoC Auto Route** feature automatically calculates and generates the optimal paths for data traffic between interconnected devices across the Network-on-Chip fabric. 
+
+By evaluating your active topology graph, the routing engine eliminates manual packet routing entry, guarantees deadlock-free path allocation, and balances traffic across system switches.
+
+To execute a routing sweep, utilize the primary action trigger:
 
 .. image:: images/auto_route_button.png
-  :alt: auto_route_button
-  :align: center
+   :alt: iNoCulator Auto Route Execution Control Button
+   :align: center
+   :width: 40%
 
-The feature provides status indicators to show the progress and result of the routing process:
+--------------------------------------------------------------------------------
 
-**Cached** – Routes have already been calculated and stored; no new computation was needed.
+Engine Routing Status Indicators
+=====================================
 
-.. image:: images/auto_route_cached.png
-  :alt: auto_route_cached
-  :align: center
+The engine returns real-time status feedback badges upon evaluation. Use this matrix to identify routing health and determine required actions:
 
-**Success** – Routing completed successfully and all paths are valid.
+🟢 Cached
+   Routes have already been pre-calculated and securely stored in memory; no new computational overhead was required.
+   
+   .. image:: images/auto_route_cached.png
+      :alt: Auto-Route Status Badge: Cached
+      :align: center
 
-.. image:: images/auto_route_success.png
-  :alt: auto_route_success
-  :align: center
+🟢 Success
+   The routing compilation completed cleanly. All path matrices are valid, optimized, and ready for validation checking.
+   
+   .. image:: images/auto_route_success.png
+      :alt: Auto-Route Status Badge: Success
+      :align: center
 
-**Updated** – Connections changed, user must re-run the Auto Route or update the routing table.
+🟡 Updated
+   The structural connections or parameters have changed. The current path map is stale, and you must click **Auto Route** again to refresh the routing tables.
+   
+   .. image:: images/auto_route_updated_routes1.png
+      :alt: Auto-Route Status Badge: Updated Routes Pending
+      :align: center
 
-.. image:: images/auto_route_updated_routes1.png
-  :alt: auto_route_updated_routes1
-  :align: center
+🔴 Error
+   The compiler could not find valid routing paths (e.g., disconnected sub-graphs or resource starvation). Manual topology intervention is required.
+   
+   .. image:: images/auto_route_error.png
+      :alt: Auto-Route Status Badge: Error Condition
+      :align: center
 
-
-**Error** – Routing could not be completed; manual intervention may be required.
-
-.. image:: images/auto_route_error.png
-  :alt: auto_route_error
-  :align: center
+.. tip::
+   If an **Error** state persists after running an Auto-Route, navigate back to the **Topology Validation** module to check for disconnected components or orphaned target nodes.

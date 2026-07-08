@@ -1,35 +1,53 @@
-Logout 
+===================================
+Session Termination and Logout
 ===================================
 
-After completing your tasks in iNoCulator, it is recommended to log out of your account to ensure data security.
+To maintain structural data integrity and satisfy corporate security compliance mandates, you should explicitly terminate your user session after concluding your design, verification, or simulation workflows on the platform canvas.
 
-To log out:
+--------------------------------------------------------------------------------
 
- 1. Click the Logout icon located at the upper-right corner of the iNoCulator interface.
+Secure Logout Sequence
+==========================
 
- 2. A confirmation message will appear to verify your action.
+Follow this simple confirmation sequence to safely close your authenticated cloud workspace:
 
- 3. Select Yes to confirm and complete the logout process.
+.. grid:: 1
+   :gutter: 3
 
-Once logged out, you will be redirected to the login screen.
+   .. grid-item-card:: Step 1: Trigger the Session Termination
+      :class-header: bg-light font-weight-bold
 
+      **Control Panel Action**
+      
+      Locate and click the **Logout** icon situated in the absolute upper-right corner of the global iNoCulator header navigation bar.
+      
+      .. image:: images/logout_icon_from_dashboard2.png
+         :alt: Location of the secure Logout action icon on the global application toolbar
+         :align: center
+         :width: 85%
 
-1. 
+   .. grid-item-card:: Step 2: Confirm the De-Authentication Command
+      :class-header: bg-light font-weight-bold
 
-.. image:: images/logout_icon_from_dashboard2.png
-  :alt: logout_icon_from_dashboard
-  :align: center
+      **Security Intercept Modal**
+      
+      The application will overlay a confirmation prompt window to prevent accidental session loss. Click the **Yes** button to verify the instruction and initiate the token flush routine.
+      
+      .. image:: images/logout_confirmation_prompt.png
+         :alt: Center overlay security modal window asking for logout confirmation
+         :align: center
+         :width: 65%
 
+--------------------------------------------------------------------------------
 
-2. 
+Post-Termination Behavior
+============================
 
-.. image:: images/logout_confirmation_prompt.png
-  :alt: logout_confirmation_prompt
-  :align: center
+Once you confirm the command, the central authentication layer invalidates your active session cookies, flushes local memory cache allocations, and drops your active security token block.
 
-
-3.
+The application engine immediately shifts your browser view back to the primary **Sign In** landing interface. This automatic routing verification confirms that your connection has closed successfully and your cloud design workspace is safely locked against unauthenticated access.
 
 .. image:: images/dashboard_page.png
-  :alt: dashboard_page
-  :align: center
+   :alt: Secure iNoCulator login and entry portal destination interface layout
+   :align: center
+   :width: 85%

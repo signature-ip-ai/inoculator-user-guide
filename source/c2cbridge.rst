@@ -1,101 +1,89 @@
-C2C Bridge Configuration 
+====================================================
+C2C Bridge Configuration (C-NoC)
 ====================================================
 
-The C2C Bridge, also known as the CHI-to-CPI Bridge, provides seamless protocol conversion between CHI (Coherent Hub Interface) and CPI (Coherent Port Interface) within C-NoC (Cache-Coherent Network-on-Chip) topologies.
+The **C2C Bridge** (CHI-to-CPI Bridge) provides protocol conversion between **CHI** (Coherent Hub Interface) and **CPI** (Coherent Port Interface) domains within **C-NoC** (Cache-Coherent Network-on-Chip) topologies. 
 
-  Purpose
+It acts as a hardware translation layer to maintain data integrity, protocol compliance, and transaction consistency across heterogeneous subsystems.
 
+--------------------------------------------------------------------------------
 
-- Acts as a translation layer to enable interoperability between components using different coherence protocols.
+Key Architecture Roles
+==========================
 
-- Ensures data integrity, protocol compliance, and transaction consistency across interconnected subsystems.
+Protocol Conversion
+   Translates CHI requests, responses, and snoop messages into their CPI equivalents, and vice-versa, without breaking cache-coherency rules.
 
+Multi-Cluster Scalability
+   Connects coherent CHI compute clusters to CPI-based accelerator devices, enabling architects to scale out complex heterogeneous SoC designs.
 
-  Key Functions
+--------------------------------------------------------------------------------
 
+Canvas Integration Workflow
+=================================
 
-- Protocol Conversion: Converts CHI requests, responses, and snoop messages into the CPI equivalent, and vice versa.
+To append a C2C Bridge instance to your architecture canvas:
 
-- Address Mapping Support: Maintains compatibility with the configured Home Node and Subordinate Node Address Maps.
+1. Hover your cursor over an open **Interconnect Port** or any of the cardinal edge ports (**N, E, S, W**). 
 
-- Cache Coherency: Preserves coherency rules during translation to allow smooth operation between CHI-based clusters and CPI-based devices.
+.. note::
+   The bridge component can only be instantiated at perimeter positions where no existing routers are connected.
 
-- Scalability: Allows system architects to integrate heterogeneous IP blocks and scale up multi-cluster designs.
-
-  Use in Topology
-
-
-In a C-NoC design:
-
-- The C2C Bridge connects CHI clusters to CPI-based devices or subsystems.
-
-- It ensures traffic between clusters remains synchronized, coherent, and protocol-compliant.
-
-- Designers can configure and visualize the bridge placement within the topology using the Inoculator Web tool.
-
-To add to the canvas, place the mouse on the Interconnect Port or any of the N, E, S, or W ports. This component can only be added in a position where no routers are connected.
-Select the 'Connect C2C Bridge' option from the context menu. 
+2. Right-click to trigger the context menu and select **Connect C2C Bridge**.
 
 .. image:: images/cnoc_add_bridge_edge.png
-  :alt: cnoc_add_bridge_edge
-  :align: center
+   :alt: Instantiating a C2C Bridge on a C-NoC boundary port
+   :align: center
+   :width: 70%
 
+--------------------------------------------------------------------------------
 
-  C-NoC Parameters
+C-NoC Protocol & Routing Parameters
+========================================
 
+When configuring a C2C Bridge, the side property panel controls structural addressing, coordinate packing, and physical protocol constraints.
 
-**Connected Topology ID** - A Connected Topology ID is a single numeric value used to represent a topology’s position by combining its X and Y coordinates. Each ID must be unique within the topology. It is computed by placing the Y coordinate in the higher bits and the X coordinate in the lower bits, using the formula:
+.. list-table:: Bridge Property Options & Requirements
+   :widths: 25 75
+   :header-rows: 1
 
-  Topology ID = (Y << 2) | X
-
-In simple terms:
-
-  Multiply Y by 4
-
-  Add X
-
-  The result is the Topology ID
-
-  This makes it easy to uniquely identify a position on a small grid (where X ranges from 0 to 3) using just one number.
-
-**Node ID** - The Node ID is a compact identifier that represents a node’s exact position and grouping within the topology. It is derived from multiple coordinate components (e.g., topology and cluster coordinates) and encoded into a single value using bitwise operations.
-
-Purpose:
-
-  Uniquely identifies a node within the system
-  Encodes hierarchical location (e.g., topology + cluster position)
-  Enables efficient hardware/software communication and routing
-
-  Typical structure (example): {top_y, clus_y, top_x, clus_x, port_direction}
-
-Each field occupies a fixed number of bits, allowing all location details to be packed into one numeric ID.
-
-**Location ID** - The Location ID represents the physical or logical placement of a component within the system. Unlike Node ID (which is encoded and compact), Location ID is typically used for:
-
-  Human-readable identification of position
-  Mapping components in the UI or topology view
-  Debugging and validation
-
-Key difference from Node ID:
-
-  Location ID → descriptive / positional reference
-  Node ID → encoded / system-level identifier
-
-**Bridge Type** - is a dropdown field where the user will be able to select between UCIE or CXL.
-
-    UCIe (Universal Chiplet Interconnect Express) - A high-speed interconnect for communication between chiplets within a single package.
-
-    CXL (Compute Express Link) – A high-speed interface for communication between processors, memory, and accelerators with cache coherency support.
-
-**Connected Topology X** - is a dropdown field where the user will be able to select from 0 to 3. Represents the column position (left to right). It is stored in the lower bits of the Connected Topology ID.
-
-**Connected Topology Y** - is a dropdown field where the user will be able to select from 0 to 3. Represents the row position (top to bottom). It is stored in the higher bits of the Connected Topology ID.
+   * - Parameter Name
+     - Functional Profile & Constraints
+   * - **Bridge Type**
+     - Dropdown selection to define the underlying physical link layer protocol:
+       
+       * ``UCIe`` *(Universal Chiplet Interconnect Express)* — Dedicated to ultra-low latency, high-density die-to-die chiplet streaming inside a single package.
+       * ``CXL`` *(Compute Express Link)* — Tailored for high-speed processor-to-memory expansion or off-chip coherent hardware accelerators.
+   * - **Connected Topology X**
+     - Dropdown selector range: **0 to 3**. Establishes the grid column position (left-to-right), packed into the lower bits of the Topology ID.
+   * - **Connected Topology Y**
+     - Dropdown selector range: **0 to 3**. Establishes the grid row position (top-to-bottom), shifted into the higher bits of the Topology ID.
+   * - **Connected Topology ID**
+     - A single read-only packed numeric value identifying the layout grid location. The engine compresses coordinates by mapping $Y$ to the upper bits and $X$ to the lower bits:
+       
+       $$\text{Topology ID} = (Y \ll 2) \mid X = (Y \times 4) + X$$
 
 .. image:: images/cnoc_bridge_sample.png
-  :alt: cnoc_bridge_sample
-  :align: center
+   :alt: C2C Bridge parameter entry layout
+   :align: center
+   :width: 80%
+
+--------------------------------------------------------------------------------
+
+Architectural Identification Schema
+======================================
+
+The platform tracks components using two distinct ID metrics to separate hardware routing paths from user-facing layout views:
+
+Node ID (System Hardware Identifier)
+   A compact bit-packed value encoding your hierarchical topology details. It enables runtime routing hardware to direct messages efficiently.
+   
+   $$\text{Structure Format Example: } \{\text{top\_y}, \text{clus\_y}, \text{top\_x}, \text{clus\_x}, \text{port\_direction}\}$$
+
+Location ID (User Interface Reference)
+   A human-readable, descriptive coordinate reference label. Unlike the packed **Node ID**, this is utilized strictly inside the UI and validation engine for error parsing and visual tracking.
 
 .. image:: images/cnoc_bridge_type.png
-  :alt: cnoc_bridge_type
-  :align: center
-
+   :alt: Dropdown selection panel between UCIe and CXL bridge profiles
+   :align: center
+   :width: 50%

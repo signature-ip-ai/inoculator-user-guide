@@ -1,106 +1,136 @@
-Projects Page
-=============================
+=======================================================
+Project Management Hub & Dashboard Interface
+=======================================================
 
-This section describes the Project Page of the Inoculator Web, including its UI layout and UX flow.
+The **Project Page** serves as the central control plane for iNoCulator Web. This workspace aggregates your Network-on-Chip (NoC) design variants, providing high-velocity lifecycle tooling to initialize, index, filter, and audit active architectural canvases.
 
-Below are the key components and features available on the Project Page:
+--------------------------------------------------------------------------------
 
-  - Project list and navigation
+Core Dashboard Features
+===========================
 
-  - Search and filter functions
+The control hub unifies configuration management and profile navigation layers through the following primary interface primitives:
 
-  - Project creation and management actions
-
-  - Tooltip messages for icons and buttons
-
-  - Access to project details and configuration
-
-  - Projects count badge 
-
-**Project Page Overview**
-
-The Project Page displays all available projects and provides tools for creating, managing, and navigating projects.
+* **Global Navigation & Canvas List:** Direct entry vectors to navigate workspace partitions and cross-link architectural topologies.
+* **Granular Search & Attribute Filters:** Real-time query execution engines to isolate historical design instances across large-scale enterprise directories.
+* **On-Demand Lifecycle Actions:** Single-click canvas instantiations paired with contextual hover states (tooltips) for error-free execution.
+* **Dynamic Analytics Badge:** A real-time numerical counter indicator displaying your current global project seat allocation and resource footprint.
 
 .. image:: images/projects_page-dashboard5.png
-  :alt: projects_page-dashboard
-  :align: center
+   :alt: Main iNoCulator Project Management Hub dashboard interface overview layout
+   :align: center
+   :width: 90%
 
-**Hamburger Menu** 
+--------------------------------------------------------------------------------
 
-The Hamburger Menu (☰) expands to show additional navigation options and settings.
+Global Control Toolbar & Workspace Navigation
+=================================================
 
-.. image:: images/projects_page-hamburger_menu3.png
-  :alt: projects_page-hamburger_menu
-  :align: center
+.. grid:: 2
+   :gutter: 3
 
-**Navigation** 
+   .. grid-item-card:: ☰ Global Navigation Drawer
+      :class-header: bg-light font-weight-bold
 
-The Navigation bar provides quick access to key pages and features of the application.
+      The **Hamburger Menu** collapses the primary viewport margins, expanding a dedicated lateral drawer containing system adjustments and platform setting configurations.
+      
+      .. image:: images/projects_page-hamburger_menu3.png
+         :alt: Expanded sidebar navigation drawer menu showing workspace settings
+         :align: center
+         :width: 85%
 
-.. image:: images/projects_page-navigation3.png
-  :alt: projects_page-navigation
-  :align: center
+   .. grid-item-card:: 🧭 Application Toolbar
+      :class-header: bg-light font-weight-bold
 
-**Inoculator Icon** 
+      The top-level **Navigation Bar** maintains persistence across screens, granting instantaneous shortcut jumps to active validation suites and compiler pipelines.
+      
+      .. image:: images/projects_page-navigation3.png
+         :alt: Top application navigation banner tracking macro-level user location
+         :align: center
+         :width: 85%
 
-The Home Icon or Inoculator Icon takes you back to the main landing page of the application.
+   .. grid-item-card:: 🚀 Root Domain Shortcut
+      :class-header: bg-light font-weight-bold
 
-.. image:: images/projects_page-home3.png
-  :alt: projects_page-home
-  :align: center
+      Clicking the specialized **iNoCulator Icon** acts as an instant home anchor, flushing non-committed navigation histories and returning the client view to the root landing interface.
+      
+      .. image:: images/projects_page-home3.png
+         :alt: Application logo vector functioning as a homepage redirection anchor
+         :align: center
+         :width: 50%
 
-**Add New Project Button** 
+   .. grid-item-card:: ✨ Starred & Favorite Canvases
+      :class-header: bg-light font-weight-bold
 
-Click the Add New Project button to start a new project and configure its details.
+      The **Starred Projects Filter Tab** allows architecture teams to pin prioritized top-level layouts, skipping general search streams to access critical variants.
+      
+      .. image:: images/projects_page-starred_project.png
+         :alt: Filter layout showcasing a localized view of favorited design suites
+         :align: center
+         :width: 75%
 
-.. image:: images/projects_page-add_new_project.png
-  :alt: projects_page-add_new_project
-  :align: center
+--------------------------------------------------------------------------------
 
-**Starred Project** 
+Project Creation & Resource Indexing
+========================================
 
-Click the tab for the list of Starred Projects or the favorites project. 
+.. list-table:: Management & Search Infrastructure Matrix
+   :widths: 35 65
+   :header-rows: 1
 
-.. image:: images/projects_page-starred_project.png
-  :alt: projects_page-starred_project
-  :align: center
+   * - Control Component
+     - Functional Behavior & Operations
+   * - **Add New Project Canvas**
+     - Triggers the system instantiation modal window. Initializes a blank slate entry layer to specify core clock domains, address bounds, and routing structures.
+     
+       .. image:: images/projects_page-add_new_project.png
+          :alt: Action button initializing a fresh Network-on-Chip design workspace
+          :align: center
+          :width: 70%
+   * - **Real-Time String Search**
+     - Executes a progressive query against the global project registry. Filters the data view on the fly based on project names, creator IDs, or target SOC tags.
+     
+       .. image:: images/search_project_page5.png
+          :alt: Text entry search control component isolating active records
+          :align: center
+          :width: 70%
+   * - **Attribute Filter Sub-System**
+     - Refines long lists by applying boolean categorical boundaries (e.g., topology layout type, date modified thresholds, or compilation status metrics).
+     
+       .. image:: images/filter_function4.png
+          :alt: Categorical dropdown filtering mechanics sorting workspace attributes
+          :align: center
+          :width: 70%
 
-**Quick Start Guide** 
+--------------------------------------------------------------------------------
 
-The Quick Start Guide provides step-by-step instructions for new users to quickly learn the tool.
+Help Desk Utility & Session Termination
+=============================================
 
-.. image:: images/projects_page-quick_start_guide2.png
-  :alt: projects_page-quick_start_guide
-  :align: center
+The global dashboard footer and peripheral drop panels group utility hooks to optimize designer onboarding paths and guarantee secure session boundaries:
 
-**Email Support** 
+.. list-table:: Support Utilities
+   :widths: 25 75
+   :stub-columns: 1
 
-The Email Support option allows users to contact the support team for assistance.
-
-.. image:: images/projects_page-email_support2.png
-  :alt: projects_page-email_support
-  :align: center
-
-**Logout Button** 
-
-The Log Out button securely signs the user out of the application.
-
-.. image:: images/projects_page-logut_button2.png
-  :alt: projects_page-logut_button
-  :align: center
-
-**Search Project** 
-
-Use the Search Field to quickly find a project by entering its name or keyword.
-
-.. image:: images/search_project_page5.png
-  :alt: search_project_page2
-  :align: center
-
-**Filter Project** 
-
-The Filter Button allows users to refine the project list based on categories or attributes.
-
-.. image:: images/filter_function4.png
-  :alt: filter_function
-  :align: center
+   * - Quick Start Guide
+     - Launches an interactive, step-by-step product walkthrough that introduces network primitives and validation procedures directly within the UI layout canvas.
+     
+       .. image:: images/projects_page-quick_start_guide2.png
+          :alt: Onboarding documentation wizard vector
+          :align: center
+          :width: 60%
+   * - Email Support
+     - Formulates an encrypted support transmission wrapper containing client telemetry logs, directly targeting the **Signature IP Enterprise Help Desk** pipeline.
+     
+       .. image:: images/projects_page-email_support2.png
+          :alt: Help desk support link trigger
+          :align: center
+          :width: 60%
+   * - Logout Routine
+     - Invalidates active web-tokens, drops state records, and securely routes the client back to the root sign-in interface window.
+     
+       .. image:: images/projects_page-logut_button2.png
+          :alt: Secure application sign-out interface trigger
+          :align: center
+          :width: 60%

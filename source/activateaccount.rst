@@ -1,22 +1,58 @@
+=====================================================
 Activate Account
 =====================================================
-This feature manages the formal acceptance and activation of a user account in iNoCulator. To begin the activation process, the user must click the link provided in the invitation email. This will open a browser tab directing the user to the Account Activation screen.
 
-.. image:: images/activate_account-fill_up_form3.png
-    :alt: activate_account-fill_up_form
-    :align: center
+This feature manages the formal acceptance and activation of a user account within the iNoCulator platform. 
+
+.. important::
+   **Form Input Guidelines:**
+   
+   * **Capitalization:** Capitalize only the first letter of your **First Name** and **Last Name**.
+   * **Allowed Characters:** Use alphanumeric characters only (including **ñ**, **Ñ**, and standard spaces).
+   * **Prohibited Elements:** Special characters and symbols are strictly forbidden.
 
 -------------------------------------------------------------------------
 
-Input Guidelines:
-    - Capitalize only the first letter of the First Name and Last Name.
+The Activation Process
+=========================
 
-    - Use alphanumeric characters only, including ñ and Ñ, and spaces.
+.. grid:: 1
+   :gutter: 3
 
-    - Special characters are not allowed.
+   .. grid-item-card:: Step 1: Click the Invitation Link
+      :class-header: bg-light font-weight-bold
 
-Once the form is completed, click the Activate button to finalize account creation. A confirmation email will be sent to indicate that the account has been successfully activated.
+      **Prerequisite**
+      
+      Open your invitation email and click the unique activation link provided. This action opens a new browser tab directing you to the official iNoCulator **Account Activation** screen.
 
-.. image:: images/activate_account-confirmation_email.png
-    :alt: activate_account-confirmation_email
-    :align: center
+   .. grid-item-card:: Step 2: Complete the Profile Form
+      :class-header: bg-light font-weight-bold
+
+      **User Input**
+      
+      Fill in your personal details on the screen, adhering strictly to the character validation guidelines outlined above.
+      
+      .. image:: images/activate_account_page.png
+         :alt: iNoCulator Account Activation Form Fields
+         :align: center
+         :width: 80%
+
+   .. grid-item-card:: Step 3: Submit Activation
+      :class-header: bg-light font-weight-bold
+
+      **Finalize**
+      
+      Click the **Activate** button at the bottom of the form to finalize your account baseline configuration.
+
+   .. grid-item-card:: Step 4: Verify Email Confirmation
+      :class-header: bg-light font-weight-bold
+
+      **Completion**
+      
+      Check your inbox for an automated confirmation email verifying that your iNoCulator user profile has been successfully provisioned.
+      
+      .. image:: images/activate_account-confirmation_email.png
+         :alt: iNoCulator Successful Activation Confirmation Email
+         :align: center
+         :width: 80%
