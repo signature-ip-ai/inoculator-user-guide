@@ -33,7 +33,7 @@ The Activation Process
       
       Fill in your personal details on the screen, adhering strictly to the character validation guidelines outlined above.
       
-      .. image:: images/activate_account-fill_up_form3.png
+      .. image:: images/activate_account_page.png
          :alt: iNoCulator Account Activation Form Fields
          :align: center
          :width: 80%
