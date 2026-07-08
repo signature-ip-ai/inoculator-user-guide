@@ -17,7 +17,7 @@ Configure your target Initiator node by selecting its contextual tabs within the
 
       The **Parameters** workspace governs protocol mappings, data bus geometries, buffer depths, and tracking parameters.
 
-      .. image:: images/initiator-parameters7.png
+      .. image:: images/initiator-parameters8.png
          :alt: iNoCulator Initiator Device Core Parameter inspector configuration panel
          :align: center
          :width: 80%
