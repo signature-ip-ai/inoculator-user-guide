@@ -32,7 +32,7 @@ Primary Target Parameter Specifications
 
 Clicking a standard Target module on the visual canvas populates a detailed multi-tab properties inspector on the right-hand panel.
 
-.. image:: images/target-parameters12.png
+.. image:: images/target-parameters13.png
    :alt: Main properties sheet for a standard Target component mapping name, device ID, and bus configuration fields
    :align: center
    :width: 85%
