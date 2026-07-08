@@ -32,7 +32,7 @@ The platform provides two distinct entry avenues to initiate an access request. 
       
       If you are already viewing the primary login credential panel, click the secondary **Request Access** text button hyperlink to launch the registration view.
       
-      .. image:: images/request_access-sign_in_page4.png
+      .. image:: images/request_access-sign_in_page5.png
          :alt: Alternative Request Access hyperlink location on the user sign-in box interface
          :align: center
          :width: 60%
@@ -44,7 +44,7 @@ The platform provides two distinct entry avenues to initiate an access request. 
       
       Fill out all mandatory corporate fields on the **Request Access** page, providing accurate structural organizational data to avoid administrative request rejection.
       
-      .. image:: images/request_access_page_update.png
+      .. image:: images/request_access_page_update1.png
          :alt: Expanded Request Access input form layout detailing identity information fields
          :align: center
          :width: 65%
@@ -76,7 +76,7 @@ Once the database processes your submission, the interface transitions to an adm
 
       The active browser tab immediately locks and renders a confirmation overlay, verifying that your registration payload has entered the global administrator ticket queue for structural evaluation.
       
-      .. image:: images/request_access-confirmation_page3.png
+      .. image:: images/request_access-confirmation.png
          :alt: Intercept modal confirmation message notifying the user of pending administrator evaluation
          :align: center
          :width: 85%
