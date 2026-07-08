@@ -65,6 +65,48 @@ Follow this sequential workflow to grant canvas access permissions to internal o
 
 --------------------------------------------------------------------------------
 
+Project Collaboration & Re-sharing Policy
+=========================================
+
+The platform enforces a strict permission hierarchy and defined re-sharing pathways to ensure data security across organizational boundaries.
+
+Role-Based Access Hierarchy
+---------------------------
+
+Access capabilities are determined by the user's specific role within the project workspace:
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Role
+     - Capabilities
+   * - **Primary Owner**
+     - Full control: Can **Delete**, **Share**, and **Edit**.
+   * - **Co-Owner**
+     - Administrative: Can **Share** and **Edit**.
+   * - **Collaborator**
+     - Functional: Can **Edit** assigned project assets.
+
+Re-sharing Governance
+---------------------
+
+Re-sharing is permitted only when specific cross-functional group requirements are met. Use the following logic to determine if a share action is valid:
+
+* **SigIP to SigIP**
+   Re-sharing is allowed only if there is an active **Project Collaboration** established between the Co-Owner's group and the target SigIP group.
+
+* **External to External**
+   Re-sharing is allowed only if the target External group belongs to the same **Project Collaboration** shared by both the Sharer and the Co-Owner.
+
+* **SigIP to External**
+   Allowed when the target External group belongs to the same **Project Collaboration**.
+
+* **External to SigIP**
+   Follows the same requirement as **External → External**; the target must be part of the shared project collaboration structure.
+
+--------------------------------------------------------------------------------
+
 Automated Transactional Email Lifecycles
 =============================================
 
