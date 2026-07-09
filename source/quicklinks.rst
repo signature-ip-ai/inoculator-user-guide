@@ -70,7 +70,6 @@ Non-Coherent NoC (NC-NoC)
    .. grid-item-card:: NC-NoC: Step-by-Step Creation
       :columns: 6
 
-      {bdg-primary}`NC-NoC`
 
       A complete walkthrough of creating your very first Non-Coherent NoC design workspace from scratch.
       
@@ -84,7 +83,6 @@ Non-Coherent NoC (NC-NoC)
    .. grid-item-card:: Device Configuration
       :columns: 6
 
-      {bdg-primary}`NC-NoC`
 
       Detailed guide on setting up, dimensioning, and tailoring Non-Coherent devices within your fabric topology.
       
@@ -98,8 +96,7 @@ Non-Coherent NoC (NC-NoC)
    .. grid-item-card:: Generating & Downloading Designs
       :columns: 6
 
-      {bdg-primary}`NC-NoC`
-
+    
       How to compile your architecture specifications, run validation, and download your finalized generation outputs.
       
       +++
@@ -112,7 +109,6 @@ Non-Coherent NoC (NC-NoC)
    .. grid-item-card:: Package Export Workflow
       :columns: 6
 
-      {bdg-primary}`NC-NoC`
 
       Step-by-step instructions on cleanly exporting and downloading structured packages out of Inoculator.
       
@@ -134,7 +130,6 @@ Coherent NoC (C-NoC)
    .. grid-item-card:: C-NoC: Step-by-Step Creation
       :columns: 6
 
-      {bdg-dark}`C-NoC`
 
       An end-to-end framework guide showing you how to initiate a Coherent NoC architecture project.
       
@@ -148,7 +143,6 @@ Coherent NoC (C-NoC)
    .. grid-item-card:: Coherent Fabric Configuration
       :columns: 6
 
-      {bdg-dark}`C-NoC`
 
       Learn to define protocols, coherency directories, and map advanced fabric parameters.
       
@@ -162,8 +156,7 @@ Coherent NoC (C-NoC)
    .. grid-item-card:: Export & Download Design
       :columns: 6
 
-      {bdg-dark}`C-NoC`
-
+     
       Consolidate your coherent design parameters, trigger the compiler, and pull your deliverables safely down.
       
       +++
