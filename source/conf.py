@@ -67,7 +67,7 @@ html_theme_options = {
         {
             "name": "Inoculator",
             "url": "https://inoculator.ai/home",
-            "icon": "fa-brands fa-web",
+            "icon": "fa-brands fa-globe",
             "type": "fontawesome",
         },
         {
@@ -76,6 +76,13 @@ html_theme_options = {
             "icon": "fa-solid fa-house",
             "type": "fontawesome",
         },
+        {
+        "name": "Support",
+        "url": "mailto:support@signatureip.ai",
+        "icon": "fa-solid fa-envelope",
+        "type": "fontawesome"
+        },
+        
     ],
 }
 
