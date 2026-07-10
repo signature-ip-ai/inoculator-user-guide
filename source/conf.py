@@ -65,14 +65,14 @@ html_theme_options = {
     # Icon links in the navbar
     "icon_links": [
         {
-            "name": "GitHub",
-            "url": "https://github.com/signatureip/inoculator-guide",
-            "icon": "fa-brands fa-github",
+            "name": "Inoculator",
+            "url": "https://inoculator.ai/home",
+            "icon": "fa-brands fa-web",
             "type": "fontawesome",
         },
         {
             "name": "SignatureIP",
-            "url": "https://signatureip.com",
+            "url": "https://signatureip.ai",
             "icon": "fa-solid fa-house",
             "type": "fontawesome",
         },
