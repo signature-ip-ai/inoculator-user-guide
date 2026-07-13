@@ -85,8 +85,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 
 .. toctree::
    :maxdepth: 2
-   :caption: Overview
-   
+   :caption: Getting Started
 
    introduction
    getstarted
@@ -95,15 +94,13 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :caption: Account Management
-   
 
    requestaccess
-   inviteuser   
+   inviteuser
    activateaccount
    login
    otp
    logout
-   
 
 .. toctree::
    :maxdepth: 2
@@ -111,6 +108,8 @@ Use the quick links below to jump straight to your workspace or explore the full
 
    createprojectncnoc
    uploadtopology
+   
+   .. rubric:: Configuration
    componentsandexplorer
    routerconfiguration
    initiatorconfiguration
@@ -120,30 +119,31 @@ Use the quick links below to jump straight to your workspace or explore the full
    bridgeconfiguration
    subtopologyconfiguration
 
+   .. rubric:: Validation & Synthesis
    accessmap
    addressmap
-   topologyvalidation   
+   topologyvalidation
    autoroute
    generatertlandtb
    simulation
    implement
-   
+
+   .. rubric:: Project Management
    copyproject
    floorplan
    autoplace
    sharedproject
    deleteproject
    searchproject
-   
+
+   .. rubric:: System Integration
    systemconfig
    registermap
    exportpackage
 
-
 .. toctree::
    :maxdepth: 2
    :caption: C-NoC Design Workflow
-   
 
    createprojectcnoc
    cnoctopology
@@ -154,14 +154,12 @@ Use the quick links below to jump straight to your workspace or explore the full
    cnoctopologyvalidation
    cnocinterleaving
    cnocaddressmap
-   
    cnocregistermap
    cnocgeneratertlandtb
 
 .. toctree::
    :maxdepth: 2
    :caption: Troubleshooting
-   
 
    invalidcredentials
    forgotpassword
@@ -172,16 +170,9 @@ Use the quick links below to jump straight to your workspace or explore the full
 
 .. toctree::
    :maxdepth: 2
-   :caption: Support & Resources
-   
+   :caption: Resources
 
    faqs
    quicklinks
    appendix
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Reference
-   
-
    modificationhistory
