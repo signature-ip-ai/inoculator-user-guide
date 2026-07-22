@@ -1,5 +1,5 @@
 ============================================
-Subtopology Partition Configuration
+NC-NOC Subtopology Partition Configuration
 ============================================
 
 A **Subtopology** is a structurally isolated subset or localized spatial cluster partition within a master global Network-on-Chip (NoC) topology canvas layout. Dividing a large-scale SoC interconnect into multiple subtopologies allows hardware architects to establish independent clock domains, isolate distinct power rails, and manage localized component routing envelopes using bridges or pipeline boundaries.
