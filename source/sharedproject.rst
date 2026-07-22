@@ -139,3 +139,39 @@ The identity registry engine dispatches automated notifications across the shari
       :alt: Automated notice tracking full data purging events due to parent project deletion
       :align: center
       :width: 80%
+
+---------------------------------------------------------------------------------
+
+Deleting a Shared Project: Owner Warning Dialog
+===================================================
+
+When a project owner attempts to delete a project that currently has shared access with other users, a confirmation dialog box appears to handle project ownership and cascading deletions.
+
+.. image:: images/delete_shared_project_dialog.png
+   :alt: Delete Shared Project Warning Dialog
+   :align: center
+
+Available Options
+-------------------
+
+The dialog provides the project owner with the following choices:
+
+1. **Cancel**
+   
+   * Aborts the deletion process. No changes are made to the project or its sharing settings.
+
+2. **Unshare from all users and Delete**
+   
+   * Proceeds with the deletion of the project.
+   * **Cascade Effect:** All associated ``SharedProject`` relations will be permanently deleted, removing access for all current collaborators.
+   * **Notifications:** An email notification is automatically sent to all previously shared users informing them that the project has been unshared and deleted.
+
+3. **Transfer ownership**
+   
+   * Allows the current owner to transfer project ownership to another user before proceeding.
+   * Requires a secondary confirmation step to finalize the transfer.
+   * **User Sorting:** The list of available users for ownership transfer displays any existing **co-owners at the top of the list** for quick selection, followed by anyone else the project is shared with.
+   * **Notifications:** An email notification is sent to the newly assigned owner regarding the transfer of project ownership.
+
+.. warning::
+   Deleting a shared project or transferring its ownership triggers automated email notifications. Ensure you select the correct action, as unsharing and deleting cannot be undone.
