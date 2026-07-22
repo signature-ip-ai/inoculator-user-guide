@@ -1,5 +1,5 @@
 ========================================================
-C-NoC Address Map Space
+C-NoC Address Map
 ========================================================
 
 The **C-NoC Address Map** framework manages address allocation across three distinct transactional domains: **Cacheable**, **Non-Cacheable**, and **Snoopable** spaces. Memory segments are distributed across local and remote nodes using a specialized architectural layout.
