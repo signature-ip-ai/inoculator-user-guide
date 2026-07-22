@@ -1,5 +1,5 @@
 =========================================================
-Generating RTL and Testbench (NC-NoC)
+NC-NoC Generating RTL and Testbench
 =========================================================
 
 The **RTL Generation Engine** compiles your finalized Non-Coherent NoC (NC-NoC) topology matrix into synthesizable Register-Transfer Level (RTL) source code files along with a fully customized verification testbench environment.
