@@ -106,6 +106,16 @@ Table of Contents
    login
    otp
    logout
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Project Management
+
+   sharedproject
+   deleteproject
+   searchproject
+   exportpackage
+   copyproject
    
 
 .. toctree::
@@ -122,7 +132,6 @@ Table of Contents
    virtualconfiguration
    bridgeconfiguration
    subtopologyconfiguration
-
    accessmap
    addressmap
    topologyvalidation   
@@ -130,17 +139,10 @@ Table of Contents
    generatertlandtb
    simulation
    implement
-   
-   copyproject
    floorplan
    autoplace
-   sharedproject
-   deleteproject
-   searchproject
-   
    systemconfig
    registermap
-   exportpackage
 
 
 .. toctree::
