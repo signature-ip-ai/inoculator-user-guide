@@ -1,5 +1,5 @@
 ====================================================
-Initiator Device Configuration
+NC-NoC Initiator Device Configuration
 ====================================================
 
 An **Initiator** element represents a master intellectual property (IP) core—such as a CPU cluster, GPU engine, or DMA controller—that originates read and write transaction requests across the Network-on-Chip (NoC) interconnect fabric. 

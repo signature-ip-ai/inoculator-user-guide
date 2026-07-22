@@ -1,5 +1,5 @@
 ===========================================
-Target Interface Configuration
+NC-NoC Target Interface Configuration
 ===========================================
 
 Configuring a Target (Slave) device involves defining its signaling protocol rules, outstanding transaction queues, physical buffer profiles, security policies, and clock domains. The system parses target configurations using two distinct structural classifications:

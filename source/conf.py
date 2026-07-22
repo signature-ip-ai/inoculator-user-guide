@@ -3,7 +3,7 @@
 project = 'Inoculator User Guide'
 copyright = '2026, SignatureIP'
 author = 'SignatureIP'
-release = '6.2.4'
+release = '6.2.5'
 
 # -- General configuration ---------------------------------------------------
 
@@ -33,7 +33,7 @@ html_theme_options = {
     "use_fullscreen_button": True,
     "use_sidenotes": True,
     "show_toc_level": 3,
-    "announcement": "📘 Inoculator User Guide v6.2.4",
+    "announcement": "📘 Inoculator User Guide v6.2.5",
     "home_page_in_toc": True,
     "repository_url": "https://github.com/signatureip/inoculator-guide",
     "repository_branch": "main",
@@ -65,17 +65,24 @@ html_theme_options = {
     # Icon links in the navbar
     "icon_links": [
         {
-            "name": "GitHub",
-            "url": "https://github.com/signatureip/inoculator-guide",
-            "icon": "fa-brands fa-github",
+            "name": "Inoculator",
+            "url": "https://inoculator.ai/home",
+            "icon": "fa-brands fa-globe",
             "type": "fontawesome",
         },
         {
             "name": "SignatureIP",
-            "url": "https://signatureip.com",
+            "url": "https://signatureip.ai",
             "icon": "fa-solid fa-house",
             "type": "fontawesome",
         },
+        {
+        "name": "Support",
+        "url": "mailto:support@signatureip.ai",
+        "icon": "fa-solid fa-envelope",
+        "type": "fontawesome"
+        },
+        
     ],
 }
 

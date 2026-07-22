@@ -61,6 +61,7 @@ Project Level Essentials
          🍿 Watch Collaboration Guide
 
 --------------------------------------------------------------------------------
+
 Non-Coherent NoC (NC-NoC)
 =========================
 

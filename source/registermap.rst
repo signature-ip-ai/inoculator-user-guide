@@ -1,5 +1,5 @@
 =========================================================
-Register Map - Non-Coherent NoC (NC-NoC)
+NC-NoC Register Map
 =========================================================
 
 The **Register Map** functions as the definitive hardware-software interface (HSI) specification for the Non-Coherent Network-on-Chip (NC-NoC) fabric workspace. It itemizes the software-accessible control, status, and configuration registers embedded within the NoC sub-systems, giving firmware developers and system architects a clear roadmap to program and orchestrate the underlying silicon.

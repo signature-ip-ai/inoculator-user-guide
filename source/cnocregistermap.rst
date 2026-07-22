@@ -1,5 +1,5 @@
 ============================================
-Register Map (C-NoC)
+C-NoC Register Map
 ============================================
 
 The **C-NoC Register Map** provides an interactive, structured hierarchy of all memory-mapped registers driving the Configurable Network-on-Chip fabric. This interface simplifies manual validation, registers exploration during post-silicon bring-up, and diagnostic debugging.

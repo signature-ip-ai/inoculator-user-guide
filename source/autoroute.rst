@@ -1,5 +1,5 @@
 ==================================================
-Auto Route (NC-NoC)
+NC-NoC Auto Route 
 ==================================================
 
 The **NC-NoC Auto Route** feature automatically calculates and generates the optimal paths for data traffic between interconnected devices across the Network-on-Chip fabric. 

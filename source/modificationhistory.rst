@@ -309,3 +309,16 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Update the Layout of Web.                                                                   |
 |                       |                                | 3. Added Quick Links for Video Guide.                                                          |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.2.4                 | July 8, 2026                   | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Project Sharing role assignment: Co-Owner and Collaborator.                                 |
+|                       |                                | 2. Address Map Auto Compute (Size and End Address) function.                                   |
+|                       |                                | 3. Protocol Names of NC-NoC Devices                                                            |
+|                       |                                | 4. Theme Colors of Login Request Access, and other authentication page.                        |
+|                       |                                | 5. C-NoC Devices default names updated to Protocol Names.                                      |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.2.5                 | July 22, 2026                  | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Deleting of project and transferring of ownership.                                          |
+|                       |                                | 2. Router Shapes for X6 lib                                                                    |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+

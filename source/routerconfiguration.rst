@@ -1,5 +1,5 @@
 ===================================================
-Router Configuration & Fabric Parameters
+NC-NoC Router Configuration
 ===================================================
 
 Configuring a network-on-chip (NoC) router requires defining its subtopology anchors, power domains, pipeline stage profiles, and static routing table mappings. To modify a router instance, click directly on the target node within the visual floorplan canvas grid to populate the configuration inspector pane.

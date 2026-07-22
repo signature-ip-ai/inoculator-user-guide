@@ -1,5 +1,5 @@
 ====================================================
-C2C Bridge Configuration (C-NoC)
+C-NoC Bridge Configuration (CHI-to-CPI)
 ====================================================
 
 The **C2C Bridge** (CHI-to-CPI Bridge) provides protocol conversion between **CHI** (Coherent Hub Interface) and **CPI** (Coherent Port Interface) domains within **C-NoC** (Cache-Coherent Network-on-Chip) topologies. 

@@ -1,5 +1,5 @@
 ===================================================
-Address Map (NC-NoC)
+NC-NoC Address Map
 ===================================================
 
 The **Address Map** feature manages the system address space allocation across all Target and Virtual Devices mapped within your topology. 

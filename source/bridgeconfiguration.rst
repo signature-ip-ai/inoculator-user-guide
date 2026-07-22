@@ -1,5 +1,5 @@
 ===========================
-Bridge Configuration
+NC-NoC Bridge Configuration
 ===========================
 
 Bridges (or Pipelines) are structural components used to link two or more separate network segments or distinct bus protocols, enabling fluid communication and integration across complex subtopologies. 

@@ -1,5 +1,5 @@
 ==============================================================
-Components and Explorer Panels
+NC-NoC Components and Explorer Panels
 ==============================================================
 
 The **Components** panel and **Project Explorer** work together to help you build and organize your Network-on-Chip (NoC) design. The Components panel houses the physical hardware blocks you drop onto the design canvas, while the Explorer panel displays the hierarchical tree arrangement of your network segments.

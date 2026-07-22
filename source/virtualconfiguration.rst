@@ -1,5 +1,5 @@
 ========================================================
-Virtual Device Configuration
+NC-NoC Virtual Device Configuration
 ========================================================
 
 A **Virtual Device** (or Virtual Target) is a software-defined endpoint abstraction that simulates a physical target device within the NoC fabric. Virtual devices allow architects to partition a single physical Target into multiple logical endpoints, each with its own independent security policy and addressing.

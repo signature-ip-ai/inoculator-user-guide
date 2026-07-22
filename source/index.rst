@@ -83,6 +83,9 @@ Use the quick links below to jump straight to your workspace or explore the full
    the full nested tree populates your sidebar beautifully, but doesn't 
    clutter your main landing page.
 
+Table of Contents 
+======================================
+
 .. toctree::
    :maxdepth: 2
    :caption: Overview
@@ -103,6 +106,16 @@ Use the quick links below to jump straight to your workspace or explore the full
    login
    otp
    logout
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Project Management and Exporting Project
+
+   sharedproject
+   deleteproject
+   searchproject
+   exportpackage
+   copyproject
    
 
 .. toctree::
@@ -111,33 +124,25 @@ Use the quick links below to jump straight to your workspace or explore the full
 
    createprojectncnoc
    uploadtopology
-   componentsandexplorer
-   routerconfiguration
-   initiatorconfiguration
-   targetconfiguration
-   addressinterleaving
-   virtualconfiguration
-   bridgeconfiguration
-   subtopologyconfiguration
-
    accessmap
+   addressinterleaving
    addressmap
-   topologyvalidation   
-   autoroute
-   generatertlandtb
-   simulation
-   implement
-   
-   copyproject
-   floorplan
    autoplace
-   sharedproject
-   deleteproject
-   searchproject
-   
+   autoroute
+   bridgeconfiguration
+   componentsandexplorer
+   generatertlandtb
+   initiatorconfiguration
+   routerconfiguration
+   targetconfiguration  
+   subtopologyconfiguration
+   topologyvalidation   
+   simulation
    systemconfig
    registermap
-   exportpackage
+   virtualconfiguration
+   implement
+   floorplan
 
 
 .. toctree::
@@ -146,17 +151,17 @@ Use the quick links below to jump straight to your workspace or explore the full
    
 
    createprojectcnoc
-   cnoctopology
-   cnocdevice
-   cnocrouter
-   cnocsystemconfig
-   c2cbridge
-   cnoctopologyvalidation
-   cnocinterleaving
    cnocaddressmap
-   
-   cnocregistermap
+   cnocinterleaving
+   c2cbridge
+   cnocdevice
    cnocgeneratertlandtb
+   cnoctopology
+   cnocrouter
+   cnocregistermap
+   cnocsystemconfig
+   cnoctopologyvalidation
+
 
 .. toctree::
    :maxdepth: 2

@@ -1,5 +1,5 @@
 ==================================
-Auto Place
+NC-NoC Auto Place
 ==================================
 
 The **NC-NoC Auto-Place** feature automatically determines the optimal physical coordinates for routers, network interfaces, memory blocks, and other foundational circuit components within your silicon floorplan layout. 

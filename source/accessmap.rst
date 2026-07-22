@@ -1,5 +1,5 @@
 =========================
-Access Map
+NC-NoC Access Map
 =========================
 
 The **Access Map** feature provides a matrix view of the security policies assigned to each device connected to every port within the topology. 
