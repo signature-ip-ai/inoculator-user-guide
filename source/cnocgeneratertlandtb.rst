@@ -1,5 +1,5 @@
 =========================================================
-Generating RTL and Testbench (C-NoC)
+C-NoC Generating RTL and Testbench
 =========================================================
 
 The **RTL and Testbench Generation** feature compiles your finalized Coherent-NoC topology into hardware description files and verification environments, allowing you to move from architecture design directly to hardware implementation.
