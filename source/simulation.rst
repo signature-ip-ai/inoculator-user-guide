@@ -1,5 +1,5 @@
 ===================================================
-NC-NOC Simulation and Cycle-Accurate Verification
+NC-NoC Simulation and Cycle-Accurate Verification
 ===================================================
 
 The **Simulation Engine** provides a cycle-level validation workspace to verify the functional correctness and bandwidth profiles of your compiled Non-Coherent NoC (NC-NoC) topologies. This layer lets you stress-test synthesizable register-transfer level (RTL) files against customizable traffic generation patterns before launching downstream hardware synthesis.
