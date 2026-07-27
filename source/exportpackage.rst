@@ -51,12 +51,12 @@ Select the tab matching your required output profile to see the specific check-b
       .. image:: images/export_package_button2.png
          :alt: Launching the Export Package configuration window panel
          :align: center
-         :width: 60%
+         :width: 50%
 
       .. image:: images/export_package_encrypted2.png
          :alt: Checking the Encrypted format modifier checkbox option
          :align: center
-         :width: 60%
+         :width: 50%
 
       Monitor your background build progression directly from the **Export Design** tracking table.
 
@@ -81,7 +81,7 @@ Select the tab matching your required output profile to see the specific check-b
       .. image:: images/export_package_obfuscated.png
          :alt: Checking the Obfuscated format modifier checkbox option
          :align: center
-         :width: 60%
+         :width: 50%
 
       Monitor your background build progression directly from the **Export Design** tracking table.
 
@@ -101,12 +101,12 @@ Select the tab matching your required output profile to see the specific check-b
       .. image:: images/export_package_button2.png
          :alt: Launching the Export Package configuration window panel
          :align: center
-         :width: 60%
+         :width: 50%
 
       .. image:: images/export_package_clean.png
          :alt: Checking the Clean format modifier checkbox option
          :align: center
-         :width: 60%
+         :width: 50%
 
       Monitor your background build progression directly from the **Export Design** tracking table.
 
