@@ -57,7 +57,7 @@ To customize your bridge latency and routing tags, single-click the bridge compo
 .. image:: images/bridge_configuration.png
    :alt: iNoCulator Bridge Configuration Property Side Panel
    :align: center
-   :width: 60%
+   :width: 50%
 
 .. list-table:: Bridge Configuration Attributes
    :widths: 30 70
