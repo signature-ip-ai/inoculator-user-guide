@@ -36,4 +36,4 @@ How to Use the Map
 .. image:: images/access_map.png
    :alt: iNoCulator Access Map Matrix Interface
    :align: center
-   :width: 100%
+   :width: 80%
