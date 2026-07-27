@@ -7,7 +7,7 @@ The **Components** panel and **Project Explorer** work together to help you buil
 .. image:: images/components_panel_and_explorer_panel.png
    :alt: iNoCulator Components Palette and Project Explorer Tree Panels
    :align: center
-   :width: 60%
+   :width: 50%
 
 --------------------------------------------------------------------------------
 
