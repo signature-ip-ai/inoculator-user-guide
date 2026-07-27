@@ -14,12 +14,11 @@ To modify established top-level properties after initial project instantiations,
 .. image:: images/nc_noc-system_config2.png
    :alt: Action bar location showing the System Config entry button
    :align: center
-   :width: 85%
-
+   :width: 70%
 .. image:: images/nc_noc-system_config4.png
    :alt: Main global NC-NoC System Configuration property overlay panel
    :align: center
-   :width: 80%
+   :width: 70%
 
 --------------------------------------------------------------------------------
 
