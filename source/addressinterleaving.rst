@@ -75,7 +75,8 @@ If the main network width differs from the target slave width ($NOC\_DATA\_WIDTH
 .. math::
 
    \begin{aligned}
-   \text{Minimum Transaction Size} &\le \frac{256}{\left(\frac{\text{NOC\_DATA\_WIDTH}}{\text{SLV\_DATA\_WIDTH}}\right)} \\[10pt]
+   \text{Minimum Transaction Size} &\le \frac{256}{\left(\frac{\text{NOC\_DATA\_WIDTH}}{\text{SLV\_DATA\_WIDTH}}\right)}
+   \end{aligned}
 
 
 
