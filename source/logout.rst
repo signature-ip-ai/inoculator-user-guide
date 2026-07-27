@@ -36,7 +36,7 @@ Follow this simple confirmation sequence to safely close your authenticated clou
       .. image:: images/logout_confirmation_prompt.png
          :alt: Center overlay security modal window asking for logout confirmation
          :align: center
-         :width: 65%
+         :width: 50%
 
 --------------------------------------------------------------------------------
 
