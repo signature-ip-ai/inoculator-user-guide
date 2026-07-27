@@ -60,21 +60,35 @@ A. Initiator Buffer Bounds
 --------------------------
 The configured **Minimum Transaction Size** must be less than or equal to both core initiator flit metric constraints. If multiple distinct initiators route to this target, the compiler uses the smallest available value:
 
-$$\text{Minimum Transaction Size} \le \text{Initiator Flit Read Buffer Size}$$
-$$\text{Minimum Transaction Size} \le \text{Initiator Flit Write Packet Size}$$
+.. math::
+   
+   \begin{aligned}
+   \text{Minimum Transaction Size} &\le \text{Initiator Flit Read Buffer Size} \\
+   \text{Minimum Transaction Size} &\le \text{Initiator Flit Write Packet Size}
+   \end{aligned}
+
 
 B. Rate Matching Boundary Condition
 -----------------------------------
 If the main network width differs from the target slave width ($NOC\_DATA\_WIDTH \neq SLV\_DATA\_WIDTH$), the **Minimum Transaction Size** must scale to protect the bus rate matching logic:
 
-$$\text{Minimum Transaction Size} \le \frac{256}{\left(\frac{NOC\_DATA\_WIDTH}{SLV\_DATA\_WIDTH}\right)}$$
+.. math::
+
+   \begin{aligned}
+   \text{Minimum Transaction Size} &\le \frac{256}{\left(\frac{\text{NOC\_DATA\_WIDTH}}{\text{SLV\_DATA\_WIDTH}}\right)} \\[10pt]
+
+
 
 C. Reorder Buffer Sizing Minimums
 ---------------------------------
 To prevent network head-of-line blocking during segment split transactions, the tracking reorder structures must meet or exceed these depth thresholds:
 
-$$\text{Write Reorder Buffer Size} \ge \frac{4096}{\text{Minimum Transaction Size}}$$
-$$\text{Read Reorder Buffer Size} \ge \frac{4096}{\text{Minimum Transaction Size}}$$
+.. math::
+
+   \begin{aligned}
+   \text{Write Reorder Buffer Size} &\ge \frac{4096}{\text{Minimum Transaction Size}} \\[10pt]
+   \text{Read Reorder Buffer Size} &\ge \frac{4096}{\text{Minimum Transaction Size}}
+   \end{aligned}
 
 .. hint::
    If target slave endpoints within the same interleaved network specify varying segment sizes, the compiler selects the absolute smallest size value to run these validation sweeps.
