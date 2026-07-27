@@ -20,7 +20,7 @@ The Default Target acts as a system fallback node and enforces fixed, unalterabl
 .. image:: images/target-default_slave1.png
    :alt: Configuration layout for the system Default Slave node showing unmodifiable parameters
    :align: center
-   :width: 85%
+   :width: 60%
 
 * **Device ID Mapping:** The identifier value ``0`` is strictly reserved by the structural compilation tool for the **Default Slave** block. No regular target node can claim this index.
 * **Protocol Assignment:** Renders a read-only parameter string showing ``Default``, identifying its role as port ``E0``'s error handling anchor.
@@ -81,7 +81,7 @@ Signaling and Transaction Queuing Controls
 .. image:: images/target-enable_virtual_device1.png
    :alt: Target parameter panel showing the toggle button mechanism to enable structural Virtual Devices
    :align: center
-   :width: 85%
+   :width: 60%
 
 Virtual Devices Toggle
    Enables or disables multi-channel virtual device overlays on this explicit endpoint target block. Once activated, developers can append logical channels to slice peripheral spaces *(For complete structural rules, see Section 6: Virtual Devices)*.
@@ -134,7 +134,7 @@ Buffer Allocations & Memory-Interleaving Overrides
 .. image:: images/target-SRAM.png
    :alt: Properties configuration panel specific to an SRAM memory macro target block configuration
    :align: center
-   :width: 85%
+   :width: 60%
 
 Aligned Addresses
    Enforces alignment restrictions on inbound bursts. Displayed for all protocols except ``SIG-NATIVE``.
@@ -164,7 +164,7 @@ The sub-panels manage downstream physical integration properties:
 .. image:: images/target-timing4.png
    :alt: Target Timing panel displaying clock inheritances and custom frequency input parameters
    :align: center
-   :width: 85%
+   :width: 60%
 
 Timing Configuration
 ---------------------
@@ -175,7 +175,7 @@ Timing Configuration
 .. image:: images/target-security1.png
    :alt: Target Security policy manager panel defining initiator access rights boundaries
    :align: center
-   :width: 85%
+   :width: 60%
 
 Security Configuration
 -----------------------
