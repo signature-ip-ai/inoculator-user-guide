@@ -36,7 +36,7 @@ Follow the sequence detailed below to complete your primary authentication hands
       .. image:: images/log_in_page.png
          :alt: Secure portal login input forms and verification gateway overlay
          :align: center
-         :width: 65%
+         :width: 50%
 
 --------------------------------------------------------------------------------
 
