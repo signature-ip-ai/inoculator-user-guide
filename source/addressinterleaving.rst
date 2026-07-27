@@ -70,7 +70,7 @@ The configured **Minimum Transaction Size** must be less than or equal to both c
 
 B. Rate Matching Boundary Condition
 -----------------------------------
-If the main network width differs from the target slave width ($NOC\_DATA\_WIDTH \neq SLV\_DATA\_WIDTH$), the **Minimum Transaction Size** must scale to protect the bus rate matching logic:
+If the main network width differs from the target slave width (:math:`\text{NOC\_DATA\_WIDTH} \neq \text{SLV\_DATA\_WIDTH}`), the **Minimum Transaction Size** must scale to protect the bus rate matching logic:
 
 .. math::
 
