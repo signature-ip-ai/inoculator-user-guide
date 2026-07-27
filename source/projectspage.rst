@@ -119,18 +119,18 @@ The global dashboard footer and peripheral drop panels group utility hooks to op
        .. image:: images/projects_page-quick_start_guide2.png
           :alt: Onboarding documentation wizard vector
           :align: center
-          :width: 60%
+          :width: 40%
    * - Email Support
      - Formulates an encrypted support transmission wrapper containing client telemetry logs, directly targeting the **Signature IP Enterprise Help Desk** pipeline.
      
        .. image:: images/projects_page-email_support2.png
           :alt: Help desk support link trigger
           :align: center
-          :width: 60%
+          :width: 40%
    * - Logout Routine
      - Invalidates active web-tokens, drops state records, and securely routes the client back to the root sign-in interface window.
      
        .. image:: images/projects_page-logut_button2.png
           :alt: Secure application sign-out interface trigger
           :align: center
-          :width: 60%
+          :width: 40%
