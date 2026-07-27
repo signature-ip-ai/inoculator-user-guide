@@ -35,7 +35,7 @@ Clicking a standard Target module on the visual canvas populates a detailed mult
 .. image:: images/target-parameters13.png
    :alt: Main properties sheet for a standard Target component mapping name, device ID, and bus configuration fields
    :align: center
-   :width: 85%
+   :width: 60%
 
 Subtopology
    A dropdown field to change or assign the component's parent subtopology directory. The node will dynamically inherit its parent's power and clock behaviors upon reallocation.
