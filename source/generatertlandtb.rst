@@ -79,7 +79,7 @@ The compiler outputs all hardware files inside a compressed Tape Archive GNU zip
    .. image:: images/extracting_file.png
       :alt: Extracting the tarball archive contents via local file system management wizard
       :align: center
-      :width: 75%
+      :width: 60%
 
 --------------------------------------------------------------------------------
 
@@ -99,7 +99,7 @@ NC-NoC Output Sub-Directories
    .. image:: images/generate_rtl_without_cycle_accurate.png
       :alt: Extracted folder map layout showing pure RTL system and testbench files
       :align: center
-      :width: 85%
+      :width: 60%
 
 .. dropdown:: 📁 Output Tree WITH Cycle Accurate Model
    :open:
@@ -109,7 +109,7 @@ NC-NoC Output Sub-Directories
    .. image:: images/generate_rtl_with_cycle_accurate.png
       :alt: Extracted folder directory layout showing added cycle-accurate subfolders
       :align: center
-      :width: 85%
+      :width: 60%
 
 C-NoC Output Sub-Directories
 ----------------------------
@@ -122,4 +122,4 @@ C-NoC Output Sub-Directories
    .. image:: images/generate_rtl_files_c_noc-without_cycle_accurate.png
       :alt: Extracted Coherent C-NoC folder structure containing CHI/CPI hardware blocks
       :align: center
-      :width: 85%
+      :width: 60%
