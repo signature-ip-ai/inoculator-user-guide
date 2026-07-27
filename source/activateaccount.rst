@@ -36,7 +36,7 @@ The Activation Process
       .. image:: images/activate_account_page.png
          :alt: iNoCulator Account Activation Form Fields
          :align: center
-         :width: 80%
+         :width: 50%
 
    .. grid-item-card:: Step 3: Submit Activation
       :class-header: bg-light font-weight-bold
