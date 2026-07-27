@@ -24,7 +24,7 @@ Follow this operational flow to retrieve your verification key and access your e
       .. image:: images/otp_page.png
          :alt: Multi-factor authentication input form for entering the One-Time PIN
          :align: center
-         :width: 65%
+         :width: 50%
 
    .. grid-item-card:: Step 2: Retrieve the Security Key
       :class-header: bg-light font-weight-bold
