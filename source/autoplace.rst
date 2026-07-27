@@ -33,4 +33,4 @@ Workspace View
 .. image:: images/auto_place_3.png
    :alt: iNoCulator Auto-Place Canvas Component Optimization Layout
    :align: center
-   :width: 100%
+   :width: 60%
