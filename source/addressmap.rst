@@ -48,4 +48,4 @@ Automated Provisioning
 .. image:: images/address_map_autofill2.png
    :alt: iNoCulator Autofill Addresses Toggle Modal View
    :align: center
-   :width: 90%
+   :width: 80%
