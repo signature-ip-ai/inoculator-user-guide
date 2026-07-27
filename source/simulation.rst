@@ -44,12 +44,12 @@ Test Execution & Parameter Configurations
 .. image:: images/simulation3.png
    :alt: Main iNoCulator simulation workspace grid and test configuration panel layout
    :align: center
-   :width: 90%
+   :width: 70%
 
 .. image:: images/simulation6.png
    :alt: Configuration columns for tweaking transaction sizes, seed numbers, and wave dumps
    :align: center
-   :width: 90%
+   :width: 70%
 
 To execute a test verification run, customize your validation parameters directly inside the interactive simulation rows:
 
@@ -84,7 +84,7 @@ Once configuration parameters match your target profiling constraints, click the
 .. image:: images/simulate_actions3.png
    :alt: Simulation history tracker log table with action dropdown markers
    :align: center
-   :width: 90%
+   :width: 70%
 
 The system logs active builds directly inside the trace tracking layout table, recording critical parameters across the entire simulation runtime lifecycle:
 
