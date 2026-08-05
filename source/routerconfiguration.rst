@@ -22,7 +22,7 @@ The configuration inspector splits localized router parameters across three dedi
       .. image:: images/router_settings4.png
          :alt: Global settings pane for a selected router component showing identification and power fields
          :align: center
-         :width: 85%
+         :width: 60%
 
    .. grid-item-card:: Tab 2: Crossbar Routing Table
       :class-header: bg-light font-weight-bold
@@ -32,7 +32,7 @@ The configuration inspector splits localized router parameters across three dedi
       .. image:: images/router_routing_table.png
          :alt: Structural routing table spreadsheet showing interconnect reachability paths
          :align: center
-         :width: 85%
+         :width: 60%
 
    .. grid-item-card:: Tab 3: Port Pipeline Stages
       :class-header: bg-light font-weight-bold
@@ -42,7 +42,7 @@ The configuration inspector splits localized router parameters across three dedi
       .. image:: images/router_ports.png
          :alt: Dedicated ports tab mapping pipeline stage attributes across attached bus protocols
          :align: center
-         :width: 85%
+         :width: 60%
 
 --------------------------------------------------------------------------------
 

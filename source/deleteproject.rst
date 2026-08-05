@@ -22,7 +22,7 @@ Project Deletion Workflow
       .. image:: images/delete_project2.png
          :alt: Locating the Delete Project trash icon button on the dashboard project card
          :align: center
-         :width: 85%
+         :width: 60%
 
    .. grid-item-card:: Step 2: Fulfill the Confirmation Prompt
       :class-header: bg-light font-weight-bold
@@ -34,7 +34,7 @@ Project Deletion Workflow
       .. image:: images/delete_project-confirmation_window.png
          :alt: Project deletion modal window prompt requiring explicit click validation
          :align: center
-         :width: 60%
+         :width: 50%
 
 --------------------------------------------------------------------------------
 

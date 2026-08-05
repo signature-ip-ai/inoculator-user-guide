@@ -32,7 +32,7 @@ Project Duplication Workflow
       .. image:: images/copy_project_dashboard2.png
          :alt: iNoCulator Main Workspace Dashboard Project Tracking Panel
          :align: center
-         :width: 85%
+         :width: 20%
 
    .. grid-item-card:: Step 2: Trigger the Duplication Control
       :class-header: bg-light font-weight-bold
@@ -44,7 +44,7 @@ Project Duplication Workflow
       .. image:: images/copy_project_cnoc.png
          :alt: Copy Project Action Menu Trigger Location
          :align: center
-         :width: 85%
+         :width: 20%
 
    .. grid-item-card:: Step 3: Configure the New Naming Matrix
       :class-header: bg-light font-weight-bold

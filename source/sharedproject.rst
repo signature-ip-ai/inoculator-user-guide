@@ -36,7 +36,7 @@ Follow this sequential workflow to grant canvas access permissions to internal o
       .. image:: images/share_project-internal.png
          :alt: Share project modal displaying the primary internal organization user list directory
          :align: center
-         :width: 75%
+         :width: 60%
 
       .. rst-class:: mt-3
       
@@ -47,7 +47,7 @@ Follow this sequential workflow to grant canvas access permissions to internal o
       .. image:: images/share_project-external.png
          :alt: Selecting external engineering partners through the secondary collaborated accounts group panel
          :align: center
-         :width: 75%
+         :width: 60%
 
    .. grid-item-card:: Step 3: Validate Active Sharing Assignments
       :class-header: bg-light font-weight-bold
@@ -61,7 +61,7 @@ Follow this sequential workflow to grant canvas access permissions to internal o
       .. image:: images/share_project-success2.png
          :alt: Project card interface showing the update badge tracking active recipient count matches
          :align: center
-         :width: 75%
+         :width: 60%
 
 --------------------------------------------------------------------------------
 
@@ -120,7 +120,7 @@ The identity registry engine dispatches automated notifications across the shari
    .. image:: images/share_project-email_notification.png
       :alt: Sample transaction message verifying initial receipt of shared design access
       :align: center
-      :width: 80%
+      :width: 65%
 
 .. dropdown:: Share Revocation and Discontinuation Notifications
 

@@ -35,7 +35,7 @@ The platform design loop relies on an iterative validation sign-off cycle:
 .. image:: images/ncnoc_topology_validation_list.png
    :alt: Diagnostic telemetry drawer enumerating the individual pass/fail system rules
    :align: center
-   :width: 90%
+   :width: 65%
 
 --------------------------------------------------------------------------------
 

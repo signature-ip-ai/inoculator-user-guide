@@ -20,7 +20,7 @@ Configure your target Initiator node by selecting its contextual tabs within the
       .. image:: images/initiator-parameters8.png
          :alt: iNoCulator Initiator Device Core Parameter inspector configuration panel
          :align: center
-         :width: 80%
+         :width: 60%
 
       * - **Name**
         - Unique text string to label the selected master interface. Input processor accepts **alphanumeric characters and underscores only** (no spaces or special symbols).
@@ -53,7 +53,7 @@ Configure your target Initiator node by selecting its contextual tabs within the
       .. image:: images/initiator-timing4.png
          :alt: Initiator node clock domain and timing constraint options panel
          :align: center
-         :width: 80%
+         :width: 60%
 
       .. note::
          **Interface Visibility Condition:** This clock domain workspace panel unlocks if and only if the **Disable Frequency Validation** parameter checkbox is explicitly activated during the root *Create Project* setup phase.
@@ -87,7 +87,7 @@ Configure your target Initiator node by selecting its contextual tabs within the
       .. image:: images/initiator-others4.png
          :alt: Traffic behavior shaping policies and secondary options configuration panel
          :align: center
-         :width: 80%
+         :width: 60%
 
       .. note::
          **Interface Visibility Condition:** This traffic shaping section lights up if the corresponding performance profiling configuration flags are checked in your active *Project Configuration* properties.

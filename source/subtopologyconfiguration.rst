@@ -24,7 +24,7 @@ Follow this sequential workflow to initialize structural folder partitions insid
       .. image:: images/subtopology-add_new_folder2.png
          :alt: Explorer tree architecture layout panel showing the addition of a secondary subtopology folder node
          :align: center
-         :width: 70%
+         :width: 60%
 
    .. grid-item-card:: Step 2: Bind Component Groups to Active Viewports
       :class-header: bg-light font-weight-bold
@@ -43,7 +43,7 @@ Clicking any subtopology container node inside the Explorer layout populated a c
 .. image:: images/subtopology-properties3.png
    :alt: Right-side inspector property sheet showing default structural identity, clocking, and sideband choices
    :align: center
-   :width: 80%
+   :width: 60%
 
 Global & Clocking Parameters
 ----------------------------------
@@ -79,7 +79,7 @@ To support structural power-down states, you can deploy hardware sideband handsh
       .. image:: images/subtopology-properties_with_power_voltage4.png
          :alt: Expanded property sheet showing independent power grid net definitions and operating voltage bounds
          :align: center
-         :width: 80%
+         :width: 60%
 
       * **Use Project Power Domain:** **Enabled by default.** Forces the subtopology rail structure to track the global, project-wide voltage parameters. Disabling this checkbox breaks the link, unlocking individualized local control fields to define independent power domains.
       * **Power Net Name:** Specifies the unique string identifier for the positive supply voltage metal track rail allocation layer (e.g., ``VDD_CORE_M0``).
