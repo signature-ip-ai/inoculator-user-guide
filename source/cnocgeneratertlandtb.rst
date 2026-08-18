@@ -48,7 +48,7 @@ The Generation Workflow
          :align: center
          :width: 90%
 
-  .. grid-item-card:: Additional Item for Internal Users
+   .. grid-item-card:: Additional Item for Internal Users
       :class-header: bg-light font-weight-bold
 
      The task window interface includes a branch selector component presented in a structured **Grid View** layout, allowing authorized internal users to target and inspect specific code/configuration branches across active sessions.
