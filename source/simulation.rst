@@ -103,13 +103,13 @@ Action Controls
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-Branch Selection in Task Windows
-================================
+Branch Selection in Task Windows [Simulation]
+=================================================
 
 The task window interface includes a branch selector that allows authorized users to target specific code/configuration branches directly within their active session.
 
-Features & Access Control
--------------------------
+Features & Access Control [Simulation]
+-------------------------------------------
 
 * **Visibility:** 
   The branch select dropdown is restricted and **visible only to internal users** belonging to authorized groups (`SignatureIP`, `SAdmins`, and designated internal groups). External or standard users will not see this control in the task window.
@@ -118,8 +118,8 @@ Features & Access Control
 * **Persistence:** 
   Any manual branch selection made by a user is automatically saved to local storage (`localStorage`) to preserve their preference across sessions and window reloads.
 
-UI & Configuration Reference
-----------------------------
+UI & Configuration Reference [Simulation]
+------------------------------------------------
 
 .. list-table:: Task Window Branch Selector Properties
    :widths: 30 70
@@ -136,8 +136,8 @@ UI & Configuration Reference
    * - **Fallback / Default**
      - Admin page group active branch configuration.
 
-Usage Example
--------------
+Usage Example [Simulation]
+-----------------------------------
 
 When an internal user opens a task window, the component checks user group permissions:
 
