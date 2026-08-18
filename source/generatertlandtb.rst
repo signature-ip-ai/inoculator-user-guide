@@ -111,15 +111,4 @@ NC-NoC Output Sub-Directories
       :align: center
       :width: 60%
 
-C-NoC Output Sub-Directories
-----------------------------
 
-.. dropdown:: 📁 Output Tree WITHOUT Cycle Accurate Model (Cache-Coherent NoC)
-   :open:
-
-   For coherent (C-NoC) designs, the engine builds out explicit directories containing cache controllers, directory nodes, snoop filters, and CHI/CPI protocol tracking layers.
-
-   .. image:: images/generate_rtl_files_c_noc-without_cycle_accurate.png
-      :alt: Extracted Coherent C-NoC folder structure containing CHI/CPI hardware blocks
-      :align: center
-      :width: 60%
