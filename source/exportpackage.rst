@@ -115,6 +115,7 @@ Select the tab matching your required output profile to see the specific check-b
          :align: center
          :width: 80%
 
+
 --------------------------------------------------------------------------------
 
 Managing Export Deliverables
@@ -146,3 +147,47 @@ For high-throughput delivery to automated continuous-integration (CI) pipelines 
 
 .. hint::
    **Automatic Activation:** The **Upload to FTP Server** action controls lock and unlock dynamically based on your enterprise group's global infrastructure profiles. Once your network administrator provisions valid server IP paths, port gates, and authorization tokens, this system control block lights up automatically inside your workflow dashboard, displaying live transfer states.
+
+-------------------------------------------------------------------------------
+
+Branch Selection in Task Windows
+================================
+
+The task window interface includes a branch selector that allows authorized users to target specific code/configuration branches directly within their active session.
+
+Features & Access Control
+-------------------------
+
+* **Visibility:** 
+  The branch select dropdown is restricted and **visible only to internal users** belonging to authorized groups (`SignatureIP`, `SAdmins`, and designated internal groups). External or standard users will not see this control in the task window.
+* **Default Branch:** 
+  Upon initial load, the selector defaults to the active branch configured globally within the **admin page group settings**.
+* **Persistence:** 
+  Any manual branch selection made by a user is automatically saved to local storage (`localStorage`) to preserve their preference across sessions and window reloads.
+
+UI & Configuration Reference
+----------------------------
+
+.. list-table:: Task Window Branch Selector Properties
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Property
+     - Description
+   * - **Component Location**
+     - Task window header / control panel toolbar.
+   * - **Authorized Roles**
+     - ``SignatureIP``, ``SAdmins``, internal group members.
+   * - **Storage Key**
+     - ``task_window_selected_branch``
+   * - **Fallback / Default**
+     - Admin page group active branch configuration.
+
+Usage Example
+-------------
+
+When an internal user opens a task window, the component checks user group permissions:
+
+1. **Permission Check:** Validates if the user session contains internal privileges.
+2. **State Initialization:** Reads from storage or falls back to the admin-defined active branch.
+3. **Event Triggering:** Dispatches a ``taskBranchChanged`` event whenever a new branch is selected, updating downstream task processes dynamically.
