@@ -17,7 +17,7 @@ Configure your target Initiator node by selecting its contextual tabs within the
 
       The **Parameters** workspace governs protocol mappings, data bus geometries, buffer depths, and tracking parameters.
 
-      .. image:: images/initiator-parameters8.png
+      .. image:: images/initiator-parameters9.png
          :alt: iNoCulator Initiator Device Core Parameter inspector configuration panel
          :align: center
          :width: 60%
@@ -47,6 +47,11 @@ Configure your target Initiator node by selecting its contextual tabs within the
            **Validation Pre-requisite:** Reorder buffers are structurally cross-checked once a target terminal node enables the *Address Interleaving Merger*.
       * - **Write Data Buffer & Buffer Depth**
         - Toggles an independent FIFO container loop to smooth over network routing stalls. Supports explicit depths from ``2`` to ``256`` entries.
+      * - **Number of Virtual Channel**
+        - Configures the number of virtual channels allocated for the initiator port to manage concurrent multi-request streams and prevent protocol deadlock.
+        - **Applicability:** Applicable **only** to **AXI4 (full)** ingress ports.
+        - **Validation Rule:** The value must not exceed the configured **"Outstanding Reads"** limit. Any value greater than Outstanding Reads or outside the allowed powers of 2 will trigger a topology validation error.
+        - **Range of Values:** Powers of 2 up to a maximum of **16** (``[0, 1, 2, 4, 8, 16]``).
 
    .. tab-item:: ⏱️ Timing Domain Setup
 
