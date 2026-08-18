@@ -101,3 +101,6 @@ Address Interleaving Merger
 
 .. warning::
    When the global **NoC Data Width** is provisioned at exactly ``1024`` and the matching **Target Port Data Width** is specified as ``32``, the **Address Interleaving Merger** toggle button is automatically **disabled** and bypassed by the hardware compilation engine.
+
+.. warning:: 
+   When a non-AXI device is configured as an Initiator, the "Address Interleaving Merger" option for all Target devices in the topology is disabled.
