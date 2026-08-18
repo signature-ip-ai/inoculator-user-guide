@@ -62,8 +62,8 @@ Compilation and Build Pipeline
 
      The task window interface includes a branch selector component presented in a structured **Grid View** layout, allowing authorized internal users to target and inspect specific code/configuration branches across active sessions.
 
-     Features & Access Control
-     -------------------------
+      **Features & Access Control**
+   
 
      * **Visibility:** 
        The branch selection grid is restricted and **visible only to internal users** belonging to authorized groups (`SignatureIP`, `SAdmins`, and designated internal groups). External or standard users will not see this panel.
@@ -72,8 +72,7 @@ Compilation and Build Pipeline
      * **Persistence:** 
        Any manual selection made by a user within the grid view is automatically saved to local storage (`localStorage`) to preserve their preference across sessions and window reloads.
 
-     Grid Layout & Configuration Reference
-     -------------------------------------
+     **Grid Layout & Configuration Reference**
 
      .. list-table:: Task Window Branch Selector Grid Properties
         :widths: 30 70
@@ -90,8 +89,7 @@ Compilation and Build Pipeline
         * - **Fallback / Default**
           - Admin page group active branch configuration.
 
-     Usage & Grid Interaction
-     ------------------------
+     **Usage & Grid Interaction**
 
      When an internal user opens a task window, the grid component performs the following operational flow:
 
