@@ -99,3 +99,48 @@ Action Controls
    
    * **Download:** Packages and pulls down the compiled transaction log matrices, performance data, and waveform traces straight to your workstation downloads folder *(availability governed by group license limits)*.
    * **Delete:** Permanently purges the targeted validation folder container from your history log to clean up your workspace footprint.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Branch Selection in Task Windows [Simulation]
+=================================================
+
+The task window interface includes a branch selector that allows authorized users to target specific code/configuration branches directly within their active session.
+
+Features & Access Control [Simulation]
+-------------------------------------------
+
+* **Visibility:** 
+  The branch select dropdown is restricted and **visible only to internal users** belonging to authorized groups (`SignatureIP`, `SAdmins`, and designated internal groups). External or standard users will not see this control in the task window.
+* **Default Branch:** 
+  Upon initial load, the selector defaults to the active branch configured globally within the **admin page group settings**.
+* **Persistence:** 
+  Any manual branch selection made by a user is automatically saved to local storage (`localStorage`) to preserve their preference across sessions and window reloads.
+
+UI & Configuration Reference [Simulation]
+------------------------------------------------
+
+.. list-table:: Task Window Branch Selector Properties
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Property
+     - Description
+   * - **Component Location**
+     - Task window header / control panel toolbar.
+   * - **Authorized Roles**
+     - ``SignatureIP``, ``SAdmins``, internal group members.
+   * - **Storage Key**
+     - ``task_window_selected_branch``
+   * - **Fallback / Default**
+     - Admin page group active branch configuration.
+
+Usage Example [Simulation]
+-----------------------------------
+
+When an internal user opens a task window, the component checks user group permissions:
+
+1. **Permission Check:** Validates if the user session contains internal privileges.
+2. **State Initialization:** Reads from storage or falls back to the admin-defined active branch.
+3. **Event Triggering:** Dispatches a ``taskBranchChanged`` event whenever a new branch is selected, updating downstream task processes dynamically.

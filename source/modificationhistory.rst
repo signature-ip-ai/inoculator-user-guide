@@ -322,3 +322,17 @@ This is the modification history made for the documentation.
 |                       |                                | 1. Deleting of project and transferring of ownership.                                          |
 |                       |                                | 2. Router Shapes for X6 lib                                                                    |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.3.0                 | Aug. 5, 2026                   | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Adjusted the image size.                                                                    | 
+|                       |                                | 2. Removed extraneous parameters in the NC-NoC initiator/target with non-AXI protocol          |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.3.1                 | Aug. 19, 2026                  | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added branch control in generate, simulate and export tasks using Internal Accounts.        |
+|                       |                                | 2. Update Router tab name from "PORTS" to "PIPELINES".                                         |
+|                       |                                | 3. Added Virtual Channel Parameters in NC-NoC.                                                 |
+|                       |                                | 4. Added NC-NoC Internal Pipeline Stages.                                                      |
+|                       |                                | 5. Modified Address Interleaving Merger to be disabled when Non-AXI is present in Initiators.  |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+

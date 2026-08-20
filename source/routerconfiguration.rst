@@ -19,7 +19,7 @@ The configuration inspector splits localized router parameters across three dedi
 
       Defines structural node naming conventions, active hardware subtopology bindings, and specific voltage domain configurations.
       
-      .. image:: images/router_settings4.png
+      .. image:: images/router_settings5.png
          :alt: Global settings pane for a selected router component showing identification and power fields
          :align: center
          :width: 60%
@@ -29,7 +29,7 @@ The configuration inspector splits localized router parameters across three dedi
 
       Exposes target packet routing rules across the local switch fabric. The interface filters destination ports dynamically based on node-to-node physical reachability limits.
       
-      .. image:: images/router_routing_table.png
+      .. image:: images/router_routing_table2.png
          :alt: Structural routing table spreadsheet showing interconnect reachability paths
          :align: center
          :width: 60%
@@ -39,7 +39,7 @@ The configuration inspector splits localized router parameters across three dedi
 
       Configures internal structural register slices to alter timing and timing slack attributes across physical boundary crossings.
       
-      .. image:: images/router_ports.png
+      .. image:: images/router_pipelines.png
          :alt: Dedicated ports tab mapping pipeline stage attributes across attached bus protocols
          :align: center
          :width: 60%
@@ -48,8 +48,6 @@ The configuration inspector splits localized router parameters across three dedi
 
 Protocol Pipeline Stage Reference Metrics
 =============================================
-
-Pipeline stage distributions vary by protocol class to match standard bus timing and buffer requirements across structural clock crossings:
 
 .. list-table:: Default Protocol Pipeline Stages
    :widths: 40 20 40
