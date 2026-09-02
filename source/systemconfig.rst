@@ -11,15 +11,26 @@ Editing the Global Configuration Fabric
 
 To modify established top-level properties after initial project instantiations, click the **System Config** control button located on the primary action bar panel.
 
-.. image:: images/nc_noc-system_config2.png
-   :alt: Action bar location showing the System Config entry button
+.. image:: images/system_config_nocparameters.png
+   :alt: Tab for NoC Parameters
    :align: center
    :width: 60%
-.. image:: images/nc_noc-system_config4.png
-   :alt: Main global NC-NoC System Configuration property overlay panel
+.. image:: images/system_config_power.png
+   :alt: Tab for Power
    :align: center
    :width: 60%
-
+.. image:: images/system_config_usersignal.png
+   :alt: Tab for User Signal
+   :align: center
+   :width: 60%
+.. image:: images/system_config_addressinterleaving.png
+   :alt: Tab for Address Interleaving
+   :align: center
+   :width: 60%
+.. image:: images/system_config_crosstopology.png
+   :alt: Tab for Cross Topology
+   :align: center
+   :width: 60%
 --------------------------------------------------------------------------------
 
 Foundational Data and Address Geometries
@@ -89,15 +100,15 @@ Advanced Protocol Extensions & Memory Stripping
 
       * **Computed Bits Buffer ID** calculated bit-width required to uniquely index the maximum buffer depth found across all network ingress ports, scaling logarithmically with the largest buffer size
 
-      * **Computed Read ID Width Master Common** automatically calculated maximum read transaction ID width, derived from the highest read ID width configured across all AXI ingress ports in the network.
+      * **Computed Read ID Width Master Common** automatically calculated maximum read transaction ID width, derived from the highest read ID width configured across all AXI ingress ports in the network. This will be increased by 7 if SIG-NATIVE is                present in any eport or iport.
 
-      * **Computed Write ID Width Master Common** automatically calculated maximum write transaction ID width, derived from the highest write ID width configured across all AXI ingress ports in the network.
+      * **Computed Write ID Width Master Common** automatically calculated maximum write transaction ID width, derived from the highest write ID width configured across all AXI ingress ports in the network. This will be increased by 7 if SIG-NATIVE is             present in any eport or iport.
 
       When the SIG_NATIVE Cross Topology is enabled, additional fields are displayed, these will allow the user to configure the desired Bits Buffer ID, Read ID Width and Write IF Width :
 
-      * **Connected Bits Buffer ID**
+      * **Connected Bits Buffer ID** allowing the user to input a desired Bits Buffer ID
 
-      * **Connected Read ID Width Master Common** 
+      * **Connected Read ID Width Master Common** allowing the user to input a desired Read ID Width
 
-      * **Connected Write ID Width Master Common** 
+      * **Connected Write ID Width Master Common** allowing the user to input a desired Write ID Width
 
