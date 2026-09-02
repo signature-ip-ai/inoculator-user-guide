@@ -93,7 +93,7 @@ Advanced Protocol Extensions & Memory Stripping
 
       * **Computed Write ID Width Master Common** automatically calculated maximum write transaction ID width, derived from the highest write ID width configured across all AXI ingress ports in the network.
 
-   When the SIG_NATIVE Cross Topology is enabled, additional fields are displayed, these will allow the user to configure the desired Bits Buffer ID, Read ID Width and Write IF Width :
+      When the SIG_NATIVE Cross Topology is enabled, additional fields are displayed, these will allow the user to configure the desired Bits Buffer ID, Read ID Width and Write IF Width :
 
       * **Connected Bits Buffer ID**
 
