@@ -335,4 +335,9 @@ This is the modification history made for the documentation.
 |                       |                                | 4. Added NC-NoC Internal Pipeline Stages.                                                      |
 |                       |                                | 5. Modified Address Interleaving Merger to be disabled when Non-AXI is present in Initiators.  |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.3.2                 | Sept. 2, 2026                  | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Updated the layout of NC-NoC System Config.                                                 |
+|                       |                                | 2. Added Cross Topology feature in Nc-NoC System Config                                        |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
