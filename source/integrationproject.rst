@@ -26,7 +26,7 @@ To add topologies, click the “Open Modal” button in the left panel. This wil
 
 All selected topologies will be displayed on the canvas.
 
-.. image:: images/integration_with_topologiess.png
+.. image:: images/integration_with_topologies.png
    :alt: Integration with Topologies
    :align: center
    :width: 80%
