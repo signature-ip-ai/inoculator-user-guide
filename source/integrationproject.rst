@@ -30,3 +30,8 @@ All selected topologies will be displayed on the canvas.
    :alt: Integration with Topologies
    :align: center
    :width: 80%
+
+
+Non-Coherent NoC Project will have a dark blue router outline, with Initiators displayed on the left ports, Target devices on the right ports, and Bridges on the bottom. Virtual Target Devices and the Default Slave will not be displayed.
+
+Coherent NoC Project will have a cyan-colored router outline, with CHI RN and AXI Master displayed on the right ports, CHI SN and AXI Slave on the left ports, and Bridges on the bottom.
