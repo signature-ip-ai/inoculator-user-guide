@@ -162,6 +162,13 @@ Table of Contents
    cnocsystemconfig
    cnoctopologyvalidation
 
+.. toctress::
+   :maxdepth: 2
+   :caption: Integration Project Workflow
+
+
+   integrationproject
+
 
 .. toctree::
    :maxdepth: 2
