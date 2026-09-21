@@ -88,6 +88,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Overview
    
 
@@ -97,6 +98,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Account Management
    
 
@@ -109,6 +111,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Project Management and Exporting Project
 
    sharedproject
@@ -120,6 +123,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: NC-NoC Design Workflow
 
    createprojectncnoc
@@ -147,6 +151,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: C-NoC Design Workflow
    
 
@@ -164,6 +169,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Integration Project Workflow
 
 
@@ -172,6 +178,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Troubleshooting
    
 
@@ -184,6 +191,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Support & Resources
    
 
@@ -193,6 +201,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :caption: Reference
    
 
