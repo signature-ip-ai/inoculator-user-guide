@@ -83,9 +83,6 @@ Use the quick links below to jump straight to your workspace or explore the full
    the full nested tree populates your sidebar beautifully, but doesn't 
    clutter your main landing page.
 
-Table of Contents 
-======================================
-
 .. toctree::
    :maxdepth: 2
    :hidden:
