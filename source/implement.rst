@@ -39,7 +39,7 @@ Implementation Configuration Workflow
       .. image:: images/implement2.png
          :alt: Physical implementation tool selection dropdown and custom file upload options overlay
          :align: center
-         :width: 75%
+         :width: 50%
 
    .. grid-item-card:: Step 3: Dispatch to the Synthesis Cluster
       :class-header: bg-light font-weight-bold

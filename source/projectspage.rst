@@ -95,9 +95,9 @@ Project Creation & Resource Indexing
           :align: center
           :width: 70%
    * - **Attribute Filter Sub-System**
-     - Refines long lists by applying boolean categorical boundaries (e.g., topology layout type, date modified thresholds, or compilation status metrics).
+     - Refines long lists by applying boolean categorical boundaries (e.g., C-NoC Projects, NC-NoC Projects or Integration Projects).
      
-       .. image:: images/filter_function4.png
+       .. image:: images/filter_function5.png
           :alt: Categorical dropdown filtering mechanics sorting workspace attributes
           :align: center
           :width: 70%
