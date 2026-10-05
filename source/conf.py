@@ -9,19 +9,28 @@ release = '6.3.5'
 
 extensions = [
     'sphinx.ext.napoleon',
-    "sphinx.ext.autosectionlabel",
-    "sphinx.ext.autodoc",
-    "sphinx.ext.todo",
-    "sphinx_copybutton",
-    "sphinx.ext.intersphinx",
-    "sphinx.ext.viewcode",
-    "sphinx_design",
-    "sphinx.ext.mathjax" 
-
+    'sphinx.ext.autosectionlabel',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',  # Added: Cleaner API documentation stubs
+    'sphinx.ext.todo',
+    'sphinx_copybutton',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.viewcode',
+    'sphinx_design',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.githubpages',  # Added: Automatically adds .nojekyll for GitHub Pages
+    # 'myst_parser',           # Uncomment if using Markdown (.md) files
 ]
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+# Extension configurations
+todo_include_todos = True
+autosectionlabel_prefix_document = True  # Prevents duplicate heading label clashes
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+}
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -33,7 +42,6 @@ html_theme_options = {
     "use_download_button": True,
     "use_fullscreen_button": True,
     "use_sidenotes": True,
-    "show_toc_level": 3,
     "announcement": "📘 Inoculator User Guide v6.3.5",
     "home_page_in_toc": True,
     "repository_url": "https://github.com/signatureip/inoculator-guide",
@@ -46,9 +54,9 @@ html_theme_options = {
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links", "theme-switcher"],
 
-    # Sidebar
+    # Sidebar (Cleaned up duplicate show_toc_level and removed ethical ads)
     "show_navbar_depth": 2,         # Show two levels in the left nav by default
-    "show_toc_level": 3,            # Show headings h2 + h3 in the right TOC
+    "show_toc_level": 3,              # Show headings h2 + h3 in the right TOC
 
     # Edit / repo buttons
     "use_edit_page_button": True,
@@ -56,8 +64,8 @@ html_theme_options = {
     "use_repository_button": True,
     "use_source_button": True,
 
-    # Primary color —
-    "primary_sidebar_end": ["indices.html", "sidebar-ethical-ads.html"],
+    # Primary sidebar widgets (Removed sidebar-ethical-ads.html for corporate compliance)
+    "primary_sidebar_end": ["indices.html"],
 
     # Footer
     "footer_start": ["copyright"],
@@ -78,12 +86,11 @@ html_theme_options = {
             "type": "fontawesome",
         },
         {
-        "name": "Support",
-        "url": "mailto:support@signatureip.ai",
-        "icon": "fa-solid fa-envelope",
-        "type": "fontawesome"
+            "name": "Support",
+            "url": "mailto:support@signatureip.ai",
+            "icon": "fa-solid fa-envelope",
+            "type": "fontawesome"
         },
-        
     ],
 }
 
@@ -91,9 +98,7 @@ html_title = "Inoculator User Guide"
 html_favicon = "_static/favicon.ico"
 html_last_updated_fmt = "%B %d, %Y"
 
-
 html_permalinks_icon = '<span class="sig-permalink" aria-label="Permalink" title="Copy link to section">⬡</span>'
-
 
 html_css_files = [
     'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600&display=swap',
