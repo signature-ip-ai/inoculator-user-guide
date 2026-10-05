@@ -134,7 +134,7 @@ Use the quick links below to jump straight to your workspace or explore the full
    componentsandexplorer
    generatertlandtb
    initiatorconfiguration
-   netwrokviewtab
+   networkviewtab
    projectoverview
    routerconfiguration
    targetconfiguration  
