@@ -1,4 +1,4 @@
-Project Overview
+NC-NoC Project Overview
 ====================================================
 
 The Project Overview (specifically the Interfaces tab) allows you to configure global network settings and manage device communication interfaces.
