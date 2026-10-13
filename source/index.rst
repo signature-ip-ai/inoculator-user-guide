@@ -153,7 +153,7 @@ Use the quick links below to jump straight to your workspace or explore the full
    :caption: NC-NoC 2.0 (CXS)
 
    createprojectncnoccxs
-   ncnoccxsoverview
+   projectoverviewcxs
    designview
 
 
