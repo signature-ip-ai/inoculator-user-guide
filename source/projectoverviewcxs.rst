@@ -5,7 +5,7 @@ The Project Overview allows you to configure global network settings and manage 
 
 
 Interface Tab (CXS)
-------------------
+----------------------
 
 **Global Network Settings:** Define top-level parameters such as NoC Address Width, NoC Data Width, and the Preferred Network Configuration
 
@@ -22,7 +22,7 @@ Interface Tab (CXS)
 
 
 Connectivty Tab (CXS)
------------------------
+---------------------------
 
 **Matrix View:** Visualize and manage communication pathways between all configured ingress devices (rows) and egress targets (columns).
 
