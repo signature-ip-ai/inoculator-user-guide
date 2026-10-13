@@ -1,4 +1,4 @@
-NC-NoC Project Overview
+NC-NoC Project Overview with SIG-NATIVE
 ====================================================
 
 The Project Overview (specifically the Interfaces tab) allows you to configure global network settings and manage device communication interfaces.
