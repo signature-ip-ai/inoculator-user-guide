@@ -29,7 +29,7 @@ Use the quick links below to jump straight to your workspace or explore the full
       Step-by-step documentation for configuring, simulating, and implementing NC-NoC designs.
 
       * :doc:`createprojectncnoc`
-      * :doc: `createprojectncnoccxs`
+      * :doc:`createprojectncnoccxs`
       * :doc:`uploadtopology`
       * :doc:`systemconfig`
 
