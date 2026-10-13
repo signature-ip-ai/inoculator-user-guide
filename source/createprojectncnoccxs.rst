@@ -27,7 +27,8 @@ The Project Settings wizard panel allows you to configure essential design rules
      - Dropdown Selector
      - Selects the target fabric architecture. Options include:
        
-       * **Non-Coherent NoC** — Activates memory-mapped routing.
+       * **Non-Coherent NoC 1.0 (SIG-NATIVE)** — Activates memory-mapped routing.
+       * **Non-Coherent NoC 2.0 (CXS)** — Activates CXS packet transport. 
        * **Coherent NoC** — Toggles cache-coherent (CHI) structures.
        * *Integration* — *(Currently not implemented).*
    * - **Project Name**
@@ -35,3 +36,30 @@ The Project Settings wizard panel allows you to configure essential design rules
      - **Required Field.** Enter a unique layout identifier name. 
        
        *(Subject to strict naming constraints below).*
+
+--------------------------------------------------------------------------------
+
+String & Naming Validation 
+=========================================
+
+The database registration engine enforces strict validation rules on the project name field. Input strings failing these constraints will trigger submission blocks:
+
+.. warning::
+   **Project Naming Constraints:**
+   
+   * **Space Prohibition:** Whitespace characters are strictly forbidden anywhere inside the project name string field (e.g., use ``My_NC_NoC`` or ``MyNCNoC`` instead of ``My NC NoC``).
+   * **Allowed Characters:** The input processor handles standard **alphanumeric characters only**. Special symbols, punctuation marks, and mathematical operators are completely prohibited.
+
+--------------------------------------------------------------------------------
+
+Launching Your Workspace
+========================================
+
+Once you have verified and entered the project name, check the **Design** tab to see the topology. 
+
+.. image:: images/cxs_blankcanvas.png
+   :alt: Non-Coherent NoC (CXS) project Blank Canvas
+   :align: center
+   :width: 65%
+
+
