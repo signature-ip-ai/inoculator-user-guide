@@ -121,7 +121,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: NC-NoC 1.0 (Sig-Native)
+   :caption: Non-Coherent NoC 1.0 (Sig-Native)
 
    createprojectncnoc
    uploadtopology
@@ -151,7 +151,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: NC-NoC 2.0 (CXS)
+   :caption: Non-Coherent NoC 2.0 (CXS)
 
    createprojectncnoccxs
    projectoverviewcxs
