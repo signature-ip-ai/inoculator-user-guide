@@ -121,7 +121,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: NC-NoC Design Workflow
+   :caption: NC-NoC 1.0 (Sig-Native)
 
    createprojectncnoc
    uploadtopology
@@ -146,6 +146,15 @@ Use the quick links below to jump straight to your workspace or explore the full
    virtualconfiguration
    implement
    floorplan
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: NC-NoC 2.0 (CXS)
+
+   createprojectncnoccxs
+   ncnoccxsoverview
+   designview
 
 
 .. toctree::
