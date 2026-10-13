@@ -125,6 +125,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 
    createprojectncnoc
    uploadtopology
+   ncnocdesigntab
    accessmap
    addressinterleaving
    addressmap
@@ -154,7 +155,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 
    createprojectncnoccxs
    projectoverviewcxs
-   designview
+   ncnocdesigntabcxs
 
 
 .. toctree::
