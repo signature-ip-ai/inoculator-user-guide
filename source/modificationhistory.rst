@@ -345,4 +345,11 @@ This is the modification history made for the documentation.
 |                       |                                | 1. Added Integration Project page.                                                             |
 |                       |                                | 2. Uploaded new screenshots.                                                                   |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.3.5                 | October 13, 2026               | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Add NC-NoC 2.0 in Non-Coherent NoC page                                                     |
+|                       |                                | 2. Update Filter items in Projects Page.                                                       |
+|                       |                                | 3. Add pages for sample designs of NC-NoC.                                                     |
+|                       |                                | 4. Upload necessary files related to NC-NoC.                                                   |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 

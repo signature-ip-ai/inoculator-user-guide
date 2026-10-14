@@ -305,3 +305,19 @@ div.announcement {
   transition: color 0.15s ease-in-out;
 }
 
+/* Modern IDE-like code blocks */
+div.highlight {
+    border-radius: 8px;
+    border: 1px solid var(--pst-color-border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Style the copy button */
+button.copybtn {
+    border-radius: 4px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    background-color: var(--pst-color-surface);
+    border: 1px solid var(--pst-color-border);
+}

@@ -29,6 +29,7 @@ Use the quick links below to jump straight to your workspace or explore the full
       Step-by-step documentation for configuring, simulating, and implementing NC-NoC designs.
 
       * :doc:`createprojectncnoc`
+      * :doc:`createprojectncnoccxs`
       * :doc:`uploadtopology`
       * :doc:`systemconfig`
 
@@ -121,10 +122,11 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: NC-NoC Design Workflow
+   :caption: Non-Coherent NoC 1.0 (Sig-Native)
 
    createprojectncnoc
    uploadtopology
+   ncnocdesigntab
    accessmap
    addressinterleaving
    addressmap
@@ -134,7 +136,7 @@ Use the quick links below to jump straight to your workspace or explore the full
    componentsandexplorer
    generatertlandtb
    initiatorconfiguration
-   netwrokviewtab
+   networkviewtab
    projectoverview
    routerconfiguration
    targetconfiguration  
@@ -146,6 +148,15 @@ Use the quick links below to jump straight to your workspace or explore the full
    virtualconfiguration
    implement
    floorplan
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Non-Coherent NoC 2.0 (CXS)
+
+   createprojectncnoccxs
+   projectoverviewcxs
+   ncnocdesigntabcxs
 
 
 .. toctree::
