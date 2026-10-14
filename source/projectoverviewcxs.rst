@@ -13,7 +13,7 @@ Interface Tab (CXS)
 
 **Egress Devices (Right Panel):** Manage outgoing destinations by specifying Egress IDs, target names, security settings, and communication protocols (e.g., AXI4, AXI3) with corresponding port widths.
 
-**Actions:** Use the toolbar buttons to add or remove interfaces, filter lists, and apply changes using the Reconfigure or Reset Changes options at the bottom.
+**Actions:** Use the toolbar buttons to add or remove interfaces, and filter lists. These configurations are saved automatically. 
 
 .. image:: images/cxsoverview_interfacetab.png
    :alt: Project Overview Interface Tab for NC-NoC 2.0 
@@ -28,7 +28,7 @@ Connectivty Tab (CXS)
 
 **Connection Toggle:** Use the interactive checkmark grid to enable or disable routing paths between specific initiators (e.g., axinorm_mst, axirm_mst) and targets (e.g., Default_Target_0, axirm_slv1, axinorm_slv2).
 
-**Global & Action Controls:** Maintain access to the top-level NoC Address Width, NoC Data Width, and Preferred Network Configuration settings, with final layout updates applied via the Reconfigure button.
+**Global & Action Controls:** Maintain access to the top-level NoC Address Width, NoC Data Width, and Preferred Network Configuration settings, with final layout updates applied and saved automatically. 
 
 
 .. image:: images/cxsoverview_connectivitytab.png
