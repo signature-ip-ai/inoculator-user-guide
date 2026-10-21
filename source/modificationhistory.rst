@@ -243,7 +243,72 @@ This is the modification history made for the documentation.
      - Added Brigde Type in C-NoC C2C Bridge. 
      - Updated related screenshots. 
    * - v6.1.4
-     - 
+     - Update the Virtual target configuration and screenshots.  
+     - Update Uplooad Topology to include Upload JSON function.  
+     - Added Export Package to FTP 
+     - Added C-NoC Register Map    
+   * - v6.1.5
+     - April 29, 2026 
+     - Added Node ID and Location ID in C-NoC Bridge right panel.   
+     - Added the Explorer View in C-NoC Project. 
+     - Change the Autofill Address in NC-NoC Address Map.
+     - Removed the Security Policy button inside Access Map.  
+     - Update the save button of Copy Project. 
+     - Removal of UCIE Bridge in System Config.
+   * - v6.2.0 
+     - May 14, 2026 
+     - Update Auto-Route wordings.
+   * - v6.2.1
+     - May 28, 2026
+     - Added Project Type: Integration
+     - Updated C-NoC Router Parameters   
+     - Update the Request Access flow. 
+   * - v6.2.2
+     - June 11, 2026  
+     - Modified the Routers, Initiator and Targets up to 128 for X6 implementation.  
+     - Added validation for Address Interleaving Merger. 
+     - Modified the Project Sharing with Project Collaboration. 
+   * - v6.2.3
+     - June 24, 2026  
+     - Modified the C-NoC and NC-NoC Address Map to add Size Column.  
+     - Update the Layout of Web. 
+     - Added Quick Links for Video Guide. 
+   * - v6.2.4
+     - July 8, 2026  
+     - Project Sharing role assignment: Co-Owner and Collaborator.  
+     - Address Map Auto Compute (Size and End Address) function. 
+     - Protocol Names of NC-NoC Devices  
+     - Theme Colors of Login Request Access, and other authentication page.  
+     - C-NoC Devices default names updated to Protocol Names.
+   * - v6.2.5
+     - July 22, 2026   
+     - Deleting of project and transferring of ownership.  
+     - Router Shapes for X6 library implementation 
+   * - v6.3.0 
+     - August 5, 2026
+     - Adjusted the image size of Sphinx Documention  
+     - Removed extraneous parameters in the NC-NoC initiator/target with non-AXI protocol  
+   * - v6.3.1
+     - August 19, 2026    
+     - Added branch control in generate, simulate and export tasks using Internal Accounts. 
+     - Update Router tab name from "PORTS" to "PIPELINES". 
+     - Added Virtual Channel Parameters in NC-NoC.  
+     - Added NC-NoC Internal Pipeline Stages.    
+     - Modified Address Interleaving Merger to be disabled when Non-AXI is present in Initiators.
+   * - v6.3.2
+     - September 2, 2026 
+     - Updated the layout of NC-NoC System Config.  
+     - Added Cross Topology feature in Nc-NoC System Config   
+   * - v6.3.3
+     - September 30, 2026
+     - Added Integration Project as Project Type
+     - Uploaded new screenshots.  
+   * - v6.3.5
+     - October 13, 2026 
+     - Add NC-NoC 2.0 in Non-Coherent NoC page  
+     - Update Filter items in Projects Page. 
+     - Add pages for sample designs of NC-NoC. 
+     - Upload necessary files related to NC-NoC.  
 
 
 
