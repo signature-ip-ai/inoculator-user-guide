@@ -10,12 +10,6 @@ Simulating CXS topologies allows you to accurately measure link utilization and 
 Core Verification Objectives:
 ===============================
 
-.. list-table:: Test Execution 
-   :widths: 25 75
-   :header-rows: 1
-   :stub-columns: 1 
-
-
 * - Flow Control & Credit Management: 
   - Verifies FLIT-level credit exchange mechanics and ensures recovery from credit-starvation states.
 * - Throughput Optimization:
