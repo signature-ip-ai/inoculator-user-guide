@@ -13,7 +13,7 @@ Interface Tab (CXS)
 
 **Egress Devices (Right Panel):** Manage outgoing destinations by specifying Egress IDs, target names, security settings, and communication protocols (e.g., AXI4, AXI3) with corresponding port widths.
 
-**Actions:** Use the toolbar buttons to add or remove interfaces and filter lists. These configurations are saved automatically.
+**Actions:** Use the toolbar buttons to add or remove interfaces, and filter lists. These configurations are saved automatically.
 
 .. image:: images/cxsoverview_interfacetab.png
    :alt: Project Overview Interface Tab for NC-NoC 2.0 
