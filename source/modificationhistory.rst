@@ -352,7 +352,8 @@ This is the modification history made for the documentation.
 |                       |                                | 3. Add pages for sample designs of NC-NoC.                                                     |
 |                       |                                | 4. Upload necessary files related to NC-NoC.                                                   |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 6.4.0                 | October 30, 2026               | *Modified Items:"                                                                              |
+| 6.4.0                 | October 30, 2026               | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
 |                       |                                | 1. Added Simulation page for NC-NoC 2.0 CXS.                                                   |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
