@@ -1,5 +1,5 @@
 ===============================
-NC-NoC 2.0 (CXS) Simualation 
+NC-NoC 2.0 (CXS) Simulation 
 ===============================
 
 The Simulation Engine for NC-NoC 2.0 CXS provides a cycle-accurate validation workspace to analyze the ultra-low-latency streaming performance, FLIT-level credit management, and end-to-end flow control of your CXS topologies. This layer enables you to stress-test high-density, multi-die stream interfaces against rigorous credit-starvation scenarios and dynamic traffic patterns.
