@@ -340,7 +340,7 @@ This is the modification history made for the documentation.
 |                       |                                | 1. Updated the layout of NC-NoC System Config.                                                 |
 |                       |                                | 2. Added Cross Topology feature in Nc-NoC System Config                                        |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
-| 6.3.3                 |                                | *Modified Items:*                                                                              |
+| 6.3.3                 | September 16, 2026             | *Modified Items:*                                                                              |
 |                       |                                |                                                                                                |
 |                       |                                | 1. Added Integration Project page.                                                             |
 |                       |                                | 2. Uploaded new screenshots.                                                                   |
@@ -351,5 +351,9 @@ This is the modification history made for the documentation.
 |                       |                                | 2. Update Filter items in Projects Page.                                                       |
 |                       |                                | 3. Add pages for sample designs of NC-NoC.                                                     |
 |                       |                                | 4. Upload necessary files related to NC-NoC.                                                   |
++-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
+| 6.4.0                 | October 30, 2026               | *Modified Items:*                                                                              |
+|                       |                                |                                                                                                |
+|                       |                                | 1. Added Simulation page for NC-NoC 2.0 CXS.                                                   |
 +-----------------------+--------------------------------+------------------------------------------------------------------------------------------------+
 
