@@ -1,8 +1,8 @@
 ===============================
-NC-NoC 2.0 (CXS) Simulation 
+Flowplex Simulation 
 ===============================
 
-The Simulation Engine for NC-NoC 2.0 CXS provides a cycle-accurate validation workspace to analyze the ultra-low-latency streaming performance, FLIT-level credit management, and end-to-end flow control of your CXS topologies. This layer enables you to stress-test high-density, multi-die stream interfaces against rigorous credit-starvation scenarios and dynamic traffic patterns.
+The Simulation Engine for Flowplex provides a cycle-accurate validation workspace to analyze the ultra-low-latency streaming performance, FLIT-level credit management, and end-to-end flow control of your CXS topologies. This layer enables you to stress-test high-density, multi-die stream interfaces against rigorous credit-starvation scenarios and dynamic traffic patterns.
 Simulating CXS topologies allows you to accurately measure link utilization and optimize credit allocation, catching structural bottlenecks and bridge-level protocol errors before generating the synthesizable RTL.
 
 -----------------------------------------------------------------------
