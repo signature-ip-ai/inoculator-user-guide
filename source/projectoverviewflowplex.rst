@@ -1,10 +1,10 @@
-NC-NoC Project Overview with CXS
+Flowplex Project Overview
 ====================================================
 
 The Project Overview allows you to configure global network settings and manage device communication interfaces. Use the Interface tab to add design components, define interface protocols and port data widths, and set the corresponding NoC data and address widths.
 
 
-Interface Tab (CXS)
+Interface Tab (Flowplex)
 ----------------------
 
 **Global Network Settings:** Define top-level parameters such as NoC Address Width, NoC Data Width, and the Preferred Network Configuration
@@ -16,12 +16,12 @@ Interface Tab (CXS)
 **Actions:** Use the toolbar buttons to add or remove interfaces, and filter lists. These configurations are saved automatically.
 
 .. image:: images/cxsoverview_interfacetab.png
-   :alt: Project Overview Interface Tab for NC-NoC 2.0 
+   :alt: Project Overview Interface Tab for Flowplex
    :align: center
    :width: 80%
 
 
-Connectivty Tab (CXS)
+Connectivty Tab (Flowplex)
 ---------------------------
 
 **Matrix View:** Visualize and manage communication pathways between all configured ingress devices (rows) and egress targets (columns).
@@ -32,6 +32,6 @@ Connectivty Tab (CXS)
 
 
 .. image:: images/cxsoverview_connectivitytab.png
-   :alt: Project Overview Connectivity Tab for NC-NoC 2.0
+   :alt: Project Overview Connectivity Tab for Flowplex
    :align: center
    :width: 80%
