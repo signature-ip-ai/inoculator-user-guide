@@ -5,7 +5,7 @@ The Project Overview allows you to configure global network settings and manage 
 
 
 Interface Tab (Flowplex)
-----------------------
+-------------------------
 
 **Global Network Settings:** Define top-level parameters such as NoC Address Width, NoC Data Width, and the Preferred Network Configuration
 
