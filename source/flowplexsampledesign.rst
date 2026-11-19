@@ -1,18 +1,18 @@
 ==========================================
-Non-Coherent NoC 2.0 (CXS) Sample Design
+Flowplex Project Sample Design
 ==========================================
 
-Below is a sample design with Non-Coherent NoC 2.0 (CXS), assuming that all necessary configuration and parameters are completed and all validations are passed. 
+Below is a sample design with Flowplex Project, assuming that all necessary configuration and parameters are completed and all validations are passed. 
 
 .. image:: images/cxs_sampledesign.png
-   :alt: NC-NoC 2.0 Sample Design
+   :alt: Flowplex Sample Design
    :align: center
    :width: 80%
 
 To view the connectivity, click any Initiator or Target Component. 
 
 .. image:: images/cxs_connectivity.png
-   :alt: NC-NoC 2.0 Sample Connectivity Flow
+   :alt: Flowplex Sample Connectivity Flow
    :align: center
    :width: 80%
 
