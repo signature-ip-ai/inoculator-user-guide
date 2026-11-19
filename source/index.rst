@@ -122,7 +122,7 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Non-Coherent NoC 1.0 (Sig-Native)
+   :caption: Non-Coherent NoC (Sig-Native)
 
    createprojectncnoc
    uploadtopology
@@ -152,12 +152,12 @@ Use the quick links below to jump straight to your workspace or explore the full
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Non-Coherent NoC 2.0 (CXS)
+   :caption: Flowplex
 
-   createprojectncnoccxs
-   projectoverviewcxs
-   ncnocdesigntabcxs
-   simulationcxs
+   createprojectflowplex
+   projectoverviewflowplex
+   flowplexdesigntab
+   simulationflowplex
 
 
 .. toctree::
