@@ -6,9 +6,6 @@ This section of the user guide covers the **Design** tab of a Flowplex
 project in iNoCulator. It explains how to configure the interface modules,
 linkports, routes and address map of the interconnect.
  
-The examples in this guide use the ``user_guide_flowplex`` project, which has
-8 Masters, 8 Slaves and 2 Linkports.
- 
 Canvas layout
 ==============
  
@@ -27,21 +24,21 @@ The Design canvas shows the interconnect from left to right:
    * - MIM
      - ``MIM_0`` … ``MIM_7``
      - Master Interface Module. Converts the Master's protocol (for example,
-       AXI4) into fabric packets. See :ref:`flowplex-mim`.
+       AXI4) into fabric packets. See :ref:`flowplexmimconfig`.
    * - Ingress port
      - ``Ix0`` … ``Ix7``
      - The point where traffic from a MIM enters the fabric.
    * - Linkport
      - ``Lx0``, ``Lx1``
      - An intermediate node that connects a group of ingress and egress
-       ports. See :ref:`flowplex-linkport`.
+       ports. See :ref:`flowplexlinkportconfig`.
    * - Egress port
      - ``Ex0`` … ``Ex7``
      - The point where traffic leaves the fabric toward a SIM.
    * - SIM
      - ``SIM_0`` … ``SIM_7``
      - Slave Interface Module. Converts fabric packets back into the
-       Slave's protocol. See :ref:`flowplex-sim`.
+       Slave's protocol. See :ref:`flowplexsimconfig`.
    * - Slave
      - ``S0`` … ``S7``
      - The target devices that receive requests and return responses.
@@ -57,7 +54,7 @@ Panels
     and egress ports. The button is disabled with the tooltip
     *Connections already generated* once the connections exist.
   * **Configure Routes** – opens routing mode and the
-    :ref:`Routing Table <flowplex-routing-table>`.
+    :ref:`Routing Table <flowplexrouting>`.
  
 * **Linkport** – holds the ``Lx`` block that you add to the canvas.
  
