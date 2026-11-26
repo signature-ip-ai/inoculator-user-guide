@@ -11,7 +11,7 @@ Project Settings Configuration Options
 
 The Project Settings wizard panel allows you to configure essential design rules and data sources before generating your hardware canvas layout.
 
-.. image:: images/cxs_createproject.png
+.. image:: images/flowplex_createproject.png
    :alt: Flowplex project wizard configuration options modal
    :align: center
    :width: 65%
@@ -57,9 +57,12 @@ Launching Your Workspace
 
 Once you have verified and entered the project name, check the **Design** tab to see the topology. 
 
-.. image:: images/cxs_blankcanvas.png
-   :alt: Flowplex project Blank Canvas
+.. image:: images/flowplex_overview.png
+   :alt: Flowplex Overview Tab
    :align: center
    :width: 65%
 
-
+.. image:: images/flowplex_designtab.png
+   :alt: Flowplex project Sample Design Tab
+   :align: center
+   :width: 65%
