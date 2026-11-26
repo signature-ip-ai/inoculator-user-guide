@@ -1,3 +1,5 @@
+.. _flowplexlinkportconfig:
+
 ======================
 Linkport Configuration
 ======================
