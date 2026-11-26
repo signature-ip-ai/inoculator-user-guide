@@ -1,3 +1,5 @@
+.. _flowplexaddressmap:
+
 =======================
 Address Map (Flowplex)
 =======================
