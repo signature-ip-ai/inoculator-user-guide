@@ -157,7 +157,7 @@ Address translation (USE_ADDR_TRANS_SLV)
 ========================================
  
 * **On** – the Slave's base address (from the
-  :ref:`Address Map <flowplex-address-map>`) is subtracted from each read and
+  :ref:`Address Map <flowplexaddressmap>`) is subtracted from each read and
   write address, so the Slave sees offsets that start at 0 instead of global
   NoC addresses.
 * **Off (default)** – addresses pass through unchanged.
