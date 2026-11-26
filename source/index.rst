@@ -158,6 +158,12 @@ Use the quick links below to jump straight to your workspace or explore the full
    projectoverviewflowplex
    flowplexdesigntab
    simulationflowplex
+   flowplexoverview
+   flowplexmimconfig
+   flowplexsimconfig
+   flowplexlinkportconfig
+   flowplexaddressmap
+   flowplexrouting
 
 
 .. toctree::
