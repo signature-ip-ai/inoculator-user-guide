@@ -55,7 +55,7 @@ The database registration engine enforces strict validation rules on the project
 Launching Your Workspace
 ========================================
 
-Once you have verified and entered the project name, check the **Design** tab to see the topology. 
+Once you have verified and entered the project name, check the **Design** tab to see the topology and **Overview** tab for configuring Interfaces.
 
 .. image:: images/flowplex_overview.png
    :alt: Flowplex Overview Tab
