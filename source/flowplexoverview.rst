@@ -70,7 +70,7 @@ The top section of the right panel changes with your selection:
   when you click a MIM, SIM or Linkport on the canvas.
 * **Routing Table** – shown while routing mode is active.
  
-The :ref:`Address Map <flowplex-address-map>` section always appears below
+The :ref:`Address Map <flowplexaddressmap>` section always appears below
 the top section.
  
 .. tip::
