@@ -69,6 +69,6 @@ panel. It lists:
 .. tip::
  
    After you change Linkport connections, open the
-   :ref:`Routing Table <flowplex-routing-table>` and check that all routes
+   :ref:`Routing Table <flowplexrouting>` and check that all routes
    are still configured.
  
